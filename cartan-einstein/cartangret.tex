@@ -1,0 +1,1925 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+\documentclass[leqno,12pt]{article}
+\usepackage{geometry}
+\geometry{a4paper}
+%\usepackage[adobe-utopia,uppercase=upright,greeklowercase=upright]{mathdesign}
+%\usepackage{indentfirst}
+%\usepackage[parfill]{parskip}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amscd}
+\usepackage{sectsty}
+\usepackage{mathtools}
+
+
+\usepackage{makeidx}
+
+\makeatletter
+\let\old@phi\phi
+\let\old@varphi\varphi
+\let\old@epsilon\epsilon
+\let\old@varepsilon\varepsilon
+\let\phi\old@varphi
+\let\varphi\old@phi
+\let\epsilon\old@varepsilon
+\let\varepsilon\old@epsilon
+\makeatother
+
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text}
+
+
+\makeindex
+
+\partfont{\mdseries\scshape\centering}
+\chapterfont{\mdseries\scshape\centering}
+\sectionfont{\mdseries\scshape\centering}
+\subsectionfont{\bfseries\centering}
+
+%\numberwithin{equation}{chapter}
+%\usepackage{epstopdf}
+\usepackage[numbib,nottoc]{tocbibind}
+%\usepackage{overcite}
+\usepackage[pdfborder={0 0 0}]{hyperref}
+%\usepackage[perpage,para,symbol]{footmisc}
+\usepackage[british]{babel}
+%\usepackage{slashed}
+
+\usepackage{perpage}
+\MakePerPage[2]{footnote}
+
+
+\title{On the equations of Einstein's gravitation}
+\author{by Élie Cartan\\
+\\
+Translation by Ziyang Hu\\
+\\
+\\
+Translated from the original French\\
+\\
+\emph{Sur les équations de la gravitation d'Einstein}\\ 
+\\
+published in 1922\\\\}
+%\date{}                                         % Activate to display a given date or no date
+
+\newcommand{\pd}{\partial}
+\newcommand{\rs}{\mathbb{R}}
+
+\DeclareMathOperator{\inp}{\lrcorner}
+
+
+\newtheoremstyle{shape0}% name
+  {9pt}%      Space above
+  {9pt}%      Space below
+  {}%         Body font
+  {}%         Indent amount (empty = no indent, \parindent = para indent)
+  {\itshape}% Thm head font
+  {.}%        Punctuation after thm head
+  {.5em}%     Space after thm head: " " = normal interword space;
+        %       \newline = linebreak
+  {}%         Thm head spec (can be left empty, meaning `normal')
+
+
+\newtheoremstyle{shape1}% name
+  {9pt}%      Space above
+  {9pt}%      Space below
+  {\itshape}%         Body font
+  {}%         Indent amount (empty = no indent, \parindent = para indent)
+  {\scshape}% Thm head font
+  {.}%        Punctuation after thm head
+  {.5em}%     Space after thm head: " " = normal interword space;
+        %       \newline = linebreak
+  {}%         Thm head spec (can be left empty, meaning `normal')
+
+\newtheoremstyle{shape2}% name
+  {9pt}%      Space above
+  {9pt}%      Space below
+  {}%         Body font
+  {}%         Indent amount (empty = no indent, \parindent = para indent)
+  {\itshape}% Thm head font
+  {.}%        Punctuation after thm head
+  {.5em}%     Space after thm head: " " = normal interword space;
+        %       \newline = linebreak
+  {}%         Thm head spec (can be left empty, meaning `normal')
+
+
+\setlength{\parindent}{15pt}
+
+\theoremstyle{shape1}
+\newtheorem*{thm*}{\hspace{15pt}Theorem}
+\newtheorem{thm}{Theorem}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prin}[thm]{Principle}
+\newtheorem{expr}[thm]{Experiment}
+\newtheorem*{dfn*}{\hspace{15pt}Definition}
+\newtheorem*{concl*}{\hspace{15pt}Conclusion}
+\theoremstyle{shape0}
+\newtheorem*{rmk*}{\hspace{15pt}Remark}
+\newtheorem*{pcase*}{\hspace{15pt}Particular case}
+
+\theoremstyle{shape2}
+\newtheorem{ex}[thm]{Example}
+\theoremstyle{definition}
+
+\renewcommand{\bfdefault}{b}
+
+
+\setcounter{secnumdepth}{5}
+\renewcommand\theparagraph{\arabic{paragraph}}
+
+\allowdisplaybreaks
+
+
+\begin{document}
+
+\renewcommand{\theequation}{\arabic{equation}}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\maketitle
+
+\renewcommand{\qedsymbol}{\textsc{q.e.d.}}
+\renewcommand{\thesection}{\roman{section}.}
+\renewcommand{\thesubsection}{\Roman{subsection}.}
+
+\tableofcontents
+\newpage
+\section{Introduction}
+\label{sec:introduction}
+
+
+
+The equations of Einstein's gravitation express the components $T_{ik}$ of matter tensor by means of the coordinates $x_{i}$ of the universe (space-time), the coefficients $g_{ik}$ of the fundamental quadratic differential form $\sum g_{ik}dx_{i}dx_{k}$ and their partial derivatives up to the first two orders. These equations, according to the principles of relativity, must have a significance independent of the choice of coordinates. This in turn menas that the equations of gravitation are
+\[
+T_{ik}=-G_{ik},
+\]
+\emph{and the differential quadratic form $\sum G_{ik}dx_{i}dx_{k}$ is a covariant of the fundamental form under arbitrary change of coordinates.}
+
+The search for the equations of gravitation therefore becomes the search for all covariant quadratic differential forms $\sum G_{ik}dx_{i}dx_{k}$. Einstein added two supplementary conditions: the first is that $G_{ik}$ are \emph{linear} in second order partial derivatives of the functions $g_{ik}$, and the second is that the conversation law holds.
+
+In the following pages, I will show rigorously that the only possible mathematical solution of the problem thus formulated is the one indicated by Einstein. More precisely, every covariant differential form $\sum G_{ik}dx_{i}dx_{k}$ whose coefficients $G_{ik}$ depend linearly on second order partial derivatives of $g_{ik}$ can be deduced from another such form $\sum \bar G_{ik}dx_{i}dx_{k}$  by the general formula
+\[
+\sum G_{ik}dx_{i}dx_{k}=\alpha\sum\bar G_{ik}dx_{i}dx_{k}+(\beta A+\gamma)\sum g_{ik}dx_{i}dx_{k},
+\]
+where $\alpha,\beta,\gamma$ are three arbitrary constants and $A$ is the Riemann scalar curvature. The condition that the conversation law holds leaves only two (homogeneous) arbitrary parameter instead of three.
+
+Given the difficulties of obtaining foreign papers encountered during and since the way, I am not absolutely sure that the proof of this theorem has not already been given. These things I am going to discuss rest naturally on the preliminary determination of the invariants of a quadratic differential form under the general transformation group on $n$ variables (four in the case of relativity): this is the very problem studied by Christoffel (\emph{Journ.\ de Crelle}, vol.\ 19) and on the view of which the absolute differential calculus is founded. The method that I am going to employ is just a simple application in a particular case of the general method I developed in 1908 \footnote{\emph{Ann.\ Éc.\ norm.}, 3rd series, vol.\ 25, pp.\ 57 (chapter 1 of the paper). In general, for the notations and the essential elements of the theories used, to a recent paper in \emph{Bulletin de la Société mathématique de France}, vol.\ 47, 1919, p.\ 125--160, and vol.\ 48, 1920, p.\ 132--208, especially chapters 1,2 and 3.}. If we imagine the given differential form to be decomposed into squares
+\[
+ds^{2}=-\omega^{2}_{1}-\omega^{2}_{2}-\omega^{2}_{3}+\omega^{2}_{4},
+\] 
+where $\omega_{1},\omega_{2},\omega_{3},\omega_{4}$ are linear differential expressions (non-exact differentials), the problem becomes finding the invariants of these four forms under transformations that substitute linear combinations of these forms in their place (which conserves $\omega^{2}_{4}-\omega^{2}_{1}-\omega^{2}_{2}-\omega^{2}_{3}$). Every decomposition of $ds^{2}$ into squares basically becomes the choice of a Euclidean reference system associated to each \emph{event}. The formations of the bilinear covariants of $\omega_{i}$ involve the components $\omega_{ij}$ of the instantaneous rotation of the moving reference system (which entails the definition of parallelism of Levi-Civita), and the covariant bilinear of $\omega_{ij}$ in turn introduces the Riemann symbols and so on.
+
+I will not use Ricci's absolute differential calculus at all. It is not that I ignore its importance, and it is not harmful, I think, to show that the absolute general methods are applicable to the theories of invariants of a quadratic differential form. This method already applies to the theory of generalised manifolds of H.~Weyl, defined by $ds^{2}$ and a linear differential form, and also to the theory of invariants of one quadratic differential equation $\sum g_{ik}dx_{i}dx_{k}$, as well as to the Monge equation
+\[
+F(x_{i};dx_{i})=0.
+\]
+
+It is remarkable that the equations of Einstein's gravitation involve only ten linear combinations of the twenty Riemann symbols, and there exist ten other linear combinations which are conserved (or rather their mutual relations are conserved) when we multiply $ds^{2}$ by an arbitrary function of $x_{i}$ and which constitute the only second order relative invariants of the \emph{equation} $ds^{2}=0$. These ten linear combinations therefore \emph{are concerned only with the law of light propagation}, which on the contrary the ten combinations entering the gravitation equations \emph{are not concerned with}. It is rather baffling that only these last ten equations have been considered by the physicists. I will show that they enter as real and imaginary parts of the coefficients of a tertiary quadratic covariant.
+
+Finally, I will indicate (from \textsection\textbf{\ref{sec:35}} onwards) a form given in terms of gravitational tensors, conceived as a vector applied to a three dimensional element in the universe, the components of the vector being third degree symbolic differential forms. The conservation law is then expressed in a simple manner by the operation of \emph{exterior derivation} which transforms an integral over a closed submanifold to an equal integral over the volume bounded by this submanifold.
+
+\mbox{}
+
+This paper was written more than a year ago. Since then I have published, during the past months of February and March, notes concerning a new geometrical conception of non-Euclidean spaces in the \emph{Comptes rendus de l'Académie des Sciences} (vol.\ 174, p.\ 437, 593, 734, 857, 1104). The fundamental idea of theses notes can be found under a semi-abstract and semi-geometrical form in the first and last parts of this paper (\textsection\textbf{\ref{sec:1}}--\textbf{\ref{sec:6}}, \textsection\textbf{\ref{sec:35}}--\textbf{\ref{sec:40}}) in a rudimentary state.
+
+Let me add that this paper also implicitly solves, in a rigorous manner, the problem of determining all covariant systems as relations between $x_{i}, g_{ik}$ and their first two partial derivatives which are linear with respect to the second order partial derivatives. These problem is associated to the problem of decomposing the Riemann-Christofell tensor into \emph{irreducible} tensors. In the case $n=4$, this decomposition is possible in one and only one way and gives three irreducible tensors:
+\begin{enumerate}
+\item The scalar tensor $A$ (total Riemann curvature);
+\item  A nine component tensor $(G)$: $G_{ij}, G_{ii}-G_{jj}$;
+\item A ten component tensor $(H)$, which were mentioned above.
+\end{enumerate}
+
+Granted this, if we ignore the relations obtained by setting to zero all components $A^{kl}_{ij}$ of the Riemann-Christofell tensor, i.e., relations expressing that the space is Euclidean, then the only possible covariant systems are obtained by either setting to zero one of these three forms, or simultaneously setting two of them to zero. In particular, Einstein's law of gravitation, in a region without matter, are obtained by setting the two tensors $A$ and $(G)$ to zero. On the contrary, Mie's law of gravitation (of a scalar potential) is obtained by setting $(H)$ to zero.
+
+These properties generalise to any dimensions. They are related to the general theory of linear groups which leaves no flat submanifold invariant, on the subject of which I refer the reader to two of my papers [\emph{Bull.\ Soc.\ math.}, vol.\ 41, p.\ 53--96 (1913), and \emph{Journ.\ Math.\ pures et appliquées}, 6th series, vol.\ 10, p.\ 149--186 (1914)].
+
+\section{Preliminaries}
+\label{sec:preliminaries}
+
+\paragraph{}
+\label{sec:1}
+Consider any given system of curvilinear coordinates in Euclidean space and suppose that $ds^{2}$ is decomposed into a sum of three squares
+\[
+ds^{2}=\omega_{1}^{2}+\omega_{2}^{2}+\omega_{3}^{2},
+\]
+where we denote by $\omega_{1},\omega_{2},\omega_{3}$ three linear expressions in the differentials of the coordinates with their coefficients functions of the coordinates. Making such a decomposition is choosing at each point $M$ in the space a rectangular trihedral having this point as its origin, the expressions $\omega_{1},\omega_{2},\omega_{3}$ denoting the components of an infinitesimally small vector joining the point $M$ to an infinitesimally close point $M+dM$ measured with respect to the moving trihedral, or the components of the infinitesimally small \emph{translation} which, together with an infinitesimally small rotation around an axis passing through $M$, transforms the trihedral at the point $M$ to the trihedral at the point $M+dM$.
+
+Now denote by $\omega_{23}=-\omega_{32}$, $\omega_{31}=-\omega_{13}$, $\omega_{12}=-\omega_{21}$ the components of this rotation. It is easy to see, and it is a classical result, that there are necessary relations between the six components $\omega_{i},\omega_{ij}$ of the instantaneous displacement of the reference moving trihedral. As a point that will be very important later on, first observe that if $x,y,z$ denote the coordinates of a fixed point with respect to the moving axes, we have the relations
+\begin{equation}
+  \label{eq:1}
+  \left\{
+    \begin{aligned}
+      dx+y\omega_{21}+z\omega_{31}+\omega_{1}&=0,\\
+      dy+z\omega_{32}+x\omega_{12}+\omega_{2}&=0,\\
+      dz+x\omega_{13}+y\omega_{23}+\omega_{3}&=0.
+    \end{aligned}
+  \right.
+\end{equation}
+
+By expressing the integrability conditions of equations \eqref{eq:1}, i.e., the bilinear covariants of the left hand sides of equations \eqref{eq:1} vanish when the equations themselves are used, we obtain
+\[
+\left\{\begin{aligned}
+\omega_{1}'-[\omega_{2}\omega_{21}]-[\omega_{3}\omega_{31}]+y\{\omega_{21}'-[\omega_{23}\omega_{31}]\}+z\{\omega_{31}'-[\omega_{32}\omega_{21}]\}&=0,\\
+\omega_{2}'-[\omega_{3}\omega_{32}]-[\omega_{1}\omega_{12}]+z\{\omega_{32}'-[\omega_{31}\omega_{12}]\}+x\{\omega_{12}'-[\omega_{13}\omega_{32}]\}&=0,\\
+\omega_{3}'-[\omega_{1}\omega_{13}]-[\omega_{2}\omega_{23}]+x\{\omega_{13}'-[\omega_{12}\omega_{23}]\}+y\{\omega_{23}'-[\omega_{21}\omega_{13}]\}&=0.\end{aligned}
+\right.
+\]
+
+These relations hold for any $x,y,z$, and hence we deduce the relations we are after
+\begin{equation}
+  \label{eq:2}
+  \left\{
+    \begin{aligned}
+      \omega_{1}'&=[\omega_{2}\omega_{21}]+[\omega_{3}\omega_{31}],\\
+      \omega_{2}'&=[\omega_{3}\omega_{32}]+[\omega_{1}\omega_{12}],\\
+      \omega_{3}'&=[\omega_{1}\omega_{13}]+[\omega_{2}\omega_{23}],\\
+      \omega_{23}'&=[\omega_{21}\omega_{13}],\\
+      \omega_{31}'&=[\omega_{32}\omega_{21}],\\
+      \omega_{12}'&=[\omega_{13}\omega_{32}].
+    \end{aligned}
+  \right.
+\end{equation}
+
+These relations can be interpreted as equivalent to the following relations by introducing two arbitrary symbols of differentiation $d$ and $\delta$
+\begin{align*}
+  d\omega_{1}^{\delta}-\delta\omega_{1}^{d}&=\begin{vmatrix}\omega_{2}^{d}&\omega_{21}^{d}\\\omega_{2}^{\delta}&\omega_{21}^{\delta}\end{vmatrix}+\begin{vmatrix}\omega_{3}^{d}&\omega_{31}^{d}\\\omega_{3}^{\delta}&\omega_{31}^{\delta}\end{vmatrix},\\
+  d\omega_{2}^{\delta}-\delta\omega_{2}^{d}&=\begin{vmatrix}\omega_{3}^{d}&\omega_{32}^{d}\\\omega_{3}^{\delta}&\omega_{32}^{\delta}\end{vmatrix}+\begin{vmatrix}\omega_{1}^{d}&\omega_{12}^{d}\\\omega_{1}^{\delta}&\omega_{12}^{\delta}\end{vmatrix},\\
+  d\omega_{3}^{\delta}-\delta\omega_{3}^{d}&=\begin{vmatrix}\omega_{1}^{d}&\omega_{13}^{d}\\\omega_{1}^{\delta}&\omega_{13}^{\delta}\end{vmatrix}+\begin{vmatrix}\omega_{2}^{d}&\omega_{23}^{d}\\\omega_{2}^{\delta}&\omega_{23}^{\delta}\end{vmatrix},
+\end{align*}
+\begin{align*}
+  d\omega_{23}^{\delta}-\delta\omega_{23}^{d}&=\begin{vmatrix}\omega_{21}^{d}&\omega_{13}^{d}\\\omega_{21}^{\delta}&\omega_{13}^{\delta}\end{vmatrix},\\
+  d\omega_{31}^{\delta}-\delta\omega_{31}^{d}&=\begin{vmatrix}\omega_{32}^{d}&\omega_{21}^{d}\\\omega_{32}^{\delta}&\omega_{21}^{\delta}\end{vmatrix},\\
+  d\omega_{12}^{\delta}-\delta\omega_{12}^{d}&=\begin{vmatrix}\omega_{13}^{d}&\omega_{32}^{d}\\\omega_{13}^{\delta}&\omega_{32}^{\delta}\end{vmatrix}.
+\end{align*}
+
+\paragraph{}
+\label{sec:2}
+The first three formulae of \eqref{eq:2} shows that, \emph{if we know only} $\omega_{1},\omega_{2},\omega_{3}$, i.e., the components of the instantaneous translation of the moving trihedral, we can deduce $\omega_{23},\omega_{31},\omega_{12}$, the components of instantaneous rotation, \emph{by simple differentiations}. Indeed, imagine that we have expressed the derivatives $\omega_{1}',\omega_{2}',\omega_{3}'$ as functions in $\omega_{1},\omega_{2},\omega_{3}$, which is always possible, as
+\begin{align*}
+  \omega_{1}'&=a_{1}[\omega_{2}\omega_{3}]+b_{1}[\omega_{3}\omega_{1}]+c_{1}[\omega_{1}\omega_{2}]\\
+  \omega_{2}'&=a_{2}[\omega_{2}\omega_{3}]+b_{2}[\omega_{3}\omega_{1}]+c_{2}[\omega_{1}\omega_{2}]\\
+  \omega_{3}'&=a_{3}[\omega_{2}\omega_{3}]+b_{3}[\omega_{3}\omega_{1}]+c_{3}[\omega_{1}\omega_{2}].
+\end{align*}
+Let us also set
+\begin{align*}
+  \omega_{23}=\alpha_{1}\omega_{1}+\beta_{1}\omega_{2}+\gamma_{1}\omega_{3},\\
+  \omega_{31}=\alpha_{2}\omega_{1}+\beta_{2}\omega_{2}+\gamma_{2}\omega_{3},\\
+  \omega_{12}=\alpha_{3}\omega_{1}+\beta_{3}\omega_{2}+\gamma_{3}\omega_{3}.
+\end{align*}
+
+A simple calculation shows, without ambiguity,
+\begin{align*}
+  \alpha_{1}&=\frac{1}{2}(a_{1}-b_{2}-c_{3}),&\beta_{1}&=a_{2},&\gamma_{1}&=a_{3},\\
+  \alpha_{2}&=b_{1},&\beta_{2}&=\frac{1}{2}(b_{2}-c_{3}-a_{1}),&\gamma_{2}&=b_{3},\\
+  \alpha_{3}&=c_{1},&\beta_{3}&=c_{2},&\gamma_{3}&=\frac{1}{2}(c_{3}-a_{1}-b_{2}).
+\end{align*}
+
+The rotation components thus determined, the equations \eqref{eq:1} give the conditions for the point of relative coordinates $(x,y,z)$ to be fixed. In particular, the conditions for the \emph{direction} $(u,v,w)$ to be invariant is
+\begin{equation}
+  \label{eq:3}
+  \left\{
+    \begin{aligned}
+      du+v\omega_{21}+w\omega_{31}&=0,\\
+      dv+w\omega_{32}+u\omega_{12}&=0,\\
+      dw+u\omega_{13}+v\omega_{23}&=0,
+    \end{aligned}
+  \right.
+\end{equation}
+\emph{they indicate how the parameters of the moving direction $u,v,w$ of a line coming from $M$ must vary such that the line remains parallel to itself.}
+
+\paragraph{}
+\label{sec:3}
+The preceding considerations extend to Euclidean space of any dimensions as well as generalised Euclidean spaces such as Minkowski space for which the square of the distance between two points $(x)$ and $(x')$ is of the form
+\[
+\sum_{i=1}^{i=n}\epsilon_{i}(x'_{i}-x_{i})^{2},
+\]
+where some of the coefficients $\epsilon_{i}$ are equal to $+1$ and the others $-1$. Let us call the geometric product $V|V'$ of two vectors $V$ and $V'$ with projections
+\begin{gather*}
+  u_{1},\quad\dots\quad u_{n},\\
+  u_{1}',\quad\dots\quad u_{n}',\\
+\end{gather*}
+the expression
+\[
+V|V'=\epsilon_{1}u_{1}u_{1}'+\epsilon_{2}u_{2}u_{2}'+\dots+\epsilon_{n}u_{n}u_{n}'.
+\]
+
+Choose, in an arbitrary manner, a system of reference vectors $V_{1},\dots,V_{n}$ at every point in the space satisfying the relations
+\begin{equation}
+  \label{eq:4}
+  V_{i}|V_{i}=\epsilon_{i},\qquad V_{i}|V_{j}=0,\qquad (i\neq j).
+\end{equation}
+
+By moving from a point $M$ to an infinitesimally near point $M'$, we have the relations of the form
+\begin{equation}
+  \label{eq:5}
+  \left\{
+    \begin{aligned}
+      dM&=\omega_{1}V_{1}+\omega_{2}V_{2}+\dots+\omega_{n}V_{n},\\
+      dV_{i}&=\epsilon_{1}\omega_{i1}V_{1}+\epsilon_{2}\omega_{i2}V_{2}+\dots+\epsilon_{n}\omega_{in}V_{n},\qquad(i=1,\dots,n),
+    \end{aligned}
+  \right.
+\end{equation}
+where $\omega_{i}$ and $\omega_{ij}$ are linear expressions in differentials of the coordinates and satisfy the equations
+\[
+\omega_{ii}=0,\qquad\omega_{ij}+\omega_{ji}=0,\qquad(i,j=1,\dots,n)
+\]
+obtained by differentiating the equations \eqref{eq:4}. We first deduce from this
+\begin{equation}
+  \label{eq:6}
+  ds^{2}=\epsilon_{1}\omega_{1}^{2}+\epsilon_{2}\omega_{2}^{2}+\dots+\epsilon_{n}\omega_{n}^{2},
+\end{equation}
+then, by writing out the condition that the left hand sides of \eqref{eq:5} are exact differentials,
+\begin{equation}
+  \label{eq:7}
+  \left\{
+    \begin{aligned}
+      \omega_{i}'&=\epsilon_{i}\sum_{k=1}^{k=n}[\omega_{k}\omega_{ki}],\\
+      \omega_{ij}'&=\sum_{k=1}^{k=n}\epsilon_{k}[\omega_{ik}\omega_{kj}].
+    \end{aligned}
+  \right.
+\end{equation}
+
+The equations expressing that a point of \emph{relative} coordinates $(x_{1},\dots,x_{n})$ is fixed are
+\begin{equation}
+  \label{eq:8}
+  dx_{i}+\omega_{i}+\epsilon_{i}\sum_{k=1}^{k=n}x_{k}\omega_{ki}=0.
+\end{equation}
+
+The expressions $\omega_{i}$ are the components of \emph{instantaneous translations} and the expressions $\omega_{ij}$ are the components of \emph{instantaneous rotation} of the moving reference system.
+
+\paragraph{}
+\label{sec:4}
+Conversely, suppose that we have decomposed $ds^{2}$ of the preceding Euclidean space into a form such as \eqref{eq:6}. This amounts to associate a moving reference system to each point of the system and the expressions $\omega_{i}$ denote the components of instantaneous translation of the system. \emph{As for the components of instantaneous rotation, they are determined without ambiguity by the first $n$ formulae of \eqref{eq:7}}. Indeed, if we set
+\begin{align*}
+  \omega_{i}'&=\sum_{(jk)}^{1,\dots,n}c_{jki}[\omega_{j}\omega_{k}],\\
+  \omega_{ij}&=\sum_{k=1}^{k=n}\alpha_{ijk}\omega_{k},\qquad(\alpha_{ijk}=-\alpha_{jik}),
+\end{align*}
+the unknown coefficients $\alpha_{ijk}$ are given by the relations
+\[
+\alpha_{kil}-\alpha_{lik}=\epsilon c_{kli},
+\]
+which leads to
+\begin{align*}
+  \alpha_{iji}&=\epsilon_{i}c_{iji},\\
+  \alpha_{ijk}&=\frac{1}{2}(\epsilon_{k}c_{ijk}-\epsilon_{i}c_{jki}-\epsilon_{j}c_{kij}).
+\end{align*}
+
+\paragraph{}
+\label{sec:5}
+Let us now consider an \emph{a priori} given quadratic differential form in $n$ variables and suppose it to be decomposable into the sum of squares of $n$ independent linear differential forms. Let us also imagine that this decomposition is done \emph{in the most general way possible}, which introduces $\dfrac{n(n-1)}{2}$ arbitrary variables as we know. We denote the given variables by $x_{1},\dots,x_{n}$ and the arbitrary parameters by $u_{1},\dots,u_{n(n-1)/2}$. Then
+\begin{equation}
+  \label{eq:9}
+  ds^{2}=\epsilon_{1}\omega_{1}^{2}+\epsilon_{2}\omega_{2}^{2}+\dots+\epsilon_{n}\omega_{n}^{2},\qquad (\epsilon_{i}=\pm 1).
+\end{equation}
+
+The $n$ forms $\omega_{i}$ are linear in $dx_{1},\dots,dx_{n}$ with their coefficients functions of $x$ and $u$. Let us calculate their bilinear covariants:  each term in one of these covariants will contain one factor from of the differentials $dx_{1},\dots,dx_{n}$, and then we can put them (in an infinite number of ways) into the form
+\begin{equation}
+  \label{eq:10}
+  \omega_{i}'=\epsilon_{i}[\omega_{1}\omega_{1i}]+\epsilon_{i}[\omega_{2}\omega_{2i}]+\dots+\epsilon_{i}[\omega_{n}\omega_{ni}],
+\end{equation}
+where $\omega_{ij}$ are linear forms in $dx$ and $du$. Now let us express that the given $ds^{2}$ does not depend on the parameters $u$. For this, let us employ two symbols of differentiation $d$ and $\delta$, the second denoting differentiation with respect to some of the parameters $u$. Then we obviously have
+\[
+\omega_{i}^{\delta}=0.
+\]
+
+On the other hand, expanding the condition that $\delta(ds^{2})$ vanishes, we obtain
+\[
+\epsilon_{1}\omega_{1}^{d}\delta\omega_{1}^{d}+
+\epsilon_{2}\omega_{2}^{d}\delta\omega_{2}^{d}+
+\dots+
+\epsilon_{n}\omega_{n}^{d}\delta\omega_{n}^{d}=0.
+\]
+and we have
+\[
+\delta\omega_{i}^{d}=\delta\omega_{i}^{d}-d\omega_{i}^{\delta}=\epsilon_{i}\sum_{k=1}^{k=n}(\omega_{k}^{\delta}\omega_{ki}^{d}-\omega_{k}^{d}\omega_{ki}^{\delta})=-\epsilon_{i}\sum_{k=1}^{k=n}\omega_{ki}^{\delta}\omega_{k}^{d},
+\]
+then the preceding relation becomes
+\[
+\sum\omega_{ki}^{\delta}\omega_{i}^{d}\omega_{k}^{d}=0,
+\]
+from which we finally obtain
+\[
+\omega_{ki}^{\delta}+\omega_{ik}^{\delta}=0.
+\]
+The relations that we obtained show that \emph{the expressions $\omega_{ij}+\omega_{ji}$} (\emph{as well as $\omega_{ii}$}) \emph{are linear in $\omega_{1},\dots,\omega_{n}$.}
+
+Now let us take into consideration of the indetermination of $\omega_{ij}$: we can, without changing the formula \eqref{eq:10}, replace $\omega_{ij}$ by
+\[
+\bar\omega_{ij}=\omega_{ij}+\sum_{k=1}^{k=n}\beta_{ijk}\omega_{k}\qquad\text{with}\qquad \beta_{kil}=\beta_{lik},
+\]
+the expression $\omega_{ij}+\omega_{ji}$ is then replaced by
+\[
+\bar \omega_{ij}+\bar \omega_{ji}=\omega_{ij}+\omega_{ji}+\sum_{k=1}^{k=n}(\beta_{ijk}+\beta_{jik})\omega_{k},
+\]
+we can use the indeterminacy of $\beta_{ijh}$ to set the right hand side to zero, and \emph{this is possible in one and only one way}, as it is easy to check.
+
+Then, \emph{to every decomposition of $ds^{2}$ into $n$ squares of the form \eqref{eq:9}, there corresponds in one and only one way $\dfrac{n(n-1)}{2}$ Pfaffian expressions $\omega_{ij}=\omega_{ji}$ which are linear in $dx_{1},\dots,dx_{n},du_{1},\dots,du_{n(n-1)/2}$ satisfying the relations \eqref{eq:10}}
+\begin{equation}
+  \label{eq:10'}\tag{\ref{eq:10}}
+  \omega_{i}'=\epsilon_{i}\sum_{k=1}^{k=n}[\omega_{k}\omega_{ki}].
+\end{equation}
+
+
+\paragraph{}
+\label{sec:6}
+Nothing prevents us to say that the decomposition \eqref{eq:9} at each point of the $n$ dimensional manifold considered of $ds^{2}$ into squares defines an Euclidean reference system and to call the following Pfaffian expressions the components of the instantaneous translation and the instantaneous rotation of the reference system respectively
+\begin{alignat*}{3}
+  &\omega_{1},\quad&\omega_{2},\quad&\dots,\quad&&\omega_{n}\\
+  &\omega_{12},&&\dots,&&\omega_{n-1,n}.
+\end{alignat*}
+
+We also agree to say that a point having (Euclidean) coordinates $x_{1},\dots,x_{n}$ with respect to a system of moving reference has zero absolute velocity for an infinitesimally small displacement of the reference system if we have the relations
+\begin{equation}
+  \label{eq:8a}\tag{\ref{eq:8}}
+  dx_{i}+\omega_{i}+\epsilon_{i}\sum_{k=1}^{k=n}x_{k}\omega_{ki}=0,
+\end{equation}
+and a direction from $M$ having the direction parameters $\xi_{1},\dots,\xi_{n}$ remains parallel to itself when the relations
+\begin{equation}
+  \label{eq:8'}\tag{\ref{eq:8}$'$}
+  d\xi_{i}+\epsilon_{i}\sum_{k=1}^{k=n}\xi_{k}\omega_{ki}=0
+\end{equation}
+hold. Here we rediscover the notion of \emph{Parallelism} due to Levi-Civita \footnote{T.~Levi-Civita, \emph{Rendic.\ del Circ.\ mat.\ de Palermo}, vol.\ 42, p.\ 173--205.}.
+
+In a Euclidean manifold a straight ray from $M$, when displaced in a parallel manner to itself, coincides with itself when the point $M$ represents any close contour. Analytically, this property entails that the Pfaffian system \eqref{eq:8} is completely integrable: indeed, if we express the complete integrability conditions of this system, we find the equations \eqref{eq:7}.
+
+It is easy to see that, conversely, the equations \eqref{eq:7} hold only in Euclidean spaces. To convince ourselves of this, it suffices to show that it is possible to reduce $ds^{2}$ to the form
+\[
+ds^{2}=\sum_{i=1}^{i=n}\epsilon_{i}dX_{i}^{2}
+\]
+by choosing $x$ and $u$ as suitably chosen functions of the $n$ variables $X_{1},\dots,X_{n}$. We obtain this by integrating the system
+\begin{equation}
+  \label{eq:11}
+  \left\{
+    \begin{aligned}
+      \omega_{i}-dX_{i}&=0,\\
+      \omega_{ij}&=0.
+    \end{aligned}
+  \right.
+\end{equation}
+
+This system is completely integrable, since the bilinear covariants of the left hand sides, which are respectively
+\begin{gather*}
+  \sum_{k=1}^{k=n}\epsilon_{k}[\omega_{k}\omega_{ki}],\\
+  \sum_{k=1}^{k=n}\epsilon_{k}[\omega_{ik}\omega_{kj}],
+\end{gather*}
+vanish when the equations of this system are taken into account. The required determination of $x$ and $u$ as functions of $X$ is therefore possible in an infinite number of ways.
+
+Therefore Euclidean spaces are the only manifolds for which the notion of parallelism of two directions from two points $M$ and $M'$ has an \emph{absolute} significance, i.e., independent of the path followed when we go from $M$ to $M'$.
+
+\paragraph{}
+\label{sec:7}
+Now let us consider the general case and start with the equations
+\begin{equation}
+  \label{eq:10'}\tag{10}
+  \omega_{i}'=\epsilon_{i}\sum_{k=1}^{k=n}[\omega_{k}\omega_{ki}]
+\end{equation}
+which introduce in a unique manner the components $\omega_{ij}$ of instantaneous rotation of the space. Let us \emph{differentiate} these equations, i.e., let us equate the trilinear covariants of the two sides. We obtain
+\[
+0=\sum_{k=1}^{k=n}[\omega'_{k}\omega_{ki}]-[\omega_{k}\omega'_{ki}],
+\]
+or, by replacing $\omega_{k}'$ by their values
+\begin{equation}
+  \label{eq:12}
+  \sum[\omega_{k}\Omega_{ki}]=0
+\end{equation}
+where we have set
+\begin{equation}
+  \label{eq:13}
+  \Omega_{ij}=\omega'_{ij}-\sum_{k=1}^{k=n}\epsilon_{k}[\omega_{ik}\omega_{kj}].
+\end{equation}
+
+We see that the expressions $\Omega_{ij}$, which vanish in the case of Euclidean space, satisfy simply the equation \eqref{eq:12} in the general case. These expressions are in the forms $dx_{1}$, \dots , $dx_{n}$, $du_{1}$, \dots , $du_{n(n-1)/2}$, or, what is the same, in $\omega_{1}$, \dots , $\omega_{n}$, $\omega_{ij}$. Therefore let us set
+\[
+\Omega_{ij}=\sum_{(kl)}A^{kl}_{ij}[\omega_{k}\omega_{l}]+\sum_{k,(lm)}B^{klm}_{ij}[\omega_{k}\omega_{lm}]+\sum_{(kl),(mn)}C^{klmn}_{ij}[\omega_{kl}\omega_{mn}].
+\]
+
+Substituting into equations \eqref{eq:12}, we see immediately that all the coefficients $C$ are zero. The consideration of the terms in
+\[
+\omega_{h}\omega_{k}\omega_{lm}
+\]
+then gives
+\[
+B^{klm}_{hi}=B^{hlm}_{ki}
+\]
+which shows that we can exchange the first lower index with the first upper index without changing the value of the coefficient $B$. On the other hand, exchanging two lower indices manifestly changes the sign of $B$. We therefore can write the six equations
+\begin{gather*}
+  B^{hlm}_{hi}=B^{hlm}_{ki},\qquad B^{ilm}_{kh}=B^{klm}_{ih},\qquad B^{hlm}_{ik}=B^{ilm}_{hk},\\
+  B^{ilm}_{hk}+B^{ilm}_{kh}=0,\qquad B^{hlm}_{ki}+B^{hlm}_{ik}=0,\qquad B^{hlm}_{ih}+B^{klm}_{hi}=0,
+\end{gather*}
+which together imply the vanishing of all the coefficients $B$.
+
+At last, if we set the coefficients of the terms in $[\omega_{h}\omega_{k}\omega_{l}]$ to zero, we obtain among the $A^{kl}_{ij}$ the relation
+\[
+A^{kl}_{hi}+A^{lh}_{ki}+A^{hk}_{li}=0.
+\]
+
+It is almost trivial to comment that on the other hand the swapping of two lower indices $i, j$, or two upper indices $h,l$, changes the sign of $A^{hl}_{ij}$.
+
+Finally, \emph{in the case of non-Euclidean manifold, the formulae \eqref{eq:10} need to be completed by the formulae}
+\begin{equation}
+  \label{eq:14}
+  \omega'_{ij}=\sum_{k=1}^{k=n}\epsilon_{k}[\omega_{ik}\omega_{kj}]+\sum_{(kl)}^{1,\dots,n}A^{kl}_{ij}[\omega_{k}\omega_{l}],
+\end{equation}
+\emph{where the quantities $A^{kl}_{ij}=-A^{kl}_{ji}=-A^{lk}_{ij}$ satisfy the relations}
+\begin{equation}
+  \label{eq:15}
+  A^{kl}_{hi}+A^{lh}_{ki}+A^{hk}_{li}=0,\qquad(i,h,k,l=1,2,\dots,n).
+\end{equation}
+
+The quantities $A^{kl}_{ij}$ are Riemann's \emph{curvature coefficients}.
+
+\paragraph{}
+\label{sec:8}
+In order not to be stopped in our reasoning later, let us now pursue our calculation further. The derivative (trilinear covariant) of $\Omega_{ij}$, calculated from the formula \eqref{eq:13}, is
+\[
+\Omega_{ij}'=-\sum_{k=1}^{k=n}\epsilon_{k}[\omega'_{ik}\omega_{kj}]+\sum_{k=1}^{k=n}\epsilon_{k}[\omega_{ik}\omega_{kj}']
+\]
+where, replacing $\omega'_{ik}$ and $\omega'_{kj}$ by their values from \eqref{eq:13},
+\begin{equation}
+  \label{eq:16}
+  \Omega'_{ij}=-\sum_{k=1}^{k=n}\epsilon_{k}[\Omega_{ik}\omega_{kj}]+\sum_{k=1}^{k=n}\epsilon_{k}[\omega_{ik}\Omega_{kj}].
+\end{equation}
+
+In turn, this equation leads to, by replacing $\Omega_{ij}$ by tis value $\sum A^{kl}_{ij}[\omega_{k}\omega_{l}]$, the equations
+\begin{equation}
+  \label{eq:17}
+  \sum_{(kl)}^{1,\dots,n}[dA^{kl}_{ij}\omega_{k}\omega_{l}]=\sum_{\rho=1}^{\rho=n}\sum_{(kl)}^{1,\dots,n}\epsilon_{\rho}[(A^{kl}_{\rho j}\omega_{i\rho}+A^{kl}_{i\rho}\omega_{j\rho}+A^{\rho l}_{ij}\omega_{k\rho}+A^{k\rho}_{ij}\omega_{l\rho})\omega_{k}\omega_{l}].
+\end{equation}
+
+We can therefore write
+\begin{equation}
+  \label{eq:18}
+  dA^{kl}_{ij}=\sum_{\rho=1}^{\rho=n}\epsilon_{\rho}(A^{kl}_{\rho j}\omega_{i\rho}+A^{kl}_{i\rho}\omega_{j\rho}+A^{\rho l}_{ij}\omega_{k\rho}+A^{k\rho}_{ij}\omega_{l\rho})+\sum_{h=1}^{h=n}(A^{kl}_{ij})_{h}\omega_{h},
+\end{equation}
+with the new coefficients $(A^{kl}_{ij})_{h}$ satisfying the equations
+\begin{align}
+  \label{eq:19}
+  (A^{kl}_{ji})_{h}+(A^{lj}_{ki})_{h}+(A^{jk}_{li})_{h}&=0,\\
+  \label{eq:20}
+  (A^{kl}_{ij})_{h}+(A^{lh}_{ij})_{k}+(A^{hk}_{ij})_{l}&=0,
+\end{align}
+where the first equations come from differentiating the relations \eqref{eq:15} and the last ones from the equality of the terms in $[\omega_{h}\omega_{k}\omega_{l}]$ on two sides of the equation \eqref{eq:17}.
+
+\paragraph{}
+\label{sec:9}
+Differentiating the equations \eqref{eq:18} gives in turn formulae that can be written
+\begin{align}
+  \label{eq:21}
+  d(A^{kl}_{ij})_{h}=&{}\sum_{\rho=1}^{\rho=n}\epsilon_{\rho}[(A^{kl}_{\rho j})_{h}\omega_{i\rho}+(A^{kl}_{i\rho})_{h}\omega_{j\rho}+(A^{\rho l}_{ij})_{h}\omega_{k\rho}+(A^{k\rho}_{ij})_{h}\omega_{l\rho}+(A^{kl}_{ij})_{\rho}\omega_{h\rho}]\\
+  &{}+\frac{1}{2}\sum_{\rho=1}^{\rho=n}\sum_{\sigma=1}^{\sigma=n}\epsilon_{\rho}(A_{\rho j}^{kl}A_{i\rho}^{h\sigma}+A_{i\rho}^{kl}A_{j\rho}^{h\sigma}+A_{ij}^{\rho l}A_{k\rho}^{h\sigma}+A_{ij}^{k\rho}A_{l\rho}^{h\sigma})\omega_{\sigma}\notag\\
+  &{}+\sum_{m=1}^{m=n}(A_{ij}^{kl})_{hm}\omega_{m},\notag
+\end{align}
+where the new coefficients $(A^{kl}_{ij})_{hm}$ do not depend on the order of the two lower indices $h,m$ and satisfy the relations
+\begin{align}
+  \label{eq:22}
+  (A^{kl}_{ji})_{hm}+(A^{lj}_{ki})_{hm}+(A^{jk}_{li})_{hm}&=0,\\
+  \label{eq:23}  
+  (A^{kl}_{ij})_{hm}+(A^{lh}_{ij})_{km}+(A^{hk}_{ij})_{lm}&=0,
+\end{align}
+which are consequences of equations \eqref{eq:19} and \eqref{eq:20}.
+
+Another differentiation, of equations \eqref{eq:21}, permits us to write
+\begin{align}
+  \label{eq:24}
+  d(A^{kl}_{ij})_{hm}=&{}\sum_{\rho=1}^{\rho=n}\epsilon_{\rho}[(A^{kl}_{\rho j})_{hm}\omega_{i\rho}+(A^{kl}_{i\rho})_{hm}\omega_{j\rho}+(A^{\rho l}_{ij})_{hm}\omega_{k\rho}\\
+  \notag&{}\qquad + (A^{k\rho}_{ij})_{hm}\omega_{l\rho}+(A^{kl}_{ij})_{\rho m}\omega_{h\rho}+(A^{kl}_{ij})_{h\rho}\omega_{m\rho}]\\
+  \notag&{}+\frac{1}{3}\sum_{\rho=1}^{\rho=n}\sum_{\sigma=1}^{\sigma=n}\epsilon_{\rho}(A^{kl}_{ij})_{\rho}(A^{m\sigma}_{h\rho}+A^{h\sigma}_{m\rho})\omega_{\sigma}\\
+  \notag&{}+\frac{1}{2}\sum_{\rho=1}^{\rho=n}\sum_{\sigma=1}^{\sigma=n}\epsilon_{\rho}[(A^{kl}_{\rho j})_{h}A^{m\sigma}_{i\rho}+(A^{kl}_{i\rho})_{h}A^{m\sigma}_{j\rho}+(A^{\rho l}_{ij})_{h}A^{m\sigma}_{k\rho}\\
+  \notag&{}\qquad + (A^{k\rho}_{ij})_{h}A^{m\sigma}_{l\rho}+(A^{kl}_{\rho j})_{m}A^{h\sigma}_{i\rho}\\
+  \notag&{}\qquad + (A^{kl}_{i\rho})_{m}A^{h\sigma}_{j\rho}+(A^{\rho l}_{ij})_{m}A^{h\sigma}_{k\rho}+(A^{k\rho}_{ij})_{m}A^{h\sigma}_{l\rho}]\omega_{\sigma}\\
+  \notag&{}+\frac{1}{6}\sum_{\rho=1}^{\rho=n}\sum_{\sigma=1}^{\sigma=n}\epsilon_{\rho}\{A^{kl}_{\rho j}[(A^{h\sigma}_{i\rho})_{m}+(A^{m\sigma}_{i\rho})_{h}]+A^{kl}_{i\rho}[(A^{h\sigma}_{j\rho})_{m}+(A^{m\sigma}_{j\rho})_{h}]\\
+  \notag&{}\qquad + A^{\rho l}_{ij}[(A^{k\sigma}_{h\rho})_{m}+(A^{m\sigma}_{k\rho})_{h}]\\
+  \notag&{}\qquad + A^{k\rho}_{ij}[(A^{h\sigma}_{l\rho})_{m}+(A^{m\sigma}_{l\rho})_{h}]\}\omega_{\sigma}\\
+  \notag&{}+\sum_{r=1}^{r=n}(A^{kl}_{ij})_{hmr}\omega_{r},
+\end{align}
+where the new coefficients $(A^{kl}_{ij})_{hmr}$ do not depend on the order of the external indices $h,m,r$ and satisfy the equations
+\begin{align}
+  \label{eq:25}
+  (A^{kl}_{ji})_{hmr}+(A^{lj}_{ki})_{hmr}+(A^{jk}_{li})_{hmr}&=0,\\
+  \label{eq:26}
+  (A^{kl}_{ij})_{hmr}+(A^{lh}_{ij})_{kmr}+(A^{hk}_{ij})_{lmr}&=0.
+\end{align}
+
+We can continue these operations indefinitely which each time gives us new quantities with an increasing number of indices.
+
+\paragraph{}
+\label{sec:10}
+Before going further, now is a good time to know how many of the quantities $A^{kl}_{ij},(A^{kl}_{ij})_{h}$, etc., \emph{regarded as unknowns linked by the relations} \eqref{eq:15}, \eqref{eq:19}, \eqref{eq:20}, \eqref{eq:22}, \eqref{eq:23}, \eqref{eq:25}, \eqref{eq:26}, are independent.
+
+Let us first be concerned with the quantities $A^{kl}_{ij}$, and let us agree to denote by the notation $i|hkl$ the negative of the left hand side of the relation \eqref{eq:15}:
+\[
+i|hkl\equiv A^{kl}_{ih}+A^{lh}_{ik}+A^{hk}_{il}.
+\]
+
+The relation
+\[
+i|hkl-h|ikl-k|ihl+l|ihk=0
+\]
+gives, after simplification,
+\[
+A^{kl}_{ih}=A^{ih}_{kl},
+\]
+which shows that \emph{we can exchange the lower indices with the upper indices}.
+
+Granted this, we can always assume that the lower indices, as well as the upper indices, are decreasing , and that the largest lower index is at equal or greater than the largest upper index. In other words, all quantities $A^{kl}_{ij}$ can be transformed into one with
+\[
+i>j,\qquad k>l,\qquad i\ge k.
+\]
+
+The quantities for which these inequalities are verified are not independent, and we can make them into those that satisfy additionally
+\[
+j\ge l.
+\]
+
+Indeed, suppose that we have
+\[
+i>j,\qquad k>l, \qquad i\ge k, \qquad j<l,
+\]
+i.e.,
+\[
+i\ge k >l>j.
+\]
+The relation
+\[
+i|jkl\equiv A^{kl}_{ij}+A^{lj}_{ik}-A^{kj}_{il}=0
+\]
+transforms $A^{kl}_{ij}$ into two quantities $A^{lj}_{ik}$ and $A^{hj}_{il}$ for which these required inequalities hold.
+
+We agree to say that an expression $A^{kl}_{ij}$ is \emph{normal} when its indices satisfy the preceding inequalities 
+\begin{equation}
+  \label{eq:27}
+  i>j,\qquad k>l,\qquad i\ge k,\qquad j\ge l.
+\end{equation}
+
+\emph{Every expression $A^{kl}_{ij}$ can be made into normal expressions.}
+
+It is now easy to see that \emph{the normal expressions are independent}. For this, let use go through the different cases according to the number of \emph{distinct} indices $i,j,k,l$.
+
+If only two of the four indices are distinct, we have only one normal quantity
+\[
+A^{ij}_{ij}\qquad (i>j).
+\]
+
+If three indices are distinct, $i>j>k$, we have three normal quantities
+\[
+A^{ik}_{ij},\qquad A^{jk}_{ij},\qquad A^{jk}_{ik}.
+\]
+
+At last, if all four indices are distinct, $i>j>k>l$, we have two normal quantities
+\[
+A^{kl}_{ij},\qquad A^{jl}_{ik}.
+\]
+
+Now observe that the relations $i|hkl$ reduce to an identity if the indices $h,k,l$ are not all distinct, and consequently \emph{the quantities with two distinct indices do not have any relations among them}. The quantities with three distinct indices $i>j>k$ appear in the relations
+\[
+i|ijk=0,\qquad j|ijk=0,\qquad k|ijk=0,
+\]
+each of which expresses the law of changing the lower indices with the upper indices and hence do not contain any relations between the normal quantities.
+
+At last the relations $i|jkl=0$ where four given distinct indices appear do not contain any relations between the normal quantities, as it is easy to see.
+
+\emph{The normal quantities $A^{kl}_{ij}$ are therefore independent}, and their total number is
+\begin{align*}
+  C^{2}_{n}+3C^{3}_{n}+2C^{3}_{n}&=\frac{n(n-1)}{2}+3\frac{n(n-1)(n-2)}{6}+2\frac{n(n-1)(n-2)(n-3)}{24}\\
+  &=\frac{n^{2}(n^{2}-1)}{12}.
+\end{align*}
+
+
+\paragraph{}
+\label{sec:11}
+Now let us consider the quantities $(A^{kl}_{ij})_{h}$ which we agree to call the \emph{first order} quantities $A$ (the quantities $A^{kl}_{ij}$ are of zeroth order). Let us also agree to say that $(A^{kl}_{ij})_{h}$ are the  \emph{derivatives} of $A^{kl}_{ij}$. The relations \eqref{eq:19} allow us to \emph{transform all first order expressions into those that are derivatives of zeroth order normal expressions}.
+
+We say that an expression $(A^{kl}_{ij})_{h}$ of first order is \emph{normal} if its indices satisfy, besides the inequalities \eqref{eq:27} expressing that they are derivatives of a normal quantity of order zero, the supplementary inequality
+\begin{equation}
+  \label{eq:28}
+  k\ge h.
+\end{equation}
+
+\emph{Every first order non-normal expression can be transformed into normal expressions where the external index $h$ has decreased.} Indeed, suppose
+\[
+i>j,\qquad k>l,\qquad i\ge k,\qquad j\ge l,\qquad k<h,
+\]
+the relation
+\[
+ij|klh\equiv (A^{kl}_{ij})_{h}+(A^{lh}_{ij})_{k}+(A^{hk}_{ij})_{l}=0
+\]
+transforms the expression considered into another expression for which the external index has decreased, and each of them can be transformed, without changing the external index, into another derivative of zeroth order normal expression. We use the same reasoning for each of these expressions until we can no longer lower the external index, and therefore finally all expressions are now normal.
+
+Now consider one of the relations \eqref{eq:20}
+\[
+ij|klh\equiv (A^{kl}_{ij})_{h}+(A^{lh}_{ij})_{k}+(A^{hk}_{ij})_{l}=0,
+\]
+where we can always suppose that we have
+\[
+i>j,\qquad k>l>h.
+\]
+
+This relation is said to be \emph{normal} if we have at the same time
+\[
+i\ge l,\qquad j\ge h.
+\]
+
+We see that to a normal relation corresponds a normal expression $A^{lh}_{ij}$, but a non-normal derived expression $(A^{lh}_{ij})_{k}$. \emph{There are as many non-normal first order expressions which are derivatives of zeroth order normal expressions as there are normal relations.}
+
+Also observe that \emph{every non-normal relation \eqref{eq:20} is a consequence of normal expressions}. Indeed, take a non-normal relation
+\[
+ij|klh=0,\qquad(i>j,k>l>h)
+\]
+and suppose, first, $j\ge h$ but $i<l$. We therefore have the inequalities
+\[
+k>l>i>j\ge h.
+\]
+
+The easy to verify identity
+\[
+ij|klh-ki|ljh+li|kjh+hl|ijh-lj|kih+kj|lih\equiv 0
+\]
+transforms the given relation into normal relations.
+
+Now suppose $j<h$, i.e., suppose
+\[
+k>l>h>j,\qquad i>j,
+\]
+the easy to verify identity
+\[
+ij|klh-ik|lhj-il|khj+ih|klj\equiv 0
+\]
+transforms the given relation into others that are examined in the first case.
+
+From everything that has been said above, it follows that the relations \eqref{eq:20} leads uniquely to the normal relations, and \emph{these normal relations are independent}. Indeed, otherwise it will be impossible, by means of the relations \eqref{eq:20}, to deduce the non-normal expressions, which are of equal number as the normal relations, as functions of normal expressions. We see that furthermore \emph{there are no relations among the normal expressions}.
+
+The counting of first order expressions presents no difficulty. We can easily calculate the number of normal expressions formed with $2$, $3$, $4$ or $5$ distinct indices and we find respectively the numbers
+\[
+2,\qquad 9,\qquad 12,\qquad 5,
+\]
+and then the number of first order normal expressions is
+\[
+2C^{2}_{n}+9C^{3}_{n}+12C^{4}_{n}+5C^{5}_{n}=\frac{n^{2}(n^{2}-1)(n+2)}{24}.
+\]
+
+
+\paragraph{}
+\label{sec:12}
+The same reasoning and the same conclusions apply to the \emph{second order} expressions of the form $(A^{kl}_{ij})_{hm}$. We can, by virtue of relations \eqref{eq:22}, transform these expressions to those which are derivatives of zeroth order normal expressions, and we can also transform them into the ones satisfying $h\ge m$. We agree to say that such an expression is normal if, \emph{besides the preceding conditions}, it also satisfies the inequality
+\begin{equation}
+  \label{eq:29}
+  k\ge h.
+\end{equation}
+
+1. \emph{Every non-normal second order expression can be transformed into normal expressions where at least one of the external indices has decreased.} Indeed, we can first transform the expression $(A^{kl}_{ij})_{h}$ to be normal with a smaller index $h$. The new expressions which are deduced by the addition of a second external index are treated as primitive expressions, after swapping the two external indices if necessary. We continue this procedure as long as possible and we will finally arrive at an expression containing only normal expressions.
+
+2. Denote by the symbol $ij|klh|m$ the left hand side of the relation
+\[
+ij|klh|m\equiv (A^{kl}_{ij})_{hm}+(A^{lh}_{ij})_{km}+(A^{hk}_{ij})_{lm}=0,
+\]
+where we can always suppose 
+\[
+i>j,\qquad k>l>h.
+\]
+
+This relation is said to be \emph{normal} if we have
+\[
+i>j,\qquad k>l>h,\qquad i\ge l,\qquad j\ge h,\qquad k\ge m,
+\]
+i.e., if the expressions $(A^{lh}_{ij})_{km}$ is the derivative of a zeroth order normal expression without being normal themselves. \emph{There are} evidently \emph{as many as non-normal derivatives of zeroth order normal expressions as there are normal relations.}
+
+3. \emph{Every non-normal relation is a consequence of the normal relations}. Indeed, according to what was done in the previous section, we can transform the given relation, \emph{without altering the last index $m$}, into relations for which
+\[
+i>j,\qquad k>l>h,\qquad i\ge l,\qquad j\ge h.
+\]
+
+If now $k<m$, we use the following easy to verify identity
+\[
+ij|klh|m-ij|mkl|h+ij|mkh|l-ij|mlh|k=0
+\]
+to transform the relation into new relations with a smaller last index. We apply the same reasoning to these new relations until we arrive at normal relations.
+
+The conclusion is the same as the preceding. The normal relations, which are the only ones we have to consider, are independent, and \emph{the normal expressions are not linked by any relation}.
+
+This conclusion applies also to third also expressions $(A^{kl}_{ij})_{hmr}$. Such an expression is normal if we have
+\begin{equation}
+  \label{eq:30}
+  i>j,\qquad k>l, \qquad i\ge k,\qquad j\ge l,\qquad k\ge h\ge m\ge r.
+\end{equation}
+
+\section[{Invariants of a quadratic differential form}]{Invariants of\\a quadratic differential form}
+\label{sec:invar-quadr-diff}
+
+\paragraph{}
+\label{sec:13}
+Let us now start considering the invariants of $ds^{2}$ under arbitrary change of variables.
+
+In short, this amounts to finding the necessary and sufficient conditions for two quadratic differential forms in $n$ variables to be transformable into each other by a change of variables. Let us decompose the first form in the most general way into a sum of $n$ squares $\sum\epsilon_{i}\omega_{i}^{2}$, the $\omega_{i}$ being linear in the differentials of the given $n$ variables $x_{1},\dots,x_{n}$ with coefficients functions of these variables and $\dfrac{n(n-1)}{2}$ new auxiliary variables $u_{1},\dots,u_{n(n-1)/2}$. Every \emph{equivalent} form in $n$ variables $\bar x_{1},\dots,\bar x_{n}$ admits a corresponding decomposition $\sum \epsilon_{i}\bar \omega_{i}^{2}$ involving $\dfrac{n(n-1)}{2}$ new auxiliary variables $\bar u_{1},\dots,\bar u_{n(n-1)/2}$. We have
+\[
+\omega_{i}=\bar \omega_{i},\qquad (i=1,2,\dots,n)
+\]
+by choosing for $\bar x_{i}$ values as functions of $x_{i}$ realising the passage from the first differential form to the second and by taking $\bar u_{i}$ to be suitable functions of $x$ and $u$. In other words, \emph{there is a change of variables for the $\dfrac{n(n+1)}{2}$ variables $x$ transforming each of the $n$ linear forms $\omega_{i}$ corresponding to the first given $ds^{2}$ into each of the $n$ linear forms $\omega_{i}$ corresponding to the second given $ds^{2}$.}
+
+Conversely, suppose that by decomposing each of the two given quadratic forms in the most general way possible into two sums of $n$ squares
+\[
+\sum\epsilon_{i}\omega_{i}^{2}\qquad\text{and}\qquad\sum\epsilon_{i}\bar\omega_{i}^{2},
+\]
+then there exists a change of variables on $x$ and $u$ transforming each form $\omega_{i}$ into $\bar\omega_{i}$.
+
+First, we see that \emph{in this change of variables, $\bar x$ depends only on $x$ and not on $u$}. Indeed, the equalities
+\[
+\omega_{i}=\bar\omega_{i}
+\]
+involving only differentials of the variables $x$ and $\bar x$ can be resolved with respect to $d\bar x_{1},\dots, d\bar x_{n}$ which are also expressed linearly in $dx_{1},\dots,dx_{n}$. Then, each of the variables $\bar x$ is a function of $x$ independent of $u$. Granted this, the change of variables for $x$ thus defined effectively transforms the two given forms into one another
+
+
+\paragraph{}
+\label{sec:14}
+The search for the invariants of a quadratic differential form will proceed in two stages. First consider the $\dfrac{n(n+1)}{2}$ variables $x$ and $u$. We search for the invariants of the system of Pfaffian expressions $\omega_{1},\omega_{2},\dots,\omega_{n}$ under any change of variables. We call these invariants \emph{the relative invariants}. \emph{The absolute invariants, i.e., those that the original problem is concerned with, is obtained by searching for all the relative invariants independent of the variables $u$.}
+
+The expressions $\omega_{i}$ are themselves relative invariants (or rather, as we usually say, \emph{covariants}), whereas the form $\sum\epsilon_{i}\omega_{i}^{2}$ is obviously an absolute invariant. The expressions $\omega_{ij}$ are also relative covariants, since they are determined in a unique manner by the derivatives $\omega_{i}'$ which are covariants of the same kind as $\omega_{i}$. Finally the derivatives $\omega_{ij}'$ being also covariants, the formulae \eqref{eq:14} gives a first system of algebraic invariants, i.e., the Riemann coefficients $A^{kl}_{ij}$, which are $\dfrac{n^{2}(n^{2}-1)}{2}$ in number. These are the \emph{fundamental invariants}.
+
+The $\dfrac{n(n+1)}{2}$ Pfaffian covariant expressions $\omega_{i},\omega_{ij}$ permit us to deduce from any algebraic invariant $I$ a series of \emph{derived invariants} given by the formula
+\[
+dI=I_{1}\omega_{1}+\dots+I_{n}\omega_{n}+\sum_{(ij)}I_{ij}\omega_{ij},
+\]
+which are $\dfrac{n(n+1)}{2}$ in number. Each of these can in turn give rise to derived invariants (second order derived invariants of $I$) and so on. By employing this derivation procedure to the fundamental invariants $A^{kl}_{ij}$, we obtain an infinite number of new invariants which are $(A^{kl}_{ij})_{h}$, $(A^{kl}_{ij})_{hm}$, etc. \emph{We are going to show that they constitute the complete system of relative invariants.}
+
+
+\paragraph{}
+\label{sec:15}
+As it is true in general and will be shown later, let us assume that among the $\dfrac{n^{2}(n^{2}-1)}{12}$ fundamental invariants, there are $\dfrac{n(n+1)}{2}$ independent ones (i.e., those that, for an arbitrary differential form, are not linked by any relations). Let us call these the \emph{principal} fundamental invariants. The other fundamental invariants (\emph{secondary}) and the first order derived invariants are, for each quadratic differential form, functions determined by these principal invariants.
+
+For two equivalent differential forms assumed to decompose in the most general manner into squares, these functions are manifestly the same. \emph{Conversely}, suppose that for the two forms the secondary invariants and the first order derived invariants of the principal invariants are \emph{the same functions} of the principal invariants. Let us then establish between the variables $x$ and $u$ on the one hand and $\bar x$ and $\bar u$ on the other hand the $\dfrac{n(n-1)}{2}$ independent relations obtained by equating each principal fundamental invariant for the two forms. The change of variables thus defined by assumption entails the one to one equality of the secondary fundamental invariants and the first order derived invariants of the principal invariants.
+
+The formulae
+\[
+dI_{\alpha}=\sum_{k=1}^{k=n}I_{\alpha k}\omega_{k}+\sum_{(kl)}^{1,\dots,n}I_{\alpha kl}\omega_{kl},\qquad\left[\alpha=1,\dots,\frac{n(n+1)}{2}\right]
+\]
+where $I_{\alpha}$ are principal invariants then show that the change of variables considered entails the equalities
+\[
+\omega_{k}=\bar \omega_{k},\qquad \omega_{kl}=\bar\omega_{kl},
+\]
+which is to be proved.
+
+The quantities $A^{kl}_{ij}$ and their derivatives of different orders therefore constitute the complete system of (relative) invariants.
+
+
+\paragraph{}
+\label{sec:16}
+For completeness, it remains to fill in the gaps of the preceding reasoning. We are going to do this by finding, at the same time, \emph{the degree of arbitrariness of the functions that in the general case express the non-principal invariants by means of the principal invariants.}
+
+Start with the equations \eqref{eq:18} and \eqref{eq:21}, or rather the equations obtained by eliminating $\omega_{i}$ and $\omega_{ij}$ in these equations and by regarding $A^{kl}_{ij}$, $(A^{kl}_{ij})_{h}$, $(A^{kl}_{ij})_{km}$ as unknowns linked by the relations \eqref{eq:15}, \eqref{eq:19}, \eqref{eq:20}, \eqref{eq:22} and \eqref{eq:23}. This amounts to expressing all these quantities by means of the quantities that we have called \emph{normal}, and that these normal quantities are regarded as unknowns.
+
+A first important remark is that we can find $\dfrac{n(n+1)}{2}$ of the equations \eqref{eq:18} permitting use to solve for $\omega_{i}$ and $\omega_{ij}$. It suffices, for example, to associate with each combination $(ij)$ of two indices $1,2,\dots,n$ an index $k$ different from $i,j$ and $n$ and consider those of the equations \eqref{eq:18} which gives $dA^{ik}_{ij}$. We adjoin to these equations the $n$ equations which gives $dA^{ni}_{ni}$ and $dA^{n,n-2}_{n,n-1}$. The right hand sides of these $\dfrac{n(n+1)}{2}$ equations are linearly independent in $\omega_{i}$ and $\omega_{ij}$: it suffices to show this by observe that they are independent \emph{in particular} when we set all the expressions $A^{kl}_{ij}$ except $A^{ij}_{ij}$, and all of the expressions $(A^{kl}_{ij})_{h}$ except $(A^{ni}_{ni})_{i}$ and $(A^{n,n-2}_{n,n-1})_{n}$ to zero. The only non-zero quantities, being normal, are independent. Or, under these conditions, we obtain
+\begin{align*}
+  dA^{jk}_{ik}&=(\epsilon_{j}A^{jk}_{jk}-\epsilon_{i}A^{ik}_{ik})\omega_{ij},\\
+  dA^{ni}_{ni}&=(A^{ni}_{ni})_{i}\omega_{i},\\
+  dA^{n,n-2}_{n,n-1}&=(A^{n,n-2}_{n,n-1})_{n}\omega_{n},
+\end{align*}
+and the right hand sides are manifestly independent.
+
+After this is done, the system obtained by eliminating the $\omega_{i}$ and $\omega_{ij}$ from the equations \eqref{eq:18} and \eqref{eq:21} can be considered as a Pfaffian system where the independent variables are the $\dfrac{n(n+1)}{2}$ quantities $A^{kl}_{ij}$ corresponding to the $\dfrac{n(n+1)}{2}$ equations which have served to solve for $\omega_{i}$ and $\omega_{ij}$ (\emph{principal} quantities), and where the dependent variables are the other quantities $A^{kl}_{ij}$, $(A^{kl}_{ij})_{h}$ and $(A^{kl}_{ij})_{hm}$, \emph{and these quantities are always assumed to be expressed in terms of the normal quantities.}
+
+It is easy to see that if we calculate the covariants $\omega'_{i}$ and $\omega_{ij}'$ of expressions $\omega_{i}$ and $\omega_{ij}$, we recover the expressions \eqref{eq:10} and \eqref{eq:14}. Indeed, take one of the $\dfrac{n(n+1)}{2}$ principal equations of \eqref{eq:18} and let us differentiate it. Using to the same manner that we used to obtain the equations \eqref{eq:21}, we have, taking into account of the equations \eqref{eq:21},
+\[
+\sum_{\rho=1}^{\rho=n}\epsilon_{\rho}(A^{kl}_{\rho j}\Pi_{i\rho}+A^{kl}_{i\rho}\Pi_{j\rho}+A^{\rho l}_{ij}\Pi_{k\rho}+A^{k\rho}_{ij}\Pi_{l\rho})+\sum_{h=1}^{h=n}(A^{kl}_{ij})_{h}\Pi_{h}=0,
+\]
+by setting
+\begin{align*}
+  \Pi_{h}&=\omega'_{h}-\sum_{k=1}^{k=n}\epsilon_{h}[\omega_{k}\omega_{kh}],\\
+  \Pi_{ij}&=\omega'_{ij}-\sum_{k=1}^{k=n}\epsilon_{k}[\omega_{ik}\omega_{kj}]-\sum_{(kl)}^{1,\dots,n}A^{kl}_{ij}[\omega_{k}\omega_{l}].
+\end{align*}
+
+According to the same hypothesis for the principal equations, we deduce from this
+\[
+\Pi_{h}=0,\qquad \Pi_{ij}=0,
+\]
+which is to be shown.
+
+Let us now come to our Pfaffian system and differentiate these equations. The equations \eqref{eq:18}, when differentiated, are identically satisfied if we take into account of the equations \eqref{eq:21}. As for the latter, differentiating them manifestly leads to [c.f., formulae \eqref{eq:24}] the equations
+\begin{equation}
+  \label{eq:31}
+  \sum_{m=1}^{m=n}[\omega_{m}(\varpi^{kl}_{ij})_{hm}]=0,\qquad(i,j,k,l,h=1,2,\dots,n),
+\end{equation}
+by setting
+\begin{align*}
+  (\varpi^{kl}_{ij})_{hm}=&{}(\varpi^{kl}_{ij})_{mh}\\
+  =&{}d(A^{kl}_{ij})_{hm}-\sum_{\rho=1}^{\rho=n}\epsilon_{\rho}[(A^{kl}_{\rho j})_{hm}\omega_{i\rho}+(A^{kl}_{i\rho})_{hm}\omega_{j\rho}+(A^{\rho l}_{ij})_{hm}\omega_{k\rho}\\
+  &{}\qquad + (A^{k\rho}_{ij})_{hm}\omega_{l\rho}+(A^{kl}_{ij})_{\rho m}\omega_{h\rho}+(A^{kl}_{ij})_{h\rho}\omega_{m\rho}]\\
+  &{}-\frac{1}{3}\sum_{\rho=1}^{\rho=n}\sum_{\sigma=1}^{\sigma=n}\epsilon_{\rho}(A^{kl}_{ij})_{\rho}(A^{m\sigma}_{h\rho}+A^{h\sigma}_{m\rho})\omega_{\sigma}\\
+  &{}-\frac{1}{2}\sum_{\rho=1}^{\rho=n}\sum_{\sigma=1}^{\sigma=n}\epsilon_{\rho}[(A^{kl}_{\rho j})_{h}A^{m\sigma}_{i\rho}+(A^{kl}_{i\rho})_{h}A^{m\sigma}_{j\rho}+(A^{\rho l}_{ij})_{h}A^{m\sigma}_{k\rho}\\
+  &{}\qquad + (A^{k\rho}_{ij})_{h}A^{m\sigma}_{l\rho}+(A^{kl}_{\rho j})_{m}A^{h\sigma}_{i\rho}\\
+  &{}\qquad + (A^{kl}_{i\rho})_{m}A^{h\sigma}_{j\rho}+(A^{\rho l}_{ij})_{m}A^{h\sigma}_{k\rho}+(A^{k\rho}_{ij})_{m}A^{h\sigma}_{l\rho}]\omega_{\sigma}\\
+  &{}-\frac{1}{6}\sum_{\rho=1}^{\rho=n}\sum_{\sigma=1}^{\sigma=n}\epsilon_{\rho}\{A^{kl}_{\rho j}[(A^{h\sigma}_{i\rho})_{m}+(A^{m\sigma}_{i\rho})_{h}]+A^{kl}_{i\rho}[(A^{h\sigma}_{j\rho})_{m}+(A^{m\sigma}_{j\rho})_{h}]\\
+  &{}\qquad + A^{\rho l}_{ij}[(A^{k\sigma}_{h\rho})_{m}+(A^{m\sigma}_{k\rho})_{h}]\\
+  &{}\qquad + A^{k\rho}_{ij}[(A^{h\sigma}_{l\rho})_{m}+(A^{m\sigma}_{l\rho})_{h}]\}\omega_{\sigma}.
+\end{align*}
+
+
+\paragraph{}
+\label{sec:17}
+It is the form of equations \eqref{eq:31} that will permit us to show that \emph{the Pfaffian system considered is in involution}. We should first observe that the expressions are linked by exactly the same relations as the quantities $(A^{kl}_{ij})_{hm}$. On the other hand, the resolution of equations \eqref{eq:31} evidently gives
+\[
+(\varpi^{kl}_{ij})_{hm}=\sum_{r=1}^{r=n}(a^{kl}_{ij})_{hmr}\omega_{r},
+\]
+where $(a^{kl}_{ij})_{hmr}$ are lined by the same relations as $(A^{kl}_{ij})_{hmr}$ (they are just the same quantities).
+
+Let us now apply the theory of Pfaffian systems. Denote by
+\begin{itemize}
+\item $s_{1}$ the number of independent expressions of the form $(\varpi^{kl}_{ij})_{h1}$,
+\item $s_{1}+s_{2}$ the number of independent expressions of the form $(\varpi^{kl}_{ij})_{h2}$ and $(\varpi^{kl}_{ij})_{h1}$,
+\item \dots
+\item $s_{1}+s_{2}+\dots+s_{i}$ the number of independent expressions of the form $(\varpi^{kl}_{ij})_{hm}$ with $m\le i$,
+\item \dots
+\item $s_{1}+s_{2}+\dots+s_{n}$ the total number of independent expressions $(\varpi^{kl}_{ij})_{hm}$.
+\end{itemize}
+
+As every expression $(A^{kl}_{ij})_{hm}$ can be transformed into normal expressions where either or both of the indices $h,m$ are decreased we see immediately that
+\begin{itemize}
+\item $s_{1}$ is the number of normal expressions $(A^{kl}_{ij})_{h1}$,
+\item $s_{2}$ is the number of normal expressions $(A^{kl}_{ij})_{h2}$,
+\item \dots,
+\item $s_{n}$ is the number of normal expressions $(A^{kl}_{ij})_{hn}$.
+\end{itemize}
+
+For the system to be in involution, it is necessary and sufficient that the number of \emph{independent} coefficients is equal to
+\[
+s_{1}+2s_{2}+\dots+ns_{n}
+\]
+
+This number is the number of the quantities $(A^{kl}_{ij})_{hmr}$ which are \emph{normal}. These normal expressions for which we have $r=1$ is equal in number to the normal expressions $(A^{kl}_{ij})_{hm}$, i.e.,
+\[
+s'_{1}=s_{1}+s_{2}+\dots+s_{n};
+\]
+the normal expressions $(A^{kl}_{ij})_{hmr}$ for which $r=2$ have in number
+\[
+s'_{2}=s_{2}+s_{3}+\dots+s_{n}
+\]
+the number of normal expressions $(A^{kl}_{ij})_{hm}$ for which $m\ge 2$, and so on. The condition
+\[
+s'_{1}+s'_{2}+\dots+s'_{n}=s_{1}+2s_{2}+\dots+ns_{n}
+\]
+is effectively verified and \emph{the Pfaffian system is in involution}.
+
+
+\paragraph{}
+\label{sec:18}
+The numerical value of $s_{n}$ is important because it indicates the number of arbitrary functions in $n$ arguments that the general solution of the Pfaffian system depends on. The number $s_{n}$ is the number of \emph{normal} expressions $(A^{kl}_{ij})_{hn}$, and therefore we necessarily have
+\[
+i=k=h=n,
+\]
+and $s_{n}$ is then the number of combinations with repetition $(jl)$ of two indices using $n-1$ letters
+\[
+s_{n}=\frac{n(n-1)}{2}.
+\]
+
+\emph{The general solution of the Pfaffian system considered therefore depends on $\dfrac{n(n-1)}{2}$ arbitrary functions of $n$ arguments.}
+
+According to what has been seen above, to every solution of the Pfaffian system there corresponds $\dfrac{n(n+1)}{2}$ Pfaffian expressions $\omega_{i},\omega_{ij}$ satisfying the relations \eqref{eq:10} and \eqref{eq:14}. Let us agree to say that two quadratic differential forms decomposed into squares long to the same class whenever there exists a change of variables transforming each expression $\omega_{i}$ relative to the first form to each of the expression $\varpi_{i}$ relative to the second. We see that \emph{every class of quadratic differential forms decomposed into squares corresponds to one solution of the Pfaffian system, and vice versa. The relations which link the relative invariants of one arbitrary quadratic form decomposed into squares therefore contain $\dfrac{n(n-1)}{2}$ arbitrary functions of $n$ arguments (and naturally other arbitrary functions with a fewer number of variables).}
+
+The property of the Pfaffian system \eqref{eq:18} and \eqref{eq:21} being in involution leads to another important conclusion. This system actually admits at least one solution corresponding to arbitrary numerical values of the both the independent and dependent variables. The same is then true for the Pfaffian system prolonged by introduction of higher order relative invariants. Consequently, \emph{there always exists at least one quadratic differential form decomposed into squares such that for suitably chosen numerical values of the variables $x$ and $u$, the corresponding normal relative invariants take arbitrarily given numerical values.}
+
+Therefore we now know not only the complete system of relative invariants, but the complete system of \emph{independent} relative invariants as well.
+
+
+\paragraph{}
+\label{sec:19}
+If we specify a quadratic differential form in $n$ variables of the form
+\[
+ds^{2}=\sum_{i,j}^{1,\dots, n}g_{ij}(x)dx_{i}dx_{j}
+\]
+with the coefficients $g_{ij}$ indeterminate functions of $x$, its decomposition into squares
+\[
+ds^{2}=\sum_{i=1}^{i=n}\epsilon_{i}\omega_{i}^{2}
+\]
+gives us the Pfaffian expressions $\omega_{i}$ linear in $dx_{1},\dots,dx_{n}$, with coefficients depending on $g_{ij}$ and $\dfrac{n(n-1)}{2}$ auxiliary variables $u$. The components $\omega_{ij}$ of the instantaneous rotation of the space, obtained by differentiating once, will contain first order partial derivatives of $g_{ij}$. As for the fundamental invariants $A^{kl}_{ij}$, as they are obtained by differentiating $\omega_{ij}$, they contain linearly the second order partial derivatives (as well as their first order derivative and the functions themselves, but no longer linearly).
+
+In the same manner, $(A^{kl}_{ij})_{h}$ contain linearly third order partial derivatives of $g_{ij}$ and so on.
+
+It is important to know that if the $\dfrac{n^{2}(n^{2}-1)(n+2)}{24}$ normal invariants $(A^{kl}_{ij})_{h}$ are \emph{independent} functions of third order partial derivatives, or more generally if the normal invariants, taken up to a certain order $p$, are independent functions of the partial derivatives of $g_{ij}$ from the third order to the $(p+2)$-th order inclusive. This is plausible, but we need to show it rigorously.
+
+Let us start with the expressions of $\omega_{i}$ formed as above and \emph{where we regard $g_{ij}$ as unknowns}. We can obviously write
+\begin{equation}
+  \label{eq:32}
+  \omega'_{i}=\epsilon_{i}\sum_{k=1}^{k=n}[\omega_{k}\omega_{ki}]
+\end{equation}
+with $n^{2}$ Pfaffian expressions $\omega_{ij}$ depending linearly on $dx$, $du$ and $dg_{ij}$. These expressions are not uniquely determined, and \emph{we take them to be in the most general way possible}, by introducing new auxiliary variables which are evidently $\dfrac{n^{2}(n+1)}{2}$ in number, since from any possible choice of $\omega_{ij}$ we deduce the most general choice by adding to $\omega_{ij}$ the expression
+\[
+\sum_{k=1}^{k=n}\alpha_{kij}\omega_{k}
+\]
+where the unknowns $\alpha_{kij}$ satisfy the conditions
+\[
+\alpha_{kij}=\alpha_{ikj}.
+\]
+
+Differentiating the equations \eqref{eq:32} leads to the formulae
+\begin{equation}
+  \label{eq:33}
+  \omega'_{ji}=\sum_{k=1}^{k=n}\epsilon_{k}[\omega_{jk}\omega_{ki}]+\sum[\omega_{k}\omega_{kji}]
+\end{equation}
+with new Pfaffian expressions $\omega_{kji}=\omega_{jki}$ linear with respect to $dx$, $du$, $dg_{ij}$ and $da_{kij}$. These expressions, if we chose in the most general way possible, will in turn involve new unknowns $\alpha_{lkji}$ in which the order of the first three indices is immaterial.
+
+The equations \eqref{eq:33} give, under differentiation, as can be shown by an easy calculation,
+\begin{equation}
+  \label{eq:34}
+  \omega'_{kji}=\sum_{\rho=1}^{\rho=n}\epsilon_{\rho}[\omega_{k\rho}\omega_{\rho ji}]+\epsilon_{\rho}[\omega_{j\rho}\omega_{k\rho i}]+\epsilon_{\rho}[\omega_{i\rho}\omega_{kj\rho}]+\sum_{l=1}^{l=n}[\omega_{l}\omega_{lkji}],
+\end{equation}
+with new Pfaffian expressions $\omega_{lkji}$ in which the order of the three indices $l,k,j$ can be changed without altering the expression.
+
+Another differentiation gives
+\begin{align}
+  \label{eq:35}
+  \omega'_{lkji}&=\sum_{\rho=1}^{\rho=n}\epsilon_{\rho}\{[\omega_{lk\rho}\omega_{\rho ji}]+[\omega_{lj\rho}\omega_{k \rho i}]+[\omega_{li\rho}\omega_{kj\rho}]\\
+  &\qquad +[\omega_{l\rho}\omega_{\rho kji}]+[\omega_{k\rho}\omega_{\rho ji}]+[\omega_{j\rho}\omega_{lk\rho i}]+[\omega_{i\rho}\omega_{lkj\rho}]\}\notag\\
+  &+\sum_{m=1}^{m=n}[\omega_{m}\omega_{mlkji}]\notag
+\end{align}
+with new expressions $\omega_{mlkji}$ and so on.
+
+
+\paragraph{}
+\label{sec:20}
+After establishing these general formulae, \emph{if we now suppose that $g_{ij}$ are functions of the variables $x$ only}, we can always assume that (\textsection\textbf{\ref{sec:5}})
+\begin{equation}
+  \label{eq:36}
+  \omega_{ij}+\omega_{ji}=0,
+\end{equation}
+the formulae \eqref{eq:33}, compared with the formulae \eqref{eq:14}, then give us
+\[
+\sum_{k=1}^{k=n}[\omega_{k}\omega_{kji}]=\sum_{(kl)}^{1,\dots, n}A_{ji}^{kl}[\omega_{k}\omega_{l}],
+\]
+which can be written
+\begin{equation}
+  \label{eq:37}
+  \omega_{kji}=\frac{1}{3}\sum_{l=1}^{l=n}(A^{kl}_{ji}+A^{jl}_{ki})\omega_{l},
+\end{equation}
+where on the right hand side the indices $k$ and $j$ enter symmetrically. Differentiating these equations give, by taking into account equations \eqref{eq:34} and \eqref{eq:18},
+\[
+\sum_{i=1}^{i=n}[\omega_{l}\omega_{lkji}]=\frac{1}{3}\sum_{lm}^{1,\dots,n}[(A^{km}_{ji})_{l}+(A^{jm}_{ki})_{l}-(A^{kl}_{ji})_{m}-(A^{jl}_{ki})_{m}][\omega_{l}\omega_{m}],
+\]
+which permits us to write
+\begin{equation}
+  \label{eq:38}
+  \omega_{lkji}=\frac{1}{12}\sum_{m=1}^{m=n}[(A^{km}_{ij})_{l}+(A^{jm}_{ik})_{l}+(A^{lm}_{ij})_{k}+(A^{jm}_{il})_{k}+(A^{lm}_{ik})_{j}+(A^{km}_{il})_{j}]\omega_{m},
+\end{equation}
+where on the right hand side the indices $j,k$ and $l$ enter symmetrically. The formulae \eqref{eq:36}, \eqref{eq:37}, \eqref{eq:38} are compatible with \emph{arbitrary} functions $g_{ij}$ of $x$.
+
+
+\paragraph{}
+\label{sec:21}
+Let us now return to our primitive point of view in \textsection\textbf{\ref{sec:19}} where $g_{ij}$, $\alpha_{kij}$, etc., are \emph{indeterminate}. The $\dfrac{n(n+1)}{2}$ equations
+\begin{equation}
+  \label{eq:36a}\tag{\ref{eq:36}}
+  \omega_{ij}+\omega_{ji}=0, \qquad(i,j=1,2,\dots,n)
+\end{equation}
+express that the unknowns $g_{ij}$ depend only on $x_{1},\dots,x_{n}$. They are equivalent to equations of the form
+\begin{equation}
+  \label{eq:36'}\tag{\ref{eq:36}$'$}
+  dg_{ij}-\sum_{k=1}^{k=n}g_{ij}^{(k)}dx_{k}=0,\qquad(i,j=1,2,\dots,n),
+\end{equation}
+where $g_{ij}^{(k)}$ are indeterminate functions involving $\omega_{i}$ and $\omega_{ij}$ and \emph{we know beforehand that the quantities $x$, $u$, $g_{ij}$, $g_{ij}^{(k)}$ are independent.}
+
+The bilinear covariants of the left hand sides of the equations \eqref{eq:36'} are
+\[
+\sum_{k=1}^{k=n}[dx_{k}dg_{ij}^{(k)}],
+\]
+whereas those of the left hand sides of equations \eqref{eq:36} are, taking into account of those equations themselves and using the formulae \eqref{eq:33},
+\[
+\sum_{k=1}^{k=n}[\omega_{k}(\omega_{kji}+\omega_{kij})].
+\]
+
+It follows that the expressions $\omega_{kji}+\omega_{kij}$, up to linear combinations of $\omega_{k}$ and left hand sides of the equations \eqref{eq:36}, i.e., up to linear combinations of $dx$ and $dg_{ij}$, must be linear with respect to $dg_{ij}^{(k)}$ and, furthermore, that \emph{with respect to $dg_{ij}^{(k)}$, it must have as many linearly independent terms as there are the differentials $dg_{ij}^{(k)}$, i.e., $\dfrac{n^{2}(n+1)}{2}$}. Or, according to the equality of $\omega_{kji}$ and $\omega_{jki}$, we see easily that all expressions $\omega_{kji}$ can be transformed into linear expressions in $\omega_{kji}+\omega_{kij}$, and their total number is precisely $\dfrac{n^{2}(n+1)}{2}$. Then, \emph{each expression $\omega_{kij}$ is linear in $dx$, $dg_{ij}$, $dg_{ij}^{(k)}$ and, with respect to $dg_{ij}^{(k)}$, the $\dfrac{n^{2}(n+1)}{2}$ expressions $\omega_{kij}$ are linearly independent.}
+
+Now introduce $\dfrac{n^{2}(n-1)}{2}$ unknowns $A_{ij}^{kl}$ linked by the relations \eqref{eq:15} and consider the equations
+\begin{equation}
+  \label{eq:37a}\tag{\ref{eq:37}}
+  \omega_{kji}=\frac{1}{3}\sum_{l=1}^{l=n}(A^{kl}_{ji}+A^{jl}_{ki})\omega_{l}.
+\end{equation}
+
+According to what has been said and what was seen in the preceding section, the system formed by the equations \eqref{eq:36} and \eqref{eq:37} is equivalent to the system formed by the equations \eqref{eq:36'} and the new equations
+\begin{equation}
+  \label{eq:37'}\tag{\ref{eq:37}$'$}
+  dg_{ij}^{(k)}-\sum_{l=1}^{l=n}g_{ij}^{(kl)}dx_{l}=0,
+\end{equation}
+where $g_{ij}^{(kl)}=g_{ij}^{(lk)}$ are indeterminate functions involving $\omega_{i}$, $\omega_{ij}$ and $\omega_{kji}$ as well as the unknowns $A^{kl}_{ij}$, and \emph{we know beforehand that the $\dfrac{n^{2}(n+1)^{2}}{4}$ quantities $g_{ij}^{(kl)}$ are independent among themselves and independent of $x$, $u$, $g_{ij}$ and $g_{ij}^{(k)}$.}
+
+The bilinear covariants of the left hand sides of the equations of the system \eqref{eq:36'} and \eqref{eq:37'} reduce to, taking account of these equations,
+\[
+\sum_{l=1}^{l=n}[dx_{l}dg_{ij}^{(kl)}].
+\]
+
+If we apply the same operation on the system \eqref{eq:36} and \eqref{eq:37}, we obtain, using the formulae \eqref{eq:34},
+\[
+\sum_{l=1}^{l=n}\left[\omega_{l}\left(\omega_{lkji}-\frac{1}{3}\varpi^{kl}_{ji}-\frac{1}{3}\varpi^{jl}_{ki}\right)\right],
+\]
+by setting [c.f.\ formulae \eqref{eq:18}]
+\[
+\varpi^{kl}_{ji}=dA^{kl}_{ji}-\sum_{\rho=1}^{\rho=n}\epsilon_{\rho}(A^{kl}_{\rho i}\omega_{j\rho}+A^{kl}_{j\rho}\omega_{i \rho}+A^{\rho l}_{ji}\omega_{k\rho}+A^{k\rho}_{ji}\omega_{l\rho}).
+\]
+
+From this if follows that up to linear combinations of $\omega_{i}$ and the left hand sides of the equations \eqref{eq:36} and \eqref{eq:37}, i.e., up to linear combinations of $dx$, $dg_{ij}$, $dg_{ij}^{(k)}$, the expressions
+\begin{equation}
+  \label{eq:39}
+  \omega_{lkji}-\frac{1}{3}\varpi^{kl}_{ji}-\frac{1}{3}\varpi^{jl}_{ki}
+\end{equation}
+are linear combinations of $dg_{ij}^{(kl)}$, and furthermore, there are exactly as many linearly independent terms as there are differentials $dg_{ij}^{(kl)}$, i.e., $\dfrac{n^{2}(n+1)^{2}}{4}$. If we apply on the expression \eqref{eq:39} two successive circular permutations of the indices $j,k,l$ and we add the two expressions obtained to the original expression, we obtain $3\omega_{lkji}$. We also see that all $\varpi^{(kl)}_{ji}$ can be transformed into linear expressions of \eqref{eq:39}. The expressions $\omega_{lkji}$ are then
+\[
+\frac{n^{2}(n+1)(n+2)}{6}
+\]
+in number, and $\varpi^{kl}_{ji}$ are 
+\[
+\frac{n^{2}(n^{2}-1)}{12}
+\]
+in number. The independent expressions of \eqref{eq:39} are therefore
+\[
+\frac{n^{2}(n+1)(n+2)}{6}+\frac{n^{2}(n^{2}-1)}{12}=\frac{n^{2}(n+1)^{2}}{4}
+\]
+in number. Consequently, \emph{the expressions $\omega_{lkji}$ and $\varpi^{kl}_{ji}$ are linearly independent with respect to $dg_{ij}^{(kl)}$} (and depend furthermore on $dx$, $dg_{ij}$ and $dg_{ij}^{(k)}$). If we in particular focus our attention on the expressions $\varpi^{kl}_{ij}$ and if we observe that these expressions are equal to $dA^{kl}_{ij}$ up to linear combinations of $\omega_{ij}$, i.e., up to linear combinations of $dx$, $du$ and $dg_{ij}$, we see that \emph{among the differentials of the fundamental relative invariants considered as functions of $x$, $u$, $g_{ij}$, $\dfrac{\pd g_{ij}}{\pd x_{k}}$, $\dfrac{\pd ^{2}g_{ij}}{\pd x_{k}\pd x_{l}}$, there can exist no independent relations of the second order partial derivatives $\dfrac{\pd^{2}g_{ij}}{\pd x_{k}\pd x_{l}}$.}
+
+In other words, \emph{the (normal) fundamental invariants are independent functions of the second order partial derivatives of the coefficients $g_{ij}$.}
+
+Now introduce $\dfrac{n^{2}(n^{2}-1)(n+2)}{24}$ new \emph{unknowns} $(A^{kl}_{ij})_{h}$ subject to the relations \eqref{eq:19} and \eqref{eq:20} and consider the system formed with the equations \eqref{eq:36}, \eqref{eq:37} and
+\begin{equation}
+  \label{eq:38a}\tag{\ref{eq:38}}
+  \left\{
+    \begin{aligned}
+      \varpi^{kl}_{ji}&=\sum_{h=1}^{h=n}(A^{kl}_{ji})_{h}\omega_{h},\\
+      \omega_{lkji}&=\frac{1}{12}\sum_{m=1}^{m=n}[(A^{km}_{ij})_{l}+(A^{jm}_{ik})_{l}+(A^{lm}_{ij})_{k}\\
+      &\qquad+(A^{jm}_{il})_{k}+(A^{lm}_{ik})_{j}+(A^{km}_{il})_{j}]\omega_{m}.
+    \end{aligned}
+  \right.
+\end{equation}
+
+According to what has been said and seen in the preceding section, this system is equivalent to the system formed by equations \eqref{eq:36'}, \eqref{eq:37'} and
+\begin{equation}
+  \label{eq:38'}\tag{\ref{eq:38}$'$}
+  dg_{ij}^{(kl)}-\sum_{h=1}^{h=n}g_{ij}^{(klh)}dx_{h}=0,
+\end{equation}
+where $g_{ij}^{(klh)}$, the order of whose upper indices being immaterial, are indeterminate functions involving $\omega_{i}$, $\omega_{ij}$, $\omega_{kji}$, $\omega_{lkji}$ as well as $A^{kl}_{ji}$ and $(A^{kl}_{ji})_{h}$. We know beforehand that the $\dfrac{n^{2}(n+1)^{2}(n+2)^{2}}{12}$ quantities $g_{ij}^{(klh)}$ are independent among themselves and independent of $x$, $u$, $g_{ij}$, $g_{ij}^{(k)}$ and $g_{ij}^{(kl)}$.
+
+The bilinear covariants of the left hand sides of the equations \eqref{eq:36'}, \eqref{eq:37'} and \eqref{eq:38'} lead to, taking account of these equations themselves,
+\[
+\sum_{h=1}^{h=n}[dx_{h}dg_{ij}^{(klh)}].
+\]
+
+The same operation, applied on the system \eqref{eq:36}, \eqref{eq:37} and \eqref{eq:38}, gives
+\begin{align*}
+  &\sum_{h=1}^{h=n}[\omega_{h}(\varpi_{ji}^{hl})_{h}],\\
+  &\sum_{h=1}^{h=n}\left\{\omega_{h}\left[\omega_{hlkji}-\frac{1}{12}(\omega^{kh}_{ij})_{l}\right.\right.\\
+  &\qquad \left.\left.-\frac{1}{12}(\varpi^{jh}_{ik})_{l}-\frac{1}{12}(\varpi^{lh}_{ij})_{k}-\frac{1}{12}(\varpi^{jh}_{il})_{k}-\frac{1}{12}(\varpi^{lh}_{ik})_{j}-\frac{1}{12}(\varpi^{kh}_{il})_{j}\right]\right\},
+\end{align*}
+by setting
+\begin{align*}
+  (\varpi^{kl}_{ji})_{h}=&{}d(A^{kl}_{ji})_{h}-\sum_{\rho=1}^{\rho=n}\epsilon_{\rho}[(A^{kl}_{\rho i})_{h}\omega_{j \rho}\\
+  &\qquad +(A^{kl}_{j\rho})_{h}\omega_{i \rho}+
+  (A^{\rho l}_{ij})_{h}\omega_{k \rho}+
+  (A^{k\rho}_{ji})_{h}\omega_{l \rho}+
+  (A^{kl}_{ji})_{\rho}\omega_{h \rho}]\\
+  &{}-\frac{1}{2}\sum_{\rho=1}^{\rho=n}\sum_{\sigma=1}^{\sigma=n}\epsilon_{\rho}(A^{kl}_{\rho i}A^{h\sigma}_{j\rho}+A^{kl}_{j\rho}A^{h\sigma}_{i\rho}+A^{\rho l}_{ji}A^{h\sigma}_{k\rho}+A^{k\rho}_{ji}A^{h\sigma}_{l\rho})\omega_{\sigma}.
+\end{align*}
+
+It follows from this that the expressions
+\[
+\omega_{hlkji}\qquad\text{and}(\varpi^{kl}_{ji})_{h}
+\]
+are linear combinations of $dx$, $dg_{ij}$, $dg_{ij}^{(k)}$, $dg_{ij}^{(kl)}$ and $dg_{ij}^{(klm)}$ and that, \emph{considered with respect to these last quantities $dg_{ij}^{(klm)}$}, there must be exactly $\dfrac{n^{2}(n+1)^{2}(n+2)}{12}$ of them independent.
+
+The number of expressions $\omega_{hlkji}$ is 
+\[
+\frac{n^{2}(n+1)(n+2)(n+3)}{24},
+\]
+and the number of $\varpi^{kl}_{ji}$ is in turn (\textsection\textbf{\ref{sec:11}})
+\[
+\frac{n^{2}(n^{2}-1)(n+2)}{24}.
+\]
+
+The sum of these last two numbers is
+\[
+\frac{n^{2}(n+1)(n+2)(n+3)}{24}
++\frac{n^{2}(n^{2}-1)(n+2)}{24}
+=\frac{n^{2}(n+1)^{2}(n+2)}{12}.
+\]
+
+Consequently, \emph{among $\omega_{mlkji}$ and $(\varpi^{kl}_{ji})_{h}$ there are no linearly independent relations in $dg_{ij}^{(klm)}$}. In particular, there are no similar relations among $(\varpi^{kl}_{ji})_{h}$. In other words, there are no linear combinations of $d(A^{kl}_{ji})_{h}$ which can be expressed linearly using $dx$, $du$, $dg_{ij}$, $dg_{ij}^{(k)}$ and $dg_{ij}^{(kl)}$. Therefore finally \emph{the normal invariants $(A^{kl}_{ij})_{h}$ are not linked by any independent relations in third order partial derivatives of the coefficients  $g_{ij}$}.
+
+
+\paragraph{}
+\label{sec:22}
+This argument can be carried further step by step, but it requires very fastidious calculations. We are going to show by an \emph{a priori} argument that \emph{all relative invariants formed with the variables $x$, $u$, the functions $g_{ij}(x)$ and their partial derivatives of the first three orders are necessarily functions of the invariants $A^{kl}_{ij}$ and $(A^{kl}_{ij})_{h}$ only}. It will follow, in particular, according to what we have seen, that \emph{all relative invariants formed with the variables $x$ and $u$, the functions $g_{ij}(x)$ and their partial derivatives of the first two orders are necessarily functions of the fundamental invariants $A^{kl}_{ij}$ only}.
+
+For the proof of the theorem, let us return to the Pfaffian system \eqref{eq:18} and \eqref{eq:21}. We know that it always admits at least one solution corresponding to given arbitrary numerical values of the dependent and independent variables. Consequently let us specify \emph{arbitrary} numerical values $(a^{kl}_{ij})_{h}$ and $a^{kl}_{ij}$ for the fundamental invariants and their first order derivatives, and consider a solution of the Pfaffian system. We can define this solution by taking certain determined functions in $\dfrac{n(n+1)}{2}$ parameters $\xi$ as the independent and dependent variables. Denote by $(\bar A^{kl}_{ij})_{h}$ and $\bar A^{kl}_{ij}$ the functions of $\xi$ obtained.
+
+Granted this, let us start with an indeterminate quadratic form decomposed into squares. Denote by $g_{ij}$ the coefficients of this form and by $(A^{kl}_{ij})_{h}$, $A^{kl}_{ij}$ the functions in $x$, $u$, $g_{ij}$, $\dfrac{\pd g_{ij}}{\pd x_{k}}$, etc., which define the relative invariants. The equations defining the forms (decomposed into squares) belonging to the classe chosen above are evidently (\textsection\textbf{\ref{sec:15}})
+\begin{equation}
+  \label{eq:40}
+  A^{kl}_{ij}=\bar A^{kl}_{ij},\qquad (A^{kl}_{ij})_{h}=(\bar A^{kl}_{ij})_{h},
+\end{equation}
+these are the equations whose independent variables are $\xi$ and the unknown functions are $x$, $u$, $g_{ij}$, $g_{ij}^{(k)}$, $g_{ij}^{(kl)}$ and $g_{ij}^{(klh)}$. We can evidently replace them with the Pfaffian system
+\begin{equation}
+  \label{eq:41}
+  \left\{
+    \begin{aligned}
+      \omega_{ij}+\omega_{ji}&=0,\\
+      \omega_{kji}&=\frac{1}{3}\sum_{l=1}^{l=n}(\bar A_{ji}^{kl}+\bar A_{ki}^{jl})\omega_{l},\\
+      d\bar A^{kl}_{ji}&=\sum_{\rho=1}^{\rho=n}\epsilon_{\rho}(\bar A^{kl}_{\rho i}\omega_{j\rho}+\bar A^{kl}_{j\rho}\omega_{i\rho}+\bar A^{\rho l}_{ji}\omega_{k\rho}+\bar A^{k\rho}_{ji}\omega_{l\rho})+\sum_{h=1}^{h=n}(\bar A^{kl}_{ji})_{h}\omega_{h}.
+    \end{aligned}
+  \right.
+\end{equation}
+
+Indeed, the equations \eqref{eq:36}, \eqref{eq:37} and \eqref{eq:38} show that the equations \eqref{eq:41} entail the equations \eqref{eq:40} and \emph{vice versa}.
+
+\emph{The system \eqref{eq:41} is in involution}, since the exterior quadratic equations which result by differentiation are, according to the calculation in \textsection\textbf{\ref{sec:21}},
+\begin{align}
+  \label{eq:42}
+  \sum_{l=1}^{l=n}[\omega_{l}\varpi_{lkji}]&=0,\\
+  \label{eq:43}
+  \sum_{h=1}^{h=n}[\omega_{l}(\bar\varpi^{kl}_{ji})_{h}]&=0,
+\end{align}
+by setting
+\[
+\varpi_{lkji}=\omega_{lkji}-\frac{1}{12}\sum_{h=1}^{h=n}[(\bar A^{kh}_{ij})_{l}+(\bar A^{jh}_{ik})_{l}+(\bar A^{lh}_{ij})_{k}+(\bar A^{jh}_{il})_{k}+(\bar A^{lh}_{ik})_{j}+(\bar A^{kh}_{il})_{j}]\omega_{h}.
+\]
+
+According to the discussion on the Pfaffian system \eqref{eq:18} and \eqref{eq:21}, the equations \eqref{eq:41} has its last line $d(\bar A^{kl}_{ji})_{h}$ as expressions of the form \eqref{eq:21} where bars have been put above the quantities, and then, according to the definition of $(\bar\varpi^{kl}_{ij})_{h}$ itself, the equations \eqref{eq:43} are identically satisfied. Therefore we only need to consider the equations \eqref{eq:42} \emph{whose form entails the property of the Pfaffian system \eqref{eq:41} being in involution.}
+
+
+
+\paragraph{}
+\label{sec:23}
+The system \eqref{eq:41} being in involution, it admits at least one solution corresponding to \emph{arbitrarily} given numerical values of the independent variables $\xi$ and the dependent variables $x$, $u$, $g_{ij}$, $g_{ij}^{(k)}$, $g_{ij}^{(kl)}$, $g_{ij}^{(klm)}$ \emph{under the condition that these numerical values satisfy the relations \eqref{eq:40}}. In particular, let us specify the numerical values $\xi^{0}$ to $\xi$ for which the invariants $A^{kl}_{ij}$ and $(A^{kl}_{ij})_{h}$ take the given numerical values $a_{ij}^{kl}$ and $(a_{ij}^{kl})_{h}$, and consider any relative invariant of the form
+\[
+I\left(x,u,g_{ij},\frac{\pd g_{ij}}{\pd x_{k}},\frac{\pd^{2}g_{ij}}{\pd x_{k}\pd x_{l}},\frac{\pd ^{3}g_{ij}}{\pd x_{k}\pd x_{l}\pd x_{h}}\right),
+\]
+this invariant has the same invariant value if we change arbitrarily the numerical values of its arguments subject to the condition that the new numerical values give the same numerical values to the invariants $A^{kl}_{ij}$ and $(A^{kl}_{ij})_{h}$. In other words, \emph{the invariant $I$ is a function of the quantities $A^{kl}_{ij}$ and $(A^{kl}_{ij})_{h}$ only.} This is what is to be proved. In particular, as we have already observed, \emph{every relative invariant containing partial derivatives of $g_{ij}$ up to two order at most is a function of the fundamental invariants $A^{kl}_{ij}$ only.}
+
+More specifically, \emph{if the invariant $I$ is linear with respect to second order partial derivatives of $g_{ij}$, then it is a linear function with constant coefficients of $A^{kl}_{ij}$.}
+
+This result, which \emph{a priori} looks very plausible and which has a great significance in the theory of generalised relativity, is hence proved rigorously.
+
+
+\section[{Absolute invariants of a quadratic differential form}]{Absolute invariants of\\a quadratic differential form}
+\label{sec:absol-invar-quadr}
+
+\paragraph{}
+\label{sec:24}
+Let us now determine the \emph{absolute} invariants.
+
+A first theoretical method consists of starting with the $\dfrac{n(n-1)}{2}$ fundamental invariants which are independent functions of the auxiliary variables $u$ and specialise the decomposition into squares in a way such that these invariants take fixed given numerical values. We then obtain $u$ as determined functions of $x$. By substituting their values into the other relative invariants, we obviously obtain the complete system of absolute invariants. However they are in general of an irrational form.
+
+In any case, the preceding method makes it clear that there are
+\[
+\frac{n^{2}(n^{2}-1)}{12}-\frac{n(n-1)}{2}=\frac{n(n-1)(n-2)(n+3)}{12}
+\]
+absolute invariants as functions of the fundamental relative invariants.
+
+Subsequently, we only need to determine these
+\[
+\frac{n(n-1)(n-2)(n+3)}{12}
+\]
+absolute invariants. For this, consider the differential form
+\[
+\Phi=\sum[\omega_{i}\omega_{j}]\cdot\Omega_{ij}=\sum A^{kl}_{ij}[\omega_{i}\omega_{j}]\cdot[\omega_{k}\omega_{l}],
+\]
+where the dot indicates an ordinary algebraic multiplication. In total this is an ordinary quadratic form in the $\dfrac{n(n-1)}{2}$ variables $[\omega_{i}\omega_{j}]$.
+
+The variables $u$ only enter in the coefficients of this form that is supposed to be expanded in terms of $[dx_{i}dx_{j}]$. Let us calculate the variation of $\Phi$ for an arbitrary variation of $u$ while keeping $x$ fixed. Denote by $\delta$ the symbol of this variation.
+
+We have, but using the already employed notation,
+\begin{gather*}
+  \omega_{i}^{\delta}=0,\\
+  \delta\omega^{d}_{i}=\delta\omega_{i}^{d}-d\omega_{i}^{\delta}=-\epsilon_{i}\sum_{k=1}^{k=n}\omega_{ki}^{\delta}\omega_{k}^{d},\\
+  \delta[\omega_{i}\omega_{j}]=-\sum_{k=1}^{k=n}\epsilon_{j}\omega_{kj}^{\delta}[\omega_{i}\omega_{k}]-\sum_{k=1}^{k=n}\epsilon_{i}\omega_{ki}^{\delta}[\omega_{k}\omega_{j}],
+\end{gather*}
+then, according to \eqref{eq:17}, and by observing that $\Omega^{\delta}_{ij}$ is zero,
+\[
+\delta\Omega_{ij}=\sum_{k=1}^{k=n}\epsilon_{k}(\omega_{ik}^{\delta}\Omega_{kj}-\omega_{kj}^{\delta}\Omega_{ik}),
+\]
+from which finally
+\begin{align*}
+  \delta\Phi=&{}-\sum\epsilon_{j}\omega^{\delta}_{kj}[\omega_{i}\omega_{k}]\Omega_{ij}-\sum\epsilon_{i}\omega_{ki}^{\delta}[\omega_{k}\omega_{j}]\Omega_{ij}\\
+  &{}+\sum\epsilon_{k}\omega_{ik}^{\delta}[\omega_{i}\omega_{j}]\Omega_{kj}-\sum\epsilon_{k}\omega_{kj}^{\delta}[\omega_{i}\omega_{j}]\Omega_{ik}.
+\end{align*}
+
+Changing the indices of summation $j$ and $k$ in the first sum and $i$ and $k$ in the second sum, we see immediately that \emph{the right hand side is zero}.
+
+In other words, \emph{the form $\Phi$ is an absolute covariant \footnote{This is the classical quadratic form introduced by E.B.~Christoffel in his paper \emph{Über die Transformation der homogenen Differentialausdrücke zweiten Grades} (\emph{Journal de Crelle}, vol.\ \textbf{70}, 1869, p.\ 46--70). The quantities $(A_{ij}^{kl})_{h}$ are also the coefficients of a covariant form of five series of differential and so on.}}.
+
+\paragraph{}
+\label{sec:25}
+The search for absolute invariants which are functions of fundamental relative invariants the becomes the resolution of a problem in analytic geometry.
+
+Let us provisionally regard $\omega_{1}$, $\omega_{2}$, \dots, $\omega_{n}$ as homogeneous coordinates of a point in a $n-1$ dimensional projective space. We can then regard the $\dfrac{n(n-1)}{2}$ expressions $[\omega_{i}\omega_{j}]$ as the Plücker coordinates of a plane in this space. \emph{It then comes to the invariants of the Plücker quadratic form}
+\begin{equation}
+  \label{eq:43a}
+  \Phi=\sum A^{kl}_{ij}[\omega_{i}\omega_{j}][\omega_{k}\omega_{l}],
+\end{equation}
+\emph{when we apply a linear transformation on these point coordinates conserving the form $\sum \epsilon_{i}\omega_{i}^{2}$.}
+
+In a less precise and not very exact manner, it comes to \emph{finding the invariants of a complex quadratic of planes under the projective transformation group leaving the quadratic $\sum\epsilon_{i}\omega_{i}^{2}$ invariant.}
+
+Analytically, we can observe that, for every linear substitution conserving the form $\sum\epsilon_{i}\omega_{i}^{2}$, the coefficients of $\Phi$ undergo a linear change belonging to a certain group. The infinitesimal transformations of this group is precisely given by \eqref{eq:18}, according to which we have
+\[
+\delta A^{kl}_{ij}=\sum_{\rho=1}^{\rho=n}\epsilon_{\rho}(\omega^{\delta}_{i\rho}A^{kl}_{\rho j}+\omega^{\delta}_{j\rho}A^{kl}_{i\rho}+\omega^{\delta}_{k\rho}A^{\rho l}_{ij}+\omega^{\delta}_{l\rho}A^{k\rho}_{ij}).
+\]
+
+The $\dfrac{n(n-1)}{2}$ infinitesimal transformations generating the group are characterised by the values $e_{ik}$ of the constants $\omega^{\delta}_{ik}$.
+
+\paragraph{}
+\label{sec:26}
+There exists a linear combination with constant coefficients of $A^{kl}_{ij}$ which is an absolute invariant, i.e.,
+\[
+A=\sum_{i,j}\epsilon_{i}\epsilon_{j}A^{ij}_{ij},
+\]
+and this is the only one: this is the \emph{total curvature} of Riemann.
+
+There also exists a quadratic form in $\omega_{i}$ which is an absolute invariant, which is the form
+\[
+\phi=\sum_{i,j,k}\epsilon_{i}A^{ik}_{ij}\omega_{j}\omega_{k},
+\]
+which can be deduced from $\Phi$ by saturation of indices (\emph{Verkürzung}). More generally, the quadratic form
+\[
+\phi+(\alpha A+\beta)\sum\epsilon_{i}\omega_{i}^{2}
+\]
+where $\alpha$ and $\beta$ denote two arbitrary constants, is also an absolutely invariant quadratic form.
+
+In the general case $n>4$, the theory on linear groups leaving no plane varieties invariant that I have developed permits us to show without difficult that we can find
+\[
+\frac{n^{2}(n^{2}-1)}{12}-\frac{n(n+1)}{2}=\frac{n(n+1)(n+2)(n-3)}{12}
+\]
+linear combinations of $A^{kl}_{ij}$, independent among themselves and independent of the coefficients of the form $\phi$, which are transformed into themselves by the group considered \emph{without the possibility of finding fewer numbers of them enjoying the same properties.}
+
+\paragraph{}
+\label{sec:27}
+The case $n=4$, which the theory of generalised relativity is concerned with, merits to be treated in details. Here the fundamental quadratic form is, as we know,
+\[
+-\omega_{1}^{2}-\omega_{2}^{2}-\omega_{3}^{2}+\omega_{4}^{2}.
+\]
+
+With the geometric interpretation indicated above, when set to zero, it defines a \emph{real non-ruled quadratic} (fundamental quadratic). This quadratic admits two systems of conjugate imaginary rectilinear generatrices, and each of the generatrices in the first system meeting three fixed generatrices in the second system belongs to three linear complexes whose equations are easy to obtain. Indeed, let
+\begin{align*}
+  \omega_{1}+i\omega_{2}+\lambda(\omega_{3}+\omega_{4})&=0,\\
+  \lambda(\omega_{1}-i\omega_{2})-\omega_{3}+\omega_{4}&=0
+\end{align*}
+be the equations of one generatrix in the first system. The Plücker coordinates of this line are, with the notation indicated above,
+\[
+\frac{[\omega_{2}\omega_{3}]}{1-\lambda^{2}}=\frac{[\omega_{3}\omega_{1}]}{i(1+\lambda^{2})}=\frac{[\omega_{1}\omega_{2}]}{2\lambda}=\frac{[\omega_{1}\omega_{4}]}{i(\lambda^{2}-1)}=\frac{[\omega_{2}\omega_{4}]}{\lambda^{2}+1}=\frac{[\omega_{3}\omega_{4}]}{-2 i\lambda}.
+\]
+
+The three complexes we search are therefore defined by the equations
+\begin{equation}
+  \label{eq:44}
+  \left\{
+    \begin{aligned}
+      \xi_{1}&\equiv[\omega_{2}\omega_{3}]-i[\omega_{1}\omega_{4}]=0,\\
+      \xi_{2}&\equiv[\omega_{3}\omega_{1}]-i[\omega_{2}\omega_{4}]=0,\\
+      \xi_{3}&\equiv[\omega_{1}\omega_{2}]-i[\omega_{3}\omega_{4}]=0.
+    \end{aligned}
+  \right.
+\end{equation}
+
+The rectilinear generatrix in the second system the belongs to three linear complexes defined by the relations
+\begin{equation}
+  \label{eq:45}
+  \left\{
+    \begin{aligned}
+      \eta_{1}&\equiv[\omega_{2}\omega_{3}]+i[\omega_{1}\omega_{4}]=0,\\
+      \eta_{2}&\equiv[\omega_{3}\omega_{1}]+i[\omega_{2}\omega_{4}]=0,\\
+      \eta_{3}&\equiv[\omega_{1}\omega_{2}]+i[\omega_{3}\omega_{4}]=0.
+    \end{aligned}
+  \right.
+\end{equation}
+
+Now let us apply a change of Plücker coordinates on the line and take the six quantities $\xi_{i}$ and $\eta_{i}$ as the new coordinates. The relations which the six new coordinates satisfy for the same line is now
+\begin{equation}
+  \label{eq:46}
+  \xi_{1}^{2}+\xi_{2}^{2}+\xi_{3}^{2}=\eta_{1}^{2}+\eta_{2}^{2}+\eta_{3}^{2}.
+\end{equation}
+
+The quadratic complex of the tangent lines of the fundamental quadratic is manifestly defined by the equation
+\begin{equation}
+  \label{eq:47}
+  \xi_{1}^{2}+\xi_{2}^{2}+\xi_{3}^{2}+\eta_{1}^{2}+\eta_{2}^{2}+\eta_{3}^{2}=0.
+\end{equation}
+This equation is indeed verified by each generatrix of this quadratic, since each generatrix, in the first system for example, has all its coordinates zero, which verifies this relation by virtue of \eqref{eq:46}. Every tangent line to this quadratic at a point defined by the intersection of the two generatrices
+\[
+(0,0,0,\eta_{1},\eta_{2},\eta_{3}),\qquad(\xi_{1},\xi_{2},\xi_{3},0,0,0)
+\]
+has coordinates
+\[
+(\lambda\xi_{1},\lambda\xi_{2},\lambda\xi_{3},\mu\eta_{1},\mu\eta_{2},\mu\eta_{3})
+\]
+which also satisfies the equation \eqref{eq:47}.
+
+
+\paragraph{}
+\label{sec:28}
+Now observe that every linear change of variables conserving the fundamental form $-\omega_{1}^{2}-\omega_{2}^{2}-\omega_{3}^{2}+\omega_{4}^{2}$ evidently leads to an \emph{orthogonal} linear transformation on $\xi$ and an \emph{orthogonal} linear transformation on $\eta$ (lt least when it does not change the coordinates $\xi$ with the coordinates $\eta$, but we consider only the transformations that do not exchange the two systems of generatrices of the fundamental quadratic). These two linear transformations naturally have complex conjugate coefficients.
+
+With these new coordinates of the line, the covariant form $\Phi$ decomposes into a sum of three separately covariant forms:
+\begin{enumerate}
+\item a quadratic form $f(\xi_{1},\xi_{2},\xi_{3})$,
+\item a quadratic form (complex conjugate) $f'(\eta_{1},\eta_{2},\eta_{3})$,
+\item a hermitian form $\psi(\xi_{1},\xi_{2},\xi_{3};\eta_{1},\eta_{2},\eta_{3})$ bilinear with respect to each series of variables and taking real numerical values when we give the two series complex conjugate numerical values (this is the property that defines a hermitian form).
+\end{enumerate}
+Carrying out this calculation, which gives no difficulty, we find
+\begin{align*}
+  4f(\xi)=&\,{}(A^{23}_{23}-A^{14}_{14}+2iA^{14}_{23})\xi^{2}_{1}
++(A^{31}_{31}-A^{24}_{24}+2iA^{24}_{31})\xi^{2}_{2}\\
+&{}+(A^{12}_{12}-A^{34}_{34}+2iA^{34}_{12})\xi^{2}_{3}
+-2(A^{13}_{12}+A^{34}_{24}+iA^{24}_{21}-iA^{34}_{31})\xi_{2}\xi_{3}\\
+&{}-2(A^{21}_{23}+A^{14}_{34}+iA^{34}_{32}-iA^{14}_{12})\xi_{3}\xi_{1}\\
+&{}-2(A^{32}_{31}+A^{24}_{14}+iA^{14}_{13}-iA^{24}_{23})\xi_{1}\xi_{2};\\
+2\psi(\xi;\eta)=&{}\,(A^{23}_{23}+A^{14}_{14})\xi_{1}\eta_{1}
++(A^{24}_{14}-A^{23}_{13}-iA^{14}_{13}-iA^{24}_{23})\xi_{1}\eta_{2}\\
+&{}+(A^{34}_{14}-A^{32}_{12}-iA^{14}_{12}-iA^{34}_{32})\xi_{1}\eta_{3}\\
+&{}+(A^{14}_{24}-A^{13}_{23}-iA^{24}_{23}-iA^{14}_{13})\xi_{2}\eta_{1}\\
+&{}+(A^{31}_{31}+A^{24}_{24})\xi_{2}\eta_{2}
++(A^{34}_{24}-A^{31}_{21}-iA^{24}_{21}-iA^{34}_{31})\xi_{2}\eta_{3}\\
+&{}+(A^{14}_{34}-A^{12}_{32}-iA^{34}_{32}-iA^{14}_{12})\xi_{3}\eta_{1}\\
+&{}+(A^{24}_{34}-A^{21}_{31}-iA^{34}_{31}-iA^{24}_{21})\xi_{3}\eta_{2}+(A^{12}_{12}+A^{34}_{34})\xi_{3}\eta_{3}.\\
+\end{align*}
+
+We observe that the sum of the coefficients of $\xi_{1}^{2}+\xi_{2}^{2}+\xi_{3}^{2}$ in $f(\xi)$ is \emph{real}. We can then write
+\[
+\Phi=\frac{1}{12}A(\xi_{1}^{2}+\xi_{2}^{2}+\xi_{3}^{2}+\eta_{1}^{2}+\eta_{2}^{2}+\eta_{3}^{2})+\bar f(\xi)+\bar f'(\eta)+\psi(\xi;\eta)
+\]
+by denoting the total curvature as $A$:
+\[
+A=A^{23}_{23}+A^{31}_{31}+A^{12}_{12}-A^{14}_{14}-A^{24}_{24}-A^{34}_{34},
+\]
+and setting
+\[
+\bar f(\xi)=f(\xi)-\frac{1}{12}A(\xi_{1}^{2}+\xi_{2}^{2}+\xi_{3}^{2}),
+\]
+the sum of the coefficients of the square terms in $\bar f(\xi)$ is then zero.
+
+When we apply an orthogonal linear transformation on $\xi$, the five complex coefficients of $\bar f(\xi)$ are transformed linearly into themselves and we cannot find $h<5$ independent linear combinations of these coefficients which are also transformed into themselves.
+
+The relative fundamental invariants of the given differential form then can be divided into four groups:
+\begin{enumerate}
+\item the absolute invariant $A$,
+\item the five complex coefficients of $f(\xi)$,
+\item the five complex conjugates of $\bar f'(\eta)$,
+\item the nine coefficients (real or imaginary conjugate pairs) of $\psi(\xi;\eta)$.
+\end{enumerate}
+
+Every linear transformation on $\omega_{i}$ transforms each group of relative invariants into themselves and it is easy to see that these groups are indecomposable, and therefore the elements transform separately among themselves.
+
+\paragraph{}
+\label{sec:29}
+In \textsection\textbf{\ref{sec:26}} we have introduced, in the general case, the covariant quadratic form
+\[
+\phi=\sum\epsilon_{i}A^{ik}_{ij}\omega_{j}\omega_{k},
+\]
+and more generally
+\[
+\phi'=\sum\epsilon_{i}A^{ik}_{ij}\omega_{j}\omega_{k}+\alpha A\sum\epsilon_{i}\omega_{i}^{2}.
+\]
+
+If we determine the coefficient $\alpha$ by the condition that the sum of the coefficients of the terms in $\epsilon_{i}\omega_{i}^{2}$ is zero, it gives
+\[
+n\alpha A=-\sum\epsilon_{i}\epsilon_{j}A^{ij}_{ij}=2A,\qquad\alpha=-\frac{2}{n},
+\]
+the $\dfrac{n(n+1)}{2}-1$ resulting coefficients transform among themselves without the possibility of finding a linear combination with fewer members enjoying the same property.
+
+Here $\dfrac{n(n+1)}{2}-1=9$. The rest of the coefficients are therefore necessarily the independent linear combinations of the hermitian form $\psi(\xi;\eta)$. Indeed, we have, 
+\begin{align*}
+  \phi'=&\,\frac{1}{2}(A^{12}_{12}+A^{13}_{13}-A^{23}_{23}-A^{14}_{14}+A^{24}_{24}+A^{34}_{34})\omega^{2}_{1}+\cdots\\
+  &+\frac{1}{2}(A^{23}_{23}+A^{31}_{31}+A^{12}_{12}+A^{14}_{14}+A^{24}_{24}+A^{34}_{34})\omega_{4}^{2}\\
+  &+2(A^{31}_{21}-A^{34}_{24})\omega_{2}\omega_{3}+\dots+2(A^{24}_{21}+A^{34}_{31})\omega_{1}\omega_{4}+\cdots
+\end{align*}
+and we find without difficulty, but with other combinations, the coefficients of the hermitian form $\psi(\xi;\eta)$.
+
+\emph{Accordingly, there must be an important geometrical relation between the quadratic form $\phi'$ and the hermitian form $\psi$.} This relation can be made evident under different forms. First, the equation obtained by setting to zero the hermitian form $\psi$ defines a complex quadratic of lines that the generatrices of the fundamental quadratic manifestly belong to (since $\psi$ annihilate at the same time $\xi$ and $\eta$). Consider a generatrix $G$ in the first system of the fundamental quadratic $(0;\eta^{0})$. The linear equation in $\xi_{1}$, $\xi_{2}$, $\xi_{3}$
+\[
+\psi(\xi;\eta^{0})=0,
+\]
+together with the equation
+\[
+\xi_{1}^{2}+\xi_{2}^{2}+\xi_{3}^{2}=0
+\]
+defines two generatrices in the second system cutting the given generatrix $G$ at two points. These points evidently have the property that every tangent on one of these points to the fundamental quadratic belongs to the complex quadratic. As the generatrix $G$ varies, these points generate a space non-flat biquadratic to which corresponds a bundle of quadratics: the quadratic $\phi'=0$ is part of this bundle.
+
+The complex quadratic $\psi=0$ may be defined by a simple geometric property by tying it together with the fundamental quadratic and the quadratic $\phi'=0$. Indeed, start \emph{a priori} with a quadratic
+\[
+a_{11}\omega_{1}^{2}+a_{22}\omega_{2}^{2}+a_{33}\omega_{3}^{2}+a_{44}\omega_{4}^{2}+2a_{23}\omega_{2}\omega_{3}+\dots+2a_{14}\omega_{1}\omega_{4}+\dots=0,
+\]
+and look for the equation of complex lines cutting this quadratic and the fundamental quadratic two segments forming a harmonic division. An easy calculation gives the equation of this complex
+\begin{align*}
+  &\ a_{11}\{[\omega_{1}\omega_{2}]^{2}+[\omega_{1}\omega_{3}]^{2}-[\omega_{1}\omega_{4}]^{2}\}+\dots\\
++&\ a_{44}\{[\omega_{1}\omega_{4}]^{2}+[\omega_{2}\omega_{4}]^{2}+[\omega_{3}\omega_{4}]^{2}\}\\
++&\ 2a_{23}\{[\omega_{1}\omega_{2}][\omega_{1}\omega_{3}]-[\omega_{4}\omega_{2}][\omega_{4}\omega_{3}]\}+\dots\\
++&\ 2a_{14}\{[\omega_{2}\omega_{1}][\omega_{2}\omega_{4}]+[\omega_{3}\omega_{1}][\omega_{3}\omega_{4}]\}+\dots=0,
+\end{align*}
+or, by introducing the coordinates $\xi$ and $\eta$,
+\begin{align*}
+  &\ \frac{1}{2}(a_{11}+a_{22}+a_{33}-a_{44})(\xi_{1}^{2}+\xi_{2}^{2}+\xi_{3}^{2}+\eta_{1}^{2}+\eta_{2}^{2}+\eta_{3}^{2})\\
+  +&\ (a_{22}+a_{33}+a_{44}-a_{11})\xi_{1}\eta_{1}-2(a_{12}-ia_{34})\xi_{1}\eta_{2}-2(a_{31}+ia_{24})\xi_{1}\eta_{3}\\
+  -&\ 2(a_{12}+ia_{34})\xi_{2}\eta_{1}+(a_{33}+a_{11}+a_{44}-a_{22})\xi_{2}\eta_{2}-2(a_{23}-ia_{14})\xi_{2}\eta_{3}\\
+  -&\ 2(a_{31}-ia_{24})\xi_{3}\eta_{1}-2(a_{23}+ia_{14})\xi_{3}\eta_{2}+(a_{11}+a_{22}+a_{44}-a_{33})\xi_{3}\eta_{3}=0.
+\end{align*}
+
+By identifying this equation with the equation $\psi=0$, we find $a_{ij}$ in terms of the coefficients of the form $\phi'$.
+
+Consequently, the geometric relation between the quadratic form $\phi'$ and the hermitian form $\psi$ is the following: \emph{the quadratic complex of the lines obtained by setting the form $\psi$ to zero is those lines cutting the fundamental quadratic and the quadratic $\phi'=0$ at two segments forming a harmonic division.}
+
+\paragraph{}
+\label{sec:30}
+We can also associate the forms $\bar f$ and $\bar f'$ with the \emph{binary} forms and the form $\psi$ with a doubly binary form. Indeed, we can express the coordinates $\xi_{1},\xi_{2},\xi_{3}$ of a generatrix in the second system of the absolute quadratic by means of a parameter, or two homogeneous parameters $u_{1}$, $u_{2}$, for example by the formulae
+\[
+\xi_{1}=u_{1}^{2}-u_{2}^{2},\qquad\xi_{2}=i(u_{1}^{2}+u_{2}^{2}),\qquad\xi_{3}=2u_{1}u_{2},
+\]
+we  also have, for every generatrix in the first system,
+\[
+\eta_{1}=v_{1}^{2}-v_{2}^{2},\qquad\eta_{2}=-i(v_{1}^{2}+v_{2}^{2}),\qquad\eta_{3}=2v_{1}v_{2}.
+\]
+
+Every orthogonal transformation on $\xi$ leads to a linear transformation \emph{with unit determinant} on the two variables $u_{1}$, $u_{2}$. As for the form $\bar f(\xi)$, it becomes a biquadratic bilinear in $u_{1}$, $u_{2}$. The form $\bar f(\xi)$ becomes a biquadratic bilinear in $v_{1}$, $v_{2}$ whose coefficients are complex conjugates of the first form. Finally the hermitian form $\psi(\xi,\eta)$ becomes a form quadratic in $(u_{1},u_{2})$ and quadratic in $(v_{1},v_{2})$.
+
+The twenty Riemann coefficients $A^{kl}_{ij}$ also divide into four groups each of which include a certain number of linear combinations of these coefficients:
+\begin{enumerate}
+\item the total curvature $A$,
+\item the five complex coefficients of a biquadratic bilinear form $F(u_{1},u_{2})$,
+\item the five complex conjugates of the biquadratic bilinear form $F'(v_{1},v_{2})$,
+\item the nine coefficients, real or complex conjugate pairs, of a form $\Psi(u_{1},u_{2},v_{1},v_{2})$, quadratic with respect to $u_{1}$, $u_{2}$ and quadratic with respect to $v_{1}$, $v_{2}$.
+\end{enumerate}
+
+The geometric significance of the variables $u_{1}$, $u_{2}$ is classical: the ratio $\dfrac{u_{1}}{u_{2}}$ denote the complex number which serves to define the position of a real point on the fundamental quadratic. Every projective transformation of the fundamental quadratic into itself leads to a projective transformation with complex coefficients on $\dfrac{u_{1}}{u_{2}}$. The equation $\Psi=0$ defines on the fundamental quadratic form a curve which is none other than the biquadratic considered above.
+
+\paragraph{}
+\label{sec:31}
+
+The search for \emph{absolute} invariants which are functions of $A^{kl}_{ij}$ now becomes a classical problem in the theory of forms. In particular, the form $F$ gives two rational invariants, the first second degree and the other third degree. The form $F'$ gives two complex conjugate invariants.
+
+The invariants can also be obtained easily by starting with the form $f(\xi)$: it suffices, as we know, to consider the sum of the principal minors of the discriminant of this form, as well as the discriminant itself. The form $\psi$, or rather the form $\phi'$ which is equivalent to it, likewise gives a quadratic invariant, a cubic invariant and a biquadratic invariant by considering of the discriminant and its principal minors: they are the coefficients of differenti powers of $\lambda$ in the equation obtained by settling the discriminant of the following form to zero:
+\[
+\phi'+\lambda(-\omega_{1}^{2}-\omega_{2}^{2}-\omega_{3}^{2}+\omega_{4}^{2}).
+\]
+
+Besides these seven invariants (or rather eight, by taking into account of the invariant $A$) obtained by the isolated consideration of each of the forms $\bar f$, $\bar f'$, $\psi$, there are six other (mixed) forms with coefficients of some of these forms. We will not go deeper on this question.
+
+
+\paragraph{}
+\label{sec:32}
+That which is most relevant for applications to the theory of generalised relativity is the resolution of the following problem:
+
+\emph{Find, in the most general possible way, ten linear combinations $R_{ij}$ with constant coefficients of the quantities $A_{ij}^{kl}$ which transform among themselves as the coefficients of a quadratic form when we apply on $\omega_{i}$ a linear transformation conserving the fundamental form $-\omega_{1}^{2}-\omega_{2}^{2}-\omega_{3}^{2}+\omega_{4}^{2}$.}
+
+In other words, \emph{construct a covariant quadratic form}
+\[
+\sum{R}_{ij}\omega_{i}\omega_{j}
+\]
+whose coefficients are linear combinations with constant coefficients of $A^{kl}_{ij}$.
+
+We have already obtained one solution of this problem, namely the quadratic form
+\[
+\lambda\phi'+(\alpha A+\beta)(-\omega_{1}^{2}-\omega_{2}^{2}-\omega_{3}^{2}+\omega_{4}^{2}),
+\]
+where $\lambda$, $\alpha$ and $\beta$ are arbitrary constants.
+
+It is easy to see that \emph{the problem does not have other solutions}.
+
+Indeed, let
+\[
+\Phi=\sum R_{ij}{\omega_{i}\omega_{j}}
+\]
+be a covariant quadratic form. Set
+\begin{align*}
+  R&=-R_{11}-R_{22}-R_{33}+R_{44},\\
+  \bar R_{ij}&=R_{ij}-\frac{1}{4}\epsilon_{ij}R\qquad(\epsilon_{ij}= 0 \text{ if } i\neq j;\epsilon_{11}=\epsilon_{22}=\epsilon_{33}=-1,\epsilon_{44}=+1),
+\end{align*}
+we can then write
+\[
+\Phi=\frac{1}{4}R(-\omega_{1}^{2}-\omega_{2}^{2}-\omega_{3}^{2}+\omega_{4}^{2})+\sum\bar R_{ij}\omega_{i}\omega_{j},
+\]
+and we have
+\[
+\bar R_{11}+\bar R_{22}+\bar R_{33}-\bar R_{44}=0.
+\]
+
+The quantity $R$ is, as we know, an absolute invariant. Then by its property of being a linear combination of $A^{kl}_{ij}$, we have
+\[
+R=\alpha A+\beta.
+\]
+
+As for the quantities $\bar R_{ij}$, they depend linearly on nine of them which we can write, without being more precise, as
+\[
+\bar R_{1},\quad\bar R_{2},\quad\dots\bar R_{9}.
+\]
+
+They undergo a linear transformation when we apply a linear transformation conserving the form $-\omega_{1}^{}-\omega_{2}^{2}-\omega_{3}^{2}+\omega_{4}^{2}$, and it is impossible to find $h<9$ independent linear combinations of $\bar R_{i}$ with the same property.
+
+Each of these nine quantities $\bar R_{i}$ can be transformed in one and only one manner under the form
+\[
+\bar R_{i}=H_{i}+K_{i}+L_{i}+\alpha_{i}A+\beta_{i}
+\]
+where $H_{i}$ is a homogeneous linear combination of the coefficients of the form $\bar f(\xi)$, $K_{i}$ a homogeneous linear combination of the coefficients of the form $\bar f'(\eta)$, $L_{i}$ a homogeneous linear combination of the coefficients of the form $\psi(\xi;\eta)$, and finally $\alpha$ and $\beta$ are constants.
+
+When we apply a linear transformation conserving the form $-\omega_{1}^{2}-\omega_{2}^{2}-\omega_{3}^{2}+\omega_{4}^{2}$ on $\omega_{i}$, the quantities $\bar R_{i}$ undergo a linear transformation among themselves, and likewise for the coefficients of the forms $\bar f(\xi)$, $\bar f'(\eta)$ and $\psi(\xi;\eta)$. If $H_{i}$ are not all zero, there will be a certain number $h$ ($4\le h<9$) of independent linear combinations of $\bar R_{i}$ which do no contain the coefficients of the form $\bar f(\xi)$: we can always assume that these combinations are precisely $\bar R_{1}$, \dots , $\bar R_{h}$. But this is impossible, since if for example an arbitrary linear transformation leaves the form $-\omega_{1}^{2}-\omega_{2}^{2}-\omega_{3}^{2}+\omega_{4}^{2}$ invariant, the linear form will be changed to
+\[
+\lambda_{1}\bar R_{1}+\lambda_{2}\bar R_{2}+\dots+\lambda_{9}\bar R_{9},
+\]
+the coefficients $\lambda_{h+1}$, \dots , $\lambda_{9}$ must be zero, since $K_{1}$ is changed in a linear combination of the coefficients of $f'(\eta)$, $L_{1}$ in a linear combination of the coefficients of $\psi(\xi;\eta)$ and $A$ is unchanged. Therefore the quantities $\bar R_{1}$, $\bar R_{2}$, \dots , $\bar R_{h}$ must transform into themselves under any linear transformation of the group considered, which we have seen is impossible.
+
+The preceding reasoning shows that all of the terms $H_{i}$ are zero. We also see that all of the forms $K_{i}$ are zero, as well as all of the coefficients $\alpha_{i}$ and $\beta_{i}$. Then, $\bar R_{i}$ are linear combinations of the coefficients of $\psi(\xi;\eta)$ or, equally, the coefficients of $\phi'(\omega)$.
+
+Then consider the quadratic form
+\[
+\sum\bar R_{ij}\omega_{i}\omega_{j}-\lambda\phi'(\omega)
+\]
+which is, by hypothesis, covariant regardless of the constant and therefore its coefficients are linear and homogeneous combinations of the nine coefficients of $\phi'(\omega)$. Let us determine the constant $\lambda$ by the condition that the nine coefficients of $\omega_{1}^{2}$, $\omega_{2}^{2}$, $\omega_{3}^{2}$, $\omega_{i}\omega_{j}$ are \emph{linearly independent}, which is always possible. If these new coefficients are not all zero, we have $h<9$ independent linear combinations of the coefficients of $\phi'$ which transform linearly among themselves, which we know is impossible. Therefore the quadratic form written as above must be identically zero for a suitably chosen value of the constant $\lambda$. \emph{This is precisely what we want to show.}
+
+In conclusion, \emph{every absolute covariant quadratic form whose coefficients are linear with respect to $A^{ij}_{kl}$ is given by the formula}
+\begin{equation}
+  \label{eq:48}
+  \lambda\sum_{i,j,k}\epsilon A^{ik}_{ij}\omega_{j}\omega_{k}+\left(\alpha\vphantom{\sum}\right.\sum_{(i,j)}\left.\epsilon_{i}\epsilon_{j}A^{ij}_{ij}+\beta\vphantom{\sum}\right)(-\omega_{1}^{2}-\omega_{2}^{2}-\omega_{3}^{2}+\omega_{4}^{2}),
+\end{equation}
+\emph{with three arbitrary constants $\alpha,\beta,\lambda$.}
+
+
+\paragraph{}
+\label{sec:33}
+Einstein's equations of gravitation are very restricted in view of the problem we just resolved. Given an $ds^{2}$ in four variables
+\[
+ds^{2}=\sum_{i,k}g_{ik}(x)dx_{i}dx_{k}
+\]
+reducible to the form $-\omega_{1}^{2}-\omega_{2}^{2}-\omega_{3}^{2}+\omega_{4}^{2}$, Einstein's equations of gravitation are of the form
+\[
+G_{ik}=-T_{ik},
+\]
+where $G_{ik}$ are the coefficients of a \emph{covariant} quadratic differential form
+\[
+\Phi=\sum G_{ik}dx_{i}dx_{k}.
+\]
+
+Einstein allows the quantities $G_{ik}$ to be functions determined by the variables $x$ and the functions $g_{ik}(x)$ and their partial derivatives of first and second order, and they are assumed to be linear with respect to the second order partial derivatives. The form
+\[
+\sum G_{ik}dx_{i}dx_{k}
+\]
+therefore must be covariant: \emph{this signifies that if we apply an arbitrary transformation}
+\[
+x_{i}=f_{i}(\bar x_{1},\bar x_{2},\bar x_{3},\bar x_{4}),
+\]
+\emph{and if under this transformation we have}
+\[
+\sum{g_{ik}}(x)dx_{i}dx_{k}=\sum \bar g_{ik}(\bar x)d\bar x_{i}d\bar x_{k},
+\]
+we then have at the same time
+\begin{align*}
+  &{}\sum G_{ik}\left(x,g_{\alpha\beta}(x),\frac{\pd g_{\alpha\beta}}{\pd x_{\rho}},\frac{\pd^{2}g_{\alpha\beta}}{\pd x_{\rho}\pd x_{\sigma}}\right)dx_{i}dx_{k}\\
+  =&{}\sum G_{ik}\left(\bar x,\bar g_{\alpha\beta}(\bar x),\frac{\pd \bar g_{\alpha\beta}}{\pd\bar x_{\rho}},\frac{\pd^{2}\bar g_{\alpha\beta}}{\pd\bar x_{\rho}\pd\bar x_{\sigma}}\right)d\bar x_{i}d\bar x_{k}
+\end{align*}
+
+To obtain all these covariant quadratic forms, imagine that we have decomposed, in the most general manner possible, the given form $ds^{2}$ into four squares $-\omega_{1}^{2}-\omega_{2}^{2}-\omega_{3}^{2}+\omega_{4}^{2}$, the coefficients of the four Pfaffian expressions being functions determined by $g_{ik}(x)$ and six auxiliary variables $u_{1},\dots,u_{6}$. The form $\Phi$ can then be expressed as a quadratic form in $\omega_{1}$, $\omega_{2}$, $\omega_{3}$, $\omega_{4}$. Consider
+\[
+\Phi=\sum R_{ik}\omega_{i}\omega_{k},
+\]
+where $R_{ik}$ are functions determined by $x$, $u$, $g_{ik}(x)$ and their partial derivatives of the first two orders, the second order derivatives entering linearly. The form $\Phi$ is by hypothesis an absolute covariant and the expressions $\omega_{i}$ are the relative covariants, and hence \emph{each of the coefficients $R_{ik}$ is a relative invariant} and according to what has been shown in \textsection{\textbf{\ref{sec:25}}}, \emph{a linear combination with constant coefficients of the fundamental invariants $A_{ij}^{kl}$.}
+
+\emph{Einstein's form $\sum G_{ik}dx_{i}dx_{k}$ is therefore necessarily of the form \eqref{eq:48}}
+\[
+\sum G_{ik}dx_{i}dx_{k}\equiv \lambda\sum_{i,j,k}^{1,\dots,4}\epsilon_{i}A^{ik}_{ij}\omega_{j}\omega_{k}+\bigg(\alpha\sum_{(ij)}^{1,\dots,4}\epsilon_{i}\epsilon_{j}A^{ij}_{ij}+\beta\bigg)(-\omega_{1}^{2}-\omega_{2}^{2}-\omega_{3}^{2}+\omega_{4}^{2}).
+\]
+
+\paragraph{}
+\label{sec:34}
+Before specialise the constant coefficients $\alpha$, $\beta$, $\gamma$ by the condition that the law of conservation is respected, let us make some remarks on the fundamental invariants which do not enter in the gravitation equations. These equations only involve the total curvature $A$ and the coefficients of the hermitian form $\psi(\xi;\eta)$, but not the quadratic forms $\bar f(\xi)$ and $\bar f'(\eta)$. The ten equations, linear with respect to the second order partial derivatives of $g_{ij}$, which we obtain by setting the coefficients of these forms to zero, evidently have an absolute invariant significance. These equations are, by substituting the expressions of $\bar f(\xi)$ given \textsection{\textbf{28}},
+\begin{align*}
+  A^{23}_{23}-A^{14}_{14}&=A^{31}_{31}-A^{24}_{24}=A^{12}_{12}-A^{34}_{34},\\
+  A^{21}_{43}=A^{31}_{42}&=0,\\
+  A^{13}_{12}+A^{34}_{24}&=A^{21}_{23}+A^{14}_{34}=A^{32}_{32}+A^{24}_{14}=0,\\
+  A^{24}_{21}-A^{34}_{31}&=A^{34}_{32}-A^{14}_{12}=A^{14}_{13}-A^{24}_{23}=0.
+\end{align*}
+
+We can show that they express the reducibility of $ds^{2}$ to the form
+\[
+\rho(dX^{2}_{4}-dX^{2}_{1}-dX^{2}_{2}-dX^{2}_{3}),
+\]
+in other words, \emph{they express the propagation of light follows the same laws as in the theory of special relativity.}
+
+More generally, the ten fundamental invariants furnished by the coefficients of $\bar f(\xi)$ and $\bar f'(\eta)$ are relative invariants, not only for the form $\sum g_{ij}dx_{i}dx_{j}$, but for the \emph{equation} obtained by setting them to zero as well.
+
+\section[{Conversation law and the equations of gravitation}]{Conversation law\\and the equations of gravitation}
+\label{sec:conv-law-equat}
+
+\paragraph{}
+\label{sec:35}
+The gravitational tensor $G_{ik}$ is considered as formed arbitrarily with the coefficients of a covariant quadratic form $\sum G_{ik}dx_{i}dx_{k}$. This is what we have done up till now. However it is beneficial to consider another point of view.
+
+Return to the physical origin of the notion of tensor. Given an elastic medium in Euclidean space, of each element of the surface of the medium having the components
+\[
+[dy\,dz],\quad[dz\,dx],\quad[dx\,dy]
+\]
+on the coordinate planes, there is a tension (a vector) whose components on the three coordinate axes are
+\begin{gather*}
+  \mathcal{P}_{xx}[dy\,dz]+\mathcal{P}_{xy}[dz\,dx]+\mathcal{P}_{xz}[dx\,dy],\\
+  \mathcal{P}_{yx}[dy\,dz]+\mathcal{P}_{yy}[dz\,dx]+\mathcal{P}_{yz}[dx\,dy],\\
+  \mathcal{P}_{zx}[dy\,dz]+\mathcal{P}_{zy}[dz\,dx]+\mathcal{P}_{zz}[dx\,dy].
+\end{gather*}
+This tensor is symmetric if the matrix of coefficients is symmetric.
+
+Instead of presenting the tensor whose components are the quantities $\mathcal{P}_{xx}$, etc., by means of the quadratic form
+\[
+\mathcal{P}_{xx}dx^{2}+2\mathcal{P}_{xy}dx\,dy+\cdots,
+\]
+we can present it, in a manner more suitable to its nature, by the projection of the tensor on an axis of indeterminate direction cosines $\xi$, $\eta$ and $\zeta$. We then have the form
+\begin{align*}
+  \Omega&=\xi\{\mathcal{P}_{xx}[dy\,dz]+\mathcal{P}_{xy}[dz\,dx]+\mathcal{P}_{xz}[dx\,dz]\}\\
+  &+\eta\{\mathcal{P}_{yx}[dy\,dz]+\mathcal{P}_{yy}[dz\,dx]+\mathcal{P}_{yz}[dx\,dz]\}\\
+  &+\zeta\{\mathcal{P}_{zx}[dy\,dz]+\mathcal{P}_{zy}[dz\,dx]+\mathcal{P}_{zz}[dx\,dz]\}.\\
+\end{align*}
+
+\emph{In essence, $\Omega$ is the quantity under the sign $\iint$ in the integral expressing the sum of the projection onto the axis $(\xi,\eta,\zeta)$ of the tensor elements  exerted on the given surface.}
+
+If we regard the direction $(\xi,\eta,\zeta)$ as \emph{fixed}, if we take the trilinear covariant of the expression $\Omega$ we obtain
+\begin{align*}
+  \Omega'&=\left[\xi\left(\frac{\pd\mathcal{P}_{xx}}{\pd x}+\frac{\pd \mathcal{P}_{xy}}{\pd y}+\frac{\pd \mathcal{P}_{xz}}{\pd z}\right)\right.\\
+  &+\left.\eta\left(\frac{\pd \mathcal{P}_{yx}}{\pd x}+\frac{\pd \mathcal{P}_{yy}}{\pd y}+\frac{\pd \mathcal{P}_{yz}}{\pd z}\right)+\zeta\left(\frac{\pd\mathcal{P}_{zx}}{\pd x}+\frac{\pd \mathcal{P}_{zy}}{\pd y}+\frac{\pd \mathcal{P}_{zz}}{\pd z}\right)\right][dx\,dy\,dz],
+\end{align*}
+i.e., the projection of the force of the volume element equivalent to the tension of the elastic medium onto the axis considered.
+
+The tensor $\Omega$ is said to \emph{satisfy conversation law} if its derivative $\Omega'$ is zero, regardless of the fixed direction $(\xi,\eta,\zeta)$.
+
+In particular, if we take a perfect fluid of constant pressure,
+\[
+\mathcal{P}_{xx}=\mathcal{P}_{yy}=\mathcal{P}_{zz}=\mathcal{P}=\text{const.},\qquad\mathcal{P}_{yz}=\mathcal{P}_{zx}=\mathcal{P}_{xy}=0,
+\]
+then the tensor $\Omega$ reduces to, up to a constant factor
+\[
+\Omega=\xi[dy\,dz]+\eta[dz\,dx]+\zeta[dx\,dy],
+\]
+and we have
+\[
+\Omega'=0.
+\]
+
+The preceding tensor easily reduces to the form which gives the volume element
+\[
+\Pi=[dx\,dy\,dz],
+\]
+it is
+\[
+\Omega=\xi\frac{\pd\mathcal{P}}{\pd[dx]}+\eta\frac{\pd\mathcal{P}}{\pd[dy]}+\zeta\frac{\pd\mathcal{P}}{\pd[dz]},
+\]
+and under this form its invariant significance (i.e., independent of the choice of axes) is made obvious.
+
+\paragraph{}
+\label{sec:36}
+Let us return to the gravitational tensor $G_{ik}$. We regard its components as the coefficients entering in the expression of the projection of the tension applied to a three dimensional element in a four dimensional universe unto a fixed direction. Let $\xi_{1}$, $\xi_{2}$, $\xi_{3}$, $\xi_{4}$ be the components of a direction at a point.
+
+First consider the tensor obtained by starting with the (four dimensional) volume element of the universe
+\[
+\Pi=[\omega_{1}\omega_{2}\omega_{3}\omega_{4}].
+\]
+\emph{element which has an invariant significance}, and by forming
+\begin{align*}
+  \Omega&=\xi_{1}\frac{\pd \Pi}{\pd \omega_{1}}+\xi_{2}\frac{\pd \Pi}{\pd \omega_{2}}+\xi_{3}\frac{\pd \Pi}{\pd \omega_{3}}+\xi_{4}\frac{\pd \Pi}{\pd\omega_{4}}\\
+  &\xi_{1}[\omega_{2}\omega_{3}\omega_{4}]+\xi_{2}[\omega_{3}\omega_{1}\omega_{4}]+\xi_{3}[\omega_{1}\omega_{2}\omega_{4}]-\xi_{4}[\omega_{1}\omega_{2}\omega_{3}].
+\end{align*}
+
+This tensor is the analogue of the (constant) pressure of a perfect fluid.
+
+More generally, we consider the tensor
+\[
+\Omega=\xi_{1}\Pi_{1}+\xi_{2}\Pi_{2}+\xi_{3}\Pi_{3}+\xi_{4}\Pi_{4},
+\]
+where $\Pi_{1}$, $\Pi_{2}$, $\Pi_{3}$, $\Pi_{4}$ are elements of triple integrals.
+
+The \emph{covariant derivative} of this tensor is obtained by taking the ordinary derivative of $\Omega$, \emph{but assuming that the differentials $d\xi_{i}$ satisfy the relations \eqref{eq:8'} expressing that the direction $(\xi)$ remains parallel to itself}:
+\begin{equation}
+  \label{eq:8b}\tag{\ref{eq:8'}}
+  d\xi_{i}=-\epsilon_{i}\sum_{k=1}^{k=4}[\xi_{k}\omega_{ki}].
+\end{equation}
+
+Under these conditions, we have
+\[
+\Omega'=\sum_{i=1}^{i=4}\xi_{i}\bigg\{\Pi_{i}'-\sum_{k=1}^{k=4}\epsilon[\Pi_{k}\omega_{ki}]\bigg\}.
+\]
+
+We can say that if $\Pi_{1}$, $\Pi_{2}$, $\Pi_{3}$, $\Pi_{4}$ represent the components of a elastic tensor exerting on the three dimensional element of the universe, the quantities
+\[
+\Pi_{i}'-\sum_{k=1}^{k=4}\epsilon_{k}[\Pi_{k}\omega_{ki}]
+\]
+are then the components of the force exerting on a four dimensional volume element of the universe.
+
+\emph{The tensor $\Omega$ will be said to satisfy the conservation law if its covariant derivative $\Omega'$ is constant}, i.e., if we have the relations
+\[
+\Pi'_{i}=\sum_{k=1}^{k=4}\epsilon_{k}[\Pi_{k}\omega_{kl}].
+\]
+
+This is the case for example in the case of the particular tensor
+\[
+\Omega=\xi_{1}[\omega_{2}\omega_{3}\omega_{4}]+\xi_{2}[\omega_{3}\omega_{1}\omega_{4}]+\xi_{3}[\omega_{1}\omega_{2}\omega_{4}]-\xi_{4}[\omega_{1}\omega_{2}\omega_{3}],
+\]
+indeed, we have, for example
+\begin{align*}  
+  \Pi'_{1}&=[\omega_{2}\omega_{3}\omega_{4}]'=[\omega'_{2}\omega_{3}\omega_{4}]-[\omega_{2}\omega_{3}'\omega_{4}]+[\omega_{2}\omega_{3}\omega_{4}']\\
+  &=\epsilon_{2}[\omega_{1}\omega_{12}\omega_{3}\omega_{4}]-\epsilon_{3}[\omega_{2}\omega_{1}\omega_{13}\omega_{4}]+\epsilon_{4}[\omega_{2}\omega_{3}\omega_{1}\omega_{14}]\\
+  &=\epsilon_{2}[\omega_{3}\omega_{1}\omega_{4}\omega_{21}]+\epsilon_{3}[\omega_{1}\omega_{2}\omega_{4}\omega_{31}]-\epsilon_{4}[\omega_{1}\omega_{2}\omega_{3}\omega_{41}]\\
+  &=\epsilon_{2}[\Pi_{2}\omega_{21}]+\epsilon_{3}[\Pi_{3}\omega_{31}]+\epsilon_{4}[\Pi_{4}\omega_{41}].
+\end{align*}
+
+
+\paragraph{}
+\label{sec:37}
+To each tensor $\Omega$ we can associate a quadratic form in $\omega_{i}$. For this it suffices to observe that the form
+\[
+\epsilon_{1}\xi_{1}\omega_{1}+\epsilon_{2}\xi_{2}\omega_{2}+\epsilon_{3}\xi_{3}\omega_{3}+\epsilon_{4}\xi_{4}\omega_{4}
+\]
+is an absolute covariant of $\sum\epsilon_{i}\omega_{i}^{2}$, and hence the four expressions
+\[
+[\omega_{2}\omega_{3}\omega_{4}],\quad[\omega_{3}\omega_{1}\omega_{4}],\quad[\omega_{1}\omega_{2}\omega_{4}],\quad-[\omega_{1}\omega_{2}\omega_{3}]
+\]
+are respectively covariant with respect to
+\[
+\epsilon_{1}\omega_{1},\qquad\epsilon_{2}\omega_{2},\qquad\epsilon_{3}\omega_{3},\qquad\epsilon_{4}\omega_{4}.
+\]
+
+The tensor $\Omega$ is therefore associated with a bilinear form in $\xi$ and $\omega$, and hence, \emph{if this bilinear form is symmetric}, with a quadratic form in $\omega_{i}$. The tensor
+\[
+\Omega=\xi_{1}[\omega_{2}\omega_{3}\omega_{4}]+\xi_{2}[\omega_{3}\omega_{1}\omega_{4}]+\xi_{3}[\omega_{1}\omega_{2}\omega_{4}]-\xi_{4}[\omega_{1}\omega_{2}\omega_{3}]
+\]
+is hence associated to the bilinear form $\sum\epsilon_{i}\xi_{i}\omega_{i}$ as well as to the fundamental form $\sum\epsilon_{i}\omega_{i}^{2}$.
+
+\paragraph{}
+\label{sec:38}
+According to the preceding and with the help of the absolute invariant
+\[
+A=\sum_{i,j}^{1,\dots,4}\epsilon_{i}\epsilon_{j}A^{ij}_{ij},
+\]
+it is easy form a symmetric tensor which is an absolute invariant. Indeed, start with the covariant form
+\begin{align*}
+  \Pi=A[\omega_{1}\omega_{2}\omega_{3}\omega_{4}]=&{}\sum_{i,j}^{1,\dots,4}\epsilon_{i}\epsilon_{j}A^{ij}_{ij}[\omega_{i}\omega_{j}\omega_{k}\omega_{l}]\\
+  =&{}\sum\epsilon_{i}\omega_{j}[\Omega_{ij}\omega_{k}\omega_{l}]\\
+  =&{}\ \epsilon_{2}\epsilon_{3}[\Omega_{23}\omega_{1}\omega_{4}]+\epsilon_{3}\epsilon_{1}[\Omega_{31}\omega_{2}\omega_{4}]+\epsilon_{1}\epsilon_{2}[\Omega_{12}\omega_{3}\omega_{4}]\\
+  &{}+\epsilon_{1}\epsilon_{4}[\Omega_{14}\omega_{2}\omega_{3}]+\epsilon_{2}\epsilon_{4}[\Omega_{24}\omega_{3}\omega_{1}]+\epsilon_{3}\epsilon_{4}[\Omega_{34}\omega_{1}\omega_{2}].
+\end{align*}
+
+This tensor is symmetric, since if we form $\epsilon_{1}[\omega_{1}\Pi_{2}]-\epsilon_{2}[\omega_{2}\Pi_{1}]$ we obtain
+\begin{align*}
+  \epsilon_{1}[\omega_{1}\Pi_{2}]-\epsilon_{2}[\omega_{2}\Pi_{1}]&=\epsilon_{3}[\omega_{4}(\omega_{1}\Omega_{13}+\omega_{2}\Omega_{23})]-\epsilon_{4}[\omega_{3}(\omega_{1}\Omega_{14}+\omega_{2}\Omega_{24})]\\
+  &=\epsilon_{3}[\omega_{4}\sum\omega_{i}\Omega_{i3}]-\epsilon_{4}[\omega_{3}\sum\omega_{i}\Omega_{i4}]
+\end{align*}
+and the two terms on the right hand side are zero by virtue of the relations \eqref{eq:12}.
+
+\emph{This tensor satisfies the conservation law.} The verification by calculation is easy by using the formulae \eqref{eq:10} and \eqref{eq:13}.
+
+We see that the components of the preceding tensor are obtained without involving, at least explicitly, the quantities $A_{ij}^{kl}$. The quantity $A$ can also be left aside when forming the invariant $\Pi$ by observing that the quantities $\epsilon_{i}\epsilon_{j}\Omega_{ij}$ act as the Plücker coordinates of a plane having the same status as the quantities $[\omega_{i}\omega_{j}]$. The expression $\Pi$ then represent the mutual moment of these two planes.
+
+\paragraph{}
+\label{sec:39}
+The quadratic form associated with the tensor we just considered must necessarily enter in the formula \eqref{eq:48}. An easy calculation gives, for example,
+\begin{align*}
+  \Pi_{1}&=\hphantom{+}(\epsilon_{2}\epsilon_{3}A^{23}_{23}+\epsilon_{2}\epsilon_{4}A^{24}_{24}+\epsilon_{3}\epsilon_{4}A^{34}_{34})[\omega_{2}\omega_{3}\omega_{4}]\\
+  &\hphantom{=}-(\epsilon_{2}\epsilon_{3}A^{32}_{31}+\epsilon_{2}\epsilon_{4}A^{42}_{41})[\omega_{3}\omega_{1}\omega_{4}]\\
+  &\hphantom{=}-(\epsilon_{3}\epsilon_{4}A^{41}_{43}+\epsilon_{3}\epsilon_{2}A^{21}_{23})[\omega_{1}\omega_{2}\omega_{4}]\\
+  &\hphantom{=}+(\epsilon_{4}\epsilon_{2}A^{24}_{21}+\epsilon_{4}\epsilon_{3}A^{34}_{31})[\omega_{1}\omega_{2}\omega_{3}].
+\end{align*}
+
+The quadratic form we search for is therefore
+\[
+\Phi=\epsilon_{1}(\epsilon_{2}\epsilon_{3}A^{23}_{23}+\epsilon_{2}\epsilon_{4}A^{24}_{24}+\epsilon_{3}\epsilon_{4}A^{34}_{34})\epsilon^{2}_{1}+\dots-2(\epsilon_{3}A^{32}_{31}+\epsilon_{4}A^{42}_{41})\omega_{1}\omega_{2}+\cdots
+\]
+
+It comes from the expression \eqref{eq:48} by taking 
+\[
+\lambda=-1,\qquad\alpha=1,\qquad\beta=0.
+\]
+
+\paragraph{}
+\label{sec:40}
+If we now want to determine all quadratic forms coming from the formulae \eqref{eq:48} which satisfy the conservation law, we first observe that the coefficient $\beta$ can be arbitrarily chosen and the conservation law holds if $\alpha+\lambda$ is zero. \emph{There can be no other cases}. Indeed, otherwise the law should hold for $\lambda=\beta=0$, $\alpha=1$, i.e., for the tensor
+\[
+\xi_{i}A[\omega_{2}\omega_{3}\omega_{4}]+\xi_{2}A[\omega_{3}\omega_{1}\omega_{4}]+\xi_{3}A[\omega_{1}\omega_{2}\omega_{4}]-\xi_{4}A[\omega_{1}\omega_{2}\omega_{3}].
+\]
+
+We therefore would have
+\[
+[A\omega_{2}\omega_{3}\omega_{4}]'=\epsilon_{2}A[\omega_{3}\omega_{1}\omega_{4}\omega_{21}]+\epsilon_{3}A[\omega_{1}\omega_{2}\omega_{4}\omega_{31}]-\epsilon_{4}A[\omega_{1}\omega_{2}\omega_{3}\omega_{41}].
+\]
+
+This relation holds if $A$ is constant. It therefore follows that we must have
+\[
+[dA\,\omega_{2}\omega_{3}\omega_{4}]=[dA\,\omega_{3}\omega_{1}\omega_{4}]=[dA\,\omega_{1}\omega_{2}\omega_{4}]=[dA\,\omega_{1}\omega_{2}\omega_{3}]=0.
+\]
+
+\emph{The invariant $A$ is therefore a constant}, which does not happen in general.
+
+\emph{The only gravitational tensors possible which satisfy the conservation law are therefore given by the formulae}
+\begin{align*}
+  \Pi_{1}&=\hphantom{+}\lambda\epsilon_{3}\epsilon_{4}[\omega_{2}\Omega_{34}]+\lambda\epsilon_{2}\epsilon_{4}[\omega_{3}\Omega_{42}]+\lambda\epsilon_{2}\epsilon_{3}[\omega_{4}\Omega_{23}]+\mu[\omega_{2}\omega_{3}\omega_{4}],\\
+  \Pi_{2}&=\hphantom{+}\lambda\epsilon_{1}\epsilon_{4}[\omega_{3}\Omega_{14}]+\lambda\epsilon_{3}\epsilon_{4}[\omega_{1}\Omega_{43}]+\lambda\epsilon_{3}\epsilon_{1}[\omega_{4}\Omega_{13}]+\mu[\omega_{3}\omega_{1}\omega_{4}],\\
+  \Pi_{3}&=\hphantom{+}\lambda\epsilon_{2}\epsilon_{4}[\omega_{1}\Omega_{24}]+\lambda\epsilon_{1}\epsilon_{4}[\omega_{2}\Omega_{41}]+\lambda\epsilon_{1}\epsilon_{2}[\omega_{4}\Omega_{12}]+\mu[\omega_{1}\omega_{2}\omega_{4}],\\
+  \Pi_{4}&={-}\lambda\epsilon_{2}\epsilon_{3}[\omega_{1}\Omega_{23}]-\lambda\epsilon_{3}\epsilon_{1}[\omega_{2}\Omega_{31}]-\lambda\epsilon_{1}\epsilon_{2}[\omega_{3}\Omega_{12}]-\mu[\omega_{1}\omega_{2}\omega_{3}],\\
+\end{align*}
+which correspond to the quadratic form
+\[
+\sum G_{ik}dx_{i}dx_{k}=-\lambda\sum_{i,j,k}\epsilon_{i}A^{ik}_{ij}\omega_{j}\omega_{k}+(\lambda A+\mu)\sum_{i=1}^{i=4}\epsilon_{i}\omega_{i}^{2},
+\]
+with two arbitrary constants $\lambda$, $\mu$.
+
+We can observe that, in Einstein's theory, the form $\Pi$ represent the \emph{matter element}, or rather the (four dimensional) \emph{action}.
+
+
+\end{document}

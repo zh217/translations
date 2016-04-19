@@ -1,0 +1,292 @@
+\select@language {british}
+\contentsline {chapter}{Preface}{3}{chapter*.1}
+\contentsline {part}{I\hspace {1em}The method of moving trihedrals in Euclidean geometry}{9}{part.1}
+\contentsline {chapter}{Introduction}{11}{chapter*.3}
+\contentsline {paragraph}{\numberline {1}}{11}{paragraph.0.0.0.0.1}
+\contentsline {chapter}{\numberline {1}Moving rectangular trihedrals. Real space curves}{13}{chapter.1}
+\contentsline {section}{\numberline {i.}Infinitesimal displacement of a rectangular trihedral}{13}{section.1.1}
+\contentsline {paragraph}{\numberline {2}Review of some kinematic notions.}{13}{paragraph.1.1.0.0.2}
+\contentsline {paragraph}{\numberline {3}Movements depending on several parameters.}{15}{paragraph.1.1.0.0.3}
+\contentsline {paragraph}{\numberline {4}The relative components have a geometrical meaning.}{16}{paragraph.1.1.0.0.4}
+\contentsline {paragraph}{\numberline {5}An integration problem.}{16}{paragraph.1.1.0.0.5}
+\contentsline {paragraph}{\numberline {6}Equality of two $\rho $-parameter families having the same relative components.}{17}{paragraph.1.1.0.0.6}
+\contentsline {paragraph}{\numberline {7}The fundamental condition of equality.}{18}{paragraph.1.1.0.0.7}
+\contentsline {paragraph}{\numberline {8}Remark concerning {\rm \textsection \textbf {\ref {sec:5}}}.}{18}{paragraph.1.1.0.0.8}
+\contentsline {section}{\numberline {ii.}Application of the theory of one-parameter families of trihedrals to space curves}{19}{section.1.2}
+\contentsline {paragraph}{\numberline {9}The various geometrical elements attached to a curve.}{19}{paragraph.1.2.0.0.9}
+\contentsline {paragraph}{\numberline {10}The relative components of the displacement of Frenet trihedral.}{20}{paragraph.1.2.0.0.10}
+\contentsline {paragraph}{\numberline {11}}{21}{paragraph.1.2.0.0.11}
+\contentsline {paragraph}{\numberline {12}Contact problem of two oriented curves.}{21}{paragraph.1.2.0.0.12}
+\contentsline {paragraph}{\numberline {13}Equality problem.}{22}{paragraph.1.2.0.0.13}
+\contentsline {paragraph}{\numberline {14}}{23}{paragraph.1.2.0.0.14}
+\contentsline {section}{\numberline {iii.}Study of space curves based on the theory of multi-parameter families of trihedrals}{23}{section.1.3}
+\contentsline {paragraph}{\numberline {15}Introduction.}{23}{paragraph.1.3.0.0.15}
+\contentsline {paragraph}{\numberline {16}Principle of recurrent solution of the contact problem.}{23}{paragraph.1.3.0.0.16}
+\contentsline {paragraph}{\numberline {17}Application of the contact condition to the problem of second order contact.}{24}{paragraph.1.3.0.0.17}
+\contentsline {paragraph}{\numberline {18}Details of the nature of the forms $\omega _i$, $\omega _{ji}$.}{25}{paragraph.1.3.0.0.18}
+\contentsline {paragraph}{\numberline {19}Return to the second order contact problem ({\rm \textsection \textbf {\ref {sec:17}}}).}{26}{paragraph.1.3.0.0.19}
+\contentsline {paragraph}{\numberline {20}Third order contact problem.}{26}{paragraph.1.3.0.0.20}
+\contentsline {paragraph}{\numberline {21}Equality problem.}{27}{paragraph.1.3.0.0.21}
+\contentsline {section}{\numberline {iv.}The method of reduced equations}{27}{section.1.4}
+\contentsline {paragraph}{\numberline {21}\textnormal {\textit {bis.}}}{27}{paragraph.1.4.0.0.21}
+\contentsline {chapter}{\numberline {2}Theory of minimal curves}{31}{chapter.2}
+\contentsline {section}{Introduction}{31}{section*.8}
+\contentsline {paragraph}{\numberline {22}Introduction.}{31}{paragraph.2.0.0.0.22}
+\contentsline {section}{\numberline {i.}Cyclic trihedrals}{31}{section.2.1}
+\contentsline {paragraph}{\numberline {23}Definition.}{31}{paragraph.2.1.0.0.23}
+\contentsline {paragraph}{\numberline {24}Components of an infinitesimal displacement.}{33}{paragraph.2.1.0.0.24}
+\contentsline {paragraph}{\numberline {25}Properties of the relative components $\omega $.}{34}{paragraph.2.1.0.0.25}
+\contentsline {paragraph}{\numberline {26}Equality condition.}{34}{paragraph.2.1.0.0.26}
+\contentsline {section}{\numberline {ii.}Definition of the elements of various orders attached to a minimal curve}{35}{section.2.2}
+\contentsline {paragraph}{\numberline {27}Definition of first order trihedrals.}{35}{paragraph.2.2.0.0.27}
+\contentsline {paragraph}{\numberline {28}Second order trihedrals.}{37}{paragraph.2.2.0.0.28}
+\contentsline {paragraph}{\numberline {29}Third order trihedrals.}{39}{paragraph.2.2.0.0.29}
+\contentsline {paragraph}{\numberline {30}Exceptional case.}{39}{paragraph.2.2.0.0.30}
+\contentsline {section}{\numberline {iii.}Problems of equality and contact}{40}{section.2.3}
+\contentsline {paragraph}{\numberline {31}Equality problem.}{40}{paragraph.2.3.0.0.31}
+\contentsline {paragraph}{\numberline {32}Contact problem of order 1.}{41}{paragraph.2.3.0.0.32}
+\contentsline {paragraph}{\numberline {33}Contact problem of order 2.}{41}{paragraph.2.3.0.0.33}
+\contentsline {paragraph}{\numberline {34}Contact problem of order 3.}{41}{paragraph.2.3.0.0.34}
+\contentsline {paragraph}{\numberline {35}Contact problems of order $>3$.}{42}{paragraph.2.3.0.0.35}
+\contentsline {section}{\numberline {iv.}Complements}{42}{section.2.4}
+\contentsline {paragraph}{\numberline {36}Analytic determination of the trihedrals of various order, of $k$ and of $d\sigma $.}{43}{paragraph.2.4.0.0.36}
+\contentsline {paragraph}{\numberline {37}Applications of the ``Frenet formulae'' \textup {\hbox {\mathsurround \z@ \normalfont (\ignorespaces \ref {eq:2.20}\unskip \@@italiccorr )}} to the search of the curves with constant curvature.}{44}{paragraph.2.4.0.0.37}
+\contentsline {paragraph}{\numberline {38}Geometric interpretation of $k$.}{46}{paragraph.2.4.0.0.38}
+\contentsline {paragraph}{\numberline {39}Reduced equations.}{46}{paragraph.2.4.0.0.39}
+\contentsline {paragraph}{\numberline {40}Geometric constructions of pseudo-arc.}{47}{paragraph.2.4.0.0.40}
+\contentsline {paragraph}{\numberline {41}Parametric reduced equations.}{49}{paragraph.2.4.0.0.41}
+\contentsline {paragraph}{\numberline {42}Important remark.}{50}{paragraph.2.4.0.0.42}
+\contentsline {chapter}{\numberline {3}Study of real ruled surfaces}{51}{chapter.3}
+\contentsline {paragraph}{\numberline {43}The order of contact between two ruled surfaces.}{51}{paragraph.3.0.0.0.43}
+\contentsline {section}{\numberline {i.}Elements of various orders}{51}{section.3.1}
+\contentsline {paragraph}{\numberline {44}{Zeroth order trihedrals.} }{51}{paragraph.3.1.0.0.44}
+\contentsline {paragraph}{\numberline {45}First order trihedrals.}{53}{paragraph.3.1.0.0.45}
+\contentsline {section}{\numberline {ii.}Problems of equality and contact; geometrical constructions}{53}{section.3.2}
+\contentsline {paragraph}{\numberline {46}The equality problem.}{54}{paragraph.3.2.0.0.46}
+\contentsline {paragraph}{\numberline {47}The contact problem.}{54}{paragraph.3.2.0.0.47}
+\contentsline {paragraph}{\numberline {48}Geometric constructions.}{54}{paragraph.3.2.0.0.48}
+\contentsline {chapter}{\numberline {4}Study of ruled isotropic surfaces}{57}{chapter.4}
+\contentsline {section}{\numberline {i.}Elements of order $1$; contacts of order $1$}{57}{section.4.1}
+\contentsline {paragraph}{\numberline {49}Zeroth order trihedrals.}{57}{paragraph.4.1.0.0.49}
+\contentsline {paragraph}{\numberline {50}First order trihedrals.}{58}{paragraph.4.1.0.0.50}
+\contentsline {paragraph}{\numberline {51}Surfaces whose $k$ is constant and whose $\omega _1+k\omega _{21}$ vanishes identically.}{60}{paragraph.4.1.0.0.51}
+\contentsline {paragraph}{\numberline {52}Geometrical construction of the invariant $k$.}{60}{paragraph.4.1.0.0.52}
+\contentsline {section}{\numberline {ii.}Surfaces with constant $k$}{61}{section.4.2}
+\contentsline {paragraph}{\numberline {53}Second order trihedrals.}{61}{paragraph.4.2.0.0.53}
+\contentsline {paragraph}{\numberline {54}Third order trihedrals.}{62}{paragraph.4.2.0.0.54}
+\contentsline {paragraph}{\numberline {55}Complements.}{63}{paragraph.4.2.0.0.55}
+\contentsline {section}{\numberline {iii.}Surfaces with variable $k$}{64}{section.4.3}
+\contentsline {paragraph}{\numberline {56}Second order trihedrals.}{64}{paragraph.4.3.0.0.56}
+\contentsline {paragraph}{\numberline {57}The Frenet formulae.}{65}{paragraph.4.3.0.0.57}
+\contentsline {part}{II\hspace {1em}Fundamental notions in the theory of finite-dimensional continuous groups}{67}{part.2}
+\contentsline {chapter}{\numberline {5}The moving frame of a finite-dimensional continuous group}{69}{chapter.5}
+\contentsline {section}{\numberline {i.}Transformations; groups; moving frames}{69}{section.5.1}
+\contentsline {paragraph}{\numberline {58}Transformations, their inverses and products.}{69}{paragraph.5.1.0.0.58}
+\contentsline {paragraph}{\numberline {59}Groups.}{71}{paragraph.5.1.0.0.59}
+\contentsline {paragraph}{\numberline {60}Parameter space.}{71}{paragraph.5.1.0.0.60}
+\contentsline {paragraph}{\numberline {61}Transformed system of reference.}{72}{paragraph.5.1.0.0.61}
+\contentsline {paragraph}{\numberline {62}Equations of a transformation in relative coordinates.}{73}{paragraph.5.1.0.0.62}
+\contentsline {paragraph}{\numberline {63}The moving frame of a family of transformations.}{74}{paragraph.5.1.0.0.63}
+\contentsline {paragraph}{\numberline {64}The moving frame of a linear transformation group.}{75}{paragraph.5.1.0.0.64}
+\contentsline {paragraph}{\numberline {65}The moving frame of the affine group.}{75}{paragraph.5.1.0.0.65}
+\contentsline {paragraph}{\numberline {66}The moving frame of the projective group (first definition).}{76}{paragraph.5.1.0.0.66}
+\contentsline {paragraph}{\numberline {67}The moving frame of the projective group (second definition).}{77}{paragraph.5.1.0.0.67}
+\contentsline {section}{\numberline {ii.}Infinitesimal displacement components of a moving frame}{78}{section.5.2}
+\contentsline {paragraph}{\numberline {68}Infinitesimal transformations.}{79}{paragraph.5.2.0.0.68}
+\contentsline {paragraph}{\numberline {69}Equations of an infinitesimal transformation in relative coordinates.}{80}{paragraph.5.2.0.0.69}
+\contentsline {paragraph}{\numberline {70}Relative components of a moving frame.}{81}{paragraph.5.2.0.0.70}
+\contentsline {paragraph}{\numberline {71}Rules for calculating the relative components.}{82}{paragraph.5.2.0.0.71}
+\contentsline {paragraph}{\numberline {72}Relative components of an affine frame.}{84}{paragraph.5.2.0.0.72}
+\contentsline {paragraph}{\numberline {73}Relative components of a projective frame.}{85}{paragraph.5.2.0.0.73}
+\contentsline {paragraph}{\numberline {74}Absolute components of a moving frame.}{86}{paragraph.5.2.0.0.74}
+\contentsline {paragraph}{\numberline {75}Relations between the absolute components $\varpi _p$ and the relative components $\omega _p$.}{88}{paragraph.5.2.0.0.75}
+\contentsline {section}{\numberline {iii.}Three theorems concerning infinitesimal displacement components of a moving frame}{89}{section.5.3}
+\contentsline {paragraph}{\numberline {76}Fundamental condition of equality.}{89}{paragraph.5.3.0.0.76}
+\contentsline {paragraph}{\numberline {77}Structure theorem.}{90}{paragraph.5.3.0.0.77}
+\contentsline {paragraph}{\numberline {78}Relation between groups and the moving frames possessing the relative components.}{90}{paragraph.5.3.0.0.78}
+\contentsline {section}{\numberline {iv.}Parameter groups}{92}{section.5.4}
+\contentsline {paragraph}{\numberline {79}Definition of parameter groups.}{92}{paragraph.5.4.0.0.79}
+\contentsline {paragraph}{\numberline {80}Pfaffian forms left invariant by parameter groups.}{93}{paragraph.5.4.0.0.80}
+\contentsline {paragraph}{\numberline {81}Infinitesimal transformations of parameter groups.}{93}{paragraph.5.4.0.0.81}
+\contentsline {paragraph}{\numberline {82}The second parameter groups.}{95}{paragraph.5.4.0.0.82}
+\contentsline {section}{\numberline {v.}Some problems of integration}{96}{section.5.5}
+\contentsline {paragraph}{\numberline {83}Construction of parameter groups from relative components.}{96}{paragraph.5.5.0.0.83}
+\contentsline {paragraph}{\numberline {84}Complements.}{97}{paragraph.5.5.0.0.84}
+\contentsline {paragraph}{\numberline {85}Construction of a group from its infinitesimal transformations (first procedure).}{98}{paragraph.5.5.0.0.85}
+\contentsline {paragraph}{\numberline {86}Construction of a group from its infinitesimal transformations (second procedure).}{98}{paragraph.5.5.0.0.86}
+\contentsline {paragraph}{\numberline {87}Construction of the set of transformed images of a point by the operations of a group for which we know the infinitesimal transformations.}{99}{paragraph.5.5.0.0.87}
+\contentsline {chapter}{\numberline {6}On various relations that may exist between two groups}{101}{chapter.6}
+\contentsline {section}{\numberline {i.}Similar groups}{101}{section.6.1}
+\contentsline {paragraph}{\numberline {88}}{101}{paragraph.6.1.0.0.88}
+\contentsline {section}{\numberline {ii.}Notion of isomorphism}{102}{section.6.2}
+\contentsline {paragraph}{\numberline {89}Introduction. The various aspects presented by the displacement group.}{102}{paragraph.6.2.0.0.89}
+\contentsline {paragraph}{\numberline {90}Definition of isomorphism.}{103}{paragraph.6.2.0.0.90}
+\contentsline {paragraph}{\numberline {91}The classes of objects a given group transforms.}{104}{paragraph.6.2.0.0.91}
+\contentsline {section}{\numberline {iii.}Identifying objects in a given class of objects}{105}{section.6.3}
+\contentsline {paragraph}{\numberline {92}Introduction.}{105}{paragraph.6.3.0.0.92}
+\contentsline {paragraph}{\numberline {93}Identification of a classe of objects $\omega $ transformed transitively by a group $G$.}{105}{paragraph.6.3.0.0.93}
+\contentsline {paragraph}{\numberline {94}Identification of a classe of objects $\omega $ transformed intransitively by a group $G$.}{106}{paragraph.6.3.0.0.94}
+\contentsline {section}{\numberline {iv.}Groups isomorphic to a given group}{107}{section.6.4}
+\contentsline {paragraph}{\numberline {95}Finding transitive groups meriedrically isometric to $G$.}{107}{paragraph.6.4.0.0.95}
+\contentsline {paragraph}{\numberline {96}Finding intransitive groups meriedrically isometric to $G$.}{108}{paragraph.6.4.0.0.96}
+\contentsline {paragraph}{\numberline {97}Distinction between holoedric and meriedric isomorphisms.}{108}{paragraph.6.4.0.0.97}
+\contentsline {paragraph}{\numberline {98}Important remarks.}{109}{paragraph.6.4.0.0.98}
+\contentsline {chapter}{\numberline {7}Relations between a group and its parameter group}{111}{chapter.7}
+\contentsline {section}{\numberline {i.}Simply transitive group}{111}{section.7.1}
+\contentsline {paragraph}{\numberline {99}}{111}{paragraph.7.1.0.0.99}
+\contentsline {section}{\numberline {ii.}Transitive group}{111}{section.7.2}
+\contentsline {paragraph}{\numberline {100}Generalities.}{111}{paragraph.7.2.0.0.100}
+\contentsline {paragraph}{\numberline {101}Practical construction of the simply transitive holoedric prolongation of a give group.}{112}{paragraph.7.2.0.0.101}
+\contentsline {paragraph}{\numberline {102}Examples.}{113}{paragraph.7.2.0.0.102}
+\contentsline {section}{\numberline {iii.}Intransitive group}{114}{section.7.3}
+\contentsline {paragraph}{\numberline {103}}{114}{paragraph.7.3.0.0.103}
+\contentsline {paragraph}{\numberline {104}Examples.}{115}{paragraph.7.3.0.0.104}
+\contentsline {chapter}{\numberline {8}Equations defining the operations of a finite-dimensional connected group}{117}{chapter.8}
+\contentsline {section}{Introduction}{117}{section*.24}
+\contentsline {paragraph}{\numberline {105}}{117}{paragraph.8.0.0.0.105}
+\contentsline {section}{\numberline {i.}The case of simply transitive groups}{117}{section.8.1}
+\contentsline {paragraph}{\numberline {106}}{117}{paragraph.8.1.0.0.106}
+\contentsline {paragraph}{\numberline {107}Determination of the invariant Pfaffian forms.}{118}{paragraph.8.1.0.0.107}
+\contentsline {section}{\numberline {ii.}The case of transitive groups}{120}{section.8.2}
+\contentsline {paragraph}{\numberline {108}Preliminaries.}{120}{paragraph.8.2.0.0.108}
+\contentsline {paragraph}{\numberline {109}Lemma.}{122}{paragraph.8.2.0.0.109}
+\contentsline {paragraph}{\numberline {110}Lemma.}{123}{paragraph.8.2.0.0.110}
+\contentsline {paragraph}{\numberline {111}Digression.}{124}{paragraph.8.2.0.0.111}
+\contentsline {paragraph}{\numberline {112}Consequences of the lemmas established in {\rm \textsection \textbf {\ref {sec:109}}} and {\rm \textsection \textbf {\ref {sec:110}}}.}{125}{paragraph.8.2.0.0.112}
+\contentsline {paragraph}{\numberline {113}Partial differential equations defining the transformations of a group.}{128}{paragraph.8.2.0.0.113}
+\contentsline {section}{\numberline {iii.}The case of intransitive groups}{131}{section.8.3}
+\contentsline {paragraph}{\numberline {114}}{131}{paragraph.8.3.0.0.114}
+\contentsline {chapter}{\numberline {9}Realisations of a given abstract group. Subgroups of a group}{133}{chapter.9}
+\contentsline {section}{Introduction}{133}{paragraph.9.0.0.0.115}
+\contentsline {paragraph}{\numberline {115}Introduction.}{133}{paragraph.9.0.0.0.115}
+\contentsline {section}{\numberline {i.}Transitive group realising a given abstract group}{133}{section.9.1}
+\contentsline {paragraph}{\numberline {116}Construction of transitive groups realising a given abstract group.}{133}{paragraph.9.1.0.0.116}
+\contentsline {paragraph}{\numberline {117}Discussion.}{134}{paragraph.9.1.0.0.117}
+\contentsline {paragraph}{\numberline {118}Distinction between holoedric and meriedric isomorphism.}{135}{paragraph.9.1.0.0.118}
+\contentsline {section}{\numberline {ii.}Intransitive group realising a given group}{137}{section.9.2}
+\contentsline {paragraph}{\numberline {119}Construction of intransitive groups realising a given abstract group.}{137}{paragraph.9.2.0.0.119}
+\contentsline {paragraph}{\numberline {120}Discussion.}{137}{paragraph.9.2.0.0.120}
+\contentsline {paragraph}{\numberline {121}Remark on the analytic nature of realisations of an abstract group.}{138}{paragraph.9.2.0.0.121}
+\contentsline {section}{\numberline {iii.}Complements}{139}{section.9.3}
+\contentsline {paragraph}{\numberline {122}Preliminaries.}{139}{paragraph.9.3.0.0.122}
+\contentsline {paragraph}{\numberline {123}Theorem.}{139}{paragraph.9.3.0.0.123}
+\contentsline {paragraph}{\numberline {124}Converse theorem.}{140}{paragraph.9.3.0.0.124}
+\contentsline {paragraph}{\numberline {125}Corollary.}{140}{paragraph.9.3.0.0.125}
+\contentsline {chapter}{\numberline {10}Differential geometry}{141}{chapter.10}
+\contentsline {section}{\numberline {i.}The method of moving frames}{141}{section.10.1}
+\contentsline {paragraph}{\numberline {126}Introduction.}{141}{paragraph.10.1.0.0.126}
+\contentsline {paragraph}{\numberline {127}Statements of the properties imposed on frames and invariants of various orders.}{141}{paragraph.10.1.0.0.127}
+\contentsline {paragraph}{\numberline {128}Use of a recurrent contact condition.}{143}{paragraph.10.1.0.0.128}
+\contentsline {paragraph}{\numberline {129}The mechanism of the method of moving frame.}{143}{paragraph.10.1.0.0.129}
+\contentsline {paragraph}{\numberline {130}Important remark.}{144}{paragraph.10.1.0.0.130}
+\contentsline {paragraph}{\numberline {131}Frenet frame; equality condition.}{145}{paragraph.10.1.0.0.131}
+\contentsline {paragraph}{\numberline {132}Problem.}{145}{paragraph.10.1.0.0.132}
+\contentsline {section}{\numberline {ii.}Unimodular affine geometry; study of real place curves}{146}{section.10.2}
+\contentsline {paragraph}{\numberline {133}Introduction.}{146}{paragraph.10.2.0.0.133}
+\contentsline {paragraph}{\numberline {134}Definition of elements of orders $0$ and $1$.}{147}{paragraph.10.2.0.0.134}
+\contentsline {paragraph}{\numberline {135}Definition of elements of order $2$.}{147}{paragraph.10.2.0.0.135}
+\contentsline {paragraph}{\numberline {136}Definition of elements of order $3$.}{148}{paragraph.10.2.0.0.136}
+\contentsline {paragraph}{\numberline {137}Definition of elements of order $>3$.}{149}{paragraph.10.2.0.0.137}
+\contentsline {paragraph}{\numberline {138}Analytic determination of Frenet frame, curvature and affine arc.}{149}{paragraph.10.2.0.0.138}
+\contentsline {paragraph}{\numberline {139}Reduced equation.}{152}{paragraph.10.2.0.0.139}
+\contentsline {paragraph}{\numberline {140}Geometrical determination of the affine arc, Frenet frame and affine curvature.}{153}{paragraph.10.2.0.0.140}
+\contentsline {section}{\numberline {iii.}Projective geometry; study of real plane curves}{155}{section.10.3}
+\contentsline {paragraph}{\numberline {141}Introduction.}{155}{paragraph.10.3.0.0.141}
+\contentsline {paragraph}{\numberline {142}Definition of elements of order $0$ and $1$.}{155}{paragraph.10.3.0.0.142}
+\contentsline {paragraph}{\numberline {143}Definition of elements of order $2$.}{156}{paragraph.10.3.0.0.143}
+\contentsline {paragraph}{\numberline {144}Definition of elements of order $3$.}{157}{paragraph.10.3.0.0.144}
+\contentsline {paragraph}{\numberline {145}Definition of elements of order $4$.}{158}{paragraph.10.3.0.0.145}
+\contentsline {paragraph}{\numberline {146}Definition of elements of order $5$.}{159}{paragraph.10.3.0.0.146}
+\contentsline {paragraph}{\numberline {147}A category of exceptional curves.}{159}{paragraph.10.3.0.0.147}
+\contentsline {paragraph}{\numberline {148}Definition of elements of order $6$.}{160}{paragraph.10.3.0.0.148}
+\contentsline {paragraph}{\numberline {149}Definition of elements of order $>6$.}{161}{paragraph.10.3.0.0.149}
+\contentsline {paragraph}{\numberline {150}Curves considered as envelopes of straight lines.}{161}{paragraph.10.3.0.0.150}
+\contentsline {paragraph}{\numberline {151}Reduced equations.}{162}{paragraph.10.3.0.0.151}
+\contentsline {part}{III\hspace {1em}Structure constants of finite-dimensional connected groups}{165}{part.3}
+\contentsline {chapter}{\numberline {11}The structural equations of E.~Cartan}{167}{chapter.11}
+\contentsline {section}{\numberline {i.}Introduction; Darboux equations}{167}{section.11.1}
+\contentsline {paragraph}{\numberline {152}}{167}{paragraph.11.1.0.0.152}
+\contentsline {section}{\numberline {ii.}Differentials; exterior derivation}{169}{section.11.2}
+\contentsline {paragraph}{\numberline {153}Differential notation.}{169}{paragraph.11.2.0.0.153}
+\contentsline {paragraph}{\numberline {154}Simultaneous use of two systems of differentials.}{170}{paragraph.11.2.0.0.154}
+\contentsline {paragraph}{\numberline {155}Exterior derivation.}{171}{paragraph.11.2.0.0.155}
+\contentsline {paragraph}{\numberline {156}Exterior products.}{172}{paragraph.11.2.0.0.156}
+\contentsline {section}{\numberline {iii.}The structural equations of E.~Cartan; the second fundamental theorem of groups}{172}{section.11.3}
+\contentsline {paragraph}{\numberline {157}Definition of the structure constants.}{172}{paragraph.11.3.0.0.157}
+\contentsline {paragraph}{\numberline {158}Structure equations of the linear transformation group}{174}{paragraph.11.3.0.0.158}
+\contentsline {paragraph}{\numberline {159}Structure equations of the planar projective group.}{174}{paragraph.11.3.0.0.159}
+\contentsline {paragraph}{\numberline {160}Structure equations of the affine group of space.}{175}{paragraph.11.3.0.0.160}
+\contentsline {paragraph}{\numberline {161}Structure equations of the homographic transformation group}{176}{paragraph.11.3.0.0.161}
+\contentsline {paragraph}{\numberline {162}A theorem about Pfaffian systems.}{176}{paragraph.11.3.0.0.162}
+\contentsline {paragraph}{\numberline {163}}{179}{paragraph.11.3.0.0.163}
+\contentsline {paragraph}{\numberline {164}}{179}{paragraph.11.3.0.0.164}
+\contentsline {paragraph}{\numberline {165}}{180}{paragraph.11.3.0.0.165}
+\contentsline {paragraph}{\numberline {166}Complements.}{180}{paragraph.11.3.0.0.166}
+\contentsline {section}{\numberline {iv.}Determination of groups and subgroups}{183}{section.11.4}
+\contentsline {paragraph}{\numberline {167}Search of all groups with one parameter.}{183}{paragraph.11.4.0.0.167}
+\contentsline {paragraph}{\numberline {168}Search of all groups with two parameters.}{184}{paragraph.11.4.0.0.168}
+\contentsline {paragraph}{\numberline {169}Realisation of an abstract group. Determination of the subgroups of a group.}{184}{paragraph.11.4.0.0.169}
+\contentsline {chapter}{\numberline {12}Differential geometry (continued)}{187}{chapter.12}
+\contentsline {section}{\numberline {i.}Implementation of the method of moving frames}{187}{section.12.1}
+\contentsline {paragraph}{\numberline {170}Introduction.}{187}{paragraph.12.1.0.0.170}
+\contentsline {paragraph}{\numberline {171}Review of notations; applications of the structure equations of E.~Cartan.}{188}{paragraph.12.1.0.0.171}
+\contentsline {paragraph}{\numberline {172}The mechanism of the method of moving frames.}{190}{paragraph.12.1.0.0.172}
+\contentsline {section}{\numberline {ii.}Projective geometry; study of plane curves}{190}{section.12.2}
+\contentsline {paragraph}{\numberline {173}Introduction.}{191}{paragraph.12.2.0.0.173}
+\contentsline {paragraph}{\numberline {174}Nature of the elements of order $0$.}{191}{paragraph.12.2.0.0.174}
+\contentsline {paragraph}{\numberline {175}Nature of the elements of order $1$.}{191}{paragraph.12.2.0.0.175}
+\contentsline {paragraph}{\numberline {176}Nature of the elements of order $2$.}{192}{paragraph.12.2.0.0.176}
+\contentsline {paragraph}{\numberline {177}Nature of the elements of order $3$.}{193}{paragraph.12.2.0.0.177}
+\contentsline {paragraph}{\numberline {178}Nature of the elements of order $4$.}{194}{paragraph.12.2.0.0.178}
+\contentsline {paragraph}{\numberline {179}Nature of the elements of order $5$.}{194}{paragraph.12.2.0.0.179}
+\contentsline {paragraph}{\numberline {180}Nature of the elements of order $6$.}{195}{paragraph.12.2.0.0.180}
+\contentsline {paragraph}{\numberline {181}Nature of the elements of orders $>6$.}{196}{paragraph.12.2.0.0.181}
+\contentsline {paragraph}{\numberline {182}Curves whose fifth order contact elements are all exceptional.}{196}{paragraph.12.2.0.0.182}
+\contentsline {paragraph}{\numberline {183}Projective development of a curve onto a conic.}{198}{paragraph.12.2.0.0.183}
+\contentsline {paragraph}{\numberline {184}}{202}{paragraph.12.2.0.0.184}
+\contentsline {section}{\numberline {iii.}Euclidean geometry; study of surfaces}{202}{section.12.3}
+\contentsline {paragraph}{\numberline {185}}{203}{paragraph.12.3.0.0.185}
+\contentsline {paragraph}{\numberline {186}Nature of the elements of orders $0$ and $1$.}{203}{paragraph.12.3.0.0.186}
+\contentsline {paragraph}{\numberline {187}Nature of the elements of order $2$.}{204}{paragraph.12.3.0.0.187}
+\contentsline {paragraph}{\numberline {188}Nature of the elements of order $3$.}{205}{paragraph.12.3.0.0.188}
+\contentsline {paragraph}{\numberline {189}Equality condition of two surfaces.}{205}{paragraph.12.3.0.0.189}
+\contentsline {paragraph}{\numberline {190}Applications of the structure theorem.}{207}{paragraph.12.3.0.0.190}
+\contentsline {paragraph}{\numberline {191}Geometrical interpretations.}{208}{paragraph.12.3.0.0.191}
+\contentsline {paragraph}{\numberline {192}Surfaces whose contact element of order $2$ is exceptional.}{208}{paragraph.12.3.0.0.192}
+\contentsline {paragraph}{\numberline {193}Surfaces invariant under a two parameter displacement group.}{209}{paragraph.12.3.0.0.193}
+\contentsline {paragraph}{\numberline {194}Reduced equation.}{209}{paragraph.12.3.0.0.194}
+\contentsline {paragraph}{\numberline {195}Deformation of surfaces.}{210}{paragraph.12.3.0.0.195}
+\contentsline {paragraph}{\numberline {196}Overview of the general problem of deformation.}{213}{paragraph.12.3.0.0.196}
+\contentsline {chapter}{\numberline {13}The third fundamental theorem in the theory of groups}{215}{chapter.13}
+\contentsline {section}{\numberline {i.}The necessary part of the third fundamental theorem}{215}{section.13.1}
+\contentsline {paragraph}{\numberline {197}Exterior derivative of a alternating bilinear differential form.}{215}{paragraph.13.1.0.0.197}
+\contentsline {paragraph}{\numberline {198}Exterior derivation of the structure equations of E.~Cartan}{216}{paragraph.13.1.0.0.198}
+\contentsline {paragraph}{\numberline {199}Third fundamental theorem of the theory of groups (S.~Lie).}{217}{paragraph.13.1.0.0.199}
+\contentsline {section}{\numberline {ii.}The canonical parameters of S.~Lie}{218}{section.13.2}
+\contentsline {paragraph}{\numberline {200}Properties of the canonical parameters.}{218}{paragraph.13.2.0.0.200}
+\contentsline {paragraph}{\numberline {201}The canonical parameters are the local coordinates in the parameter space.}{219}{paragraph.13.2.0.0.201}
+\contentsline {paragraph}{\numberline {202}Expression of the forms $\omega _{s}$ as functions of canonical parameters.}{220}{paragraph.13.2.0.0.202}
+\contentsline {section}{\numberline {iii.}Proof (incomplete) of the third fundamental theorem}{221}{section.13.3}
+\contentsline {paragraph}{\numberline {203}Construction of the forms $\omega _{s}$ verifying the structure equations of E.~Cartan.}{221}{paragraph.13.3.0.0.203}
+\contentsline {paragraph}{\numberline {204}Application of the preceding paragraph to the proof of the third fundamental theorem.}{223}{paragraph.13.3.0.0.204}
+\contentsline {chapter}{\numberline {14}The structural equations of S.~Lie}{225}{chapter.14}
+\contentsline {section}{\numberline {i.}The bracket of two infinitesimal transformations}{225}{section.14.1}
+\contentsline {paragraph}{\numberline {205}An infinitesimal transformation transformed by another infinitesimal transformation.}{225}{paragraph.14.1.0.0.205}
+\contentsline {paragraph}{\numberline {206}Properties of the brackets.}{226}{paragraph.14.1.0.0.206}
+\contentsline {paragraph}{\numberline {207}Application to the theory of groups.}{227}{paragraph.14.1.0.0.207}
+\contentsline {section}{\numberline {ii.}The second fundamental theorem of S.~Lie}{227}{section.14.2}
+\contentsline {paragraph}{\numberline {208}Ratio between the infinitesimal transformations and the components of the moving frame.}{227}{paragraph.14.2.0.0.208}
+\contentsline {paragraph}{\numberline {209}Application of the Frobenius theorem.}{229}{paragraph.14.2.0.0.209}
+\contentsline {paragraph}{\numberline {210}The structure equations of S.~Lie.}{230}{paragraph.14.2.0.0.210}
+\contentsline {paragraph}{\numberline {211}Group generated by infinitesimal transformations satisfying the structure equations of S.~Lie.}{231}{paragraph.14.2.0.0.211}
+\contentsline {section}{\numberline {iii.}Determination of groups and subgroups}{232}{section.14.3}
+\contentsline {paragraph}{\numberline {212}Subgroups of a given group.}{232}{paragraph.14.3.0.0.212}
+\contentsline {paragraph}{\numberline {213}The case of isomorphism and similitude.}{233}{paragraph.14.3.0.0.213}
+\contentsline {paragraph}{\numberline {214}The search of all groups acting on one variable.}{234}{paragraph.14.3.0.0.214}
+\contentsline {section}{\numberline {iv.}Adjoint groups and the third fundamental theorem}{237}{section.14.4}
+\contentsline {paragraph}{\numberline {215}Non-linear adjoint group.}{237}{paragraph.14.4.0.0.215}
+\contentsline {paragraph}{\numberline {216}Linear adjoint group.}{237}{paragraph.14.4.0.0.216}
+\contentsline {paragraph}{\numberline {217}Infinitesimal transformations of the linear adjoint group.}{237}{paragraph.14.4.0.0.217}
+\contentsline {paragraph}{\numberline {218}The converse of the third fundamental theorem of S.~Lie.}{239}{paragraph.14.4.0.0.218}
+\contentsline {chapter}{\numberline {A}Bibliography}{241}{appendix.A}
+\contentsline {chapter}{Index}{243}{appendix.A}

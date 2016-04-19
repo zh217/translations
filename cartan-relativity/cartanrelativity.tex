@@ -1,0 +1,1074 @@
+\documentclass[leqno,11pt]{article}
+\usepackage{geometry}
+\geometry{a4paper}
+%\usepackage[adobe-utopia,uppercase=upright,greeklowercase=upright]{mathdesign}
+\usepackage{indentfirst}
+%\usepackage[parfill]{parskip}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amscd}
+\usepackage{sectsty}
+
+%\usepackage{makeidx}
+
+%\makeindex
+
+%\partfont{\mdseries\scshape\centering}
+%\chapterfont{\mdseries\scshape\centering}
+\sectionfont{\bfseries\centering}
+%\subsectionfont{\bfseries\centering}
+
+%\numberwithin{equation}{chapter}
+%\usepackage{epstopdf}
+\usepackage[numbib,nottoc]{tocbibind}
+%\usepackage{overcite}
+\usepackage{hyperref}
+%\usepackage[perpage,para,symbol]{footmisc}
+\usepackage[british]{babel}
+%\usepackage{slashed}
+
+\usepackage{perpage}
+\MakePerPage[2]{footnote}
+
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%\fancyhead{}
+%\fancyhead[LE,RO]{\thepage}
+%\fancyhead[RE]{{\rightmark}}
+%\fancyhead[LO]{{\leftmark}}
+%\fancyfoot{}
+
+
+%\renewcommand{\sectionmark}[1]
+%{\markright{\itshape {#1}}}
+
+%\makeatletter
+%\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
+%\hbox{}
+%\vspace*{\fill}
+%\begin{center}
+%This page is intentionally blank.
+%\end{center}
+%\vspace{\fill}
+%\thispagestyle{empty}
+%\newpage
+%\if@twocolumn\hbox{}\newpage\fi\fi\fi}
+%\makeatother
+
+%\renewcommand{\chaptermark}[1]{\markboth{\thechapter.\ \ #1}{}}
+
+\title{On the theory of systems in involution\\
+and its applications to relativity}
+\author{by \'Elie Cartan\\
+\\
+Translation by Ziyang Hu\\
+\\
+\\
+Translated from the original French\\
+\\
+\emph{Sur la th\'eorie des syst\`emes en involution}\\ 
+\emph{et ses applications \`a la relativit\'e}\\\\
+{Bull.~Soc.~Math.~France, vol.~59, pp.~88--118, 1931.}
+\\~
+}%\date{}                                         % Activate to display a given date or no date
+
+\newcommand{\pd}{\partial}
+\newcommand{\rs}{\mathbb{R}}
+
+\DeclareMathOperator{\inp}{\lrcorner}
+
+
+\newtheoremstyle{shape0}% name
+  {9pt}%      Space above
+  {9pt}%      Space below
+  {}%         Body font
+  {}%         Indent amount (empty = no indent, \parindent = para indent)
+  {\itshape}% Thm head font
+  {.}%        Punctuation after thm head
+  {.5em}%     Space after thm head: " " = normal interword space;
+        %       \newline = linebreak
+  {}%         Thm head spec (can be left empty, meaning `normal')
+
+
+\newtheoremstyle{shape1}% name
+  {9pt}%      Space above
+  {9pt}%      Space below
+  {\itshape}%         Body font
+  {}%         Indent amount (empty = no indent, \parindent = para indent)
+  {\scshape}% Thm head font
+  {.}%        Punctuation after thm head
+  {.5em}%     Space after thm head: " " = normal interword space;
+        %       \newline = linebreak
+  {}%         Thm head spec (can be left empty, meaning `normal')
+
+\newtheoremstyle{shape2}% name
+  {9pt}%      Space above
+  {9pt}%      Space below
+  {}%         Body font
+  {}%         Indent amount (empty = no indent, \parindent = para indent)
+  {\itshape}% Thm head font
+  {.}%        Punctuation after thm head
+  {.5em}%     Space after thm head: " " = normal interword space;
+        %       \newline = linebreak
+  {}%         Thm head spec (can be left empty, meaning `normal')
+
+
+\setlength{\parindent}{15pt}
+
+\theoremstyle{shape1}
+\newtheorem*{thm*}{\hspace{15pt}Theorem}
+\newtheorem{thm}{Theorem}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prin}[thm]{Principle}
+\newtheorem{expr}[thm]{Experiment}
+\newtheorem*{dfn*}{\hspace{15pt}Definition}
+\newtheorem*{concl*}{\hspace{15pt}Conclusion}
+\theoremstyle{shape0}
+\newtheorem*{rmk*}{\hspace{15pt}Remark}
+\newtheorem*{pcase*}{\hspace{15pt}Particular case}
+
+\theoremstyle{shape2}
+\newtheorem{ex}[thm]{Example}
+\theoremstyle{definition}
+
+\renewcommand{\bfdefault}{b}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+The theory of relativity introduces systems of partial differential equations, the compatibility of which is in general demonstrated by not very rigorous elementary reasonings. In the particular case of the system of $22$ equations that Einstein put down in 1929 which are the basis of a new unified field theory, these reasonings are not without serious difficulties that have to be avoided by rather artificial means. Actually, my theory of Pfaffian systems in involution permits a complete study of these compatibility problem as well as specifying in a rigorous manner the degree of generality of the solutions of a relativistic system, if we do not regard two solutions that can be deduced from each other by a simple change of independent variables as distinct: in this setting, each solution is essentially characterised by the system of differential invariants determining the universe up to an arbitrary change of variables, and what we are looking for is exactly the degree of generality of the solutions of the differential system which defines these invariants as a finite number of functions in them.
+
+In the present article, I will put forward my theory of systems in involution under a rather elementary form by transforming them, instead of into Pfaffian systems as I have done in my previous works, into \emph{first order linear partial differential equations}. Under this form, the theory is better suited to applications in mathematical physics, and at the same time it also achieves a remarkable simplicity. In particular, for relativistic systems, the number of necessary identities is specified, and we will also see that it is greater than the usual reasonings would assume: this is exactly what happens for the system of Einstein.
+
+It is almost pedestrian to remark that a system not in involution is not incompatible because of this. According to the general theory, every system can be prolonged by successive differentiation in a way to obtain either a system of algebraically incompatible equations, or a system in involution.
+
+The only theorem that we assume the reader to know is the Cauchy-Kowalewski existence theorem.
+
+\section{Systems in involution in two independent variables}
+\label{sec:syst-invol-two}
+
+\textbf{1}. Consider a system of $r$ first order linear partial differential equations of $n$ unknown functions $u_{1}, u_{2},\dots,u_{n}$ in two independent variables $x,y$:
+\begin{equation}
+  \label{eq:1}
+  \left\{
+    \begin{aligned}
+      \sum_{k=1}^{k=n}a_{1k}\frac{\pd u_{k}}{\pd x}+\sum_{k=1}^{k=n}b_{1k}\frac{\pd u_{k}}{\pd y}-c_{1}&=0,\\
+      &\dots\\
+      \sum_{k=1}^{k=n}a_{rk}\frac{\pd u_{k}}{\pd x}+\sum_{k=1}^{k=n}b_{rk}\frac{\pd u_{k}}{\pd y}-c_{r}&=0.\\
+    \end{aligned}
+  \right.
+\end{equation}
+The coefficients $a_{ik},b_{ik}$ and $c_{i}$ are \emph{analytic} functions in $x,y,u_{1},\dots,u_{n}$. \emph{We will only be concerned with analytic solutions of these equations}.
+
+First suppose that the equations \eqref{eq:1} can be resolved with respect to $r$ of the partial derivatives $\pd u_{k}/\pd y$, for example $\pd u_{1}/\pd y,\dots,\pd u_{r}/\pd y$, which naturally requires $n\ge r$. In this case the classical Cauchy-Kowalewski theorem tells us that the given system always admits one and only one analytic solution such that, given arbitrarily the functions $u_{r+1},\dots,u_{n}$, the functions $u_{1},\dots, u_{r}$ reduce at $y=y_{0}$ to given functions of $x$.
+
+If $n>r$, we say that the general solution of the system depends on $n-r$ arbitrary functions in two variables; if $n=r$, we say that it depends on $n$ arbitrary functions of one variable, i.e., the functions in $x$ which $u_{1},\dots, u_{n}$ reduce to at $y=y_{0}$.
+
+\vspace{12pt}
+
+\textbf{2}. Now suppose that the equations \eqref{eq:1} cannot be resolved with respect to $r$ of the partial derivatives $\pd u_{k}/\pd y$, or what is the same, that elimination of $\pd u_{k}/\pd y$ leads to a certain number $r_{1}>0$ of equations containing only $\pd u_{k}/\pd x$. It may happen that, by a change of variables, we obtain a system where either this case no longer arises, or the above elimination leads to less than $r_{1}$ independent equations of $\pd u_{k}/\pd y$. We say that the choice of the variables is \emph{singular} when the elimination of $\pd u_{k}/\pd y$ leads to a greater number of independent equations than in the general case.
+
+Now consider the case where the choice of variables is not singlar. We write the equations of the system under the form
+\begin{equation}
+  \label{eq:2}
+  \left\{
+    \begin{aligned}
+      X_{i}&\equiv\sum_{k}a_{ik}\frac{\pd u_{k}}{\pd x}-c_{i}=0,&(i&=1,2,\dots,r_{1}),\\
+      Y_{j}&\equiv\sum_{k}\left(a_{r_{1}+j,k}\frac{\pd u_{k}}{\pd x}+b_{r_{1}+j,k}\frac{\pd u_{k}}{\pd y}\right)-c_{r_{1}+j}=0,&(j&=1,\dots,r-r_{1}).
+    \end{aligned}
+  \right.
+\end{equation}
+
+The hypothesis that the choice of variables is not singular entails important consequences for the coefficients of the equations. Indeed, consider the change of variables
+\[
+x'=x,\qquad y'=y+mx,
+\]
+where $m$ is a constant. We have
+\[
+\frac{\pd u_{k}}{\pd x}=\frac{\pd u_{k}}{\pd x'}+m\frac{\pd u_{k}}{\pd y'},\qquad\frac{\pd u_{k}}{\pd y}=\frac{\pd u_{k}}{\pd y'}.
+\]
+The equations \eqref{eq:2}, with the new variables, are
+\begin{align*}
+  X_{i}&\equiv \sum_{k}a_{ik}\frac{\pd u_{k}}{\pd x'}+m\sum_{k}a_{ik}\frac{\pd u_{k}}{\pd y'}-c_{i}=0,\\
+  Y_{j}&\equiv\sum_{k}a_{r_{1}+j,k}\frac{\pd u_{k}}{\pd x'}+\sum_{k}(b_{r_{1}+j,k}+ma_{r_{1}+j,k})\frac{\pd u_{k}}{\pd y'}-c_{r_{1}+j}=0.
+\end{align*}
+
+If $m$ is sufficiently small, $Y_{j}$ are linearly independent with respect to $\pd u_{k}/\pd y'$. Therefore necessarily the $r_{1}$ forms
+\[
+\sum_{k}a_{ik}\frac{\pd u_{k}}{\pd y'},\qquad(i=1,\dots,r_{1}),
+\]
+considered as linear forms in $\pd u_{1}/\pd y',\dots,\pd u_{n}/\pd y'$ depend linearly on the $r-r_{1}$ forms
+\[
+\sum_{k}(b_{r_{1}+j,k}+ma_{r_{1}+j,k})\frac{\pd u_{k}}{\pd y'}.
+\]
+This holds for all sufficiently small values of $m$. By letting $m$ tend to zero, we arrive at the following theorem:
+
+\begin{thm*}
+  If the choice of variables is not singular, there exist relations among the coefficients of equations \eqref{eq:2} of the form
+  \begin{equation}
+    \label{eq:3}
+    a_{ik}=\lambda_{i1}b_{r_{1}+1,k}+\lambda_{i2}b_{r_{1}+2,k}+\dots+\lambda_{i,r-r_{1}}b_{r,k},\qquad(i=1,\dots,r_{1};k=1,\dots,n).
+  \end{equation}
+\end{thm*}
+
+Before deducing important consequences from these relations, let us first make the following remark, which will be useful for us later on. Suppose, as always permissible, that the equations $Y_{j}=0$ can be resolved with respect to
+\[
+\frac{\pd u_{1}}{\pd y},\qquad\frac{\pd u_{2}}{\pd y},\qquad\dots\qquad\frac{\pd u_{r-r_{1}}}{\pd y}.
+\]
+It follows from the relations \eqref{eq:3} that the equations $X_{i}=0$ are resolvable with respect to $r_{1}$ of the corresponding derivatives
+\[
+\frac{\pd u_{1}}{\pd x},\qquad\frac{\pd u_{2}}{\pd x},\qquad\dots\qquad\frac{\pd u_{r-r_{1}}}{\pd x}.
+\]
+We can suppose that they are resolvable with respect to the first $r_{1}$ derivatives. It is then \emph{a priori} clear that we have $r-r_{1}\ge r_{1}$, otherwise the given equations could be resolved with respect to more than $r-r_{1}$ of the derivatives $\pd u_{k}/\pd x$ and the choice of variables would be singular.
+
+\vspace{12pt}
+
+\textbf{3}. The equations \eqref{eq:3} lead us to consider the $r_{1}$ expressions
+\begin{equation}
+  \label{eq:4}
+  \Theta_{i}\equiv\frac{\pd X_{i}}{\pd y}-\lambda_{i1}\frac{\pd Y_{1}}{\pd x}-\lambda_{i2}\frac{\pd Y_{2}}{\pd x}-\dots-\lambda_{i,r-r_{1}}\frac{\pd Y_{r-r_{1}}}{\pd x}.
+\end{equation}
+If we expand these expressions, we see immediately that they contain neither the second derivatives $\pd^{2}u_{k}/\pd x\,\pd y$ nor $\pd^{2}u_{k}/\pd y^{2}$, but only the second derivatives $\pd^{2}u_{k}/\pd x^{2}$ as well as the derivatives $\pd u_{k}/\pd x$ and $\pd u_{k}/\pd y$. Taking into account the given equations and the equations $\pd X_{i}/\pd x=0$, we can make the following quantities disappear from $\Theta_{i}$:
+\[
+\frac{\pd^{2}u_{1}}{\pd x^{2}},\quad\dots\quad\frac{\pd^{2}u_{r_{1}}}{\pd x^{2}},\quad\frac{\pd u_{1}}{\pd y}\quad\dots\quad\frac{\pd u_{r-r_{1}}}{\pd y},\quad\frac{\pd u_{1}}{\pd x},\quad\dots\quad\frac{\pd u_{r_{1}}}{\pd x},
+\]
+and then $\Theta_{i}$ becomes functions in
+\[
+\Theta_{i}\equiv\Theta_{i}\left(x,y,u_{k},\frac{\pd u_{r_{1}+1}}{\pd x},\dots,\frac{\pd u_{n}}{\pd x},\frac{\pd u_{r-r_{1}+1}}{\pd y},\dots,\frac{\pd u_{n}}{\pd y},\frac{\pd ^{2}u_{r_{1}+1}}{\pd x^{2}},\dots,\frac{\pd^{2}u_{n}}{\pd x^{2}}\right),
+\]
+we can add the remark that the right hand side are linear with respect to $\pd^{2}u_{k}/\pd x^{2}$.
+
+Now we are going to prove the following theorem:
+
+\begin{thm*}
+  If the $r_{1}$ expressions $\Theta_{i}$, using the equations of the system and the equations $\pd X_{i}/\pd x=0$, reduce to equations that vanish identically when we regard their arguments as independent variables, then the given system admits at least one analytic solution such that, at $y=y_{0}$, the functions $u_{k}$ and their partial derivatives $\pd u_{k}/\pd y$ reduce to arbitrarily given functions $\varphi_{k}(x)$ and $\psi_{k}(x)$ respectively, subject to the condition that these functions satisfy the given equations in which we set $y=y_{0}$.
+\end{thm*}
+
+Indeed, the $r-r_{1}$ equations $Y_{j}=0$ constitute a Cauchy-Kowalewski system. If $n=r-r_{1}$, they admit one and only one solution corresponding to the given initial conditions. If $n>r-r_{1}$, we can specify \emph{arbitrarily} the functions $u_{r-r_{1}+1},\dots,u_{n}$ such that they and their partial derivatives with respect to $y$ reduces on $y=y_{0}$ to the given values. After these functions have been chosen, the equations $Y_{j}=0$ admit, for the $r-r_{1}$ other unknown functions, one and only one solution corresponding to the given initial conditions.
+
+Let us begin with a solution of the equations $Y_{j}=0$. The values of the functions $u_{k}$, when substituted into $X_{i}$, give the determined functions $\bar X_{i}(x,y)$, which by hypothesis vanish for $y=y_{0}$. We have agreed that the quantities $\Theta_{i}$ vanish identically  by setting $X_{i}=0,Y_{j}=0$ and $\pd X_{i}/\pd x=0$. Therefore the functions $\bar X_{i}$ satisfy a system of equations of the form
+\[
+\frac{\pd \bar X_{i}}{\pd y}-\sum_{k}\mu_{ik}\frac{\pd \bar X_{k}}{\pd x}-f_{i}(x,y,\bar X_{k})=0,
+\]
+a Cauchy-Kowalewski which admit one and only one solution corresponding to the initial conditions $\bar X_{i}=0$ on $y=y_{0}$, and obviously this solution is $\bar X_{i}=0$. The stated theorem is hence proved.
+
+\vspace{12pt}
+
+\textbf{4}. The preceding theorem admits a converse:
+
+\theoremstyle{shape1}
+\newtheorem*{thmc}{\hspace{15pt}Converse}
+\begin{thmc}
+  If the given system admits at least one solution such that, on $y=y_{0}$, the functions $u_{k}$ and their partial derivatives $\pd u_{k}/\pd y$ reduce to functions $\varphi_{k}(x)$ and $\psi_{k}(x)$ respectively subject to the condition that these functions satisfy the given equations, then the expressions $\Theta_{i}$, when we use the equations $X_{i}=0, Y_{j}=0, \pd X_{i}/\pd x=0$ vanish identically.
+\end{thmc}
+
+Indeed, according to what has been said above, to satisfy equations \eqref{eq:2} where we set $y=y_{0}$, we can specify arbitrarily the functions
+\[
+\varphi_{r_{1}+1}(x),\qquad\dots\qquad\varphi_{n}(x),
+\]
+as well as the functions
+\[
+\psi_{r-r_{1}+1}(x),\qquad\dots\qquad\psi_{n}(x).
+\]
+As for the functions $\varphi_{1}(x), \dots,\varphi_{r_{1}}(x)$, we can specify arbitrarily their numerical values on $x=x_{0}$. Then on $x=x_{0}$ we can specify arbitrarily the numerical values of the functions
+\begin{align*}
+  &\varphi_{k}(x),\qquad(k=1,2,\dots,n),\\
+  &\varphi'_{r_{1}+1}(x),\qquad\dots\qquad\varphi'_{n}(x);\\
+  &\varphi''_{r_{1}+1}(x),\qquad\dots\qquad\varphi''_{n}(x);\\
+  &\psi_{r-r_{1}+1}(x),\qquad\dots,\qquad\psi_{n}(x).
+\end{align*}
+
+It follows that if we set $x=x_{0},y=y_{0}$ in the expression $\Theta_{i}$, the expression vanishes regardless of the numerical values of the other arguments. Therefore this expression $\Theta_{i}$ is identically zero and the theorem is proved.
+
+\vspace{12pt}
+
+\textbf{5}. To say that when taking into account the equations $X_{i}=0,Y_{j}=0,\pd X_{i}/\pd x=0$ the quantity $\Theta_{i}$ vanishes identically is to say that there exists among the first order partial derivatives of the left hand sides of the given equations $r_{1}$ independent linear combinations which vanish identically by taking into account the equations of the system. For brevity, we say that there exists $r_{i}$ independent identities between the first order derivatives of the left hand sides of the given equations.
+
+An important and immediate observation is the following: \emph{there can exist no more than $r_{1}$ identities of this kind}. Indeed, suppose $\Theta$ is a linear combination of $\pd X_{i}/\pd x$, $\pd X_{i}/\pd y$, $\pd Y_{j}/\pd x$, $\pd Y_{j}/\pd y$ which, after collecting similar terms, do not contain any second order partial derivatives. The absence of the derivatives $\pd^{2}u_{k}/\pd y^{2}$ requires that all the coefficients of $\pd Y_{j}\/\pd y$ in $\Theta$ are zero, the absence of the derivatives $\pd ^{2}u_{k}/\pd x\,\pd y$ requires that all the coefficients of $\pd Y/\pd x$ are zero, and finally the absence of the derivatives $\pd ^{2}u_{k}/\pd x^{2}$ requires that all the coefficients of $\pd X_{i}/\pd x$ are zero. Then every linear combination of $\pd X_{i}/\pd x$, $\pd X_{i}/\pd y$, $\pd Y_{i}/\pd x$, $\pd Y_{i}/\pd y$ in which every second order derivative has been eliminated is well-determined when we specify the coefficients of $\pd X_{i}/\pd y$. Therefore there are at most $r_{1}$ of these independent combinations.
+
+The preceding result has a huge importance, since the integer $r_{1}$ has an intrinsic significance \emph{independent of the non-singular choice of the independent variables}. The existence of $r_{1}$ identities therefore permits application of the theorem of \textsection\textbf{4} regardless of whether the choice of independent variables is singular or not.
+
+We say that the given system is \emph{in involution} if the derivatives of the left hand side are linked by $r_{1}$ linearly independent identities.
+
+If $n>r-r_{1}$, we see that we can arbitrarily specify $n-r+r_{1}$ of the unknown functions $u_{k}$: we say that the general solution depends on $n-r+r_{1}$ arbitrary functions in $x, y$.
+
+If $n=r-r_{1}$, every solution of the system is uniquely determined by a solution of the equations $X_{i}=0$ on $y=y_{0}$, since the equations $Y_{j}=0$ completely determine the initial values of $\pd u_{k}/\pd y$ when we know the initial values of $u_{k}$. As we can satisfy the $r_{1}$ equations $X_{i}=0$ by specifying arbitrarily $n-r_{1}$ of the unknown functions on $y=y_{0}$, we say that the general solution of the system depends on $n-r_{1}$ arbitrary functions of $x$.
+
+Observe that the number of arbitrary elements which enter the general solution is the last non-zero number of the non-increasing sequence
+\[
+n-r_{1},\qquad n-r+r_{1},
+\]
+and these arbitrary elements are functions of one or two variables according to whether the number considered is the first or second in the sequence.
+
+We may arrive at a situation where $n=r-r_{1}=r_{1}$. The general solution then depends on no more than $n$ arbitrary constants.
+
+\vspace{12pt}
+
+\textbf{6}. An important case is where we have $n=r-r_{1}$. We say that in this case the system in involution \emph{determines} the unknown functions. More precisely, knowledge of the unknown functions on $y=y_{0}$ completely determines the functions for all values of $y$.
+
+\emph{For a system to be in involution and to determine the unknown functions, it is necessary that}:
+\begin{enumerate}
+\item \emph{the equations in the system can be resolved with respect to the $n$ derivatives $\pd u_{k}/\pd y$;}
+\item \emph{there exist $r_{1}=r-n$ linearly independent identities among the derivatives of the left hand sides.}
+\end{enumerate}
+
+These two conditions are independent of each other. The second condition is generally taken to be necessary and sufficient.
+
+\vspace{12pt}
+
+\textbf{7}. Consider a particular solution of the given system, which we think of as defining a two dimensional surface in a $n+r$ dimensional space. Consider a line $y=f(x)$ on this surface. The solution can be obtained by the Cauchy-Kowalewski method indicated above if the choice of new variables 
+\[
+x'=x,\qquad y'=y-f(x)
+\]
+is not singular. If it is, the curve is said to be a \emph{characteristic}. As we have
+\[
+\frac{\pd u}{\pd x}=\frac{\pd u}{\pd x'}-f'\frac{\pd u}{\pd y'},\qquad \frac{\pd u}{\pd y}=\frac{\pd u}{\pd y'},
+\]
+the curve is characteristic if, returning to the general form \eqref{eq:1} of the equations of the system, in the following linear forms in $\pd u_{1}/\pd y'$, \dots , $\pd u_{n}/\pd y'$
+\[
+\sum_{k=1}^{k=n}(b_{ik}-f'a_{ik})\frac{\pd u_{k}}{\pd y'},\qquad(i=1,2,\dots,r),
+\]
+at most $r-r_{1}-1$ of them are independent. We can express this result in a more symmetric way.
+
+\emph{The line defined by the differential equation}
+\[
+\alpha\,dx+\beta\,dy=0
+\]
+\emph{is characteristic if the $r$ linear forms}
+\[
+\sum_{k=1}^{k=n}(\alpha a_{ik}+\beta b_{ik})\xi_{k}\qquad(i=1,2,\dots,r)
+\]
+\emph{in $x_{1},\xi_{2},\dots,\xi_{n}$ contain at most $r-r_{1}-1$ independent forms.}
+
+\vspace{12pt}
+
+\textbf{8}. Let us apply the preceding considerations to some simple examples. If we consider a first order non-linear partial differential equation
+\[
+\frac{\pd z}{\pd y}-f\left(x,y,z,\frac{\pd z}{\pd x}\right)=0,
+\]
+we can transform it into a system of two linear equations of two unknown variables $z$ and $p$:
+\begin{align*}
+  \frac{\pd z}{\pd x}-p&=0,\\
+  \frac{\pd z}{\pd y}-f(x,y,z,p)&=0.
+\end{align*}
+
+Under this form the system \emph{is not in involution}. We know that, for $y=y_{0}$, we can arbitrarily specify $z=\varphi(x)$ and $p=\varphi'(x)$. But we cannot arbitrarily specify $\pd p/\pd y$. We add the following obvious equation to the two preceding equations:
+\[
+\frac{\pd p}{\pd y}-f'_{x}-f'_{z}p-f'_{p}\frac{\pd p}{\pd x}=0.
+\]
+
+Now we have
+\[
+n=2,\qquad r=3,\qquad r_{1}=1.
+\]
+On the other hand there is the identity
+\[
+\frac{\pd}{\pd y}\left(\frac{\pd z}{\pd x}-p\right)-\frac{\pd}{\pd x}\left(\frac{\pd z}{\pd y}-f\right)+\left(\frac{\pd p}{\pd y}-f'_{x}-f'_{z}p-f'_{p}\frac{\pd p}{\pd x}\right)\equiv 0.
+\]
+The system is therefore in involution and it \emph{determines} the two unknown functions, and the general solution depends on $n-r_{1}=1$ arbitrary function of one variable.
+
+The characteristics are given by requiring the three forms
+\[
+\alpha\xi_{1},\qquad\beta\xi_{1},\qquad(\beta-\alpha f'_{p})\xi_{2}
+\]
+contains $r-r_{1}-1=1$ independent form at most. Hence we must have $\beta=\alpha f'_{p}$. Then the characteristics are curves satisfying
+\[
+dy=f'_{p}dx,
+\]
+a classical result.
+
+Now take a system of two equations with two unknown functions
+\begin{align*}
+  a_{11}\frac{\pd u_{1}}{\pd x}+a_{12}\frac{\pd u_{2}}{\pd x}+b_{11}\frac{\pd u_{1}}{\pd y}+b_{12}\frac{\pd u_{2}}{\pd y}-c_{1}&=0,\\
+  a_{21}\frac{\pd u_{1}}{\pd x}+a_{22}\frac{\pd u_{2}}{\pd x}+b_{21}\frac{\pd u_{1}}{\pd y}+b_{22}\frac{\pd u_{2}}{\pd y}-c_{2}&=0.
+\end{align*}
+The integer $r-r_{1}=2-r_{1}$ is the number of linear forms in $\xi_{1},\xi_{2}$
+\begin{gather*}
+  (a_{11}\alpha+b_{11}\beta)\xi_{1}+(a_{12}\alpha+b_{12}\beta)\xi_{2},\\
+  (a_{21}\alpha+b_{21}\beta)\xi_{1}+(a_{22}\alpha+b_{22}\beta)\xi_{2},
+\end{gather*}
+which are linearly independent. In general this number is $2$, then $r_{1}=0$, and then the system is in involution and it determines the unknown functions. The general solution depends on $n-r_{1}=2$ arbitrarily functions in one variable.
+
+It is easily shown that the integer $r_{1}$ is equal to $1$ if the system given is of the form
+\begin{align*}
+  X&\equiv a\frac{\pd u_{1}}{\pd x}+b\frac{\pd u_{2}}{\pd x}-c_{1}=0,\\
+  Y&\equiv a\frac{\pd u_{1}}{\pd y}+b\frac{\pd u_{2}}{\pd y}-c_{2}=0.\\  
+\end{align*}
+Then the existence of an identity is necessary for it to be in involution. But in this case the system does not determine the unknown functions. The identity is of the form
+\[
+\frac{\pd X}{\pd y}-\frac{\pd Y}{\pd x}\equiv 0,
+\]
+and it is clear that it must hold regardless of the numerical values of the arguments $x$, $y$, $u_{1}$, $u_{2}$, $\pd u_{1}/\pd x$, $\pd u_{1}/\pd y$, $\pd u_{2}/\pd x$, $\pd u_{2}/\pd y$ \emph{subject to the condition that these numerical values satisfy the given equations.}
+
+
+\section{Systems in involution in three independent variables}
+\label{sec:syst-invol-three}
+
+\textbf{9}. Now take a system of $r$ linear first order partial differential equations in three independent variables $x,y,z$. Suppose that, for an arbitrary choice of independent variables, the system can be resolved with respect to the $r-r_{2}$ derivatives $\pd u_{k}/\pd z$, and that the $r_{2}$ independent equations resulting from the elimination of $\pd u_{k}/\pd z$ can be resolved with respect to the $r_{2}-r_{1}$ derivatives $\pd u_{k}/\pd y$, such that there exist $r_{1}$ independent linear combinations of the system containing only $\pd u_{k}/\pd x$. The choice of variables is said to be \emph{singular} if the left hand sides of the equations admit less than $r-r_{2}$ independent linear combinations with respect to $\pd u_{k}/\pd z$, or if they admit exactly $r-r_{2}$ such combinations but the $r_{2}$ linear combinations containing no $\pd u_{k}/\pd z$ admit less than $r_{2}-r_{1}$ independent linear combinations with respect to $\pd u_{k}/\pd y$.
+
+Assume that the choice of variables is non-singular. We can write the equations of the system under the form
+\begin{equation}
+  \label{eq:5}
+  \left\{
+    \begin{aligned}
+      X_{i}&\equiv\sum_{k}a_{ik}\frac{\pd u_{k}}{\pd x}-d_{i}=0,\qquad(i=1,\dots,r_{1}),\\
+      Y_{j}&\equiv\sum_{k}\left(a_{r_{1}+j,k}\frac{\pd u_{k}}{\pd x}+b_{r_{1}+j,k}\frac{\pd u_{k}}{\pd y}\right)-d_{r_{1}+j}=0,\qquad(j=1,\dots,r_{2}-r_{1})\\
+      Z_{h}&\equiv\sum_{k}\left(a_{r_{2}+h,k}\frac{\pd u_{k}}{\pd x}+b_{r_{2}+h,k}\frac{\pd u_{k}}{\pd y}+c_{r_{2}+h,k}\frac{\pd u_{k}}{\pd z}\right)-d_{r_{2}+h}=0,\\
+      &\qquad\qquad(h=1,\dots,r-r_{2}).
+    \end{aligned}
+  \right.
+\end{equation}
+
+Previously we have shown the relation
+\begin{gather}
+  \label{eq:6}
+  a_{ih}=\lambda_{i1}b_{r_{1}+1,h}+\lambda_{i2}b_{r_{1}+2,h}+\dots+\lambda_{i,r_{2}-r_{1}}b_{r_{2}h}\\
+  (i=1,\dots,r_{1};h=1,\dots,n).\notag
+\end{gather}
+
+Here there are others. Indeed, consider the change of variables
+\[
+x'=x,\qquad y'=y,\qquad z'=z+my+nx,
+\]
+$m$ and $n$ being constants. The coefficients of $\pd u_{k}/\pd z$ in $X_{i},Y_{j}$ and $Z_{h}$ respectively become
+\[
+na_{ik},\qquad na_{r_{1}+j,k}+mb_{r_{1}+j,k},\qquad n a_{r_{2}+h,k}+mb_{r_{2}+h,k}+c_{r_{2}+h,k}.
+\]
+If $m$ and $n$ are sufficiently small, the $r-r_{2}$ expressions $Z_{h}$ would continue to be linear combinations with respect to $\pd u_{k}/\pd z$. An analogous reasoning as was used before shows the existence of relations of the form
+\begin{equation}
+  \label{eq:7}
+  \left\{
+    \begin{aligned}
+      a_{ik}&=\mu_{i1}c_{r_{2}+1,k}+\dots+\mu_{i,r-r_{2}}c_{rk},&(i&=1,\dots,r_{1};k=1,\dots,n),\\
+      a_{r_{1}+j,k}&=\nu_{j1}c_{r_{2}+1,k}+\dots+\nu_{j,r-r_{2}}c_{rk},&(j&=1,\dots,r_{2}-r_{1};k=1,\dots,n),\\
+      b_{r_{1}+j,k}&=\rho_{j1}c_{r_{2}+1,k}+\dots+\rho_{j,r-r_{2}}c_{rk},&(j&=1,\dots,r_{2}-r_{1};k=1,\dots,n).
+    \end{aligned}
+  \right.
+\end{equation}
+
+Granted this, consider the $r_{1}+r_{2}$ expressions
+\begin{equation}
+  \label{eq:8}
+  \left\{
+    \begin{aligned}
+      \Theta_{i}&\equiv\frac{\pd X_{i}}{\pd y}-\sum_{j=1}^{j=r_{2}-r_{1}}\lambda_{ij}\frac{\pd Y_{j}}{\pd x},&(i&=1,\dots,r_{1}),\\
+      \Phi_{i}&\equiv\frac{\pd X_{i}}{\pd z}-\sum_{h=1}^{h=r-r_{2}}\mu_{ih}\frac{\pd Z_{h}}{\pd x},&(i&=1,\dots,r_{1}),\\
+      \Psi_{j}&\equiv\frac{\pd Y_{j}}{\pd z}-\sum_{h=1}^{h=r-r_{2}}\left(v_{jh}\frac{\pd Z_{h}}{\pd x}+\rho_{jh}\frac{\pd Z_{h}}{\pd y}\right),&(j&=1,\dots,r_{2}-r_{1}).
+    \end{aligned}
+  \right.
+\end{equation}
+
+When expanded, $\Theta_{i}$ contain only the second derivatives $\pd^{2}u_{k}/\pd x^{2}$, $\Phi_{i}$ contain only the second derivatives $\pd^{2}u_{k}/\pd x^{2}$ and $\pd^{2}u_{k}/\pd x\,\pd y$, and $\Psi_{j}$ contain the second derivatives $\pd^{2}u_{k}/\pd x^{2}$, $\pd^{2}u_{k}/\pd x\,\pd y$ and $\pd^{2}u_{k}/\pd y^{2}$.
+
+\vspace{12pt}
+
+\textbf{10}. Here we make a remark analogous to the one in \textsection\textbf{2}. Assume, without loss of generality, that the equations $Z_{h}=0$ are resolved with respect to the derivatives
+\begin{equation}
+  \label{eq:9}
+  \frac{\pd u_{1}}{\pd z},\qquad\frac{\pd u_{2}}{\pd z},\qquad\frac{\pd u_{r-r_{1}}}{\pd z}.
+\end{equation}
+The last equations of \eqref{eq:7} show that then the equations $Y_{j}=0$ are resolvable with respect to $r_{2}-r_{1}$ of the corresponding derivatives $\pd u_{1}/\pd y,\dots,\pd u_{r-r_{2}}/\pd y$. We assume that it is with respect to the first $r_{2}-r_{1}$ ones
+\begin{equation}
+  \label{eq:10}
+  \frac{\pd u_{1}}{\pd y},\qquad\dots\qquad\frac{\pd u_{r_{2}-r_{1}}}{\pd y}.
+\end{equation}
+
+The relations \eqref{eq:6} show that the equations $X_{i}=0$ are resolvable with respect to $r_{1}$ of the derivatives $\pd u_{1}/\pd x,\dots,\pd u_{r_{2}-r_{1}}/\pd x$. We assume that they are with respect to
+\begin{equation}
+  \label{eq:11}
+  \frac{\pd u_{1}}{\pd x},\qquad\dots\qquad\frac{\pd u_{r_{1}}}{\pd x}.
+\end{equation}
+
+If we now take into account of the equations $\pd X_{i}/\pd x=0$, we see that we can make the first $r_{1}$ second derivatives $\pd^{2}u_{1}/\pd x^{2}$, \dots , $\pd^{2}u_{r_{1}}/\pd x^{2}$ disappear from $\Theta_{i}$. We can then use the equations \eqref{eq:5} themselves to make the derivatives \eqref{eq:9}, \eqref{eq:10} and \eqref{eq:11} disappear. Finally, after this reduction, the expression $\Theta_{i}$ depend only on the arguments
+\[
+x,\quad y,\quad z,\quad u_{k},\quad \frac{\pd u_{r_{1}+k}}{\pd x},\quad\frac{\pd u_{r_{2}-r_{1}+k}}{\pd y},\quad\frac{\pd u_{r-r_{2}+k}}{\pd z}, \quad\frac{\pd ^{2}u_{r_{1}+k}}{\pd x^{2}}.
+\]
+
+If we take into account the equations $\pd X_{i}/\pd x=0$ and $\pd Y_{j}/\pd x=0$, we can make the second derivatives $\pd^{2}u_{1}/\pd x^{2}$, \dots , $\pd^{2}u_{r_{1}}/\pd x^{2}$, $\pd^{2}u_{1}/\pd x\,\pd y$, \dots , $\pd^{2}u_{r_{2}-r_{1}}/\pd x\,\pd y$ disappear from $\Phi_{i}$. As for $\Theta_{i}$, we can then use the equations \eqref{eq:5} themselves. After this reduction, the expression $\Phi_{i}$ depend only on the arguments
+\[
+x,\quad y,\quad z,\quad u_{k},\quad \frac{\pd u_{r_{1}+k}}{\pd x},\quad\frac{\pd u_{r_{2}-r_{1}+k}}{\pd y},\quad\frac{\pd u_{r-r_{2}+k}}{\pd z}, \quad\frac{\pd ^{2}u_{r_{1}+k}}{\pd x^{2}},\quad\frac{\pd^{2}u_{r_{2}-r_{1}+k}}{\pd x\,\pd y}.
+\]
+
+By an analogous procedure we can reduce the expressions $\Psi_{j}$ so that it depend only on the arguments
+\begin{gather*}
+  x,\quad y,\quad z,\quad u_{k},\quad \frac{\pd u_{r_{1}+k}}{\pd x},\quad\frac{\pd u_{r_{2}-r_{1}+k}}{\pd y},\quad\frac{\pd u_{r-r_{2}+k}}{\pd z},\\
+  \frac{\pd ^{2}u_{r_{1}+k}}{\pd x^{2}},\quad\frac{\pd^{2}u_{r_{2}-r_{1}+k}}{\pd x\,\pd y},\quad\frac{\pd ^{2}u_{r_{2}-r_{1}+k}}{\pd y^{2}}.
+\end{gather*}
+
+\vspace{12pt}
+
+\textbf{11}. We now prove the following theorem:
+
+\begin{thm*}
+  If the $r_{1}+r_{2}$ expressions $\Theta_{i},\Phi_{i},\Psi_{j}$ vanish identically when the equations $\pd X_{i}/\pd x=\pd Y_{j}/\pd x=\pd Y_{j}/\pd y=X_{i}=Y_{j}=Z_{h}=0$ are taken into account, then the given system admits at least one analytic solution such that, on $z=z_{0}$, the functions $u_{k}$ and their partial derivatives $\pd u_{k}/\pd z$ reduce to given functions $\varphi_{k}(x,y)$ and $\psi_{k}(x,y)$, subject to the conditions that these functions satisfy the given equations when we set $z=z_{0}$.
+\end{thm*}
+
+First observe that the equations $X_{i}=Y_{j}=0$ form a system in involution of two independent variables $x,y$. Granted this, suppose that the functions $\varphi_{k}(x,y)$ and $\psi_{k}(x,y)$ satisfy the given equations on $z=z_{0}$ regarded as partial differential equations with respect to the unknown functions $u_{k}=\varphi_{k}(x,y)$ and as linear equations with respect to the unknown functions $\pd u_{k}/\pd z=\psi_{k}(x,y)$. The equations $Z_{h}=0$ then constitue a Cauchy-Kowalewski system. If $n=r-r_{2}$, they admit one and only one solution corresponding to the given initial conditions. If $n>r-r_{2}$, we can specify \emph{arbitrarily} the functions $u_{r-r_{2}+1},\dots,u_{n}$, as long as they and their derivatives with respect to $z$ reduce on $z=z_{0}$ to values that have been given. After choosing these functions, the equations $Z_{h}=0$ will admit one and only one solution satisfying the given initial conditions.
+
+Substituting the values of $u_{k}$ corresponding to one solution of the equations $Z_{h}=0$ into $X_{i}$ and $Y_{j}$, we obtain the determined functions $\bar X_{i}(x,y,z)$ and $\bar Y_{j}(x,y,z)$ which, by our hypothesis, vanish on $z=z_{0}$. According to the hypothesis for $\Phi_{i}$ and $\Psi_{j}$, these expressions vanish identically when taking into account of $\pd X_{i}/\pd x=0$, $\pd Y_{j}/\pd x=0$, $\pd Y_{j}/\pd y=0$, and hence we see that the functions $\bar X_{i}$ and $\bar Y_{j}$ satisfy a Cauchy-Kowalewski system of the form
+\begin{align*}
+  \frac{\pd \bar X_{i}}{\pd z}-\sum_{k}A_{ik}\frac{\pd \bar X_{k}}{\pd x}-\sum_{k}B_{ik}\frac{\pd \bar Y_{k}}{\pd x}-\sum_{k}C_{ik}\frac{\pd \bar Y_{k}}{\pd y}-f(x,y,z,\bar X_{i},\bar Y_{j})&=0,\\
+  \frac{\pd \bar Y_{j}}{\pd z}-\sum_{k}A'_{jk}\frac{\pd \bar X_{k}}{\pd x}-\sum_{k}B'_{jk}\frac{\pd \bar Y_{k}}{\pd x}-\sum_{k}C'_{jk}\frac{\pd \bar Y_{k}}{\pd y}-\varphi(x,y,z,\bar X_{i},\bar Y_{j})&=0.
+\end{align*}
+
+This system admits one and only one solution corresponding to the initial conditions $\bar X_{i}=0,\bar Y_{j}=0$ on $z=z_{0}$: this solution is manifestly $\bar X_{i}\equiv 0$, $\bar Y_{j}\equiv 0$, which is to be proved.
+
+\vspace{12pt}
+
+\textbf{12}. The preceding theorem admits a converse
+
+\begin{thmc}
+  Suppose that a given system enjoys the following properties:
+  \begin{enumerate}
+  \item If we set $z=z_{0}$ in the coefficients of the equations and regard the quantities $u_{k}$ and $\pd u_{k}/\pd z$ as unknown functions in $x, y$, the system admits at lest one solution such that, on $y=y_{0}$, the functions $u_{k}$, their partial derivatives $\pd u_{k}/\pd y$ and the functions $\pd u_{k}\/pd z$ reduce to given functions of $x$ subject to the condition that these functions in $x$ satisfy the given equations when we replace $y$ by $y_{0}$ in their coefficients;
+  \item If $u_{k}=\varphi_{k}(x,y)$ and $\pd u_{k}/\pd z=\psi_{k}(x,y)$ constitute a solution satisfying the preceding conditions, there exists at least one solution $u_{k}(x,y,z)$ such that on $z=z_{0}$ the function $u_{k}(x,y,z)$ reduces to $\varphi_{k}(x,y)$ and its partial derivative with respect to $z$ reduces to $\psi_{k}(x,y)$;
+  \end{enumerate}
+  Then the $r_{1}+r_{2}$ expressions $\Theta_{i},\Phi_{i},\Psi_{j}$ vanish identically when the following equations are taken into account
+\[
+\frac{\pd X_{i}}{\pd x}=\frac{\pd Y_{j}}{\pd x}=\frac{\pd Y_{j}}{\pd y}=X_{i}=Y_{j}=Z_{h}=0.
+\]
+\end{thmc}
+
+The first part of the converse concerns only the equations $X_{i}=0, Y_{j}=0$ where in the coefficients we have set $z=z_{0}$. It expresses that the system thus obtained is in involution. As this has to hold regardless of $z_{0}$, this proves that the expressions $\Theta_{i}$ vanish identically when we take into account of the equations $\pd X_{i}/\pd x=0$, $X_{i}=0$, $Y_{j}=0$.
+
+Now let us deal with the second part of the converse. According to what has been said above, we obtain one solution of the system by specifying arbitrarily:
+\begin{enumerate}
+\item The functions $u_{r-r_{2}+1}(x,y,z)$, \dots , $u_{n}(x,y,z)$;
+\item On $z=z_{0}$, the functions $u_{r_{2}-r_{1}+1}(x,y)$, \dots , $u_{r-r_{2}}(x,y)$;
+\item On $z=z_{0}$, $y=y_{0}$, the functions $u_{r_{1}+1}(x)$, \dots , $u_{r_{2}-r_{1}}(x)$;
+\item On $z=z_{0}$, $y=y_{0}$, $x=x_{0}$, the values $u_{1}$, \dots , $u_{r_{1}}$.
+\end{enumerate}
+
+Then we can specify on $x=x_{0}$, $y=y_{0}$, $z=z_{0}$ the numerical values of the following quantities arbitrarily:
+\begin{gather*}
+  u_{k},\quad \frac{\pd u_{r_{1}+k}}{\pd x},\quad\frac{\pd u_{r_{2}-r_{1}+k}}{\pd y},\quad\frac{\pd u_{r-r_{2}+k}}{\pd z},\\
+  \frac{\pd ^{2}u_{r_{1}+k}}{\pd x^{2}},\quad\frac{\pd^{2}u_{r_{2}-r_{1}+k}}{\pd x\,\pd y},\quad\frac{\pd ^{2}u_{r_{2}-r_{1}+k}}{\pd y^{2}}.
+\end{gather*}
+
+As the constants $x_{0},y_{0},z_{0}$ can be taken arbitrarily, it follows that the expressions $\Phi_{i}$ and $\Psi_{j}$ vanish identically for arbitrary numerical values of their arguments.
+
+\vspace{12pt}
+
+\textbf{13}. Now observe that there can exist no more than $r_{1}+r_{2}$ independent linear combinations of $\pd X_{i}/\pd x$, $\pd X_{i}/\pd y$, \dots , $\pd Z_{h}/\pd z$, which contain no second derivatives of the functions $u_{k}$. Indeed, consider a linear combination $\Theta$ for which the coefficients of $\pd X_{i}/\pd y$, $\pd X_{i}/\pd z$, $\pd Y_{j}/\pd z$ are all zero. Successive considerations of $\pd^{2}u_{k}/\pd z^{2}$, $\pd^{2}u_{k}/\pd y\,\pd z$, $\pd^{2}u_{k}/\pd x\, \pd z$, $\pd^{2}u_{k}/\pd y^{2}$, $\pd^{2}u_{k}/\pd x\,\pd y$, $\pd^{2}u_{k}/\pd x^{2}$ show that all the other coefficients are zero. Then every linear combination $\Theta$ enjoying the property stated above has its coefficients completely determined by those of $\pd X_{i}/\pd y$, $\pd X_{i}/\pd z$, $\pd Y_{j}/\pd z$, and the number of them which are linearly independent is at most $r_{1}+r_{2}$.
+
+This shows \emph{a fortiori} that the number of linearly independent \emph{identities} among the derivatives of the left hand sides of the equations is at most $r_{1}+r_{2}$. Then if the maximal number is obtained, the properties stated in the theorem in \textsection\textbf{11} hold for every non-singular choice of independent variables. In this case we say that the system is in involution.
+
+\emph{The involution condition is therefore the existence of $r_{1}+r_{2}$ linearly independent identities among the derivatives of the left hand sides of the equations in the system.}
+
+The degree of arbitrariness of the general solution is, according to what has been said above, the last non-zero number of the non-increasing numbers
+\[
+n-r_{1},\qquad n-r_{2}+r_{1},\qquad n-r+r_{2},
+\]
+and the arbitrary elements are functions of one, two or three variables according to whether it is the first, second or the third number in the sequence. If $n-r_{1}$ is zero, the general solution will only depend on $n$ arbitrary constants.
+
+The system \emph{determines} the unknown functions if $n=r-r_{2}$. Then \emph{for a system to be in involution and to determine the unknown functions, it is necessary and sufficient that}
+\begin{enumerate}
+\item \emph{For a non-singular choice of variables, the equations are resolvable with respect to $n$ partial derivatives  $\pd u_{k}/\pd z$;}
+\item \emph{There are $r_{1}+r-n$ linearly independent identities among the derivatives of the left hand sides of the equations.}
+\end{enumerate}
+
+We see that the number of necessary identities may be \emph{greater} than the number $r-n$ of the difference between the number of equations and the number of unknowns.
+
+\vspace{12pt} 
+
+\textbf{14}. We can regard every solution of a given system as defining a three dimensional variety in a $n+3$ dimensional space. On an integral variety, a surface defined by a relation
+\[
+z=f(x,y)
+\]
+is \emph{characteristic} if it is impossible to obtain the variety by applying the theorem in \textsection\textbf{11} where, by a suitable choice of non-singular variables, we use the equation $z-f(x,y)=0$ to play the role of the equation $z'=0$. If a surface is defined by
+\[
+\alpha\,dx+\beta\,dy+\gamma\,dz=0,
+\]
+the condition for the surface to be characteristic is when we replace respectively
+\[
+\frac{\pd u_{k}}{\pd x},\qquad\frac{\pd u_{k}}{\pd y},\qquad\frac{\pd u_{k}}{\pd z}
+\] 
+by
+\[
+\alpha\xi_{k},\qquad \beta\xi_{k},\qquad\gamma\xi_{k},
+\]
+in the left hand sides of the equations of the system, they become at most $r-r_{2}-1$ independent linear forms in $\xi_{1}$, \dots , $\xi_{n}$.
+
+There can also exist characteristic \emph{lines}. If one such line is defined by
+\begin{align*}
+  \alpha\,dx+\beta\,dy+\gamma\,dz&=0,\\
+  \alpha'dx+\beta'dy+\gamma'dz&=0,
+\end{align*}
+then the $r$ linear forms in $\xi_{k},\xi'_{k}$ obtained by replacing
+\[
+\frac{\pd u_{k}}{\pd x},\qquad\frac{\pd u_{k}}{\pd y},\qquad\frac{\pd u_{k}}{\pd z}
+\]
+by
+\[
+\alpha\xi_{k}+\alpha'\xi'_{k},\qquad\beta\xi_{k}+\beta'\xi'_{k},\qquad\gamma\xi_{k}+\gamma'\xi'_{k}
+\]
+have at most $r-r_{1}-1$ independent forms in them.
+
+\vspace{12pt}
+
+\textbf{15}. We will consider only one example. Take the system
+\begin{align*}
+  X&\equiv\frac{\pd v}{\pd z}-\frac{\pd w}{\pd y}-a=0,\\
+  Y&\equiv\frac{\pd w}{\pd x}-\frac{\pd u}{\pd z}-b=0,\\
+  Z&\equiv\frac{\pd u}{\pd y}-\frac{\pd v}{\pd x}-c=0,\\
+  T&\equiv\frac{\pd u}{\pd x}+\frac{\pd v}{\pd y}+\frac{\pd w}{\pd z}-h=0,
+\end{align*}
+of three unknown functions $u,v,w$. For simplicity, the coefficients $a,b,c,h$ are assumed to be given functions of $x,y,z$. Here we have
+\[
+r=4,\qquad r_{2}=1,\qquad r_{1}=0.
+\]
+
+The involution condition requires the existence of one identity, whose left hand side is necessarily
+\[
+\frac{\pd X}{\pd x}+\frac{\pd Y}{\pd y}+\frac{\pd Z}{\pd z},
+\]
+we hence arrive at the condition
+\[
+\frac{\pd a}{\pd x}+\frac{\pd b}{\pd y}+\frac{\pd c}{\pd z}=0.
+\]
+
+As the equations are resolvable with respect to the three derivatives $\pd u/\pd z$, $\pd v/\pd z$, $\pd w/\pd z$, the system \emph{determines} the unknown functions and the general solution depends on two arbitrary functions of two variables.
+
+The two dimensional characteristics are obtained by expressing that the four forms
+\[
+\gamma\xi_{2}-\beta\xi_{3},\qquad\alpha\xi_{3}-\gamma\xi_{1},\qquad\beta\xi_{2}-\alpha\xi_{1},\qquad\alpha\xi_{1}+\beta\xi_{2}+\gamma\xi_{3}
+\]
+reduce to at most two independent forms, which gives
+\[
+\alpha^{2}+\beta^{2}+\gamma^{2}=0.
+\]
+We also obtain the integrals of the equation
+\[
+\left(\frac{\pd V}{\pd x}\right)^{2}+\left(\frac{\pd V}{\pd y}\right)^{2}+\left(\frac{\pd V}{\pd z}\right)^{2}=0.
+\]
+
+There are no one dimensional characteristics.
+
+\section{The general case}
+\label{sec:general-case}
+
+\textbf{16}. Let us confine ourselves to state what happens for four independent variables $x,y,z,t$. If $r$ is the number of equations in the system and $n$ the number of unknown functions, we denote by $r_{3}$ the number of independent linear combinations of the left hand sides containing only derivatives with respect to $x,y,z$, by $r_{2}$ the number of combinations  containing only  derivatives with respect to $x,y$, and by $r_{1}$ the number of combinations containing only derivatives with respect to $x$. Naturally these integers $r_{1},r_{2},r_{3}$ are with respect to a choice of \emph{arbitrary} choice of variables. The choice of variables is said to be non-singular if these integers have the same values as in the generic case.
+
+We define a system in involution in a way analogous to what was done in the preceding and we can show that the involution condition is the existence of $r_{1}+r_{2}+r_{3}$ identities among the partial derivatives of the left hand sides of the equations of the system.
+
+The degree of arbitrariness of the general solution is the last non-zero number of the following non-increasing sequence
+\[
+n-r_{1},\qquad n-r_{2}+r_{1},\qquad n-r_{3}+r_{2},\qquad n-r+r_{3}.
+\]
+
+If $n=r-r_{3}$, the system determines the unknown functions. We then see that the number of linearly independent identities is
+\[
+r_{1}+r_{2}+r-n\ge r-n.
+\]
+In this case the general solution depends on
+\[
+n-r_{3}+r_{2}=2n-r+r_{2}
+\]
+arbitrary functions of three variables.
+
+In this case there may exist three, two or one dimensional characteristics.
+
+\vspace{12pt}
+
+\textbf{17}. Take the following system as an example. This system arises in the hydrodynamics for a continuous medium without pressure or stress but with Newtonian attractions:
+\begin{align*}
+  F_{1}&\equiv\frac{\pd Y}{\pd z}-\frac{\pd Z}{\pd y}=0,\\
+  F_{2}&\equiv\frac{\pd Z}{\pd x}-\frac{\pd X}{\pd z}=0,\\
+  F_{3}&\equiv\frac{\pd X}{\pd y}-\frac{\pd Y}{\pd x}=0,\\
+  F_{4}&\equiv\frac{\pd X}{\pd x}+\frac{\pd Y}{\pd y}+\frac{\pd Z}{\pd z}+4\pi\rho=0,\\
+  F_{5}&\equiv\frac{\pd \rho}{\pd t}+\frac{\pd (\rho u)}{\pd x}+\frac{\pd (\rho v)}{\pd y}+\frac{\pd (\rho w)}{\pd z}=0,\\
+  F_{6}&\equiv\frac{\pd u}{\pd t}+u\frac{\pd u}{\pd x}+v\frac{\pd u}{\pd y}+w\frac{\pd u}{\pd z}-X=0,\\
+  F_{7}&\equiv\frac{\pd v}{\pd t}+u\frac{\pd v}{\pd x}+v\frac{\pd v}{\pd y}+w\frac{\pd v}{\pd z}-Y=0,\\
+  F_{8}&\equiv\frac{\pd w}{\pd t}+u\frac{\pd w}{\pd x}+v\frac{\pd w}{\pd y}+w\frac{\pd w}{\pd z}-Z=0.
+\end{align*}
+
+There are seven unknown functions. $X,Y,Z$ denote the components of the Newtonian acceleration, $r$ denotes the density of the medium and $u,v,w$ denote the components of velocity.
+
+If we arrange the variables in the order $t,x,y,z$, we have a non-singular choice of variables with
+\[
+n=7,\qquad r=8,\qquad r_{3}=1,\qquad r_{2}=0,\qquad r_{1}=0.
+\]
+
+The integer $r_{1}+r_{2}+r_{3}$ is equal to $1$, and the involution condition is the existence of one identity, which is obvious in this case:
+\[
+\frac{\pd F_{1}}{\pd x}+\frac{\pd F_{2}}{\pd y}+\frac{\pd F_{3}}{\pd z}=0.
+\]
+
+The system therefore \emph{determines} the unknown functions and the general solution depends on $n-r_{3}+r_{2}=6$ arbitrary functions in $t,x,y$.
+
+The three dimensional characteristics are obtained by expression that the linear forms
+\begin{gather*}
+  \gamma\xi_{2}-\beta\xi_{3},\qquad \alpha\xi_{3}-\gamma\xi_{1},\qquad\beta\xi_{1}-\alpha\xi_{2},\qquad\alpha\xi_{1}+\beta\xi_{2}+\gamma\xi_{3},\\
+  (\delta+\alpha u+\beta v+\gamma w)\xi_{4}+\rho(\alpha\xi_{5}+\beta\xi_{6}+\gamma\xi_{7}),\\
+  (\delta+\alpha u+\beta v+\gamma w)\xi_{5},\qquad(\delta+\alpha u+\beta v+\gamma w)\xi_{6},\qquad (\delta+\alpha u+\beta v+\gamma w)\xi_{7}
+\end{gather*}
+contain at most $r-r_{3}-1=6$ independent forms at most. If the quantity $\delta+\alpha u+\beta v+\gamma w$ is non-zero, this requires that the first four forms contain at most two independent forms, which gives, at least in the real domain,
+\[
+\alpha=\beta=\gamma=0.
+\]
+
+If on the other hand $\delta+\alpha u+\beta v+\gamma w=0$, there are at most only $4$ independent forms.
+
+Therefore there are two kinds of three dimensional characteristic varieties:
+
+\begin{enumerate}
+\item Those that are defined by $dt=0$: they are the constant time sections;
+\item The varieties satisfying one relation of the form
+\[
+\alpha(dx-u\,dt)+\beta(dy-v\,dt)+\gamma(dz-w\,dt)=0,
+\]
+these are varieties generated by two dimensional families of fluid flow lines traced through time.
+\end{enumerate}
+
+The existence of the first kind of characteristics is linked to the instantaneous propagation of gravitation.
+
+The two dimensional characteristics are the varieties generated by one parameter families of fluid flow lines, and the one dimensional characteristics are the fluid flow lines themselves.
+
+
+\section{Applications to the unified theory of field}
+\label{sec:appl-unit-theory}
+
+\textbf{18}. We are going to apply the general theory to the study of partial differential equations that forms the basis of a unified field theory following the conception of Einstein, equations that comes from the notion of Riemannian spaces with absolute parallelism. We are not going to be concerned with the geometrical aspect of the problem~\footnote{See \textsc{A.~Einstein}, \emph{Auf die Riemann-Metrik und den Fern-Parallelismusgegr\"undete einheitliche Feldtheorie} (\emph{Math.\ Ann.}, vol.\ 102, 1930, p.\ 685--697); and \textsc{E.~Cartan}, \emph{Notice historique sur la notion du parallelisme absolu} (\emph{Math.\ Ann.}, vol.~102, 1930.\ p.\ 698--706)}.
+
+A Riemannian space with absolute parallelism is defined analytically by $16$ functions $h_{s\alpha}$ in four independent variables $x^{\alpha}$ $(\alpha=1,2,3,4)$. The \emph{Latin} index $s$ takes the four values $1,2,3,4$, such that the quantities $\sum_{\alpha}h_{s\alpha}dx^{\alpha}$ represent the projection of an infinitesimally small vector joining a point to an infinitesimally near point $(x^{\alpha}+dx^{\alpha})$ onto the axes of rectangular frame attached at the point $(x^{\alpha})$. All these frames are by convention parallel among themselves. The Greek indices $\alpha,\beta, \dots$ are with respect to the independent variables.
+
+Conforming to classical notations, we suppress the summation signs. We denote ordinary derivation by a comma: the symbol $T_{,\alpha}$ denotes the derivative of $T$ with respect to $x^{\alpha}$.
+
+We denote the determinant of the $16$ quantities $h_{s\alpha}$ by $h$ and the minor relative to $h_{s\alpha}$ divided by $h$ by $h^{\alpha}_{s}$.
+
+The \emph{torsion} of the space is defined analytically either by the quantities $\Lambda^{s}_{\alpha\beta}=-\Lambda^{s}_{\beta\alpha}$ in the $24$ relations
+\begin{equation}
+  \label{eq:I}\tag{I}
+  \mathcal{H}_{s\alpha\beta}\equiv h_{s\alpha,\beta}-h_{s\beta,\alpha}-\Lambda^{s}_{\alpha\beta}=0,
+\end{equation}
+or by the quantities $\Lambda^{\gamma}_{\alpha\beta}=-\Lambda^{\gamma}_{\beta\alpha}$ defined by
+\[
+\Lambda^{\gamma}_{\alpha\beta}=h^{\gamma}_{s}\Lambda^{s}_{\alpha\beta}.
+\]
+
+The elimination of $h_{s\alpha}$ from the equations \eqref{eq:I} gives the relations
+\begin{equation}
+  \label{eq:II}\tag{II}
+  \mathcal{L}^{s}_{\alpha\beta\gamma}\equiv\Lambda^{s}_{\alpha\beta,\gamma}+\Lambda^{s}_{\beta\gamma,\alpha}+\Lambda^{s}_{\gamma\alpha,\beta}=0.
+\end{equation}
+We then have the $16+4=20$ identities among the derivatives of the expressions $\mathcal{H}_{s\alpha\beta}$ and $\mathcal{L}^{s}_{\alpha\beta\gamma}$, in which $h_{s\alpha}$ and $\Lambda^{s}_{\alpha\beta}$ are regarded as arbitrary functions independent from each other:
+\begin{equation}
+  \label{eq:III}\tag{III}
+  \left\{
+    \begin{aligned}
+      \mathcal{H}_{s\alpha\beta,\gamma}+\mathcal{H}_{s\beta\gamma,\alpha}+\mathcal{H}_{s\gamma\alpha,\beta}+\mathcal{L}^{s}_{\alpha\gamma\beta}&\equiv 0,\\
+      \mathcal{L}^{s}_{\alpha\beta\gamma,\delta}-\mathcal{L}^{s}_{\alpha\beta\delta,\gamma}+\mathcal{L}^{s}_{\alpha\gamma\delta,\beta}-\mathcal{L}^{s}_{\beta\gamma\delta,\alpha}&\equiv 0.
+    \end{aligned}
+  \right.
+\end{equation}
+
+In these identities, $s$ takes the values $1,2,3,4$, and in the first identities, $\alpha,\beta,\gamma$ are any of the indices $1,2,3,4$ whereas in the last identities $\alpha,\beta,\gamma,\delta$ are the indices $1,2,3,4$ up to a certain ordering.
+
+In what follows we regard the equations \eqref{eq:I} and \eqref{eq:II} as first order linear partial differential equations  in $16+24=40$ unknown functions $h_{s\alpha}$ and $\Lambda^{s}_{\alpha\beta}$. Between the derivatives of the left hand sides of these equations there therefore exist the $20$ identities \eqref{eq:III}. If we denote by $r',r'_{1},r'_{2},r'_{3}$ the integers relative to this system, we immediately see that the the equations are resolvable with respect to the derivatives, taken with respect of $x^{4}$, of the $24$ functions
+\[
+h_{s\alpha}\quad(s=1,2,3,4;\alpha=1,2,3)\qquad\text{and}\qquad\Lambda^{s}_{\alpha\beta}\quad(s=1,2,3,4;\alpha=1,2,3),
+\]
+the elimination of these derivatives leads to $r'_{3}=16$ equations
+\begin{align*}
+  \mathcal{H}_{s\alpha\beta}&=0&(s&=1,2,3,4;\alpha,\beta=1,2,3),\\
+  \mathcal{L}^{s}_{123}&=0&(s&=1,2,3,4).
+\end{align*}
+
+These $16$ equations are resolvable with respect to derivatives, taken with respect with $x^{3}$, of the $12$ functions
+\[
+h_{s\alpha}\quad(s=1,2,3,4;\alpha=1,2)\qquad\text{and}\qquad\Lambda^{s}_{12}\quad(s=1,2,3,4),
+\]
+the elimination of these derivatives leads to $r'_{2}=4$ equations
+\[
+\mathcal{H}_{s12}=0,\qquad(s=1,2,3,4).
+\]
+Finally these four equations are resolvable with respect to the four derivatives $h_{s1,2}$, and therefore we have $r'_{1}=0$.
+
+The sum $r'_{1}+r'_{2}+r'_{3}=0+4+16=20$ is precisely the number of identities in \eqref{eq:III}.
+
+If we now adjoin to the equations \eqref{eq:I} and \eqref{eq:II} $r$ new equations and if we denote by 
+\[
+r_{1}+r'_{1},\qquad r_{2}+r'_{2},\qquad r_{3}+r'_{3}
+\]
+the numbers relative to the total system, we see that the total system will be in involution if it admits $r_{1}+r_{2}+r_{3}$ new identities independent of \eqref{eq:III}. Moreover, to know $r-r_{3}$, it suffices, by imagining that $\Lambda^{s}_{\alpha\beta,4}$ $(\alpha,\beta=1,2,3)$ are extracted from equations \eqref{eq:II}, to find how many new equations we can extract from the given new equations. We can proceed in a similar way to get $r_{2}$ and $r_{1}$.
+
+\vspace{12pt}
+
+\textbf{19}. Before going further, it is important to recall one of the conditions formulated by Einstein, i.e., the equations that form the basis of the theory must determine the $16$ unknown functions $h_{s\alpha}$ \emph{up to an arbitrary transformation effected on the independent variables}. Obviously, this condition is not very precise. We can make it partially more precise in the following way.
+
+The four quantities $h_{s\alpha}dx^{\alpha}$ are, as we already mentioned, the components with respect to rectangular frames that are all parallel between themselves, of an infinitesimally small vector joining two infinitesimally close points. Imagine one solution of the field equations. We can always chose the independent variables such that the tangent lines at each of their points on the fourth axis of the frame are the lines
+\[
+x^{1}=\text{const.}\qquad
+x^{2}=\text{const.}\qquad
+x^{3}=\text{const.}
+\]
+this gives
+\[
+h_{14}=0,\qquad h_{24}=0,\qquad h_{34}=0.
+\]
+we can then take $\int h_{44}dx^{4}$, where we regard $x^{1},x^{2},x^{3}$ as parameters, as the new variable $x^{4}$, which gives
+\[
+h_{44}=1.
+\]
+
+\emph{The number of unknown functions is hence reduced by four.}
+
+We can go further. Let use determine a function $\varphi(x^{1},x^{2},x^{3})$ by the equation
+\[
+\begin{vmatrix}
+  h_{11}(x^{1},x^{2},x^{3},\varphi)&  h_{12}(x^{1},x^{2},x^{3},\varphi)&  h_{13}(x^{1},x^{2},x^{3},\varphi)\\
+  h_{21}(x^{1},x^{2},x^{3},\varphi)&  h_{22}(x^{1},x^{2},x^{3},\varphi)&  h_{23}(x^{1},x^{2},x^{3},\varphi)\\
+  h_{41}(x^{1},x^{2},x^{3},\varphi)+\dfrac{\pd\varphi}{\pd x^{1}}&  h_{42}(x^{1},x^{2},x^{3},\varphi)+\dfrac{\pd\varphi}{\pd x^{2}}&  h_{43}(x^{1},x^{2},x^{3},\varphi)+\dfrac{\pd\varphi}{\pd x^{3}}
+\end{vmatrix}=0.
+\]
+
+This equation expresses that if we move on the submanifold
+\[
+x^{4}=\varphi(x^{1},x^{2},x^{3}),
+\]
+the three forms in $dx^{1},dx^{2},dx^{3}$
+\[
+h_{1\alpha}dx^{\alpha},\qquad h_{2\alpha}dx^{\alpha},\qquad h_{4\alpha}dx^{\alpha}
+\]
+are now linearly independent. We can assume, by an obvious change of variables, that $\varphi=0$ is one solution of the equation considered.
+
+Let us restrict ourselves on the submanifold $x^{4}=0$. We can assume that the lines
+\[
+x^{1}=\text{const.},\qquad x^{2}=\text{const.}
+\]
+are those which, at each of their points, are perpendicular to the first two axes of the rectangular frame attached at the point, which is to say that we assume
+\[
+h_{13}=h_{23}=0;
+\]
+we can then, as we have done above, suppose that
+\[
+h_{33}=1,
+\]
+and then, by taking into account of equation \eqref{eq:I}, we see that, \emph{on $x^{4}=0$ we can assume that}
+\[
+h_{13}=0,\qquad h_{23}=0,\qquad h_{33}=1,\qquad h_{43}=0.
+\]
+
+\emph{The number of unknown functions entering the equations of the system is therefore reduced, when we set $x^{4}=0$, by $8$ units.}
+
+
+\vspace{12pt}
+
+\textbf{20}. We have already seen (\textsection\textbf{18})  what the involution condition will be for a given system with $r$ equations in addition to \eqref{eq:I} and \eqref{eq:II}: the existence of $r_{1}+r_{2}+r_{3}$ new identities. The condition for the system to \emph{determine} the unknown functions, in the sense of the theory of relativity, is just that the new equations are resolvable with respect to the $n$ derivatives $\Lambda^{s}_{\alpha4,4}$, which gives
+\[
+r-r_{3}=12.
+\]
+
+Then, \emph{for the given system to be involution and to determine the unknown functions, it is necessary and sufficient that:}
+\begin{enumerate}
+\item \emph{the equations other than \eqref{eq:I} and \eqref{eq:II} in the system are resolvable with respect to the $12$ derivatives $\Lambda^{s}_{\alpha 4,4}$};
+\item \emph{there exist between the derivatives of the left hand sides of the equations}
+\[
+r_{1}+r_{2}+r_{3}=r_{1}+r_{2}+r-12
+\]
+\emph{linearly independent identities.}
+\end{enumerate}
+
+Observe that the usual reasoning leads only to a necessary and sufficient condition of the existence of $r-12$ identities.
+
+The degree of generality of the solution, which is in the general case given by $n-r_{3}+r_{2}$, is here obtained by replacing respectively
+\[
+n,\qquad r_{3},\qquad r_{2}
+\]
+by
+\[
+40-8,\qquad r_{3}+16,\qquad r_{2}+4,
+\]
+which gives
+\[
+20-r_{3}+r_{2}=32-r+r_{2}
+\]
+arbitrary functions in three variables.
+
+\vspace{12pt}
+
+\textbf{21}. Let us apply the preceding to the $22$ equations of Einstein. Following him, we denote the covariant derivative with respect to $x^{\alpha}$ by $T_{;\alpha}$. It is essential to note that the covariant derivative $T_{;\alpha}$ is the sum of the ordinary derivative with respect to $x^{\alpha}$ and terms involving linearly the derivatives of the functions $h_{s\lambda}$ \emph{with respect to the same variables $x^{\alpha}$}. We have, for example,
+\[
+\Lambda^{\gamma}_{\alpha\beta;\delta}=\Lambda^{\gamma}_{\alpha\beta,\delta}-h^{\rho}_{s}(h_{s\alpha,\delta}\Lambda^{\gamma}_{\rho\beta}+h_{s\beta,\delta}\Lambda^{\gamma}_{\alpha\rho})+h^{\gamma}_{s}h_{s\rho,\delta}\Lambda^{\rho}_{\alpha\beta}.
+\]
+
+Between the two second order covariant derivatives $T_{;\alpha;\beta}$ and $T_{;\beta;\alpha}$ of a tensor $T$ we have the relation
+\[
+T_{;\alpha;\beta}-T_{;\beta;\alpha}+\Lambda^{\rho}_{\alpha\beta}T_{;\rho}=0.
+\]
+
+With these notations, the equations \eqref{eq:II}, which are none other than Bianchi identities, take the form
+\begin{equation}
+  \label{eq:II'}\tag{II$'$}
+  \mathcal{L}^{\delta}_{\alpha\beta\gamma}\equiv \Lambda^{\delta}_{\alpha\beta;\gamma}+\Lambda^{\delta}_{\beta\gamma;\alpha}+\Lambda^{\delta}_{\gamma\alpha;\beta}+\Lambda^{\rho}_{\alpha\beta}\Lambda^{\delta}_{\gamma\rho}+\Lambda^{\rho}_{\beta\gamma}\Lambda^{\delta}_{\alpha\rho}+\Lambda^{\rho}_{\gamma\alpha}\Lambda^{\delta}_{\beta\rho}=0.
+\end{equation}
+
+The system of Einstein, which contains $22$ equations, are the following:
+\begin{equation}
+  \label{eq:IV}\tag{IV}
+  \left\{
+    \begin{aligned}
+      \mathcal{F}_{\alpha\beta}&\equiv\Lambda^{\rho}_{\alpha\beta;\rho}=0,\\
+      \mathcal{G}^{\beta}_{\alpha}&\equiv\Lambda^{\beta}_{\alpha\rho;\underline\rho}+\Lambda^{\sigma}_{\alpha\rho}\Lambda^{\beta}_{\rho\sigma}=0,
+    \end{aligned}
+  \right.
+\end{equation}
+where we denote the quantity $g^{\rho\sigma}\Lambda^{\beta}_{\alpha\sigma}$ by $\Lambda^{\beta}_{\alpha\underline\rho}$.
+
+The calculation of $r_{3}$ is immediate. Indeed the expression $\mathcal{G}^{\beta}_{\alpha}$ contains $g^{44}\Lambda^{\beta}_{\alpha4;4}$. Hence if $g^{44}\neq 0$,  which is the case for an arbitrary choice of variables, the equations \eqref{eq:IV} are resolvable with respect to the $12$ covariant derivatives $\Lambda^{\beta}_{\alpha 4;4}$. We therefore have
+\[
+r_{3}=r-12=10.
+\]
+
+By the way, we see that \emph{the three dimensional characteristics of the system are the submanifolds tangent at each of their points to the hypercone $ds^{2}$ relative to the point.}
+
+\vspace{12pt}
+
+\textbf{22}. The $r_{3}=10$ equations which no longer contain any partial derivatives with respect to $x^{4}$ are, as can be seen easily,
+\begin{align*}
+  \mathcal{F}_{\alpha\beta}-\mathcal{L}^{4}_{\alpha\beta4}&=0&&(\alpha,\beta=1,2,3),\\
+  \mathcal{G}^{4}_{\alpha}-g^{4\rho}\mathcal{F}_{\alpha\rho}&=0&&(\alpha=1,2,3),\\
+  g^{4\rho}\mathcal{G}^{\alpha}_{\rho}\equiv \mathcal{G}^{\alpha}_{4}&=0&&(\alpha=1,2,3,4).
+\end{align*}
+
+We easily determine that the two equations
+\begin{gather*}
+\mathcal{F}_{12}-\mathcal{L}^{4}_{124}-\mathcal{L}^{3}_{123}=0\\
+g^{3\rho}(\mathcal{G}^{4}_{\rho}-g^{4\sigma}\mathcal{F}_{\rho\sigma})-g^{4\rho}\mathcal{G}^{3}_{\rho}\equiv\mathcal{G}^{4}_{\underline 3}-\mathcal{G}^{3}_{\underline 4}-\mathcal{F}_{\underline 3\underline 4}=0
+\end{gather*}
+contain no derivatives with respect to $x^{4}$ or $x^{3}$. They are also the only ones enjoying this property, as we can see by assuming for example that all of $g^{\alpha\beta}$ are zero for $\alpha\neq \beta$, with $g^{\alpha\alpha}=1$.
+
+We therefore have $r_{2}=2$. As for $r_{1}$, we see immediately that it is zero.
+
+\vspace{12pt}
+
+\textbf{23}. The values we have found for $r_{1},r_{2},r_{3}$, i.e.,
+\[
+r_{1}=0,\qquad r_{2}=2,\qquad r_{3}=10,
+\]
+show that the system is in involution if there exists
+\[
+r_{1}+r_{2}+r_{3}=12
+\]
+linearly independent identities. The general solution then depends on 
+\[
+32-r+r_{2}=12
+\]
+arbitrary functions in three variables.
+
+The $12$ identities, which really exist, are the following
+\begin{equation}
+  \label{eq:V}\tag{V}
+  \left\{
+    \begin{gathered}
+      \mathcal{F}_{\alpha\beta;\gamma}+\mathcal{F}_{\beta\gamma;\alpha}+\mathcal{F}_{\gamma\alpha;\beta}-\mathcal{L}^{\rho}_{\alpha\beta\gamma;\rho}+\Lambda^{\rho}_{\alpha\beta}\mathcal{F}_{\gamma\rho}+\Lambda^{\rho}_{\beta\gamma}\mathcal{F}_{\alpha\rho}+\Lambda^{\rho}_{\gamma\alpha}\mathcal{F}_{\beta\rho}\equiv 0,\\
+      \mathcal{G}^{\rho}_{\alpha;\rho}-\mathcal{F}_{\alpha\underline\rho;\rho}-\Lambda^{\sigma}_{\alpha\underline\rho}\mathcal{F}_{\rho\sigma}\equiv 0,\\
+      \mathcal{G}^{\alpha}_{\underline\rho;\rho}+\Lambda^{\alpha}_{\underline\rho\sigma}\mathcal{G}^{\sigma}_{\rho}-\frac{1}{2}\Lambda^{\tau}_{\rho\underline\sigma}\mathcal{L}^{\alpha}_{\rho\sigma\tau}\equiv 0.
+    \end{gathered}
+  \right.
+\end{equation}
+
+The first four equations can be written much more simply as
+\[
+\mathcal{F}_{\alpha\beta,\gamma}+\mathcal{F}_{\beta\gamma,\alpha}+\mathcal{F}_{\gamma\alpha,\beta}\equiv 0.
+\]
+Indeed, by setting
+\[
+\varphi_{\alpha}=\Lambda^{\rho}_{\alpha\rho},
+\]
+we have, according to the Bianchi identities $\mathcal{L}^{\rho}_{\alpha\beta\rho}=0$,
+\[
+\mathcal{F}_{\alpha\beta}\equiv \varphi_{\alpha,\beta}-\varphi_{\beta,\alpha}.
+\]
+
+\vspace{12pt}
+
+\textbf{24}. There exists another system of $22$ equations, also in involution, with the same degree of arbitrariness as the system of Einstein. Let us first introduce the quantities
+\[
+S^{\alpha}=\frac{1}{h}(g_{\beta\rho}\Lambda^{\rho}_{\gamma\delta}+g_{\gamma\rho}\Lambda^{\rho}_{\delta\beta}+g_{\delta\rho}\Lambda^{\rho}_{\beta\gamma}),
+\]
+where $\alpha,\beta,\gamma,\delta$ form an even permutation of the indices $1,2,3,4$. We verify the identities that
+\[
+\mathcal{G}^{4}_{\underline 3}-\mathcal{G}^{3}_{\underline 4}-\mathcal{F}_{\underline 3\underline 4}\equiv S_{2,1}-S_{1,2}+\varphi_{1}S_{2}-\varphi_{2}S_{1},
+\]
+such that the $22$ equations of Einstein can be written
+\begin{equation}
+  \label{eq:VI'}\tag{IV$'$}
+  \left\{
+    \begin{aligned}
+      \varphi_{\alpha,\beta}-\varphi_{\beta,\alpha}&=0,\\
+      S_{\alpha,\beta}-S_{\beta,\alpha}-\varphi_{\alpha}S_{\beta}+\varphi_{\beta}S_{\alpha}&=0,\\
+      {G}^{\beta}_{\underline\alpha}+\mathcal{G}^{\alpha}_{\underline\beta}&=0,
+    \end{aligned}
+  \right.
+\end{equation}
+the last $10$ equations being symmetric. On the other hand we can verify by a rather difficult calculation that the quantities $G_{\alpha\beta}$ which are introduces in the old equations of relativity (contracted Riemann tensor) can be expressed under the form
+\[
+G_{\alpha\beta}\equiv\mathcal{G}^{\beta}_{\underline\alpha}+\mathcal{G}^{\underline\alpha}_{\beta}-(\varphi_{\alpha,\beta}+\varphi_{\beta,\alpha})-2\Lambda^{\underline\sigma}_{\alpha\beta}\Lambda^{\sigma}_{\beta\underline\rho}-S_{\alpha}S_{\beta}+g_{\alpha\beta}S_{\rho}S^{\rho}.
+\]
+
+Consider the system of $22$ equations
+\begin{equation}
+  \label{eq:VI}\tag{VI}
+  \left\{
+    \begin{gathered}
+      \mathcal{F}_{\alpha\beta}\equiv\varphi_{\alpha,\beta}-\varphi_{\beta,\alpha}+m(\varphi_{\alpha}S_{\beta}-\varphi_{\beta}S_{\alpha})=0,\\
+      \mathcal{S}_{\alpha\beta}\equiv S_{\alpha,\beta}-S_{\beta,\alpha}+n(\varphi_{\alpha}S_{\beta}-\varphi_{\beta}S_{\alpha})=0,\\
+G_{\alpha\beta}=0.
+    \end{gathered}
+  \right.
+\end{equation}
+We check without difficulty that the values of $r_{1},r_{2},r_{3}$ are the same as in the system of Einstein, and the three dimensional characteristic submanifolds are also the same. There again exists $12$ linearly independent identities, i.e., the $4$ classical identities of the old theory of relativity and the $8$ identities
+\begin{align*}
+  \mathcal{F}_{\alpha\beta,\gamma}+\mathcal{F}_{\beta\gamma,\alpha}+\mathcal{F}_{\gamma\alpha,\beta}+m(S_{\alpha}\mathcal{F}_{\beta\gamma}+S_{\beta}\mathcal{F}_{\gamma\alpha}+S_{\gamma}\mathcal{F}_{\alpha\beta}-\varphi_{\alpha}\mathcal{S}_{\beta\gamma}-\varphi_{\beta}\mathcal{S}_{\gamma\alpha}-\varphi_{\gamma}\mathcal{S}_{\alpha\beta})\equiv 0,\\
+  \mathcal{S}_{\alpha\beta,\gamma}+\mathcal{S}_{\beta\gamma,\alpha}+\mathcal{S}_{\gamma\alpha,\beta}+n(S_{\alpha}\mathcal{F}_{\beta\gamma}+S_{\beta}\mathcal{F}_{\gamma\alpha}+S_{\gamma}\mathcal{F}_{\alpha\beta}-\varphi_{\alpha}\mathcal{S}_{\beta\gamma}-\varphi_{\beta}\mathcal{S}_{\gamma\alpha}-\varphi_{\gamma}\mathcal{S}_{\alpha\beta})\equiv 0.
+\end{align*}
+
+The system \eqref{eq:VI} is therefore in involution, it determines the variables of the field and its general solution depend on $12$ arbitrary functions of $3$ variables.
+
+\vspace{12pt}
+
+\textbf{25}. Finally let us indicate a last system in involution which contains only $15$ equations, i.e.,
+\begin{equation}
+  \label{eq:VII}\tag{VII}
+  \left\{
+    \begin{aligned}
+      \mathcal{F}_{\alpha\beta}&\equiv S_{\alpha\beta}-S_{\beta\alpha}+c(\varphi_{\alpha,\beta}-\varphi_{\beta,\alpha})=0,\\
+      \Phi_{\alpha\beta}&\equiv G_{\alpha\beta}-\frac{1}{4}g_{\alpha\beta}G_{\rho\underline\rho}+a\left(\varphi_{\alpha,\beta}+\varphi_{\beta,\alpha}-\frac{1}{2}g_{\alpha\beta}\varphi_{\rho,\underline\rho}\right)\\
+      &\quad +b(S_{\alpha,\beta}+S_{\beta,\alpha}-g_{\alpha\beta}S_{\underline\rho,\rho})-T_{\alpha\beta}=0.
+    \end{aligned}
+  \right.
+\end{equation}
+
+In these equations $a,b,c$ are three numerical constants, and $T_{\alpha\beta}$ denote an arbitrary symmetric tensor formed with the components of the torsion subject to the condition that its contacted tensor is zero.
+
+If $a\neq bc$, the equations of the system can be resolved with respect to the $12$ derivatives $\Lambda^{\beta}_{\alpha4;4}$ and we find
+\[
+r_{3}=3,\qquad r_{2}=1,\qquad r_{1}=0.
+\]
+There really exist $r_{1}+r_{2}+r_{3}=4$ identities, i.e.,
+\[
+\mathcal{F}_{\alpha\beta,\gamma}+\mathcal{F}_{\beta\gamma,\alpha}+\mathcal{F}_{\gamma\alpha,\beta}\equiv 0.
+\]
+
+The general solution depends on $32-r+r_{2}=18$ arbitrary functions in three variables.
+
+It is probable that the systems \eqref{eq:IV}, \eqref{eq:VI} and \eqref{eq:VII} are the only systems in involution independent of the choice of variables and the choice of rectangular frames and which are linear with respect to the covariant derivatives of $\Lambda^{\gamma}_{\alpha\beta}$ and quadratic with respect to $\Lambda^{\gamma}_{\alpha\beta}$, and which further \emph{determine} the unknown functions. However the discussion of this problem involves problems in algebra which are beyond the subject of this article.
+
+Let us add that the equations \eqref{eq:IV}, \eqref{eq:VI} and \eqref{eq:VII} can be written in a manner such that the independent variables do not appear at all, by utilising the tensor components of the torsion with respect to the rectangular frames, equipollent between themselves, attached at different points of the space. These components $\Lambda^{s}_{ij}$ are defined by
+\[
+\Lambda^{s}_{ij}=h^{\alpha}_{i}h^{\beta}_{j}\Lambda^{s}_{\alpha\beta}.
+\]
+
+On the other hand by introducing the covariant derivative $T_{;i}$ defined by
+\[
+dT=\sum_{s}T_{;s}h_{s\alpha}dx^{\alpha}
+\]
+the equations \eqref{eq:II'}, \eqref{eq:IV}, \eqref{eq:V}, \eqref{eq:VI}, \eqref{eq:VII} take the same form when we substitute Greek indices by Latin indices, but each index can then be written above or below indifferently. The discussion is the same as before, but the quantities $g_{\alpha\beta}$, $g^{\alpha\beta}$, etc., do not appear anywhere, or rather the quantities $g_{ij}$ and $g^{ij}$ are zero for $i\neq j$ and are $1$ for $i=j$.
+
+\end{document}

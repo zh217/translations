@@ -1,0 +1,308 @@
+;; RefTeX parse info file
+;; File: /Users/zh217/Documents/work/cartangret.tex
+;; User: zh217 (Amadeo)
+
+(set reftex-docstruct-symbol '(
+
+
+(xr nil "\\\\\\\\\\\\")
+
+(index-tags)
+
+(is-multi nil)
+
+(bibview-cache)
+
+(master-dir . "/Users/zh217/Documents/work/")
+
+(label-numbers ("eq:" . 49))
+
+(bof "/Users/zh217/Documents/work/cartangret.tex")
+
+(toc "toc" "    1 Introduction" "/Users/zh217/Documents/work/cartangret.tex" nil 2 "1" "\\section{Introduction}" 3916)
+
+("sec:introduction" "s" "The equations of Einstein's gravitation express the components $T_{ik}$ of matter tensor by means of" "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+(toc "toc" "    2 Preliminaries" "/Users/zh217/Documents/work/cartangret.tex" nil 2 "2" "\\section{Preliminaries}" 11811)
+
+("sec:preliminaries" "s" "\\paragraph{}  Consider any given system of curvilinear coordinates in Euclidean space and suppose th" "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+(toc "toc" "          2.0.0.1  " "/Users/zh217/Documents/work/cartangret.tex" nil 5 "2.0.0.1" "\\paragraph{}" 11862)
+
+("sec:1" "s" "Consider any given system of curvilinear coordinates in Euclidean space and suppose that $ds^{2}$ is" "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+("eq:1" "e" "\\left\\{ \\begin{aligned} dx+y\\omega_{21}+z\\omega_{31}+\\omega_{1}&=0," "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+("eq:2" "e" "\\left\\{ \\begin{aligned} \\omega_{1}'&=[\\omega_{2}\\omega_{21}]+[\\omega_{3}\\omega_{31}]," "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+(toc "toc" "          2.0.0.2  " "/Users/zh217/Documents/work/cartangret.tex" nil 5 "2.0.0.2" "\\paragraph{}" 16281)
+
+("sec:2" "s" "The first three formulae of \\eqref{eq:2} shows that, \\emph{if we know only} $\\omega_{1},\\omega_{2},\\" "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+("eq:3" "e" "\\left\\{ \\begin{aligned} du+v\\omega_{21}+w\\omega_{31}&=0," "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+(toc "toc" "          2.0.0.3  " "/Users/zh217/Documents/work/cartangret.tex" nil 5 "2.0.0.3" "\\paragraph{}" 18357)
+
+("sec:3" "s" "The preceding considerations extend to Euclidean space of any dimensions as well as generalised Eucl" "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+("eq:4" "e" "V_{i}|V_{i}=\\epsilon_{i},\\qquad V_{i}|V_{j}=0,\\qquad (i\\neq j). " "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+("eq:5" "e" "\\left\\{ \\begin{aligned} dM&=\\omega_{1}V_{1}+\\omega_{2}V_{2}+\\dots+\\omega_{n}V_{n}," "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+("eq:6" "e" "ds^{2}=\\epsilon_{1}\\omega_{1}^{2}+\\epsilon_{2}\\omega_{2}^{2}+\\dots+\\epsilon_{n}\\omega_{n}^{2}, " "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+("eq:7" "e" "\\left\\{ \\begin{aligned} \\omega_{i}'&=\\epsilon_{i}\\sum_{k=1}^{k=n}[\\omega_{k}\\omega_{ki}]," "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+("eq:8" "e" "dx_{i}+\\omega_{i}+\\epsilon_{i}\\sum_{k=1}^{k=n}x_{k}\\omega_{ki}=0. " "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+(toc "toc" "          2.0.0.4  " "/Users/zh217/Documents/work/cartangret.tex" nil 5 "2.0.0.4" "\\paragraph{}" 20888)
+
+("sec:4" "s" "Conversely, suppose that we have decomposed $ds^{2}$ of the preceding Euclidean space into a form su" "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+(toc "toc" "          2.0.0.5  " "/Users/zh217/Documents/work/cartangret.tex" nil 5 "2.0.0.5" "\\paragraph{}" 21848)
+
+("sec:5" "s" "Let us now consider an \\emph{a priori} given quadratic differential form in $n$ variables and suppos" "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+("eq:9" "e" "ds^{2}=\\epsilon_{1}\\omega_{1}^{2}+\\epsilon_{2}\\omega_{2}^{2}+\\dots+\\epsilon_{n}\\omega_{n}^{2},\\qquad" "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+("eq:10" "e" "\\omega_{i}'=\\epsilon_{i}[\\omega_{1}\\omega_{1i}]+\\epsilon_{i}[\\omega_{2}\\omega_{2i}]+\\dots+\\epsilon_{" "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+("eq:10'" "e" "\\tag{\\ref{eq:10}} \\omega_{i}'=\\epsilon_{i}\\sum_{k=1}^{k=n}[\\omega_{k}\\omega_{ki}]. " "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+("eq:12" "e" nil "/Users/zh217/Documents/work/cartangret.tex" nil "")
+
+("eq:13" "e" nil "/Users/zh217/Documents/work/cartangret.tex" nil "")
+
+("eq:14" "e" nil "/Users/zh217/Documents/work/cartangret.tex" nil "")
+
+("eq:15" "e" nil "/Users/zh217/Documents/work/cartangret.tex" nil "")
+
+(toc "toc" "          2.0.0.6  " "/Users/zh217/Documents/work/cartangret.tex" nil 5 "2.0.0.6" "\\paragraph{}" 25280)
+
+("sec:6" "s" "Nothing prevents us to say that the decomposition \\eqref{eq:9} at each point of the $n$ dimensional " "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+("eq:8a" "e" "\\tag{\\ref{eq:8}} dx_{i}+\\omega_{i}+\\epsilon_{i}\\sum_{k=1}^{k=n}x_{k}\\omega_{ki}=0, " "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+("eq:8'" "e" "\\tag{\\ref{eq:8}$'$} d\\xi_{i}+\\epsilon_{i}\\sum_{k=1}^{k=n}\\xi_{k}\\omega_{ki}=0 " "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+("eq:11" "e" " " "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+(toc "toc" "          2.0.0.7  " "/Users/zh217/Documents/work/cartangret.tex" nil 5 "2.0.0.7" "\\paragraph{}" 28203)
+
+("sec:7" "s" "\\paragraph{}  \\paragraph{} \\label{sec:9} \\paragraph{} \\label{sec:10} \\paragraph{} \\label{sec:11} \\pa" "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+(toc "toc" "          2.0.0.8  " "/Users/zh217/Documents/work/cartangret.tex" nil 5 "2.0.0.8" "\\paragraph{}" 28231)
+
+("sec:8" "s" "\\paragraph{}  \\paragraph{} \\label{sec:10} \\paragraph{} \\label{sec:11} \\paragraph{} \\label{sec:12} \\s" "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+("eq:16" "e" nil "/Users/zh217/Documents/work/cartangret.tex" nil "")
+
+("eq:17" "e" nil "/Users/zh217/Documents/work/cartangret.tex" nil "")
+
+("eq:18" "e" nil "/Users/zh217/Documents/work/cartangret.tex" nil "")
+
+("eq:19" "e" nil "/Users/zh217/Documents/work/cartangret.tex" nil "")
+
+("eq:20" "e" nil "/Users/zh217/Documents/work/cartangret.tex" nil "")
+
+(toc "toc" "          2.0.0.9  " "/Users/zh217/Documents/work/cartangret.tex" nil 5 "2.0.0.9" "\\paragraph{}" 28259)
+
+("sec:9" "s" "\\paragraph{}  \\paragraph{} \\label{sec:11} \\paragraph{} \\label{sec:12} \\section{Invariants of a quadr" "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+("eq:21" "e" nil "/Users/zh217/Documents/work/cartangret.tex" nil "")
+
+("eq:22" "e" nil "/Users/zh217/Documents/work/cartangret.tex" nil "")
+
+("eq:23" "e" nil "/Users/zh217/Documents/work/cartangret.tex" nil "")
+
+("eq:24" "e" nil "/Users/zh217/Documents/work/cartangret.tex" nil "")
+
+("eq:25" "e" nil "/Users/zh217/Documents/work/cartangret.tex" nil "")
+
+("eq:26" "e" nil "/Users/zh217/Documents/work/cartangret.tex" nil "")
+
+(toc "toc" "          2.0.0.10  " "/Users/zh217/Documents/work/cartangret.tex" nil 5 "2.0.0.10" "\\paragraph{}" 28287)
+
+("sec:10" "s" "\\paragraph{}  \\paragraph{} \\label{sec:12} \\section{Invariants of a quadratic differential form} \\lab" "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+("eq:27" "e" nil "/Users/zh217/Documents/work/cartangret.tex" nil "")
+
+(toc "toc" "          2.0.0.11  " "/Users/zh217/Documents/work/cartangret.tex" nil 5 "2.0.0.11" "\\paragraph{}" 28316)
+
+("sec:11" "s" "\\paragraph{}  \\section{Invariants of a quadratic differential form} \\label{sec:invar-quadr-diff} \\pa" "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+("eq:28" "e" nil "/Users/zh217/Documents/work/cartangret.tex" nil "")
+
+(toc "toc" "          2.0.0.12  " "/Users/zh217/Documents/work/cartangret.tex" nil 5 "2.0.0.12" "\\paragraph{}" 28345)
+
+("sec:12" "s" "\\section{Invariants of a quadratic differential form}  \\paragraph{} \\label{sec:13} \\paragraph{} \\lab" "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+("eq:29" "e" nil "/Users/zh217/Documents/work/cartangret.tex" nil "")
+
+("eq:30" "e" nil "/Users/zh217/Documents/work/cartangret.tex" nil "")
+
+(toc "toc" "    3 Invariants of a quadratic differential form" "/Users/zh217/Documents/work/cartangret.tex" nil 2 "3" "\\section{Invariants of a quadratic differential form}" 28378)
+
+("sec:invar-quadr-diff" "s" "\\paragraph{}  \\paragraph{} \\label{sec:14} \\paragraph{} \\label{sec:15} \\paragraph{} \\label{sec:16} \\p" "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+(toc "toc" "          3.0.0.1  " "/Users/zh217/Documents/work/cartangret.tex" nil 5 "3.0.0.1" "\\paragraph{}" 28462)
+
+("sec:13" "s" "\\paragraph{}  \\paragraph{} \\label{sec:15} \\paragraph{} \\label{sec:16} \\paragraph{} \\label{sec:17} \\p" "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+(toc "toc" "          3.0.0.2  " "/Users/zh217/Documents/work/cartangret.tex" nil 5 "3.0.0.2" "\\paragraph{}" 28491)
+
+("sec:14" "s" "\\paragraph{}  \\paragraph{} \\label{sec:16} \\paragraph{} \\label{sec:17} \\paragraph{} \\label{sec:18} \\p" "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+(toc "toc" "          3.0.0.3  " "/Users/zh217/Documents/work/cartangret.tex" nil 5 "3.0.0.3" "\\paragraph{}" 28520)
+
+("sec:15" "s" "\\paragraph{}  \\paragraph{} \\label{sec:17} \\paragraph{} \\label{sec:18} \\paragraph{} \\label{sec:19} \\p" "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+(toc "toc" "          3.0.0.4  " "/Users/zh217/Documents/work/cartangret.tex" nil 5 "3.0.0.4" "\\paragraph{}" 28549)
+
+("sec:16" "s" "\\paragraph{}  \\paragraph{} \\label{sec:18} \\paragraph{} \\label{sec:19} \\paragraph{} \\label{sec:20} \\p" "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+("eq:31" "e" nil "/Users/zh217/Documents/work/cartangret.tex" nil "")
+
+(toc "toc" "          3.0.0.5  " "/Users/zh217/Documents/work/cartangret.tex" nil 5 "3.0.0.5" "\\paragraph{}" 28578)
+
+("sec:17" "s" "\\paragraph{}  \\paragraph{} \\label{sec:19} \\paragraph{} \\label{sec:20} \\paragraph{} \\label{sec:21} \\p" "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+(toc "toc" "          3.0.0.6  " "/Users/zh217/Documents/work/cartangret.tex" nil 5 "3.0.0.6" "\\paragraph{}" 28607)
+
+("sec:18" "s" "\\paragraph{}  \\paragraph{} \\label{sec:20} \\paragraph{} \\label{sec:21} \\paragraph{} \\label{sec:22} \\p" "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+(toc "toc" "          3.0.0.7  " "/Users/zh217/Documents/work/cartangret.tex" nil 5 "3.0.0.7" "\\paragraph{}" 28636)
+
+("sec:19" "s" "\\paragraph{}  \\paragraph{} \\label{sec:21} \\paragraph{} \\label{sec:22} \\paragraph{} \\label{sec:23} \\s" "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+("eq:32" "e" nil "/Users/zh217/Documents/work/cartangret.tex" nil "")
+
+("eq:33" "e" nil "/Users/zh217/Documents/work/cartangret.tex" nil "")
+
+("eq:34" "e" nil "/Users/zh217/Documents/work/cartangret.tex" nil "")
+
+("eq:35" "e" nil "/Users/zh217/Documents/work/cartangret.tex" nil "")
+
+(toc "toc" "          3.0.0.8  " "/Users/zh217/Documents/work/cartangret.tex" nil 5 "3.0.0.8" "\\paragraph{}" 28665)
+
+("sec:20" "s" "\\paragraph{}  \\paragraph{} \\label{sec:22} \\paragraph{} \\label{sec:23} \\section{Absolute invariants o" "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+("eq:36" "e" nil "/Users/zh217/Documents/work/cartangret.tex" nil "")
+
+("eq:37" "e" nil "/Users/zh217/Documents/work/cartangret.tex" nil "")
+
+("eq:38" "e" nil "/Users/zh217/Documents/work/cartangret.tex" nil "")
+
+(toc "toc" "          3.0.0.9  " "/Users/zh217/Documents/work/cartangret.tex" nil 5 "3.0.0.9" "\\paragraph{}" 28694)
+
+("sec:21" "s" "\\paragraph{}  \\paragraph{} \\label{sec:23} \\section{Absolute invariants of a quadratic differential f" "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+("eq:39" "e" nil "/Users/zh217/Documents/work/cartangret.tex" nil "")
+
+("eq:40" "e" nil "/Users/zh217/Documents/work/cartangret.tex" nil "")
+
+("eq:41" "e" nil "/Users/zh217/Documents/work/cartangret.tex" nil "")
+
+("eq:42" "e" nil "/Users/zh217/Documents/work/cartangret.tex" nil "")
+
+("eq:43" "e" nil "/Users/zh217/Documents/work/cartangret.tex" nil "")
+
+(toc "toc" "          3.0.0.10  " "/Users/zh217/Documents/work/cartangret.tex" nil 5 "3.0.0.10" "\\paragraph{}" 28723)
+
+("sec:22" "s" "\\paragraph{}  \\section{Absolute invariants of a quadratic differential form} \\label{sec:absol-invar-" "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+(toc "toc" "          3.0.0.11  " "/Users/zh217/Documents/work/cartangret.tex" nil 5 "3.0.0.11" "\\paragraph{}" 28752)
+
+("sec:23" "s" "\\section{Absolute invariants of a quadratic differential form}  \\paragraph{} \\label{sec:24} \\paragra" "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+(toc "toc" "    4 Absolute invariants of a quadratic differential form" "/Users/zh217/Documents/work/cartangret.tex" nil 2 "4" "\\section{Absolute invariants of a quadratic differential form}" 28783)
+
+("sec:absol-invar-quadr" "s" "\\paragraph{}  \\paragraph{} \\label{sec:25} \\paragraph{} \\label{sec:26} \\paragraph{} \\label{sec:27} \\p" "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+(toc "toc" "          4.0.0.1  " "/Users/zh217/Documents/work/cartangret.tex" nil 5 "4.0.0.1" "\\paragraph{}" 28877)
+
+("sec:24" "s" "\\paragraph{}  \\paragraph{} \\label{sec:26} \\paragraph{} \\label{sec:27} \\paragraph{} \\label{sec:28} \\p" "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+(toc "toc" "          4.0.0.2  " "/Users/zh217/Documents/work/cartangret.tex" nil 5 "4.0.0.2" "\\paragraph{}" 28906)
+
+("sec:25" "s" "\\paragraph{}  \\paragraph{} \\label{sec:27} \\paragraph{} \\label{sec:28} \\paragraph{} \\label{sec:29} \\p" "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+("eq:44" "e" nil "/Users/zh217/Documents/work/cartangret.tex" nil "")
+
+(toc "toc" "          4.0.0.3  " "/Users/zh217/Documents/work/cartangret.tex" nil 5 "4.0.0.3" "\\paragraph{}" 28935)
+
+("sec:26" "s" "\\paragraph{}  \\paragraph{} \\label{sec:28} \\paragraph{} \\label{sec:29} \\paragraph{} \\label{sec:30} \\p" "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+(toc "toc" "          4.0.0.4  " "/Users/zh217/Documents/work/cartangret.tex" nil 5 "4.0.0.4" "\\paragraph{}" 28964)
+
+("sec:27" "s" "\\paragraph{}  \\paragraph{} \\label{sec:29} \\paragraph{} \\label{sec:30} \\paragraph{} \\label{sec:31} \\p" "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+("eq:45" "e" nil "/Users/zh217/Documents/work/cartangret.tex" nil "")
+
+("eq:46" "e" nil "/Users/zh217/Documents/work/cartangret.tex" nil "")
+
+("eq:47" "e" nil "/Users/zh217/Documents/work/cartangret.tex" nil "")
+
+(toc "toc" "          4.0.0.5  " "/Users/zh217/Documents/work/cartangret.tex" nil 5 "4.0.0.5" "\\paragraph{}" 28993)
+
+("sec:28" "s" "\\paragraph{}  \\paragraph{} \\label{sec:30} \\paragraph{} \\label{sec:31} \\paragraph{} \\label{sec:32} \\p" "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+(toc "toc" "          4.0.0.6  " "/Users/zh217/Documents/work/cartangret.tex" nil 5 "4.0.0.6" "\\paragraph{}" 29022)
+
+("sec:29" "s" "\\paragraph{}  \\paragraph{} \\label{sec:31} \\paragraph{} \\label{sec:32} \\paragraph{} \\label{sec:33} \\p" "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+(toc "toc" "          4.0.0.7  " "/Users/zh217/Documents/work/cartangret.tex" nil 5 "4.0.0.7" "\\paragraph{}" 29051)
+
+("sec:30" "s" "\\paragraph{}  \\paragraph{} \\label{sec:32} \\paragraph{} \\label{sec:33} \\paragraph{} \\label{sec:34} \\s" "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+(toc "toc" "          4.0.0.8  " "/Users/zh217/Documents/work/cartangret.tex" nil 5 "4.0.0.8" "\\paragraph{}" 29080)
+
+("sec:31" "s" "\\paragraph{}  \\paragraph{} \\label{sec:33} \\paragraph{} \\label{sec:34} \\section{Conversation law and " "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+(toc "toc" "          4.0.0.9  " "/Users/zh217/Documents/work/cartangret.tex" nil 5 "4.0.0.9" "\\paragraph{}" 29109)
+
+("sec:32" "s" "\\paragraph{}  \\paragraph{} \\label{sec:34} \\section{Conversation law and the equations of gravitation" "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+("eq:48" "e" nil "/Users/zh217/Documents/work/cartangret.tex" nil "")
+
+(toc "toc" "          4.0.0.10  " "/Users/zh217/Documents/work/cartangret.tex" nil 5 "4.0.0.10" "\\paragraph{}" 29138)
+
+("sec:33" "s" "\\paragraph{}  \\section{Conversation law and the equations of gravitation} \\label{sec:conv-law-equat}" "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+(toc "toc" "          4.0.0.11  " "/Users/zh217/Documents/work/cartangret.tex" nil 5 "4.0.0.11" "\\paragraph{}" 29167)
+
+("sec:34" "s" "\\section{Conversation law and the equations of gravitation}  \\paragraph{} \\label{sec:35} \\paragraph{" "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+(toc "toc" "    5 Conversation law and the equations of gravitation" "/Users/zh217/Documents/work/cartangret.tex" nil 2 "5" "\\section{Conversation law and the equations of gravitation}" 29198)
+
+("sec:conv-law-equat" "s" "\\paragraph{}  \\paragraph{} \\label{sec:36} \\paragraph{} \\label{sec:37} \\paragraph{} \\label{sec:38} \\p" "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+(toc "toc" "          5.0.0.1  " "/Users/zh217/Documents/work/cartangret.tex" nil 5 "5.0.0.1" "\\paragraph{}" 29286)
+
+("sec:35" "s" "\\paragraph{}  \\paragraph{} \\label{sec:37} \\paragraph{} \\label{sec:38} \\paragraph{} \\label{sec:39} \\p" "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+(toc "toc" "          5.0.0.2  " "/Users/zh217/Documents/work/cartangret.tex" nil 5 "5.0.0.2" "\\paragraph{}" 29315)
+
+("sec:36" "s" "\\paragraph{}  \\paragraph{} \\label{sec:38} \\paragraph{} \\label{sec:39} \\paragraph{} \\label{sec:40} " "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+("eq:49" "e" nil "/Users/zh217/Documents/work/cartangret.tex" nil "")
+
+(toc "toc" "          5.0.0.3  " "/Users/zh217/Documents/work/cartangret.tex" nil 5 "5.0.0.3" "\\paragraph{}" 29344)
+
+("sec:37" "s" "\\paragraph{}  \\paragraph{} \\label{sec:39} \\paragraph{} \\label{sec:40} " "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+(toc "toc" "          5.0.0.4  " "/Users/zh217/Documents/work/cartangret.tex" nil 5 "5.0.0.4" "\\paragraph{}" 29373)
+
+("sec:38" "s" "\\paragraph{}  \\paragraph{} \\label{sec:40} " "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+(toc "toc" "          5.0.0.5  " "/Users/zh217/Documents/work/cartangret.tex" nil 5 "5.0.0.5" "\\paragraph{}" 29402)
+
+("sec:39" "s" "\\paragraph{}  " "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+(toc "toc" "          5.0.0.6  " "/Users/zh217/Documents/work/cartangret.tex" nil 5 "5.0.0.6" "\\paragraph{}" 29431)
+
+("sec:40" "s" " " "/Users/zh217/Documents/work/cartangret.tex" nil)
+
+(eof "/Users/zh217/Documents/work/cartangret.tex")
+))
+

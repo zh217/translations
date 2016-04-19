@@ -1,0 +1,1836 @@
+;; RefTeX parse info file
+;; File: /Users/zh217/Documents/work/cartangrpt.tex
+;; User: zh217 (Amadeo)
+
+(set reftex-docstruct-symbol '(
+
+
+(xr nil "\\\\\\\\\\\\")
+
+(index-tags)
+
+(is-multi t)
+
+(bibview-cache)
+
+(master-dir . "/Users/zh217/Documents/work/")
+
+(label-numbers)
+
+(bof "/Users/zh217/Documents/work/cartangrpt.tex")
+
+(toc "toc" "  * Preface" "/Users/zh217/Documents/work/cartangrpt.tex" nil 1 "*" "\\chapter*{Preface}" 6444)
+
+(bof "/Users/zh217/Documents/work/cartangrp1.tex")
+
+(toc "toc" "Part I The method of moving trihedrals in Euclidean geometry" "/Users/zh217/Documents/work/cartangrp1.tex" nil 0 "Part I" "\\part{The method of moving trihedrals in Euclidean geometry}" 2)
+
+("part:1" "s" "\\chapter*{Introduction}  \\addcontentsline{toc}{chapter}{Introduction} \\paragraph{}\\label{sec:1} Riba" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "  * Introduction" "/Users/zh217/Documents/work/cartangrp1.tex" nil 1 "*" "\\chapter*{Introduction}" 79)
+
+("cha:0" "s" "\\addcontentsline{toc}{chapter}{Introduction} \\paragraph{} Ribaucour the first studied the differenti" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          1  " "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "1" "\\paragraph{}" 163)
+
+("sec:1" "s" "Ribaucour the first studied the differential properties of surfaces with help of a moving rectangula" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "  1 Moving rectangular trihedrals. Real space curves" "/Users/zh217/Documents/work/cartangrp1.tex" nil 1 "1" "\\chapter{Moving rectangular trihedrals. Real space curves}" 2508)
+
+("cha:1" "s" "\\section[{Infinitesimal displacement of a rectangular trihedral}]{Infinitesimal displacement of" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "    1.1 Infinitesimal displacement of" "/Users/zh217/Documents/work/cartangrp1.tex" nil 2 "1.1" "\\section[{Infinitesimal displacement of a rectangular trihedral}]{Infinitesimal displacement of\\\\a rectangular trihedral \\footnote{\\emph{See} \\textsc{G.~Darboux} \\cite{1}, vol.\\ 1, chapters 1, 5 and 7.}}" 2583)
+
+("sec:1.1" "s" "\\paragraph{Review of some kinematic notions.}  Consider a moving solid body. It is convenient for st" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          1.1.0.0.1 Review of some kinematic notions." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "1.1.0.0.1" "\\paragraph{Review of some kinematic notions.}" 2804)
+
+("sec:2" "s" "Consider a moving solid body. It is convenient for studying its geometry to invariantly attach a rig" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:1.1" "e" "\\left\\{ \\begin{alignedat}{6} \\frac{d{\\rvec{A}}}{dt}&=&\\xi_{1}\\ivec_{1}&\\ +\\ &\\xi_{2}\\ivec_{2}&\\ +\\ &" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:1.2" "e" "\\left\\{ \\begin{alignedat}{6} \\frac{d{\\rvec{A}}}{dt}&=&\\xi_{1}\\ivec_{1}&\\ +\\ &\\xi_{2}\\ivec_{2}&\\ +\\ &" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          1.1.0.0.2 Movements depending on several parameters." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "1.1.0.0.2" "\\paragraph{Movements depending on several parameters.}" 6123)
+
+("sec:3" "s" "The consideration in \\fsref{2} has applications in many diverse questions in geometry. It is useful " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:1.3" "e" "\\left\\{ \\begin{alignedat}{6} \\frac{\\pd {\\rvec{M}}}{\\pd u_{q}}&=\\frac{\\pd {\\rvec{A}}}{\\pd u_{q}}&{}+x" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:1.4" "e" "\\left\\{ \\begin{alignedat}{6} d{\\rvec{M}}&=d{\\rvec{A}}&{}+x\\,d\\ivec_{1}&&{}+y\\,d\\ivec_{2}&&{}+z\\,d\\iv" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          1.1.0.0.3 The relative components have a geometrical meaning." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "1.1.0.0.3" "\\paragraph{The relative components have a geometrical meaning.}" 9488)
+
+("sec:4" "s" "Consider a family of trihedrals depending on one or several parameters $u_{1}$, $\\dots$, $u_{\\rho}$." "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:1.5" "e" "\\left\\{ \\begin{aligned} \\omega_{i}(u;du)&=\\omega_{i}(v;dv)," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          1.1.0.0.4 An integration problem." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "1.1.0.0.4" "\\paragraph{An integration problem.}" 11313)
+
+("sec:5" "s" "Now we are going to find if the converse of this proposition holds and to tackle the following integ" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:1.2-1" "e" "\\tag{2$_{1}$} \\left\\{ \\begin{alignedat}{4} \\frac{dx}{dt}&={}&\\xi_{1}\\alpha&&{}+\\xi_{2}\\alpha'&+\\xi_{" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          1.1.0.0.5 Equality of two $\\rho$-parameter families having the same relative components." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "1.1.0.0.5" "\\paragraph{Equality of two $\\rho$-parameter families having the same relative components.}" 14833)
+
+("sec:6" "s" "Let us finish proving the converse of \\fsref{4} [formulae \\eqref{eq:1.5}]: consider two families of " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:1.5a" "e" "\\tag{\\ref{eq:1.5}} \\left\\{ \\begin{aligned} \\omega_{i}(u;du)&=\\omega^{\\star}_{i}(v;dv)," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          1.1.0.0.6 The fundamental condition of equality." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "1.1.0.0.6" "\\paragraph{The fundamental condition of equality.}" 16920)
+
+("sec:7" "s" "\\emph{Consider a bijective correspondance established between two $\\rho$ parameter families of trihe" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          1.1.0.0.7 Remark concerning \\fsref{5}." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "1.1.0.0.7" "\\paragraph{Remark concerning \\fsref{5}.}" 17873)
+
+("sec:8" "s" "In the course of this paragraph we have characterised the position of an arbitrary trihedral in spac" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "    1.2 Application of the theory of one-parameter families of trihedrals to the study of space curves" "/Users/zh217/Documents/work/cartangrp1.tex" nil 2 "1.2" "\\section[{Application of the theory of one-parameter families of trihedrals to space curves}]{Application of the theory of one-parameter families of trihedrals to the study of space curves}" 20547)
+
+("sec:appl-theory-one" "s" "\\paragraph{The various geometrical elements attached to a curve.}  We will now rapidly review the cl" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          1.2.0.0.1 The various geometrical elements attached to a curve." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "1.2.0.0.1" "\\paragraph{The various geometrical elements attached to a curve.}" 20766)
+
+("sec:9" "s" "We will now rapidly review the classical theory of space curves. Consider a real space curve $C$. We" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          1.2.0.0.2 The relative components of the displacement of Frenet trihedral." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "1.2.0.0.2" "\\paragraph{The relative components of the displacement of Frenet trihedral.}" 22514)
+
+("sec:10" "s" "Consider the right rectangular trihedrals $\\mathbf{A}\\ivec_{1}\\ \\ivec_{2}\\ \\ivec_{3}$ at each point " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:1.6" "e" "\\left\\{ \\begin{alignedat}{3} d{\\rvec{A}}&=&ds\\,\\ivec_{1}," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          1.2.0.0.3  " "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "1.2.0.0.3" "\\paragraph{}" 25705)
+
+("sec:11" "s" "The preceding results are sufficient to resolve two questions that arise naturally: \\newtheorem*{pco" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          1.2.0.0.4 Contact problem of two oriented curves." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "1.2.0.0.4" "\\paragraph{Contact problem of two oriented curves.}" 27178)
+
+("sec:12" "s" "First suppose $P\\ge 2$. We exclude the case where one of the points $\\mathbf{A}_{0}$, $\\mathbf{A}_{0" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          1.2.0.0.5 Equality problem." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "1.2.0.0.5" "\\paragraph{Equality problem.}" 29630)
+
+("sec:13" "s" "When $C$ and $C^{\\star}$ are analytic the equality problem can be resolved by an intermediate contac" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          1.2.0.0.6  " "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "1.2.0.0.6" "\\paragraph{}" 32092)
+
+("sec:14" "s" "Finally, let us use the structure theorem stated in \\fsref{7}. We have determined that, whatever the" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "    1.3 Study of space curves based on the theory of multi-parameter families of trihedrals" "/Users/zh217/Documents/work/cartangrp1.tex" nil 2 "1.3" "\\section{Study of space curves based on the theory of multi-parameter families of trihedrals}" 32705)
+
+("sec:study-space-curves" "s" "\\paragraph{Introduction.}  In the course of the preceding paragraph, the two problems of contact and" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          1.3.0.0.1 Introduction." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "1.3.0.0.1" "\\paragraph{Introduction.}" 32831)
+
+("sec:15" "s" "In the course of the preceding paragraph, the two problems of contact and of equality have not been " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          1.3.0.0.2 Principle of recurrent solution of the contact problem." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "1.3.0.0.2" "\\paragraph{Principle of recurrent solution of the contact problem.}" 33792)
+
+("sec:16" "s" "The most general order $P$ contact element depends on $2P+3$ parameters $[x,y,z,\\dots,y^{(P)},z^{(P)" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          1.3.0.0.3 Application of the contact condition to the problem of second order contact." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "1.3.0.0.3" "\\paragraph{Application of the contact condition to the problem of second order contact.}" 37536)
+
+("sec:17" "s" "Consider a displacement resolving the first order problem: it superimposes an arbitrary first order " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:1.c" "e" "\\tag{$c$} \\left\\{ \\begin{aligned} \\omega_{i}(t_{0},\\theta_{0},dt,d\\theta)&=\\omega_{i}(t_{0},\\theta_{" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          1.3.0.0.4 Details of the nature of the forms $\\omega_i$, $\\omega_{ji}$." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "1.3.0.0.4" "\\paragraph{Details of the nature of the forms $\\omega_i$, $\\omega_{ji}$.}" 39513)
+
+("sec:18" "s" "The movement of the trihedral of parameters $(t,\\theta)$ is completely determined by the knowledge o" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:1.7" "e" "\\left\\{ \\begin{aligned} \\omega_{1}(t,\\theta,dt,d\\theta)&=\\ivec_{1}\\times d{\\rvec{A}},\\qquad\\omega_{2" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:1.8" "e" "\\ivec_{1}={\\jvec}_{1},\\qquad\\ivec_{2}={\\jvec}_{2}\\cos\\theta+{\\jvec}_{3}\\sin\\theta,\\qquad\\ivec_{3}=-{" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:1.9" "e" "\\left\\{ \\begin{aligned} \\omega_{1}(t,\\theta,dt,d\\theta)&={\\jvec}_{1}\\times d{\\rvec{A}},\\qquad\\omega_" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:1.10" "e" "\\left\\{ \\begin{aligned} \\omega_{1}(t,\\theta,dt,d\\theta)&=\\omega_{1}(t,0,dt,0)," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          1.3.0.0.5 Return to the second order contact problem (\\fsref{17})." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "1.3.0.0.5" "\\paragraph{Return to the second order contact problem (\\fsref{17}).}" 43412)
+
+("sec:19" "s" "Consider the condition \\eqref{eq:1.c} again. Let us choose $\\theta\\str_{0}$ in a way that the corres" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          1.3.0.0.6 Third order contact problem." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "1.3.0.0.6" "\\paragraph{Third order contact problem.}" 44583)
+
+("sec:20" "s" "Let us now apply the contact condition (\\fsref{16}), which is very easy since the second order probl" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          1.3.0.0.7 Equality problem." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "1.3.0.0.7" "\\paragraph{Equality problem.}" 46124)
+
+("sec:21" "s" "The family of second order trihedrals attached at an oriented curve $C$ is such that if we displace " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "    1.4 The method of reduced equations" "/Users/zh217/Documents/work/cartangrp1.tex" nil 2 "1.4" "\\section{The method of reduced equations}" 47235)
+
+("sec:meth-reduc-equat" "s" "\\addtocounter{paragraph}{-1} \\paragraph{\\textnormal{\\textit{bis.}}}  We can obtain the Frenet equati" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          1.4.0.0.1 \\textnormal{\\textit{bis.}}" "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "1.4.0.0.1" "\\paragraph{\\textnormal{\\textit{bis.}}}" 47337)
+
+("sec:21a" "s" "We can obtain the Frenet equations by another method than the one we just developed, the method of \\" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:1.11" "e" "\\left\\{ \\begin{aligned} y&=\\frac{1}{2}ax^{2}+\\frac{1}{6}cx^{3}+\\cdots," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:1.12" "e" "\\left\\{ \\begin{aligned} &\\omega_{2}+x\\omega_{12}-\\left(\\frac{1}{6}bx^{3}+\\cdots\\right)\\omega_{23}" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "  2 Theory of minimal curves" "/Users/zh217/Documents/work/cartangrp1.tex" nil 1 "2" "\\chapter{Theory of minimal curves}" 52241)
+
+("cha:theory-minim-curv" "s" "\\addcontentsline{toc}{section}{Introduction} \\paragraph{Introduction.}  The theory of the preceding " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          2.0.0.0.1 Introduction." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "2.0.0.0.1" "\\paragraph{Introduction.}" 52352)
+
+("sec:22" "s" "The theory of the preceding chapter can be easily extended to the case of an arbitrary complex curve" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:2.1" "e" "x'^{2}+y'^{2}+z'^{2}&=0," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:2.2" "e" "x'x''+y'y''+z'z''&=0.  " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "    2.1 Cyclic trihedrals" "/Users/zh217/Documents/work/cartangrp1.tex" nil 2 "2.1" "\\section{Cyclic trihedrals}" 54067)
+
+("sec:cyclic-trihedrals" "s" "\\paragraph{Definition.}  Given a right rectangular trihedral $\\mathbf{O}xyz$, let us consider the tr" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          2.1.0.0.1 Definition." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "2.1.0.0.1" "\\paragraph{Definition.}" 54126)
+
+("sec:23" "s" "Given a right rectangular trihedral $\\mathbf{O}xyz$, let us consider the trihedral constituted by th" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:2.3" "e" "\\begin{pmatrix} \\ivec_{1}{}^{2}&\\ivec_{1}\\times\\ivec_{2}&\\ivec_{1}\\times\\ivec_{3}" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:2.4" "e" "\\ivec_{1}\\wedge\\ivec_{2}=i\\ivec_{1},\\qquad\\ivec_{2}\\wedge\\ivec_{3}=i\\ivec_{3},\\qquad\\ivec_{3}\\wedge\\" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:2.5" "e" "(\\ivec_{1}\\wedge\\ivec_{2})\\times\\ivec_{3}=i. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          2.1.0.0.2 Components of an infinitesimal displacement." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "2.1.0.0.2" "\\paragraph{Components of an infinitesimal displacement.}" 57050)
+
+("sec:24" "s" "The most general displacement of a cyclic trihedral depends on \\emph{six} parameters. We will not ma" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:2.6" "e" "\\left\\{ \\begin{aligned} \\overrightarrow{d\\mathbf{A}}&=\\omega_{1\\hphantom{0}}\\ivec_{1}+\\omega_{2\\hpha" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:2.7" "e" "\\left\\{ \\begin{aligned} \\overrightarrow{d\\mathbf{A}}&={}\\hphantom{+}\\omega_{1\\hphantom{0}}\\ivec_{1}+" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:2.8" "e" "\\left\\{ \\begin{aligned} \\omega_{1}&=\\ivec_{3}\\times\\overrightarrow{d\\mathbf{A}},&&&\\omega_{11}&=\\ive" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          2.1.0.0.3 Properties of the relative components $\\omega$." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "2.1.0.0.3" "\\paragraph{Properties of the relative components $\\omega$.}" 60060)
+
+("sec:25" "s" "We claim that \\emph{these six components are independent forms of the differentials of the six param" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:2.9" "e" "\\left\\{ \\begin{aligned} \\omega_{1}&=\\xi_{1}(t)dt,&\\omega_{2}&=\\xi_{2}(t)dt,&\\omega_{3}&=\\xi_{3}(t)dt" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          2.1.0.0.4 Equality condition." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "2.1.0.0.4" "\\paragraph{Equality condition.}" 61916)
+
+("sec:26" "s" "If we subject all trihedrals in a family to the same displacement, the relative components $\\omega$ " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "    2.2 Definition of the elements of various orders attached to a minimal curve" "/Users/zh217/Documents/work/cartangrp1.tex" nil 2 "2.2" "\\section{Definition of the elements of various orders attached to a minimal curve}" 63619)
+
+("sec:defin-elem-vari" "s" "\\paragraph{Definition of first order trihedrals.}  We define them to be the right cyclic trihedrals " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          2.2.0.0.1 Definition of first order trihedrals." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "2.2.0.0.1" "\\paragraph{Definition of first order trihedrals.}" 63731)
+
+("sec:27" "s" "We define them to be the right cyclic trihedrals whose apex belongs to the given minimal curve and w" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:2.10" "e" "\\omega_{2}=0,\\qquad\\omega_{3}=0. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:2.11" "e" "\\left\\{ \\begin{aligned} \\ivec_{1}&=\\alpha\\jvec_{1}," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:2.12" "e" "\\left\\{ \\begin{aligned} \\omega_{1}&=\\frac{1}{\\alpha}\\bar\\omega_{1},&&&\\omega_{11}&=\\bar\\omega_{11}-\\" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          2.2.0.0.2 Second order trihedrals." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "2.2.0.0.2" "\\paragraph{Second order trihedrals.}" 69452)
+
+("sec:28" "s" "According to the formulae \\eqref{eq:2.12} every point $\\mathbf{A}$ on the curve possesses a first or" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:2.13" "e" "\\omega_{1}=\\omega_{12}. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:2.14" "e" "\\alpha=\\pm1. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:2.15" "e" "&\\left\\{ \\begin{aligned} \\ivec_{1}&=\\jvec_{1}," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:2.16" "e" "&\\left\\{ \\begin{aligned} \\omega_{1}&=\\bar\\omega_{1}," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:2.17" "e" "&\\left\\{ \\begin{aligned} \\ivec_{1}&=-\\jvec_{1}," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:2.18" "e" "&\\left\\{ \\begin{aligned} \\omega_{1}&=-\\bar\\omega_{1}," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          2.2.0.0.3 Third order trihedrals." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "2.2.0.0.3" "\\paragraph{Third order trihedrals.}" 74040)
+
+("sec:29" "s" "We distinguish in the family of second trihedrals those special trihedrals which we will call third " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:2.19" "e" "\\omega_{11}=0. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:2.20" "e" "\\left\\{ \\begin{aligned} \\overrightarrow{d\\mathbf{A}}&=d\\sigma\\,\\ivec_{1},&&&d\\ivec_{2}&=d\\sigma(k\\iv" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          2.2.0.0.4 Exceptional case." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "2.2.0.0.4" "\\paragraph{Exceptional case.}" 76252)
+
+("sec:30" "s" "The preceding definitions fail for \\emph{the curves whose components $\\omega_{12}$ of the first orde" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "    2.3 Problems of equality and contact" "/Users/zh217/Documents/work/cartangrp1.tex" nil 2 "2.3" "\\section{Problems of equality and contact}" 78770)
+
+("sec:probl-equal-cont" "s" "\\paragraph{Equality problem.}  The definitions that we have given in the course of the preceding sec" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          2.3.0.0.1 Equality problem." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "2.3.0.0.1" "\\paragraph{Equality problem.}" 78843)
+
+("sec:31" "s" "The definitions that we have given in the course of the preceding section are such that if we subjec" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:2.21" "e" "k(\\sigma)=k\\str(\\sigma\\str),\\qquad d\\sigma=d\\sigma\\str. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:2.22" "e" "k(\\sigma)=k\\str(\\sigma\\str),\\qquad d\\sigma=-d\\sigma\\str. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          2.3.0.0.2 Contact problem of order 1." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "2.3.0.0.2" "\\paragraph{Contact problem of order 1.}" 80882)
+
+("sec:32" "s" "This problem can be solved immediately: consider two minimal curves $C$ and $C\\str$ and two of their" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          2.3.0.0.3 Contact problem of order 2." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "2.3.0.0.3" "\\paragraph{Contact problem of order 2.}" 82002)
+
+("sec:33" "s" "Consider a displacement solving the first order contact problem: it superimposes any first order tri" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:2.23" "e" "\\omega_{1}=\\omega_{1}\\str,\\qquad\\omega_{11}=\\omega_{11}\\str,\\qquad\\omega_{12}=\\omega_{12}\\str,\\qquad" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          2.3.0.0.4 Contact problem of order 3." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "2.3.0.0.4" "\\paragraph{Contact problem of order 3.}" 84302)
+
+("sec:34" "s" "Consider a contact of order $\\ge 2$ established at a point $\\mathbf{A}_{0}$ between two oriented min" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          2.3.0.0.5 Contact problems of order $>3$." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "2.3.0.0.5" "\\paragraph{Contact problems of order $>3$.}" 85702)
+
+("sec:35" "s" "Consider a contact of order $\\ge 3$ established at a point $\\mathbf{A}_{0}$ between two oriented cur" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "    2.4 Complements" "/Users/zh217/Documents/work/cartangrp1.tex" nil 2 "2.4" "\\section{Complements}" 87053)
+
+("sec:complements" "s" "To practically solve the equality and contact problems, we need to know how to effectively determine" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          2.4.0.0.1 Analytic determination of the trihedrals of various order, of $k$ and of $d\\sigma$." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "2.4.0.0.1" "\\paragraph{Analytic determination of the trihedrals of various order, of $k$ and of $d\\sigma$.}" 87387)
+
+("sec:36" "s" "Consider a minimal curve traced by a point $(x,y,z)$, the reference trihedral used being tri-rectang" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("x:weierstrass" "s" "\\begin{align*} x(t)&=\\int_{t_{0}}^{t}\\frac{1-t^{2}}{2}f(t)dt+x_{0}," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:2.24" "e" "\\left\\{ \\begin{aligned} \\omega_{1}&=\\frac{1}{\\alpha}f(t)dt,&\\omega_{11}&=-\\lambda\\,dt+\\frac{d\\alpha}" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:2.25" "e" "d\\sigma=\\sqrt{f}\\,dt,\\qquad k=\\frac{1}{f}\\left[\\frac{1}{2}\\frac{f''}{f}-\\frac{5}{8}\\frac{f'^{2}}{f^{" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          2.4.0.0.2 Applications of the ``Frenet formulae'' \\eqref{eq:2.20} to the search of the curves with constant cu" "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "2.4.0.0.2" "\\paragraph{Applications of the ``Frenet formulae'' \\eqref{eq:2.20} to the search of the curves with constant curvature.}" 91053)
+
+("sec:37" "s" "First suppose that $k=0$. We have $d\\ivec_{3}=0$, and therefore $\\ivec_{3}$ is a constant vector, le" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          2.4.0.0.3 Geometric interpretation of $k$." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "2.4.0.0.3" "\\paragraph{Geometric interpretation of $k$.}" 94136)
+
+("sec:38" "s" "There exists one and only one oriented minimal circular helix which has a contact of order $4$ with " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          2.4.0.0.4 Reduced equations." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "2.4.0.0.4" "\\paragraph{Reduced equations.}" 95482)
+
+("sec:39" "s" "We can, as we have done in paragraph \\fsref{21a}\\textit{bis.}, try to find the reduced equations of " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:2.26" "e" "\\left\\{ \\begin{aligned} y&=\\hphantom{+}\\frac{1}{2}x^{2}-\\frac{1}{12}kx^{4}-\\frac{1}{60}\\frac{dk}{d\\s" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          2.4.0.0.5 Geometric constructions of pseudo-arc." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "2.4.0.0.5" "\\paragraph{Geometric constructions of pseudo-arc.}" 97959)
+
+("sec:40" "s" "\\emph{a.} The abscissa $x$ of a point $\\mathbf{A}'$ infinitesimally close to $\\mathbf{A}$ gives the " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:2.27" "e" "c^{2}=y^{2}+2xz\\sim \\frac{1}{4}x^{4}-\\frac{1}{3}x^{4}\\sim-\\frac{1}{12}x^{4}\\sim-\\frac{1}{12}d\\sigma^" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:2.28" "e" "d\\sigma^{6}=12iv, " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:2.29" "e" "d\\sigma^{2}=-\\frac{iv}{c^{2}}. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          2.4.0.0.6 Parametric reduced equations." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "2.4.0.0.6" "\\paragraph{Parametric reduced equations.}" 102187)
+
+("sec:41" "s" "We can, using the reduced equations \\eqref{eq:2.26} of the curve, establish the expressions in the c" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:2.30" "e" "\\left\\{ \\begin{aligned} x&=\\sigma+\\frac{1}{6}k\\sigma^{3}+\\frac{1}{24}\\frac{dk}{d\\sigma}\\sigma^{4}+\\c" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          2.4.0.0.7 Important remark." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "2.4.0.0.7" "\\paragraph{Important remark.}" 104677)
+
+("sec:42" "s" "Thus we see how the ``\\emph{Frenet formulae}'' \\eqref{eq:2.20}, by the intermediacy of the ``\\emph{r" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "  3 Study of real ruled surfaces" "/Users/zh217/Documents/work/cartangrp1.tex" nil 1 "3" "\\chapter{Study of real ruled surfaces}" 105938)
+
+("cha:study-real-ruled" "s" "\\paragraph{The order of contact between two ruled surfaces.}  A ruled surface is a surface generated" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          3.0.0.0.1 The order of contact between two ruled surfaces." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "3.0.0.0.1" "\\paragraph{The order of contact between two ruled surfaces.}" 106006)
+
+("sec:43" "s" "A ruled surface is a surface generated by a moving straight line called the generatrix $G$, and on t" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "    3.1 Elements of various orders" "/Users/zh217/Documents/work/cartangrp1.tex" nil 2 "3.1" "\\section{Elements of various orders}" 106965)
+
+("sec:elem-vari-orders" "s" "\\paragraph[{Zeroth order trihedrals.} ]{Zeroth order trihedrals \\footnote{The reasoning employed in " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          3.1.0.0.1 Zeroth order trihedrals \\footnote{The reasoning employed in this paragraph is related to the remark " "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "3.1.0.0.1" "\\paragraph[{Zeroth order trihedrals.} ]{Zeroth order trihedrals \\footnote{The reasoning employed in this paragraph is related to the remark of paragraph \\fsref{27}, p.~\\pageref{sec:27}.}.}" 107032)
+
+("sec:44" "s" "It is convenient to assume that the generatrix $G$ is oriented and to introduce a certain orientatio" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:3.1" "e" "\\left\\{ \\begin{aligned} \\mathbf{A}&=\\mathbf{B}+\\rho\\,\\jvec_{1}\\qquad\\text{(this signifies $\\overrigh" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:3.2" "e" "\\left\\{ \\begin{aligned} \\omega_{2}&=(\\phantom{+}\\bar\\omega_{2}\\cos\\theta+\\bar\\omega_{3}\\sin\\theta)+\\" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          3.1.0.0.2 First order trihedrals." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "3.1.0.0.2" "\\paragraph{First order trihedrals.}" 112437)
+
+("sec:45" "s" "These formulae show that among the zeroth order trihedrals attached at a generatrix $G$ there are tw" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:3.3" "e" "\\left\\{ \\begin{aligned} \\overrightarrow{d\\mathbf{A}}&=d\\sigma(\\alpha\\ivec_{1}+k\\ivec_{3}),&&&d\\ivec_" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "    3.2 Problems of equality and contact;" "/Users/zh217/Documents/work/cartangrp1.tex" nil 2 "3.2" "\\section[{Problems of equality and contact; geometrical constructions}]{Problems of equality and contact;\\\\geometrical constructions}" 115848)
+
+("sec:probl-equal-cont-1" "s" "\\paragraph{The equality problem.}  Let us find all the ways to superimpose two given oriented ruled " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          3.2.0.0.1 The equality problem." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "3.2.0.0.1" "\\paragraph{The equality problem.}" 116014)
+
+("sec:46" "s" "Let us find all the ways to superimpose two given oriented ruled surfaces. The fundamental condition" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          3.2.0.0.2 The contact problem." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "3.2.0.0.2" "\\paragraph{The contact problem.}" 116647)
+
+("sec:47" "s" "\\emph{Zeroth order contact problem.} The displacements superimposing two given generatrices $G$ and " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          3.2.0.0.3 Geometric constructions." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "3.2.0.0.3" "\\paragraph{Geometric constructions.}" 118561)
+
+("sec:48" "s" "Let us determine the tangent plane to the surface at a point $\\mathbf{C}$ on the generatrix. Set $\\o" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "  4 Study of ruled isotropic surfaces" "/Users/zh217/Documents/work/cartangrp1.tex" nil 1 "4" "\\chapter{Study of ruled isotropic surfaces}" 120085)
+
+("cha:study-ruled-isotr" "s" "\\section{Elements of order $1$; contacts of order $1$}  \\paragraph{Zeroth order trihedrals.} \\label{" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "    4.1 Elements of order $1$; contacts of order $1$" "/Users/zh217/Documents/work/cartangrp1.tex" nil 2 "4.1" "\\section{Elements of order $1$; contacts of order $1$}" 120160)
+
+("sec:elements-order-1" "s" "\\paragraph{Zeroth order trihedrals.}  By isotropic ruled surfaces we mean ruled surfaces whose gener" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          4.1.0.0.1 Zeroth order trihedrals." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "4.1.0.0.1" "\\paragraph{Zeroth order trihedrals.}" 120245)
+
+("sec:49" "s" "By isotropic ruled surfaces we mean ruled surfaces whose generatrices are isotropic. We continue to " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:4.1" "e" "\\left\\{ \\begin{aligned} \\mathbf{A}&=\\mathbf{B}+\\rho\\,\\jvec_{1}\\qquad\\text{(this signifies $\\overrigh" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:4.2" "e" "\\left\\{ \\begin{aligned} \\omega_{2}&=\\bar\\omega_{2}+\\lambda\\bar\\omega_{3}+\\rho\\bar\\omega_{12}," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          4.1.0.0.2 First order trihedrals." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "4.1.0.0.2" "\\paragraph{First order trihedrals.}" 123990)
+
+("sec:50" "s" "The formulae \\eqref{eq:4.2} reveal that the expression $\\dfrac{\\omega_{3}}{\\omega_{12}}$ has the sam" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:4.3" "e" "\\omega_{2}=0,\\qquad\\omega_{3}=k\\omega_{12}. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:4.4" "e" "\\left\\{ \\begin{aligned} \\mathbf{A}&=\\mathbf{B}-\\lambda k\\jvec_{1}," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:4.5" "e" "\\left\\{ \\begin{aligned} \\omega_{12}&=\\mu\\bar\\omega_{12}," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          4.1.0.0.3 Surfaces whose $k$ is constant and whose $\\omega_1+k\\omega_{21}$ vanishes identically." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "4.1.0.0.3" "\\paragraph{Surfaces whose $k$ is constant and whose $\\omega_1+k\\omega_{21}$ vanishes identically.}" 128705)
+
+("sec:51" "s" "The formulae \\eqref{eq:4.5} show that $\\omega_{1}+k\\omega_{21}$ is identically zero regardless of wh" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:4.6" "e" "\\mathbf{P}=\\mathbf{A}+k\\ivec_{2}. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          4.1.0.0.4 Geometrical construction of the invariant $k$." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "4.1.0.0.4" "\\paragraph{Geometrical construction of the invariant $k$.}" 130826)
+
+("sec:52" "s" "Consider a isotropic ruled surface and one of its generatrices. There exists one and only one sphere" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:4.7" "e" "\\mathbf{A}+k\\ivec_{2}+x\\ivec_{1}, " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "    4.2 Surfaces with constant $k$" "/Users/zh217/Documents/work/cartangrp1.tex" nil 2 "4.2" "\\section{Surfaces with constant $k$}" 133368)
+
+("sec:surf-with-const" "s" "\\paragraph{Second order trihedrals.}  When $k$ has a constant value, the formulae \\eqref{eq:4.5} are" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          4.2.0.0.1 Second order trihedrals." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "4.2.0.0.1" "\\paragraph{Second order trihedrals.}" 133434)
+
+("sec:53" "s" "When $k$ has a constant value, the formulae \\eqref{eq:4.5} are written \\begin{align*} \\omega_{12}&=\\" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:4.8" "e" "\\omega_{12}=\\omega_{1}+k\\omega_{21}. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:4.9" "e" "\\left\\{ \\begin{aligned} \\mathbf{A}&=\\mathbf{B}-\\lambda k\\jvec_{1}," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:4.10" "e" "\\omega_{11}=\\bar\\omega_{11}-\\lambda\\,d\\sigma. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          4.2.0.0.2 Third order trihedrals." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "4.2.0.0.2" "\\paragraph{Third order trihedrals.}" 136900)
+
+("sec:54" "s" "The formula \\eqref{eq:4.10} shows that each generatrix of our oriented surface possesses one and onl" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:4.11" "e" "\\left\\{ \\begin{aligned} \\overrightarrow{d\\mathbf{A}}&=d\\sigma(1-k\\alpha)\\ivec_{1}+d\\sigma\\,k\\ivec_{3" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          4.2.0.0.3 Complements." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "4.2.0.0.3" "\\paragraph{Complements.}" 137808)
+
+("sec:55" "s" "\\emph{Third order contact problem.} Consider two oriented surfaces for which $k$ has the same consta" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "    4.3 Surfaces with variable $k$" "/Users/zh217/Documents/work/cartangrp1.tex" nil 2 "4.3" "\\section{Surfaces with variable $k$}" 140143)
+
+("sec:surf-with-vari" "s" "\\paragraph{Second order trihedrals.}  The first order invariant $k$, when it is not a constant along" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          4.3.0.0.1 Second order trihedrals." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "4.3.0.0.1" "\\paragraph{Second order trihedrals.}" 140208)
+
+("sec:56" "s" "The first order invariant $k$, when it is not a constant along the curve, constitutes a natural prin" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:4.12" "e" "\\omega_{12}=dk,\\qquad\\omega_{1}+k\\omega_{21}=0. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          4.3.0.0.2 The Frenet formulae." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "4.3.0.0.2" "\\paragraph{The Frenet formulae.}" 142434)
+
+("sec:57" "s" "Let us consider the instantaneous displacement of a second order trihedral. Set \\[ \\omega_{21}=\\alph" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:4.13" "e" "\\left\\{ \\begin{alignedat}{6} \\overrightarrow{d\\mathbf{A}}&={}&-{}&&\\alpha k\\,dk\\,\\ivec_{1}&+{}&k\\,dk" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "Part II First notions in the theory of finite-dimensional" "/Users/zh217/Documents/work/cartangrp1.tex" nil 0 "Part II" "\\part[{First notions in the theory of finite-dimensional continuous groups}]{First notions in the theory of finite-dimensional\\\\ continuous groups}" 144946)
+
+("part:first-notions-theory" "s" "\\chapter[{The moving frame of a finite-dimensional continuous group}]{The moving frame of" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "  5 The moving frame of" "/Users/zh217/Documents/work/cartangrp1.tex" nil 1 "5" "\\chapter[{The moving frame of a finite-dimensional continuous group}]{The moving frame of\\\\a finite-dimensional\\\\continuous group}" 145129)
+
+("cha:moving-frame-finite" "s" "\\section{Transformations; groups; moving frames}  \\paragraph{Transformations, their inverses and pro" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "    5.1 Transformations; groups; moving frames" "/Users/zh217/Documents/work/cartangrp1.tex" nil 2 "5.1" "\\section{Transformations; groups; moving frames}" 145293)
+
+("sec:transf-group-moving" "s" "\\paragraph{Transformations, their inverses and products.}  Let $\\mathbf{M}$ be a point in a $n$-dime" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          5.1.0.0.1 Transformations, their inverses and products." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "5.1.0.0.1" "\\paragraph{Transformations, their inverses and products.}" 145374)
+
+("sec:58" "s" "Let $\\mathbf{M}$ be a point in a $n$-dimensional space. This point is defined by a system of $n$ coo" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          5.1.0.0.2 Groups." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "5.1.0.0.2" "\\paragraph{Groups.}" 148960)
+
+("sec:59" "s" "\\emph{Definition:} a transformation group is a set of transformations acting on the same domain whic" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          5.1.0.0.3 Parameter space." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "5.1.0.0.3" "\\paragraph{Parameter space.}" 150651)
+
+("sec:60" "s" "Consider a family of transformations. We can always establish a continuous and bijective corresponde" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:5.1" "e" "\\left\\{ \\begin{aligned} x'_{1}&=\\phi_{1}(x_{1},\\dots,x_{n};a_{1},\\dots,a_{r})," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:5.2" "e" "\\frac{D(\\phi_{1},\\dots,\\phi_{n})}{D(x_{1},\\dots,x_{n})}\\neq 0, " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          5.1.0.0.4 Transformed system of reference." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "5.1.0.0.4" "\\paragraph{Transformed system of reference.}" 152834)
+
+("sec:61" "s" "The formulae \\eqref{eq:5.1} presuppose that a system of reference $\\mathbf{R}_{0}$ is defined on the" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          5.1.0.0.5 Equations of a transformation in relative coordinates." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "5.1.0.0.5" "\\paragraph{Equations of a transformation in relative coordinates.}" 155045)
+
+("sec:62" "s" "Consider a domain $D$ on which a reference system $\\mathbf{R}_{0}$ is defined. Let $S$ and $T$ be tw" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:5.3" "e" "\\phi_{i}(x'_{1},\\dots,x'_{n})=\\psi_{i}[\\phi_{1}(x_{1},\\dots,x_{n}),\\dots,\\phi(x_{1},\\dots,x_{n})]. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          5.1.0.0.6 The moving frame of a family of transformations." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "5.1.0.0.6" "\\paragraph{The moving frame of a family of transformations.}" 157789)
+
+("sec:63" "s" "During the first part of this work it has been useful for us to employ a system of moving reference " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          5.1.0.0.7 The moving frame of a linear transformation group." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "5.1.0.0.7" "\\paragraph{The moving frame of a linear transformation group.}" 161440)
+
+("sec:64" "s" "The linear transformation\\[ x'=ax+b\\qquad(a>0) \\] constitute a continuous group on one variable with" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("fig:3" "f" " " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          5.1.0.0.8 The moving frame of the affine group." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "5.1.0.0.8" "\\paragraph{The moving frame of the affine group.}" 163011)
+
+("sec:65" "s" "A point in the plane is represented by two Cartesian coordinates $x$ and $y$. The affine group is th" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:5.4" "e" "\\left\\{ \\begin{aligned} x'&=ax+by+c," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("fig:4" "f" " " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          5.1.0.0.9 The moving frame of the projective group (first definition)." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "5.1.0.0.9" "\\paragraph{The moving frame of the projective group (first definition).}" 165046)
+
+("sec:66" "s" "If we represent a point in a plane as its three homogeneous coordinates, then the projective group i" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:5.5" "e" "\\left\\{ \\begin{aligned} x'&=ax+by+cz," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          5.1.0.0.10 The moving frame of the projective group (second definition)." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "5.1.0.0.10" "\\paragraph{The moving frame of the projective group (second definition).}" 167380)
+
+("sec:67" "s" "The transformations of the projective group are no longer defined by the formulae \\eqref{eq:5.5}, bu" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:5.6" "e" "\\left\\{ \\begin{aligned} x'&=ax+by+cz," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "    5.2 Infinitesimal displacement components" "/Users/zh217/Documents/work/cartangrp1.tex" nil 2 "5.2" "\\section[{Infinitesimal displacement components of a moving frame}]{Infinitesimal displacement components\\\\of a moving frame}" 170825)
+
+("sec:comp-infin-displ" "s" "Differential calculus can be applied to the theory of groups by the intermediacy of two notions that" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          5.2.0.0.1 Infinitesimal transformations." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "5.2.0.0.1" "\\paragraph{Infinitesimal transformations.}" 171205)
+
+("sec:68" "s" "Consider a transformation $T_{\\epsilon}$ depending on an infinitesimally small parameter $\\epsilon$ " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:5.7" "e" "x'_{i}=x_{i}+\\epsilon\\eta_{i}(x_{1},\\dots,x_{n})+\\cdots " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:5.8" "e" "\\delta f=\\epsilon\\sum_{i=1}^{n}\\eta_{i}(x_{1},\\dots,x_{n})\\frac{\\pd f(x_{1},\\dots,x_{n})}{\\pd x_{i}}" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          5.2.0.0.2 Equations of an infinitesimal transformation in relative coordinates." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "5.2.0.0.2" "\\paragraph{Equations of an infinitesimal transformation in relative coordinates.}" 174874)
+
+("sec:69" "s" "We distinguished geometrical transformations from analytic transformations (\\fsref{62}, p.~\\pageref{" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:5.S" "e" "\\tag{S} x'_{i}=\\phi_{i}(x_{1},\\dots,x_{n}). " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:5.T" "e" "\\tag{T} Xf=\\sum_{i=1}^{n}\\eta_{i}(x_{1},\\dots,x_{n})\\frac{\\pd f}{\\pd x_{i}}. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:5.9" "e" "Yf=\\sum_{k=1}^{n}\\zeta_{k}(x_{1},\\dots,x_{n})\\frac{\\pd f}{\\pd x_{k}} " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:5.10" "e" "\\sum_{k=1}^{n}\\frac{\\pd\\phi_{i}}{\\pd x_{k}}\\zeta_{k}=\\eta_{i}[\\phi_{1}(x_{1},\\dots,x_{n}),\\dots,\\phi" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          5.2.0.0.3 Relative components of a moving frame." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "5.2.0.0.3" "\\paragraph{Relative components of a moving frame.}" 177552)
+
+("sec:70" "s" "Consider the moving frame of a family of transformations and let $\\mathbf{R}_{a}$ and $\\mathbf{R}_{a" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:5.11" "e" "\\begin{multlined} \\omega_{1}(a,da)X_{1}f+\\omega_{2}(a,da)X_{2}f+\\omega_{3}(a,da)X_{3}f+" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:5.12" "e" "\\omega_{1}(a,da)X_{1}f+\\dots+\\omega_{r}(a+da)X_{r}f, " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          5.2.0.0.4 Rules for calculating the relative components." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "5.2.0.0.4" "\\paragraph{Rules for calculating the relative components.}" 181679)
+
+("sec:71" "s" "Consider a family of transformations $S_{a}$ possessing inverses \\begin{equation} \\tag{\\ref{eq:5.1}}" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:5.1'" "e" "\\tag{\\ref{eq:5.1}} x'_{i}=\\phi_{i}(x_{1},\\dots,x_{n};a_{1},\\dots,a_{r}). " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:5.13" "e" "\\sum_{k=1}^{n}\\frac{\\pd \\phi_{i}(x_{1},\\dots,x_{n};a_{1},\\dots,a_{r})}{\\pd x_{k}}\\delta x_{k}=\\sum_{" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:5.14" "e" "\\delta f=\\sum_{k=1}^{n}\\delta x_{k}\\frac{\\pd f}{\\pd x_{k}}. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          5.2.0.0.5 Relative components of an affine frame." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "5.2.0.0.5" "\\paragraph{Relative components of an affine frame.}" 186272)
+
+("sec:72" "s" "Consider the affine group and the frames defined in paragraph \\fsref{65} (p.~\\pageref{sec:65}). In t" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:5.15" "e" "\\left\\{ \\begin{aligned} \\overrightarrow{d\\mathbf{A}}&=\\omega_{1\\phantom{0}}(a,da)\\ivec_{1}+\\omega_{2" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          5.2.0.0.6 Relative components of a projective frame." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "5.2.0.0.6" "\\paragraph{Relative components of a projective frame.}" 188976)
+
+("sec:73" "s" "Consider the projective group and the frames defined in paragraph \\fsref{67} (p.~\\pageref{sec:67}). " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:5.16" "e" "\\left\\{ \\begin{aligned} d\\mathbf{A}_{\\phantom{0}}&=\\omega_{00}(a,da)\\mathbf{A}+\\omega_{01}(a,da)\\mat" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:5.17" "e" "\\omega_{00}(a,da)+\\omega_{11}(a,da)+\\omega_{22}(a,da)=0. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          5.2.0.0.7 Absolute components of a moving frame." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "5.2.0.0.7" "\\paragraph{Absolute components of a moving frame.}" 191820)
+
+("sec:74" "s" "Consider the moving frame $\\mathbf{R}_{a}$ of a family of transformations $S_{a}$. The transformatio" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:5.18" "e" "\\vp_{1}(a,da)Y_{1}f+\\dots+\\vp_{r}(a,da)Y_{r}f, " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:5.1''" "e" "\\tag{\\ref{eq:5.1}} x'_{i}=\\phi_{i}(x_{1},\\dots,x_{n};a_{1},\\dots,a_{r}). " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:5.19" "e" "\\delta f=\\sum_{i,p}\\frac{\\pd\\phi_{i}(y_{1},\\dots,y_{n};a_{1},\\dots,a_{r})}{\\pd a_{p}}\\frac{\\pd f(x_{" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:5.20" "e" "x_{i}=\\phi_{i}(y_{1},\\dots,y_{n};a_{1},\\dots,a_{r}). " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          5.2.0.0.8 Relations between the absolute components $\\vp_p$ and the relative components $\\omega_p$." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "5.2.0.0.8" "\\paragraph{Relations between the absolute components $\\vp_p$ and the relative components $\\omega_p$.}" 196518)
+
+("sec:75" "s" "Consider a finite dimensional and connected family of transformations $S_{a}$ possessing inverses. T" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:5.21" "e" "S_{a}^{-1}S_{a+da}=\\Sigma_{a-da}\\Sigma_{a}^{-1}, " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:5.21'" "e" "\\tag{\\ref{eq:5.21}$'$} S_{a+da}S_{a}^{-1}=\\Sigma^{-1}_{a}\\Sigma_{a-da}. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:5.22" "e" "\\omega_{p}(a,da)=-\\vp_{p}(\\alpha,d\\alpha). " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "    5.3 Three theorems concerning infinitesimal displacement components of a moving frame" "/Users/zh217/Documents/work/cartangrp1.tex" nil 2 "5.3" "\\section[{Three theorems concerning infinitesimal displacement components of a moving frame}]{Three theorems concerning infinitesimal displacement components of a moving frame}" 199134)
+
+("sec:three-theor-conc" "s" "\\paragraph[{Fundamental condition of equality.}]{Fundamental condition of equality \\footnote{This th" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          5.3.0.0.1 Fundamental condition of equality \\footnote{This theorem generalises the equality conditions stated " "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "5.3.0.0.1" "\\paragraph[{Fundamental condition of equality.}]{Fundamental condition of equality \\footnote{This theorem generalises the equality conditions stated in paragraph \\fsref{7} and \\fsref{26} (p.~\\pageref{" 199341)
+
+("sec:76" "s" "\\emph{Consider a moving frame $\\mathbf{R}_{a}$ and two families of frames $\\mathbf{R}_{u}$ and $\\mat" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          5.3.0.0.2 Structure theorem." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "5.3.0.0.2" "\\paragraph{Structure theorem.}" 201200)
+
+("sec:77" "s" "We are going to generalise the structure theorems in paragraphs \\fsref{7} and \\fsref{26} (p.~\\pagere" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:5.23" "e" "\\omega_{1}(a,da)=\\lambda_{1}(t)dt,\\qquad\\dots,\\qquad\\omega_{r}(a,da)=\\lambda_{r}(t)dt. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          5.3.0.0.3 Relation between groups and the moving frames possessing the relative components." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "5.3.0.0.3" "\\paragraph{Relation between groups and the moving frames possessing the relative components.}" 204309)
+
+("sec:78" "s" "Consider a connected and finite dimensional family of transformations $S_{a}$ whose moving frame $\\m" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:5.24" "e" "\\mathbf{R}_{a}=T_{a}\\mathbf{R}_{1}. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "    5.4 Parameter groups" "/Users/zh217/Documents/work/cartangrp1.tex" nil 2 "5.4" "\\section{Parameter groups}" 209221)
+
+("sec:parameter-groups" "s" "\\paragraph{Definition of parameter groups.}  Consider a transformation group $S_{a}$ and its moving " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          5.4.0.0.1 Definition of parameter groups." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "5.4.0.0.1" "\\paragraph{Definition of parameter groups.}" 209277)
+
+("sec:79" "s" "Consider a transformation group $S_{a}$ and its moving frame $\\mathbf{R}_{a}$. Each transformation $" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:5.25" "e" "\\xi'=\\Theta_{a}\\xi\\qquad\\text{when}\\qquad S_{\\xi'}=S_{a}S_{\\xi}. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          5.4.0.0.2 Pfaffian forms left invariant by parameter groups." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "5.4.0.0.2" "\\paragraph{Pfaffian forms left invariant by parameter groups.}" 211196)
+
+("sec:80" "s" "Consider a variable point $\\xi$ in the parameter space and a fixed transformation $\\Theta_{a}$ of th" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          5.4.0.0.3 Infinitesimal transformations of parameter groups." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "5.4.0.0.3" "\\paragraph{Infinitesimal transformations of parameter groups.}" 213255)
+
+("sec:81" "s" "Consider a transformation $\\Theta_{\\epsilon}$ of infinitesimal parameters $\\epsilon_{i}$. It transfo" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:5.26" "e" "\\vp_{p}(\\xi,\\delta\\xi)=\\epsilon_{p}. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:5.27" "e" "df=\\vp_{1}(\\xi,d\\xi)A_{1}f+\\dots+\\vp_{r}(\\xi,d\\xi)A_{r}f, " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:5.28" "e" "\\delta f=\\epsilon_{1}A_{1}f+\\dots+\\epsilon_{r}A_{r}f. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:5.29" "e" "\\xi'=a\\xi,\\qquad\\eta'=a\\eta+b. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:5.30" "e" "\\delta f=\\epsilon_{1}\\left(\\xi\\frac{\\pd f}{\\pd\\xi}+\\eta\\frac{\\pd f}{\\pd\\eta}\\right)+\\epsilon_{2}\\fra" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          5.4.0.0.4 The second parameter groups." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "5.4.0.0.4" "\\paragraph{The second parameter groups.}" 216729)
+
+("sec:82" "s" "{\\small Let us use $T$ to denote the transformation of the parameter space associating the point $b$" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:5.31" "e" "\\xi''=\\Psi_{a}\\xi\\qquad\\text{when} S_{\\xi''}=S_{\\xi}S_{a}. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "    5.5 Some problems of integration" "/Users/zh217/Documents/work/cartangrp1.tex" nil 2 "5.5" "\\section{Some problems of integration}" 219367)
+
+("sec:some-probl-integr" "s" "\\paragraph{Construction of parameter groups from relative components.}  Consider a connected, finite" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          5.5.0.0.1 Construction of parameter groups from relative components." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "5.5.0.0.1" "\\paragraph{Construction of parameter groups from relative components.}" 219437)
+
+("sec:83" "s" "Consider a connected, finite dimensional group $S_{a}$. Its parameter group $\\Theta_{a}$ leaves the " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          5.5.0.0.2 Complements." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "5.5.0.0.2" "\\paragraph{Complements.}" 222182)
+
+("sec:84" "s" "The preceding theorem can be thought of as a corollary of the following \\footnote{It suffices to set" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          5.5.0.0.3 Construction of a group from its infinitesimal transformations (first procedure)." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "5.5.0.0.3" "\\paragraph{Construction of a group from its infinitesimal transformations (first procedure).}" 224512)
+
+("sec:85" "s" "Consider a group of transformations $S_{a}$ operating on a domain $D$. Let $X_{1}$, $\\dots$, $X_{r}$" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:5.32" "e" "\\frac{dx_{i}}{dt}=\\lambda_{1}(t)X_{1}x_{i}+\\dots+\\lambda_{r}(t)X_{r}x_{i},\\qquad(i=1,\\dots,n), " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          5.5.0.0.4 Construction of a group from its infinitesimal transformations (second procedure)." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "5.5.0.0.4" "\\paragraph{Construction of a group from its infinitesimal transformations (second procedure).}" 227417)
+
+("sec:86" "s" "Let us apply the following construction: \\somespace \\emph{Let us specify $r$ arbitrary constants $a_" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:5.33" "e" "\\frac{dx_{i}}{dt}=a_{1}X_{1}x_{i}+\\dots+a_{r}X_{r}x_{i},\\qquad(i=1,\\dots,n), " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          5.5.0.0.5 Construction of the set of transformed images of a point by the operations of a group for which we k" "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "5.5.0.0.5" "\\paragraph{Construction of the set of transformed images of a point by the operations of a group for which we know the infinitesimal transformations.}" 229473)
+
+("sec:87" "s" "Consider a group operating on a domain $D$ whose infinitesimal transformations are $X_{1}$, $\\dots$," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:5.34" "e" "(X_{1}x_{1},\\dots,X_{1}x_{n}),\\qquad(X_{2}x_{1},\\dots,X_{2}x_{n}),\\qquad(X_{r}x_{1},\\dots,X_{r}x_{n}" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:5.35" "e" "X_{1}f=0,\\qquad \\dots,\\qquad X_{r}f=0. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "  6 On various relations that may exist between two groups" "/Users/zh217/Documents/work/cartangrp1.tex" nil 1 "6" "\\chapter{On various relations that may exist between two groups}" 231571)
+
+("cha:vari-relat-that" "s" "\\section{Similar groups}  \\paragraph{} \\label{sec:88} Consider a transformation $S$ operating on a $" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "    6.1 Similar groups" "/Users/zh217/Documents/work/cartangrp1.tex" nil 2 "6.1" "\\section{Similar groups}" 231665)
+
+("sec:similar-groups" "s" "\\paragraph{}  Consider a transformation $S$ operating on a $n$ dimensional domain $D$: \\begin{equati" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          6.1.0.0.1  " "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "6.1.0.0.1" "\\paragraph{}" 231718)
+
+("sec:88" "s" "Consider a transformation $S$ operating on a $n$ dimensional domain $D$: \\begin{equation}  x'_{i}=\\p" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:6.1" "e" "x'_{i}=\\phi_{i}(x_{1},\\dots,x_{n}). " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:6.2" "e" "X'_{i}=\\Phi_{i}(X_{1},\\dots,X_{n}). " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "    6.2 Notion of isomorphism" "/Users/zh217/Documents/work/cartangrp1.tex" nil 2 "6.2" "\\section{Notion of isomorphism}" 235066)
+
+("sec:notion-isomorphism" "s" "\\paragraph{Introduction. The various aspects presented by the displacement group.}  Consider the dis" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          6.2.0.0.1 Introduction. The various aspects presented by the displacement group." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "6.2.0.0.1" "\\paragraph{Introduction. The various aspects presented by the displacement group.}" 235130)
+
+("sec:89" "s" "Consider the displacement group of space. It has equations that are essentially different according " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          6.2.0.0.2 Definition of isomorphism." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "6.2.0.0.2" "\\paragraph{Definition of isomorphism.}" 238509)
+
+("sec:90" "s" "Given a class $\\omega$ of objects constructed by the recurrence procedure indicated in the preceding" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          6.2.0.0.3 The classes of objects a given group transforms." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "6.2.0.0.3" "\\paragraph{The classes of objects a given group transforms.}" 241472)
+
+("sec:91" "s" "We will generalise the considerations of paragraph \\fsref{89} in this paragraph. Consider, instead o" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "    6.3 Identifying objects in a given class of objects" "/Users/zh217/Documents/work/cartangrp1.tex" nil 2 "6.3" "\\section{Identifying objects in a given class of objects}" 243939)
+
+("sec:spott-objects-same" "s" "\\paragraph{Introduction.}  During the first part of this work, we have always dealt with geometrical" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          6.3.0.0.1 Introduction." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "6.3.0.0.1" "\\paragraph{Introduction.}" 244029)
+
+("sec:92" "s" "During the first part of this work, we have always dealt with geometrical objects in a manner alread" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          6.3.0.0.2 Identification of a classe of objects $\\omega$ transformed transitively by a group $G$." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "6.3.0.0.2" "\\paragraph{Identification of a classe of objects $\\omega$ transformed transitively by a group $G$.}" 245991)
+
+("sec:93" "s" "The identification of these objects does not necessitate the use of invariants and is very easy. Let" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          6.3.0.0.3 Identification of a classe of objects $\\omega$ transformed intransitively by a group $G$." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "6.3.0.0.3" "\\paragraph{Identification of a classe of objects $\\omega$ transformed intransitively by a group $G$.}" 248658)
+
+("sec:94" "s" "This class decomposes into subclasses $\\delta$ each of which is constituted by the set of transforme" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:6.1a" "e" "\\tag{\\ref{eq:6.1}} x'_{i}=\\phi(x_{1},\\dots,x_{n};a_{1},\\dots,a_{r}). " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "    6.4 Groups isomorphic to a given group" "/Users/zh217/Documents/work/cartangrp1.tex" nil 2 "6.4" "\\section{Groups isomorphic to a given group}" 252901)
+
+("sec:groups-isom-given" "s" "\\paragraph{Finding transitive groups meriedrically isometric to $G$.}  Consider a class of objects $" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          6.4.0.0.1 Finding transitive groups meriedrically isometric to $G$." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "6.4.0.0.1" "\\paragraph{Finding transitive groups meriedrically isometric to $G$.}" 252977)
+
+("sec:95" "s" "Consider a class of objects $\\omega$ transformed transitively by $G$. Let $g_{1}$ be the subgroup of" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          6.4.0.0.2 Finding intransitive groups meriedrically isometric to $G$." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "6.4.0.0.2" "\\paragraph{Finding intransitive groups meriedrically isometric to $G$.}" 255236)
+
+("sec:96" "s" "Paragraph \\fsref{94} leads to the following considerations. Consider a set of bodies $c_{s}$ where t" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          6.4.0.0.3 Distinction between holoedric and meriedric isomorphisms." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "6.4.0.0.3" "\\paragraph{Distinction between holoedric and meriedric isomorphisms.}" 256059)
+
+("sec:97" "s" "$G(\\omega)$ can fail to be holoedrically isomorphic to $G$: this is the case when the transformation" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          6.4.0.0.4 Important remarks." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "6.4.0.0.4" "\\paragraph{Important remarks.}" 258251)
+
+("sec:98" "s" "The study of groups isomorphic to a given grou $G$ thus amounts to the determination of all the subg" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "  7 Relations between a group and its parameter group" "/Users/zh217/Documents/work/cartangrp1.tex" nil 1 "7" "\\chapter{Relations between a group and its parameter group}" 261261)
+
+("cha:relat-betw-group" "s" "\\section{Simply transitive group}  \\paragraph{} \\label{sec:99} Consider a simply transitive group $G" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "    7.1 Simply transitive group" "/Users/zh217/Documents/work/cartangrp1.tex" nil 2 "7.1" "\\section{Simply transitive group}" 261351)
+
+("sec:simply-trans-group" "s" "\\paragraph{}  Consider a simply transitive group $G$. Let us choose the coordinates of the origin $\\" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          7.1.0.0.1  " "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "7.1.0.0.1" "\\paragraph{}" 261417)
+
+("sec:99" "s" "Consider a simply transitive group $G$. Let us choose the coordinates of the origin $\\mathbf{A}$ as " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "    7.2 Transitive group" "/Users/zh217/Documents/work/cartangrp1.tex" nil 2 "7.2" "\\section{Transitive group}" 262185)
+
+("sec:transitive-group" "s" "\\paragraph{Generalities.}  Now consider a transitive group $G$ which operates on the points of a dom" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          7.2.0.0.1 Generalities." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "7.2.0.0.1" "\\paragraph{Generalities.}" 262242)
+
+("sec:100" "s" "Now consider a transitive group $G$ which operates on the points of a domain $D$. Suppose a system o" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:7.1" "e" "x'_{i}=\\phi_{i}(x_{1},\\dots,x_{n};a_{1},\\dots,a_{r}), " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:7.2" "e" "\\left\\{ \\begin{aligned} x'_{i}&=\\phi_{i}(x_{1},\\dots,x_{n};a_{1},\\dots,a_{r}),&(i&=1,\\dots,n)," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          7.2.0.0.2 Practical construction of the simply transitive holoedric prolongation of a give group." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "7.2.0.0.2" "\\paragraph{Practical construction of the simply transitive holoedric prolongation of a give group.}" 265772)
+
+("sec:101" "s" "We are now going to indicate the precise procedure we will use to choose the parameters conforming t" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          7.2.0.0.3 Examples." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "7.2.0.0.3" "\\paragraph{Examples.}" 266912)
+
+("sec:102" "s" "{\\small \\emph{The group of planar displacements.} Let us choose the translation $\\overrightarrow{\\ma" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:7.3" "e" "\\left\\{ \\begin{aligned} x'&=x\\cos c-y\\sin c+x_{0}," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:7.4" "e" "\\left\\{ \\begin{aligned} x'&=x\\cos c-y\\sin c+x_{0}," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:7.5" "e" "x'=ax+x_{0}. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:7.6" "e" "\\left\\{ \\begin{aligned} x'&=ax+x_{0}," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:7.7" "e" "x'=\\frac{x}{\\beta x+\\alpha}+x_{0}. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:7.8" "e" "\\left\\{ \\begin{aligned} x'&=\\frac{x}{\\beta x+\\alpha}+x_{0}," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "    7.3 Intransitive group" "/Users/zh217/Documents/work/cartangrp1.tex" nil 2 "7.3" "\\section{Intransitive group}" 269586)
+
+("sec:intransitive-group" "s" "\\paragraph{}  Now consider an intransitive group $G$ with $p$ invariants operating on a domain $D$ w" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          7.3.0.0.1  " "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "7.3.0.0.1" "\\paragraph{}" 269647)
+
+("sec:103" "s" "Now consider an intransitive group $G$ with $p$ invariants operating on a domain $D$ whose defining " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:7.1a" "e" "\\tag{\\ref{eq:7.1}} x'_{i}=\\phi_{i}(x_{1},\\dots,x_{n};a_{1},\\dots,a_{r}) " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:7.9" "e" "\\left\\{ \\begin{aligned} \\xi'_{1}&=\\psi_{1}(\\xi_{1},\\xi_{2},\\dots;a_{1},\\dots,a_{r})," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:7.10" "e" "\\left\\{ \\begin{aligned} \\xi'_{1}&=\\psi_{1}(\\xi_{1},\\xi_{2},\\dots;a_{1},\\dots,a_{r})," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:7.11" "e" "\\left\\{ \\begin{aligned} x'_{1}&=\\phi_{1}(x_{1},\\dots,x_{m};a_{1},\\dots,a_{r})," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          7.3.0.0.2 Examples." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "7.3.0.0.2" "\\paragraph{Examples.}" 274241)
+
+("sec:104" "s" "{\\small Consider the intransitive group $G$ in two parameters acting on two variables: \\begin{equati" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:7.1'" "e" "\\tag{\\ref{eq:7.1}$'$} \\left\\{ \\begin{aligned} x'&=x," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:7.9'" "e" "\\tag{\\ref{eq:7.9}$'$} \\left\\{ \\begin{aligned} \\xi'&=\\xi+a," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:7.10'" "e" "\\tag{\\ref{eq:7.10}$'$} \\left\\{ \\begin{aligned} \\xi'&=\\xi+a," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:7.11'" "e" "\\tag{\\ref{eq:7.11}$'$} \\left\\{ \\begin{aligned} x'&=x," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:7.12" "e" "\\tag{12$'$} x=\\xi,\\qquad y=\\xi\\zeta+\\eta. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "  8 Equations defining the operations of a finite-dimensional connected group" "/Users/zh217/Documents/work/cartangrp1.tex" nil 1 "8" "\\chapter{Equations defining the operations of a finite-dimensional connected group}" 276677)
+
+("cha:equat-defin-oper" "s" "\\section*{Introduction}  \\addcontentsline{toc}{section}{Introduction} \\paragraph{} \\label{sec:105} L" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "    * Introduction" "/Users/zh217/Documents/work/cartangrp1.tex" nil 2 "*" "\\section*{Introduction}" 276791)
+
+("sec:introduction-2" "s" "\\addcontentsline{toc}{section}{Introduction} \\paragraph{}  Let us recall the results stated in \\page" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          8.0.0.0.1  " "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "8.0.0.0.1" "\\paragraph{}" 276888)
+
+("sec:105" "s" "Let us recall the results stated in \\pageref{sec:80} and \\pageref{sec:83}: the parameter group leave" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:8.1" "e" "x'_{i}=\\phi_{i}(x_{1},\\dots,x_{n};a_{1},\\dots,a_{r}),\\qquad(i=1,2,\\dots,n). " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "    8.1 The case of simply transitive groups" "/Users/zh217/Documents/work/cartangrp1.tex" nil 2 "8.1" "\\section{The case of simply transitive groups}" 277963)
+
+("sec:case-simply-trans" "s" "\\paragraph{}  \\textsc{Theorem.} \\emph{A simply transitive group can be characterised by the property" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          8.1.0.0.1  " "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "8.1.0.0.1" "\\paragraph{}" 278041)
+
+("sec:106" "s" "\\textsc{Theorem.} \\emph{A simply transitive group can be characterised by the property that it leave" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          8.1.0.0.2 Determination of the invariant Pfaffian forms." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "8.1.0.0.2" "\\paragraph{Determination of the invariant Pfaffian forms.}" 279837)
+
+("sec:107" "s" "We will deduce the Pfaffian forms that a simply transitive group left invariant from the defining eq" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:8.2" "e" "X_{i}=\\phi_{i}(x_{1},\\dots,x_{n};a_{1},\\dots,a_{n}),\\qquad(i=1,2,\\dots,n). " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:8.3" "e" "dX_{i}=\\frac{\\pd\\phi_{i}(x_{1},\\dots,x_{n};a_{1},\\dots,a_{n})}{\\pd x_{1}}dx_{1}+\\dots+\\frac{\\pd \\phi" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:8.4" "e" "dX_{i}=a_{i1}(X_{1},\\dots,X_{n};x_{1},\\dots,x_{n})dx_{1}+\\alpha_{in}(X_{1},\\dots,X_{n};x_{1},\\dots,x" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:8.5" "e" "dX_{i}=\\alpha_{i1}(X_{1},\\dots,X_{n};x'_{1},\\dots,x'_{n})dx'_{1}+\\dots+\\alpha_{in}(X_{1},\\dots,X_{n}" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "    8.2 The case of transitive groups" "/Users/zh217/Documents/work/cartangrp1.tex" nil 2 "8.2" "\\section{The case of transitive groups}" 284732)
+
+("sec:case-trans-groups" "s" "\\paragraph{Preliminaries.}  Suppose the parameters are chosen as indicated in paragraph \\fsref{100} " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          8.2.0.0.1 Preliminaries." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "8.2.0.0.1" "\\paragraph{Preliminaries.}" 284803)
+
+("sec:108" "s" "Suppose the parameters are chosen as indicated in paragraph \\fsref{100} (p.~\\pageref{sec:100}) of th" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:8.6" "e" "\\left\\{ \\begin{gathered} \\sum_{p=1}^{r}\\omega_{p}(a,da)X_{p}f=\\sum_{j=1}^{n}\\frac{\\pd f}{\\pd x_{j}}\\" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:8.7" "e" "\\left\\{ \\begin{aligned} \\omega_{1}(x,u,dx,du)&=\\cos u\\,dx+\\sin u\\,dy," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:8.8" "e" "\\left\\{ \\begin{aligned} \\omega_{1}(x,u,dx,du)&=\\frac{dx}{u}," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:8.9" "e" "\\omega_{1}=u\\,dx,\\qquad\\omega_{2}=2v\\,dx-\\frac{du}{u},\\qquad\\omega_{3}=\\frac{v^{2}}{u}dx-\\frac{dv}{u" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:8.10" "e" "\\frac{f'''}{f'}-\\frac{3}{2}\\frac{f''^{2}}{f'^{2}}=0. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          8.2.0.0.2 Lemma." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "8.2.0.0.2" "\\paragraph{Lemma.}" 289064)
+
+("sec:109" "s" "\\emph{We can always form $n$ distinct linear combinations of $\\omega_{p}$ with constant coefficients" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          8.2.0.0.3 Lemma." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "8.2.0.0.3" "\\paragraph{Lemma.}" 291711)
+
+("sec:110" "s" "\\emph{If the differentials $u_{j}$ do not appear in the first $n$ forms} \\[ \\omega_{1}(x,u,dx),\\qqua" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          8.2.0.0.4 Digression." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "8.2.0.0.4" "\\paragraph{Digression.}" 292648)
+
+("sec:111" "s" "{\\small We are going to show how the choice of parameters indicated in paragraph \\fsref{101} (chapte" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:8.11" "e" "\\left\\{ \\begin{aligned} \\omega_{i}(x,u,dx)&=\\bar\\omega_{i}(x,u,dx)&\\text{for }&i\\le n," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          8.2.0.0.5 Consequences of the lemmas established in \\fsref{109} and \\fsref{110}." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "8.2.0.0.5" "\\paragraph{Consequences of the lemmas established in \\fsref{109} and \\fsref{110}.}" 297068)
+
+("sec:112" "s" "Consider a connected, finite-dimensional and transitive group defined by the analytic equations \\beg" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:8.1--" "e" "\\tag{\\ref{eq:8.1}} x'_{i}=\\phi_{i}(x_{1},\\dots,x_{n};a_{a},\\dots,a_{r}). " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:8.12" "e" "u_{h}=\\Psi_{h}(x'_{1},\\dots,x'_{n};u'_{1},\\dots,u'_{p};a_{1},\\dots,a_{r}),\\qquad(h=1,\\dots,p). " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:8.13" "e" "v_{i}=\\theta_{i}(x'_{1}, \\dots, x'_{n};u'_{1}, \\dots, u'_{p};v'_{1}, \\dots, v'_{q};a_{1},\\dots,a_{r}" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          8.2.0.0.6 Partial differential equations defining the transformations of a group." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "8.2.0.0.6" "\\paragraph{Partial differential equations defining the transformations of a group.}" 305217)
+
+("sec:113" "s" "Consider a variable frame depending on only the parameters $x_{1}$, $\\dots$, $x_{n}$. Suppose for ex" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:8.14" "e" "\\left\\{ \\begin{gathered} \\omega_{i}(x',u',dx')=\\omega_{i}(x,0,dx)," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:8.15-1" "e" "\\addtocounter{equation}{1} \\tag{\\arabic{equation}$_{1}$} \\omega_{i}(x,u,dx)&=\\omega_{i}(x',0,dx')," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:8.15-2" "e" "\\tag{\\arabic{equation}$_{2}$} \\omega_{h}(x,u,v,dx,du)&=\\omega_{h}(x',0,0,dx',0)," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:8.15-3" "e" "\\tag{\\arabic{equation}$_{3}$} \\omega_{m}(x,u,\\dots,w,dx,du,\\dots,dw)&=\\omega_{m}(x',0,\\dots,0,dx',0," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:8.16-1" "e" "\\addtocounter{equation}{1} \\tag{\\arabic{equation}$_{1}$} \\alpha_{ij}(x,u)=\\sum_{k=1}^{n}\\alpha_{ik}(" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:8.16-2" "e" "\\tag{\\arabic{equation}$_{2}$} \\beta_{hi}(x,u,v)+\\sum_{k=1}^{p}\\gamma_{hk}(x,u,v)\\frac{\\pd u_{k}}{\\pd" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:8.17-1" "e" "\\addtocounter{equation}{1} \\tag{\\arabic{equation}$_{1}$} u_{h}=F_{h}\\left(x_{1},\\dots,x_{n},x'_{1},\\" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:8.17-2" "e" "\\tag{\\arabic{equation}$_{2}$} v_{l}=G_{l}\\left(x_{1},\\dots,x_{n},x'_{1},\\dots,x'_{n},\\frac{\\pd x'_{1" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "    8.3 The case of intransitive groups" "/Users/zh217/Documents/work/cartangrp1.tex" nil 2 "8.3" "\\section{The case of intransitive groups}" 312609)
+
+("sec:case-intr-groups" "s" "\\paragraph{}  Let us recall the result proved in paragraph \\fsref{103} (p.~\\pageref{sec:103}). Every" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          8.3.0.0.1  " "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "8.3.0.0.1" "\\paragraph{}" 312681)
+
+("sec:114" "s" "Let us recall the result proved in paragraph \\fsref{103} (p.~\\pageref{sec:103}). Every intransitive " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "  9 Realisations of a given abstract group. Subgroups of a group" "/Users/zh217/Documents/work/cartangrp1.tex" nil 1 "9" "\\chapter{Realisations of a given abstract group. Subgroups of a group}" 316333)
+
+("cha:real-given-abstr" "s" "\\paragraph{Introduction.}  \\addcontentsline{toc}{section}{Introduction} The preceding chapter, which" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          9.0.0.0.1 Introduction." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "9.0.0.0.1" "\\paragraph{Introduction.}" 316434)
+
+("sec:115" "s" "\\addcontentsline{toc}{section}{Introduction} The preceding chapter, which is related to the definiti" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "    9.1 Transitive group realising a given abstract group" "/Users/zh217/Documents/work/cartangrp1.tex" nil 2 "9.1" "\\section{Transitive group realising a given abstract group}" 317470)
+
+("sec:trans-group-real" "s" "\\paragraph{Construction of transitive groups realising a given abstract group.}  Consider an abstrac" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          9.1.0.0.1 Construction of transitive groups realising a given abstract group." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "9.1.0.0.1" "\\paragraph{Construction of transitive groups realising a given abstract group.}" 317560)
+
+("sec:116" "s" "Consider an abstract group, i.e., a parameter group $G$. We assume it to be defined in a domain $D$ " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:9.1" "e" "\\xi'_{p}=\\Phi_{p}(\\xi_{1},\\dots,\\xi_{r};a_{1},\\dots,a_{r}),\\qquad(p=1,\\dots,r). " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:9.p" "e" "\\tag{P} \\left\\{ \\begin{gathered} \\text{We suppose that this transitive group operates on a domain $D" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          9.1.0.0.2 Discussion." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "9.1.0.0.2" "\\paragraph{Discussion.}" 319843)
+
+("sec:117" "s" "Conversely, consider such a completely integrable system obtained by equating to zero certain linear" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          9.1.0.0.3 Distinction between holoedric and meriedric isomorphism." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "9.1.0.0.3" "\\paragraph{Distinction between holoedric and meriedric isomorphism.}" 322605)
+
+("sec:118" "s" "We suppose that the second difficulty indicated in the preceding paragraph does not arise: a variety" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:9.2" "e" "x'_{i}=\\phi_{i}(x_{1},\\dots,x_{n};a_{1},\\dots,a_{r}), " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:9.3" "e" "u_{h}=\\Psi_{h}(x'_{1},\\dots,x'_{n};u'_{1},\\dots,u'_{p};a_{1},\\dots,a_{r}),\\qquad(h=1,\\dots,p). " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "    9.2 Intransitive group realising a given group" "/Users/zh217/Documents/work/cartangrp1.tex" nil 2 "9.2" "\\section{Intransitive group realising a given group}" 327168)
+
+("sec:intr-group-real" "s" "\\paragraph{Construction of intransitive groups realising a given abstract group.}  Consider again a " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          9.2.0.0.1 Construction of intransitive groups realising a given abstract group." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "9.2.0.0.1" "\\paragraph{Construction of intransitive groups realising a given abstract group.}" 327250)
+
+("sec:119" "s" "Consider again a abstract group $G$ defined by analytic equations and let $\\omega_{1}(\\xi,d\\xi)$, $\\" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:9.2a" "e" "\\tag{\\ref{eq:9.2}} x'_{i}=\\phi_{i}(x_{1},\\dots,x_{n};a_{1},\\dots,a_{r}),\\qquad(i=1,\\dots,n). " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:9.4" "e" "\\sum_{1\\le s\\le r}\\alpha_{is}(y)\\omega_{s}(\\xi,d\\xi). " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          9.2.0.0.2 Discussion." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "9.2.0.0.2" "\\paragraph{Discussion.}" 330091)
+
+("sec:120" "s" "Conversely, consider such a system. The group transforms the varieties $V$ into each other since it " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:9.1'" "e" "\\tag{\\ref{eq:9.1}$'$} \\xi'_{1}=\\xi_{1}+a_{1},\\qquad\\dots,\\qquad\\xi'_{r}=\\xi_{r}+a_{r}. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:9.2'" "e" "\\tag{\\ref{eq:9.2}$'$} \\left\\{ \\begin{aligned} x'_{1}&=x_{1}," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          9.2.0.0.3 Remark on the analytic nature of realisations of an abstract group." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "9.2.0.0.3" "\\paragraph{Remark on the analytic nature of realisations of an abstract group.}" 332489)
+
+("sec:121" "s" "We have assumed above that the functions $\\alpha_{i,j}$ are analytic. But if, in the formulae \\eqref" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "    9.3 Complements" "/Users/zh217/Documents/work/cartangrp1.tex" nil 2 "9.3" "\\section{Complements}" 333367)
+
+("sec:complements" "s" "\\paragraph{Preliminaries.}  In the course of this chapter we have established the following result (" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          9.3.0.0.1 Preliminaries." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "9.3.0.0.1" "\\paragraph{Preliminaries.}" 333414)
+
+("sec:122" "s" "In the course of this chapter we have established the following result (c.f.~\\fsref{116}, p.~\\pagere" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          9.3.0.0.2 Theorem." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "9.3.0.0.2" "\\paragraph{Theorem.}" 335135)
+
+("sec:123" "s" "\\emph{Consider the family of frames $\\mathbf{R}$ attached to an object \\footnote{C.f.~\\fsref{93}, p." "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          9.3.0.0.3 Converse theorem." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "9.3.0.0.3" "\\paragraph{Converse theorem.}" 336386)
+
+("sec:124" "s" "\\emph{Suppose that a family of frames depends analytically on $v$ parameters and $r-v$ linearly inde" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          9.3.0.0.4 Corollary." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "9.3.0.0.4" "\\paragraph{Corollary.}" 337720)
+
+("sec:125" "s" "A ``body'' is constituted by the image variety of a subgroup of $G$ in the parameter space and by th" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "  10 Differential geometry" "/Users/zh217/Documents/work/cartangrp1.tex" nil 1 "10" "\\chapter{Differential geometry}" 338441)
+
+("cha:diff-geom" "s" "\\section{The method of moving frames}  \\paragraph{Introduction.} \\label{sec:126} Consider a connecte" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "    10.1 The method of moving frames" "/Users/zh217/Documents/work/cartangrp1.tex" nil 2 "10.1" "\\section{The method of moving frames}" 338496)
+
+("sec:method-moving-frames" "s" "\\paragraph{Introduction.}  Consider a connected and finite dimensional group $G$ operating on the po" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          10.1.0.0.1 Introduction." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "10.1.0.0.1" "\\paragraph{Introduction.}" 338568)
+
+("sec:126" "s" "Consider a connected and finite dimensional group $G$ operating on the points of a domain $D$ \\footn" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          10.1.0.0.2 Statements of the properties imposed on frames and invariants of various orders." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "10.1.0.0.2" "\\paragraph{Statements of the properties imposed on frames and invariants of various orders.}" 340820)
+
+("sec:127" "s" "We will subject the solution of the identification problem that we have just put forward to certain " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:10.1" "e" "\\pi_{\\alpha}=\\sum_{p=1}^{r}a_{\\alpha p}\\omega_{p},\\qquad(r-v_{P-1}<\\alpha\\le r-v_{P}). " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:10.2" "e" "\\left\\{ \\begin{aligned} dk_{\\alpha}&=b_{\\alpha 1}\\pi_{1}+\\dots+b_{\\alpha \\lambda}\\pi_{\\lambda}&&&&(\\" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          10.1.0.0.3 Use of a recurrent contact condition." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "10.1.0.0.3" "\\paragraph{Use of a recurrent contact condition.}" 346264)
+
+("sec:128" "s" "By hypothesis we know how to identify the points of $D$, i.e., the contact elements of order zero. O" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          10.1.0.0.4 The mechanism of the method of moving frame \\footnote{Paragraph \\fsref{172}, p.~\\pageref{sec:172} in" "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "10.1.0.0.4" "\\paragraph[The mechanism of the method of moving frame.]{The mechanism of the method of moving frame \\footnote{Paragraph \\fsref{172}, p.~\\pageref{sec:172} indicates a better way to apply the operations of thi" 347712)
+
+("sec:129" "s" "Suppose that we know: \\somespace 1. The number of invariants of orders $1$, $2$, $\\dots$, $P$; 2. Th" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          10.1.0.0.5 Important remark." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "10.1.0.0.5" "\\paragraph{Important remark.}" 350011)
+
+("sec:130" "s" "Choosing at certain exceptional points the secondary parameters in a way to establish among the coef" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          10.1.0.0.6 Frenet frame; equality condition." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "10.1.0.0.6" "\\paragraph{Frenet frame; equality condition.}" 351552)
+
+("sec:131" "s" "Given a variety $V_{\\lambda}$ let us determine successively the frames and the invariants of the con" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          10.1.0.0.7 Problem." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "10.1.0.0.7" "\\paragraph{Problem.}" 354065)
+
+("sec:132" "s" "\\emph{Under what conditions does a variety $V_{\\lambda}$ possess the following property: \\footnote{I" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "    10.2 Unimodular affine geometry;" "/Users/zh217/Documents/work/cartangrp1.tex" nil 2 "10.2" "\\section[{Unimodular affine geometry; study of real place curves}]{Unimodular affine geometry;\\\\study of real place curves}" 355743)
+
+("sec:unim-affine-geom" "s" "\\paragraph{Introduction.}  We will apply the method of moving frame to the study of real plane curve" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          10.2.0.0.1 Introduction." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "10.2.0.0.1" "\\paragraph{Introduction.}" 355897)
+
+("sec:133" "s" "We will apply the method of moving frame to the study of real plane curves, relative to the group of" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:10.2.1" "e" "\\left\\{ \\begin{aligned} x'&=ax+by+c," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:10.2.2" "e" "\\ivec_{1}\\wedge\\ivec_{2}=1. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:10.2.3" "e" "\\left\\{ \\begin{aligned} \\overrightarrow{d\\mathbf{A}}&=\\omega_{1\\hphantom{0}}(a,da)\\ivec_{1}+\\omega_{" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          10.2.0.0.2 Definition of elements of orders $0$ and $1$." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "10.2.0.0.2" "\\paragraph{Definition of elements of orders $0$ and $1$.}" 358485)
+
+("sec:134" "s" "A contact element of order zero is constituted by a point, a contact element of order $1$ by a point" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          10.2.0.0.3 Definition of elements of order $2$." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "10.2.0.0.3" "\\paragraph{Definition of elements of order $2$.}" 360104)
+
+("sec:135" "s" "Consider two variable frames of order $1$ of a curve: $\\mathbf{A}\\ivec_{1}\\ivec_{2}$ and $\\mathbf{A}" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:10.2.4" "e" "\\left\\{ \\begin{aligned} \\ivec_{1}&=\\lambda\\jvec_{1}," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:10.2.5" "e" "\\left\\{ \\begin{alignedat}{20} \\omega_{1}&=\\overrightarrow{d\\mathbf{A}}\\wedge\\ivec_{2}&&=\\frac{1}{\\la" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:10.2.6" "e" "b=\\lambda^{3}\\bar b. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          10.2.0.0.4 Definition of elements of order $3$." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "10.2.0.0.4" "\\paragraph{Definition of elements of order $3$.}" 362533)
+
+("sec:136" "s" "By replacing in \\eqref{eq:10.2.6} $b$ and $\\bar b$ by $1$ we obtain $\\lambda^{3}=1$, i.e., since $\\l" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:10.2.7" "e" "\\left\\{ \\begin{aligned} \\ivec_{1}&=\\jvec_{1}," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          10.2.0.0.5 Definition of elements of order $>3$." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "10.2.0.0.5" "\\paragraph{Definition of elements of order $>3$.}" 364813)
+
+("sec:137" "s" "The frames of orders $>3$ coincide with the Frenet frame. There exists an invariant of order $4$: $k" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:10.2.8" "e" "\\left\\{ \\begin{aligned} \\overrightarrow{d\\mathbf{A}}&=d\\sigma\\,\\ivec_{1}," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          10.2.0.0.6 Analytic determination of Frenet frame, curvature and affine arc." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "10.2.0.0.6" "\\paragraph{Analytic determination of Frenet frame, curvature and affine arc.}" 366336)
+
+("sec:138" "s" "\\emph{Generalities.} Suppose we have determined at each point of the curve $[x,y(x)]$ a particular f" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:10.2.9" "e" "\\left\\{ \\begin{aligned} \\text{coordinates of }&\\mathbf{A}:&&x,y;" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:10.2.10" "e" "\\lambda=(y'')^{-\\frac{1}{3}},\\qquad\\mu=\\frac{1}{y''}\\frac{1}{\\lambda}\\frac{d\\lambda}{dx}=-\\frac{1}{3" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:10.2.11" "e" "d\\sigma=(y'')^{\\frac{1}{3}}dx, " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:10.2.12" "e" "k=\\frac{1}{2}\\left(\\left.y''\\right.^{-\\frac{2}{3}}\\right)''. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:10.2.13" "e" "\\lambda=R^{\\frac{1}{3}},\\qquad\\mu=\\frac{R}{\\lambda}\\frac{d\\lambda}{ds}=\\frac{1}{3}\\frac{dR}{ds}. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:10.2.14" "e" "d\\sigma=R^{-\\frac{1}{3}}ds, " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:10.2.15" "e" "k=-R^{-\\frac{4}{3}}+\\frac{1}{2}\\frac{d^{2}}{ds^{2}}(R^{\\frac{2}{3}}). " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:10.2.16" "e" "d\\sigma=(d\\mathbf{A}\\wedge d^{2}\\mathbf{A})^{\\frac{1}{3}}. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          10.2.0.0.7 Reduced equation." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "10.2.0.0.7" "\\paragraph{Reduced equation.}" 372442)
+
+("sec:139" "s" "We can recover the Frenet formulae by finding directly a reduced equation of the curve in a neighbou" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:10.2.17" "e" "y=\\frac{1}{2}x^{2}-\\frac{1}{8}kx^{4}-\\frac{1}{40}\\frac{dk}{d\\sigma}+\\cdots " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:10.2.18" "e" "\\left\\{ \\begin{aligned} x&=\\sigma+\\frac{1}{6}k\\sigma^{3}+\\frac{1}{24}\\frac{dk}{d\\sigma}\\sigma^{4}+\\c" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          10.2.0.0.8 Geometrical determination of the affine arc, Frenet frame and affine curvature." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "10.2.0.0.8" "\\paragraph{Geometrical determination of the affine arc, Frenet frame and affine curvature.}" 375708)
+
+("sec:140" "s" "Let $\\Delta$ be a direction of a straight line not parallel to the tangent at $\\mathbf{A}$, and let " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:10.2.19" "e" "d\\sigma\\sim\\sqrt[3]{4\\,\\text{area}\\,\\mathbf{AC}'\\mathbf{A}} \\qquad\\text{and}\\qquad\\ivec_{1}=\\lim\\fra" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("fig:5" "f" " " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "    10.3 Projective geometry; study of real plane curves \\footnote{For this section, the reader can consult \\" "/Users/zh217/Documents/work/cartangrp1.tex" nil 2 "10.3" "\\section[{Projective geometry; study of real plane curves}]{Projective geometry; study of real plane curves \\footnote{For this section, the reader can consult \\textsc{E.~Cartan}, \\emph{Leçon sur la théorie des e" 379675)
+
+("sec:proj-geom-study" "s" "\\paragraph{Introduction.}  We will apply the method of moving frame to the study of real planar curv" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          10.3.0.0.1 Introduction." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "10.3.0.0.1" "\\paragraph{Introduction.}" 379994)
+
+("sec:141" "s" "We will apply the method of moving frame to the study of real planar curves relative to the group $G" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:10.3.1" "e" "\\left\\{ \\begin{aligned} x'&=ax+by+cz," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:10.3.2" "e" "[\\mathbf{A},\\mathbf{A}_{1},\\mathbf{A}_{2}]=. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:10.3.3" "e" "\\left\\{ \\begin{aligned} d\\mathbf{A}_{\\phantom{0}}&=\\omega_{00}\\mathbf{A}+\\omega_{01}\\mathbf{A}_{1}+\\" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:10.3.3'" "e" "\\tag{\\ref{eq:10.3.3}$'$} \\omega_{00}+\\omega_{11}+\\omega_{22}=0. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          10.3.0.0.2 Definition of elements of order $0$ and $1$." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "10.3.0.0.2" "\\paragraph{Definition of elements of order $0$ and $1$.}" 381686)
+
+("sec:142" "s" "There is no invariant of order $0$ or $1$. The frames of order $0$ of a point on a curve are the fra" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          10.3.0.0.3 Definition of elements of order $2$." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "10.3.0.0.3" "\\paragraph{Definition of elements of order $2$.}" 382925)
+
+("sec:143" "s" "Consider two frames of order $1$ at the same variable point: $\\mathbf{AA}_{1}\\mathbf{A}_{2}$ and $\\m" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:10.3.4" "e" "\\left\\{ \\begin{aligned} \\mathbf{A}_{\\phantom{0}}&=\\lambda\\mathbf{B}," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:10.3.5" "e" "\\left\\{ \\begin{aligned} \\omega_{01}&=[\\mathbf{A},d\\mathbf{A},\\mathbf{A}_{2}]" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:10.3.6" "e" "b=\\lambda^{3}_{1}\\bar b. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          10.3.0.0.4 Definition of elements of order $3$." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "10.3.0.0.4" "\\paragraph{Definition of elements of order $3$.}" 386072)
+
+("sec:144" "s" "By replacing in \\eqref{eq:10.3.6} $b$ and $\\bar b$ by $1$ we obtain $\\lambda^{3}_{1}=1$, i.e., $\\lam" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:10.3.7" "e" "\\left\\{ \\begin{aligned} \\mathbf{A}_{\\phantom{0}}&=\\lambda\\mathbf{B}," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:10.3.8" "e" "\\omega_{01}=\\lambda\\bar\\omega_{01}. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:10.3.9" "e" "b=\\frac{1}{\\lambda}\\bar b+\\left(\\frac{\\mu}{\\lambda}-\\rho\\right). " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          10.3.0.0.5 Definition of elements of order $4$." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "10.3.0.0.5" "\\paragraph{Definition of elements of order $4$.}" 388670)
+
+("sec:145" "s" "By replacing in \\eqref{eq:10.3.9} $b$ and $\\bar b$ by $0$, we obtain $\\rho=\\dfrac{\\mu}{\\lambda}$. Th" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:10.3.10" "e" "\\left\\{ \\begin{aligned} \\mathbf{A}_{\\phantom{0}}&=\\lambda\\mathbf{B}," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:10.3.11" "e" "b=\\frac{1}{\\lambda^{2}}\\bar b+\\frac{\\mu^{2}-2\\nu}{\\lambda^{2}}. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          10.3.0.0.6 Definition of elements of order $5$." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "10.3.0.0.6" "\\paragraph{Definition of elements of order $5$.}" 391391)
+
+("sec:146" "s" "By replacing in \\eqref{eq:10.3.11} $b$ and $\\bar b$ by $0$ we obtain $\\nu=\\frac{\\mu^{2}}{2}$. The fo" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:10.3.12" "e" "\\left\\{ \\begin{aligned} \\mathbf{A}_{\\phantom{0}}&=\\lambda\\mathbf{B}," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:10.3.13" "e" "b=\\frac{\\bar b}{\\lambda^{3}}. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          10.3.0.0.7 A category of exceptional curves." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "10.3.0.0.7" "\\paragraph{A category of exceptional curves.}" 393471)
+
+("sec:147" "s" "The preceding definition of the order $5$ frames does not make sense when the displacements of the o" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:10.3.14" "e" "\\omega_{00}=0,\\qquad\\omega_{10}=0. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          10.3.0.0.8 Definition of elements of order $6$." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "10.3.0.0.8" "\\paragraph{Definition of elements of order $6$.}" 395583)
+
+("sec:148" "s" "By replacing in \\eqref{eq:10.3.13} $b$ and $\\bar b$ by $-1$ we obtain $\\lambda=1$. The formulae allo" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:10.3.15" "e" "\\left\\{ \\begin{aligned} \\mathbf{A}_{\\phantom{0}}&=\\mathbf{B}," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          10.3.0.0.9 Definition of elements of order $>6$." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "10.3.0.0.9" "\\paragraph{Definition of elements of order $>6$.}" 397415)
+
+("sec:149" "s" "There exists an invariant of order $7$: $k=-\\dfrac{\\omega_{10}}{d\\sigma}$. We call it the \\emph{proj" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:10.3.16" "e" "\\left\\{ \\begin{aligned} d\\mathbf{A}_{\\phantom{0}}&=d\\sigma\\,\\mathbf{A}," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          10.3.0.0.10 Curves considered as envelopes of straight lines." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "10.3.0.0.10" "\\paragraph{Curves considered as envelopes of straight lines.}" 398772)
+
+("sec:150" "s" "We can consider a curve as the envelop of its tangents. From this point of view we can introduce fra" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          10.3.0.0.11 Reduced equations." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "10.3.0.0.11" "\\paragraph{Reduced equations.}" 400555)
+
+("sec:151" "s" "We can arrive at the reduced equation by a curve in the neighbourhood of an ordinary point rapidly b" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "Part III Structure constants of finite-dimensional connected groups" "/Users/zh217/Documents/work/cartangrp1.tex" nil 0 "Part III" "\\part{Structure constants of finite-dimensional connected groups}" 405194)
+
+("part:struct-const-finite" "s" "\\chapter{The structural equations of E.~Cartan}  \\section{Introduction; Darboux equations} \\label{se" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "  11 The structural equations of E.~Cartan" "/Users/zh217/Documents/work/cartangrp1.tex" nil 1 "11" "\\chapter{The structural equations of E.~Cartan}" 405294)
+
+("cha:struct-equat-e" "s" "\\section{Introduction; Darboux equations}  \\paragraph{} \\label{sec:152} The relative components of t" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "    11.1 Introduction; Darboux equations" "/Users/zh217/Documents/work/cartangrp1.tex" nil 2 "11.1" "\\section{Introduction; Darboux equations}" 405372)
+
+("sec:intr-darb-equat" "s" "\\paragraph{}  The relative components of the displacement of a frame depending on a single parameter" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          11.1.0.0.1  " "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "11.1.0.0.1" "\\paragraph{}" 405443)
+
+("sec:152" "s" "The relative components of the displacement of a frame depending on a single parameter are arbitrary" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.1" "e" "\\left\\{ \\begin{alignedat}{20} \\overrightarrow{d\\mathbf{A}}&{}={}&\\omega_{1\\phantom{0}}\\ivec_{1}&&{}+" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.2" "e" "\\left\\{ \\begin{aligned} \\omega_{1\\phantom{0}}&=\\xi\\,du+\\xi_{1}dv,&&&\\omega_{2\\phantom{0}}&=\\eta\\,du+" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.3" "e" "& \\left\\{ \\begin{alignedat}{20} \\frac{\\pd\\vec{\\mathbf{A}}}{\\pd u}&{}={}&\\xi\\ivec_{1}&&{}+{}\\eta\\ivec" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.4" "e" "& \\left\\{ \\begin{alignedat}{20} \\frac{\\pd\\vec{\\mathbf{A}}}{\\pd v}&{}={}&\\xi_{1}\\ivec_{1}&&{}+{}\\eta_" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.5-1" "e" "\\tag{$5_{1}$} \\left\\{ \\begin{aligned} \\frac{\\pd\\xi}{\\pd v}-\\frac{\\pd\\xi_{1}}{\\pd u}&=(q\\zeta_{1}-q_{" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.5-2" "e" "\\tag{$5_{2}$} \\left\\{ \\begin{aligned} \\frac{\\pd p}{\\pd v}-\\frac{\\pd p_{1}}{\\pd u}&=qr_{1}-q_{1}r," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "    11.2 Differentials; exterior derivation" "/Users/zh217/Documents/work/cartangrp1.tex" nil 2 "11.2" "\\section{Differentials; exterior derivation}" 411687)
+
+("sec:diff-exter-deriv" "s" "\\paragraph{Differential notation.}  Consider $n$ independent variables $x_{1}$, $\\dots$, $x_{n}$. We" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          11.2.0.0.1 Differential notation." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "11.2.0.0.1" "\\paragraph{Differential notation.}" 411762)
+
+("sec:153" "s" "Consider $n$ independent variables $x_{1}$, $\\dots$, $x_{n}$. We call a system of $n$ functions whos" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          11.2.0.0.2 Simultaneous use of two systems of differentials." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "11.2.0.0.2" "\\paragraph{Simultaneous use of two systems of differentials.}" 412859)
+
+("sec:154" "s" "It will be useful for us to attribute simultaneously to each variable $x_{i}$ two differentials $dx_" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.6" "e" "d\\delta x_{i}=\\delta d x_{i}. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.7" "e" "d\\delta f=\\delta df. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          11.2.0.0.3 Exterior derivation." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "11.2.0.0.3" "\\paragraph{Exterior derivation.}" 416519)
+
+("sec:155" "s" "Consider a Pfaffian form \\begin{equation}  \\omega(x,dx)=\\sum_{k}a_{k}(x_{1},\\dots,x_{n})dx_{k}. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.8" "e" "\\omega(x,dx)=\\sum_{k}a_{k}(x_{1},\\dots,x_{n})dx_{k}. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.9" "e" "d\\omega(x,\\delta x)-\\delta\\omega(x,dx)&=\\sum_{k}(da_{k}\\delta x_{k}-\\delta a_{k}dx_{k})" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.10" "e" "\\omega'(x,dx,\\delta x)=d\\omega(x,\\delta x)-\\delta\\omega(d,dx). " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          11.2.0.0.4 Exterior products." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "11.2.0.0.4" "\\paragraph{Exterior products.}" 418031)
+
+("sec:156" "s" "$\\omega'$ depends linearly on each of the series of variables $dx_{1}$, $\\dots$, $dx_{n}$; $\\delta x" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.11" "e" "(m\\omega)'=[dm\\,\\omega]+m\\omega'. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "    11.3 The structural equations of E.~Cartan; the second fundamental theorem of groups" "/Users/zh217/Documents/work/cartangrp1.tex" nil 2 "11.3" "\\section{The structural equations of E.~Cartan; the second fundamental theorem of groups}" 420051)
+
+("sec:struct-equat-e" "s" "\\paragraph{Definition of the structure constants.}  Let us consider a finite dimensional connected g" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          11.3.0.0.1 Definition of the structure constants." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "11.3.0.0.1" "\\paragraph{Definition of the structure constants.}" 420169)
+
+("sec:157" "s" "Let us consider a finite dimensional connected group of transformations $S_{a}$. Let $\\omega_{1}(a,d" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.12" "e" "\\omega_{s}(\\xi',d\\xi')=\\omega_{s}(\\xi,d\\xi)\\qquad(s=1,\\dots,r). " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.13" "e" "d\\omega_{s}(\\xi',\\delta\\xi')-\\delta\\omega_{s}(\\xi',d\\xi')=d\\omega_{s}(\\xi,\\delta\\xi)-\\delta\\omega_{s" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.14" "e" "\\omega'_{s}(\\xi,d\\xi,\\delta\\xi)=\\sum_{(p,q)}c_{pqs}(\\xi)[\\omega_{p}(\\xi,d\\xi)\\omega_{q}(\\xi,d\\xi)], " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.15" "e" "c_{pqs}(\\xi)+c_{qps}(\\xi)=0. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.14'" "e" "\\tag{\\ref{eq:11.14}$'$} \\omega'_{s}(\\xi',d\\xi',\\delta\\xi')=\\sum_{(p,q)}c_{pqs}(\\xi')[\\omega_{p}(\\xi'" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.16" "e" "\\omega'_{s}=\\sum_{(p,q)}c_{pqs}[\\omega_{p}\\omega_{q}]. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.17" "e" "\\vp'_{s}=-\\sum_{(p,q)}c_{pqs}[\\vp_{p}\\vp_{q}]. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          11.3.0.0.2 Structure equations of the linear transformation group" "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "11.3.0.0.2" "\\paragraph{Structure equations of the linear transformation group}" 423547)
+
+("sec:158" "s" "\\[ x'=ax+b\\qquad(a>0). \\] We have, according to paragraphs \\fsref{71} (p.~\\pageref{sec:71}) and \\fsr" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          11.3.0.0.3 Structure equations of the planar projective group." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "11.3.0.0.3" "\\paragraph{Structure equations of the planar projective group.}" 424205)
+
+("sec:159" "s" "The eight relative components are defined geometrically by the equations \\eqref{eq:11.16} and \\eqref" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.18" "e" "\\left\\{ \\begin{aligned} d\\mathbf{A}_{\\phantom{0}}&=\\omega_{00}(d)\\mathbf{A}+\\omega_{01}(d)\\mathbf{A}" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.19" "e" "\\omega_{00}(d)+\\omega_{11}(d)+\\omega_{22}(d)=0. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.20" "e" "\\omega'_{ij}=\\sum_{k=0}^{2}[\\omega_{ik}\\omega_{kj}]\\qquad(i=0,1,2;j=0,1,2). " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          11.3.0.0.4 Structure equations of the affine group of space (c.f.~\\fsref{72}, p.~\\pageref{sec:72})." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "11.3.0.0.4" "\\paragraph[{Structure equations of the affine group of space.}]{Structure equations of the affine group of space (c.f.~\\fsref{72}, p.~\\pageref{sec:72}).}" 426074)
+
+("sec:160" "s" "The affine frame is constituted by a point $\\mathbf{A}$ and three linearly independent vectors $\\ive" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.21" "e" "d\\mathbf{A}&=\\sum_{k=1}^{3}\\omega_{k}\\ivec_{k}," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.22" "e" "d\\ivec_{i}&=\\sum_{k=1}^{3}\\omega_{ik}\\ivec_{k}. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.23" "e" "\\omega'_{ij}=\\sum_{k=1}^{3}[\\omega_{ik}\\omega_{kj}]. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.24" "e" "\\omega'_{i}=\\sum_{k=1}^{3}[\\omega_{k}\\omega_{ki}]. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.25" "e" "\\omega_{11}+\\omega_{22}+\\omega_{33}=0," "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.26" "e" "\\omega_{3}=0,\\qquad\\omega_{13}=0,\\qquad\\omega_{31}=0,\\qquad\\omega_{23}=0,\\qquad\\omega_{32}=0,\\qquad\\" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.27" "e" "\\omega_{ij}+\\omega_{ji}=0. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          11.3.0.0.5 Structure equations of the homographic transformation group" "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "11.3.0.0.5" "\\paragraph{Structure equations of the homographic transformation group}" 428712)
+
+("sec:161" "s" "\\[ x'=\\frac{ax+b}{cx+d}\\qquad(ad-bc>0). \\] According to the equations \\eqref{eq:8.9} of chapter \\ref" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.28" "e" "\\omega'_{1}=[\\omega_{1}\\omega_{2}],\\qquad\\omega'_{2}=2[\\omega_{1}\\omega_{3}],\\qquad\\omega'_{3}=[\\ome" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          11.3.0.0.6 A theorem about Pfaffian systems." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "11.3.0.0.6" "\\paragraph{A theorem about Pfaffian systems.}" 429650)
+
+("sec:162" "s" "The following paragraph will then establish three essential theorems which involve the structural co" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.29" "e" "\\omega_{s}(a,da)=\\omega\\str_{s}(u,du) " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.30" "e" "\\omega_{s}(a,da)=\\omega_{s}\\str[u(t),du(t)]\\qquad(s=1,\\dots,r) " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.31" "e" "\\frac{\\pd}{\\pd\\theta}\\omega_{s}\\left(a,\\frac{\\pd a}{\\pd t}\\right)=\\frac{\\pd}{\\pd\\theta}\\omega_{s}\\st" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.32" "e" "\\omega_{s}\\left(a,\\frac{\\pd a}{\\pd\\theta}\\right)=\\omega_{s}\\str\\left(u,\\frac{\\pd u}{\\pd\\theta}\\right" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          11.3.0.0.7  " "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "11.3.0.0.7" "\\paragraph{}" 436348)
+
+("sec:163" "s" "Suppose in the theorem of the preceding paragraph the quantities $\\omega_{s}(a,da)$ are the relative" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          11.3.0.0.8  " "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "11.3.0.0.8" "\\paragraph{}" 437467)
+
+("sec:164" "s" "Let us now consider two $r$ parameter groups having the same structural constants and whose paramete" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          11.3.0.0.9  " "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "11.3.0.0.9" "\\paragraph{}" 439114)
+
+("sec:165" "s" "Finally suppose that in the theorem of paragraph \\fsref{162} the forms $\\omega_{s}\\str$ are identica" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          11.3.0.0.10 Complements." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "11.3.0.0.10" "\\paragraph{Complements.}" 440844)
+
+("sec:166" "s" "We are going to show how the essential passages of this chapter (\\fsref{157} and \\fsref{162}) can be" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.33" "e" "\\Pi_{1}(X,dX)=0,\\qquad\\dots,\\qquad\\Pi_{N}(X,dX)=0 " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.33*" "e" "\\tag{\\ref{eq:11.33}$\\str$} \\Pi\\str_{1}(X,dX)=0,\\qquad\\dots,\\qquad\\Pi\\str_{N}(X,dX)=0. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.34" "e" "dU_{1}=0,\\qquad\\dots,\\qquad dU_{N}=0. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.35" "e" "dU_{1}=A_{1}dX_{R}=0,\\qquad\\dots,\\qquad dU_{N}-A_{N}dX_{R}=0. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.36" "e" "\\omega_{s}(\\xi,d\\xi)=\\omega_{s}(\\xi',d\\xi') " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "    11.4 Determination of groups and subgroups" "/Users/zh217/Documents/work/cartangrp1.tex" nil 2 "11.4" "\\section{Determination of groups and subgroups}" 448192)
+
+("sec:determ-groups-subgr" "s" "The structural equations play a fundamental role in the determination of groups enjoying some given " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          11.4.0.0.1 Search of all groups with one parameter." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "11.4.0.0.1" "\\paragraph{Search of all groups with one parameter.}" 448443)
+
+("sec:167" "s" "The translation on the straight line constitutes a one parameter group. Its parameter group has the " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.37" "e" "\\omega'_{1}=0. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          11.4.0.0.2 Search of all groups with two parameters." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "11.4.0.0.2" "\\paragraph{Search of all groups with two parameters.}" 449327)
+
+("sec:168" "s" "The transformations of the plane constitutes a two parameter group. Its parameter group has equation" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.38" "e" "\\xi'_{1}=\\xi_{1}+a_{1},\\qquad\\xi'_{2}=\\xi_{2}+a_{2}. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.39" "e" "\\omega'_{1}=0,\\qquad\\omega'_{2}=0. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.40" "e" "\\omega'_{1}=0,\\qquad\\omega'_{2}=-[\\omega_{1}\\omega_{2}]. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.41" "e" "\\omega'_{1}=c_{121}[\\omega_{1}\\omega_{2}],\\qquad\\omega'_{2}=c_{122}[\\omega_{1}\\omega_{2}]. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(toc "toc" "          11.4.0.0.3 Realisation of an abstract group. Determination of the subgroups of a group." "/Users/zh217/Documents/work/cartangrp1.tex" nil 5 "11.4.0.0.3" "\\paragraph{Realisation of an abstract group. Determination of the subgroups of a group.}" 450675)
+
+("sec:169" "s" "Chapter \\ref{cha:real-given-abstr} makes the search for transitive groups isomorphic to a given grou" "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.42" "e" "c_{pqs}=0\\qquad\\text{for}\\qquad s=1,\\dots,\\rho,\\quad p=s+1,\\dots,r,\\quad q=s+1,\\dots,r. " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.43" "e" "dy_{1}=0,\\qquad\\dots,\\qquad dy_{p}=0, " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.44" "e" "\\sum_{1\\le s\\le r}\\alpha_{is}(y)\\omega_{s}(\\xi,d\\xi)=0\\qquad(i=1,\\dots,n-p), " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+("eq:11.55" "e" "\\sum_{s=1}^{r}\\alpha_{is}(y)\\sum_{(p,q)}c_{pqs}[\\omega_{p}\\omega_{q}]=0, " "/Users/zh217/Documents/work/cartangrp1.tex" nil)
+
+(eof "/Users/zh217/Documents/work/cartangrp1.tex")
+
+(toc "toc" "  12 Differential geometry (continued)" "/Users/zh217/Documents/work/cartangrpt.tex" nil 1 "12" "\\chapter{Differential geometry (continued)}" 462769)
+
+("cha:diff-geom-cont" "s" "\\section{Implementation of the method of moving frames}  \\paragraph{Introduction.} \\label{sec:170} C" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "    12.1 Implementation of the method of moving frames" "/Users/zh217/Documents/work/cartangrpt.tex" nil 2 "12.1" "\\section{Implementation of the method of moving frames}" 462843)
+
+("sec:impl-meth-moving" "s" "\\paragraph{Introduction.}  Consider a finite dimensional connected group $G$ operating transitively " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          12.1.0.0.1 Introduction." "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "12.1.0.0.1" "\\paragraph{Introduction.}" 462929)
+
+("sec:170" "s" "Consider a finite dimensional connected group $G$ operating transitively on the points in a domain $" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          12.1.0.0.2 Review of notations; applications of the structure equations of E.~Cartan." "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "12.1.0.0.2" "\\paragraph[{Review of notations; applications of the structure equations of E.~Cartan.}]{Review of notations; applications of the structure equations of E.~Cartan.}" 465799)
+
+("sec:171" "s" "Consider a $\\lambda$ dimensional variety $V_{\\lambda}$ and one of its oriented contact elements of o" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:12.1" "e" "\\pi_{1}=\\sum_{p=1}^{r}a_{1,p}\\omega_{p},\\qquad\\dots,\\qquad\\pi_{r-v}=\\sum_{p=1}^{r}a_{r-v_{P},p}\\omeg" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:12.2" "e" "\\pi'_{i}{}={}&{}\\sum_{(\\alpha,\\beta)}C_{\\alpha\\beta i}[\\pi_{\\alpha}\\pi_{\\beta}]+\\sum_{m,\\alpha}D_{m\\" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:12.3" "e" "\\delta \\pi_{i}+\\sum_{n=1}^{n=v_{P}}e_{r-v_{P}+n}\\left[\\sum_{\\alpha=1}^{\\alpha=r-v_{P}}A_{\\alpha ni}\\" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:12.4" "e" "\\left\\{ \\begin{aligned} dk_{\\alpha}&=b_{\\alpha 1}\\pi_{1}+\\dots+b_{\\alpha\\lambda}\\pi_{\\lambda},&\\text" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:12.5" "e" "\\left\\{ \\begin{aligned} 0&=\\delta b_{\\alpha 1}\\pi_{1}+\\dots+\\delta b_{\\alpha\\lambda}\\pi_{\\lambda}+b_" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:12.6" "e" "\\left\\{ \\begin{aligned} \\delta b_{\\alpha\\beta}&=\\sum_{n=1}^{n=v_{P}}f_{\\alpha\\beta n}(b_{\\lambda\\mu}" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          12.1.0.0.3 The mechanism of the method of moving frames." "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "12.1.0.0.3" "\\paragraph{The mechanism of the method of moving frames.}" 472192)
+
+("sec:172" "s" "To apply this method is to solve the following problem a certain number of times: \\somespace The str" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "    12.2 Projective geometry; study of plane curves" "/Users/zh217/Documents/work/cartangrpt.tex" nil 2 "12.2" "\\section{Projective geometry; study of plane curves}" 475552)
+
+("sec:proj-geom-study-1" "s" "\\paragraph{Introduction.}  We have given a first solution to the problem stated in paragraph \\fsref{" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          12.2.0.0.1 Introduction." "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "12.2.0.0.1" "\\paragraph{Introduction.}" 475636)
+
+("sec:173" "s" "We have given a first solution to the problem stated in paragraph \\fsref{141} (p.~\\pageref{sec:141})" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:12.7" "e" "\\omega'_{ij}=\\sum_{k=0}^{2}[\\omega_{ik}\\omega_{kj}]\\qquad(i=0,1,2;j=0,1,2). " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          12.2.0.0.2 Nature of the elements of order $0$." "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "12.2.0.0.2" "\\paragraph{Nature of the elements of order $0$.}" 476444)
+
+("sec:174" "s" "The frames of order $0$ attached to a point $\\mathbf{A}$ will be the frames $\\mathbf{AA}_{1}\\mathbf{" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          12.2.0.0.3 Nature of the elements of order $1$." "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "12.2.0.0.3" "\\paragraph{Nature of the elements of order $1$.}" 477131)
+
+("sec:175" "s" "The exterior derivatives of the principal components $\\omega_{01}$ and $\\omega_{02}$ are, according " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          12.2.0.0.4 Nature of the elements of order $2$." "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "12.2.0.0.4" "\\paragraph{Nature of the elements of order $2$.}" 478883)
+
+("sec:176" "s" "According to the structural equations \\eqref{eq:12.7}, we have \\[ \\omega'_{12}=-[\\omega_{02}\\omega_{" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          12.2.0.0.5 Nature of the elements of order $3$." "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "12.2.0.0.5" "\\paragraph{Nature of the elements of order $3$.}" 481118)
+
+("sec:177" "s" "According to the structural equation \\eqref{eq:12.7}, we have \\[ \\omega'_{11}=-[\\omega_{10}\\omega_{0" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          12.2.0.0.6 Nature of the elements of order $4$." "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "12.2.0.0.6" "\\paragraph{Nature of the elements of order $4$.}" 482561)
+
+("sec:178" "s" "The structural equations \\eqref{eq:12.7} give us \\begin{alignat*}{20} \\omega'_{21}&{}=-{}&[\\omega_{0" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          12.2.0.0.7 Nature of the elements of order $5$." "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "12.2.0.0.7" "\\paragraph{Nature of the elements of order $5$.}" 484299)
+
+("sec:179" "s" "The structural equations \\eqref{eq:12.7} give us \\[ \\omega'_{20}=[\\omega_{20}\\omega_{00}]+[\\omega_{2" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          12.2.0.0.8 Nature of the elements of order $6$." "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "12.2.0.0.8" "\\paragraph{Nature of the elements of order $6$.}" 486474)
+
+("sec:180" "s" "The structural equations \\eqref{eq:12.7} give us \\[ \\omega'_{00}=[\\omega_{01}\\omega_{10}]+[\\omega_{0" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          12.2.0.0.9 Nature of the elements of orders $>6$." "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "12.2.0.0.9" "\\paragraph{Nature of the elements of orders $>6$.}" 487621)
+
+("sec:181" "s" "The frames of order $>6$ coincide with the Frenet frame. There exists one invariant of order $7$, $k" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          12.2.0.0.10 Curves whose fifth order contact elements are all exceptional." "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "12.2.0.0.10" "\\paragraph{Curves whose fifth order contact elements are all exceptional.}" 488378)
+
+("sec:182" "s" "We are going to say a series of remarks concerning the curves $C$ whose frames of order $4$ satisfy " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:12.8" "e" "\\begin{pmatrix} \\omega_{00}&\\omega_{01}&0" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:12.9" "e" "\\omega'_{01}=[\\omega_{00}\\omega_{01}],\\qquad\\omega'_{00}=[\\omega_{01}\\omega_{10}],\\qquad\\omega'_{10}" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:12.10" "e" "\\left\\{ \\begin{aligned} d\\lambda+\\omega_{01}-\\lambda\\omega_{00}+(\\mu-\\lambda^{2})\\omega_{10}&=0," "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:12.11" "e" "\\mu=\\frac{1}{2}\\lambda^{2}. " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:12.12" "e" "d\\lambda+\\omega_{01}-\\lambda\\omega_{00}-\\frac{1}{2}\\lambda^{2}\\omega_{10}=0. " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          12.2.0.0.11 Projective development of a curve onto a conic \\footnote{For more details, \\emph{see} \\cite{20}, p.~" "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "12.2.0.0.11" "\\paragraph[{Projective development of a curve onto a conic.}]{Projective development of a curve onto a conic \\footnote{For more details, \\emph{see} \\cite{20}, p.~51--69.}.}" 494265)
+
+("sec:183" "s" "The reasoning that we just applied to the conics $C$ generalise to any curve $\\Gamma$. The fourth or" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:12.13" "e" "\\Lambda=\\frac{\\alpha\\lambda+\\beta}{\\gamma\\lambda+1}, " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:12.14" "e" "d\\mathbf{P}=(\\omega_{00}+\\lambda\\omega_{10})\\mathbf{P}+\\frac{1}{2}\\lambda^{2}\\omega_{20}\\mathbf{A}. " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("fig:12.1" "f" " " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:12.15" "e" "\\frac{d^{3}\\mathbf{A}}{dt^{3}}-r\\mathbf{A}=0, " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("fig:12.2" "f" " " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          12.2.0.0.12  " "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "12.2.0.0.12" "\\paragraph{}" 506009)
+
+("sec:184" "s" "\\emph{Remark.} In the projective theory of planar curves, we are lead to introduce in an intrinsic m" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "    12.3 Euclidean geometry; study of surfaces" "/Users/zh217/Documents/work/cartangrpt.tex" nil 2 "12.3" "\\section{Euclidean geometry; study of surfaces}" 508109)
+
+("sec:eucl-geom-study" "s" "\\paragraph{}  The fundamental group $G$ is the displacement group, whose structural equations are (p" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          12.3.0.0.1  " "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "12.3.0.0.1" "\\paragraph{}" 508186)
+
+("sec:185" "s" "The fundamental group $G$ is the displacement group, whose structural equations are (p.~\\pageref{sec" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:12.16" "e" "\\omega'_{i}=\\sum_{k=1}^{3}[\\omega_{k}\\omega_{ki}],\\qquad\\omega'_{ij}\\sum_{k=1}^{3}[\\omega_{ik}\\omega" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          12.3.0.0.2 Nature of the elements of orders $0$ and $1$." "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "12.3.0.0.2" "\\paragraph{Nature of the elements of orders $0$ and $1$.}" 509728)
+
+("sec:186" "s" "It is geometrically obvious that there is no invariant of order $0$ or $1$. The frames of order $0$ " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:12.17" "e" "\\omega_{3}=0. " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          12.3.0.0.3 Nature of the elements of order $2$." "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "12.3.0.0.3" "\\paragraph{Nature of the elements of order $2$.}" 510886)
+
+("sec:187" "s" "According to the structure equations \\eqref{eq:12.16} and the equation \\eqref{eq:12.17}, the exterio" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:12.18" "e" "\\omega'_{1}=[\\omega_{2}\\omega_{21}],\\qquad\\omega'_{2}=[\\omega_{1}\\omega_{12}]," "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:12.19" "e" "0=\\omega'_{3}=[\\omega_{1}\\omega_{13}]+[\\omega_{2}\\omega_{23}]," "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:12.20" "e" "\\omega'_{13}=-[\\omega_{23}\\omega_{12}],\\qquad\\omega'_{23}=-[\\omega_{13}\\omega_{21}]. " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:12.21" "e" "\\omega_{13}=a\\omega_{1}+b\\omega_{2},\\qquad\\omega_{23}=b\\omega_{1}+c\\omega_{2}. " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:12.22" "e" "\\left\\{ \\begin{aligned} [\\omega_{1}(da-2b\\omega_{12})]+[\\omega_{2}(db+\\overline{a-c}\\,\\omega_{12})]&" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:12.23" "e" "\\delta a=2e_{12}b,\\qquad\\delta b=e_{12}(c-a),\\qquad\\delta c=-2e_{12}b. " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:12.24" "e" "\\omega_{1}^{2}+\\omega_{2}^{2},\\qquad\\omega_{1}\\omega_{13}+\\omega_{2}\\omega_{23} " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:12.25" "e" "\\left\\{ \\begin{aligned} \\delta\\omega_{1}&= e_{12}\\omega_{2},&&&\\delta\\omega_{2}&=-e_{12}\\omega_{1}," "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          12.3.0.0.4 Nature of the elements of order $3$." "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "12.3.0.0.4" "\\paragraph{Nature of the elements of order $3$.}" 514549)
+
+("sec:188" "s" "The frames of orders $P\\ge 2$ are the Frenet frame. The infinitesimal displacement of the Frenet fra" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:12.26" "e" "\\omega_{1},\\quad\\omega_{2},\\quad\\omega_{3}=0,\\quad\\omega_{13}=r_{1}\\omega_{1},\\quad\\omega_{23}=r_{2}" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:12.27" "e" "df=f_{,1}\\omega_{1}+f_{,2}\\omega_{2}, " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:12.28" "e" "\\left\\{ \\begin{gathered} \\omega'_{1}=\\rho_{1}[\\omega_{1}\\omega_{2}],\\qquad\\omega'_{2}=\\rho_{2}[\\omeg" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          12.3.0.0.5 Equality condition of two surfaces." "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "12.3.0.0.5" "\\paragraph{Equality condition of two surfaces.}" 517009)
+
+("sec:189" "s" "According to paragraph \\fsref{131} (p.~\\pageref{sec:131}), the equality condition of two surfaces wh" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:12.29" "e" "r_{1}=r_{1}\\str,\\qquad r_{2}=r\\str_{2},\\qquad\\omega_{1}=\\omega_{1}\\str,\\qquad\\omega_{2}=\\omega_{2}\\s" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          12.3.0.0.6 Applications of the structure theorem." "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "12.3.0.0.6" "\\paragraph[{Applications of the structure theorem.}]{Applications of the structure theorem.}" 521401)
+
+("sec:190" "s" "\\textsc{Theorem.} \\emph{Consider two Pfaffian forms $\\omega_{1}$ and $\\omega_{2}$ depending on two i" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          12.3.0.0.7 Geometrical interpretations." "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "12.3.0.0.7" "\\paragraph{Geometrical interpretations.}" 524195)
+
+("sec:191" "s" "The lines $\\omega_{2}=0$ and $\\omega_{1}=0$ are characterised geometrically by the property that $d\\" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          12.3.0.0.8 Surfaces whose contact element of order $2$ is exceptional." "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "12.3.0.0.8" "\\paragraph{Surfaces whose contact element of order $2$ is exceptional.}" 525444)
+
+("sec:192" "s" "We will now study the exceptional class of surfaces whose coefficients of order $1$ satisfy the equa" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          12.3.0.0.9 Surfaces invariant under a two parameter displacement group." "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "12.3.0.0.9" "\\paragraph{Surfaces invariant under a two parameter displacement group.}" 527038)
+
+("sec:193" "s" "We will now find all surfaces that are transformed into themselves under a two parameter displacemen" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          12.3.0.0.10 Reduced equation." "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "12.3.0.0.10" "\\paragraph{Reduced equation.}" 528311)
+
+("sec:194" "s" "Let $z=f(x,y)$ be the equation of the surface in a neighbourhood of one of its points $\\mathbf{A}$ w" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:12.30" "e" "\\overline{df}+x\\omega_{13}+y\\omega_{23}-\\frac{\\pd f}{\\pd x}(\\omega_{1}+y\\omega_{21}+z\\omega_{31})-\\f" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          12.3.0.0.11 Deformation of surfaces." "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "12.3.0.0.11" "\\paragraph{Deformation of surfaces.}" 530449)
+
+("sec:195" "s" "Two surfaces are said to be applicable in the send of Gauss if we can establish a point corresponden" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:12.31" "e" "\\omega_{1}=\\omega_{1}\\str,\\qquad\\omega_{2}=\\omega_{2}\\str. " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:12.32" "e" "\\omega_{12}=\\omega_{12}\\str. " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:12.33" "e" "\\left\\{ \\begin{aligned} \\omega'_{1}&=[\\omega_{2}\\omega_{21}],&\\omega'_{2}&=[\\omega_{1}\\omega_{12}],&" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          12.3.0.0.12 Overview of the general problem of deformation." "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "12.3.0.0.12" "\\paragraph{Overview of the general problem of deformation.}" 536725)
+
+("sec:196" "s" "We can present Gauss' problem of deformation under the following form. Two surfaces $S$ and $S\\str$ " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "  13 The third fundamental theorem in the theory of groups" "/Users/zh217/Documents/work/cartangrpt.tex" nil 1 "13" "\\chapter{The third fundamental theorem in the theory of groups}" 538762)
+
+("cha:third-fund-theory" "s" "\\section[The necessary part of the third fundamental theorem]{The necessary part of" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "    13.1 The necessary part of" "/Users/zh217/Documents/work/cartangrpt.tex" nil 2 "13.1" "\\section[The necessary part of the third fundamental theorem]{The necessary part of\\\\ the third fundamental theorem}" 538857)
+
+("sec:direct-part-third" "s" "\\paragraph[{Exterior derivative of a alternating bilinear differential form.}]{Exterior derivative o" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          13.1.0.0.1 Exterior derivative of a alternating bilinear differential form \\footnote{More generally we can defi" "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "13.1.0.0.1" "\\paragraph[{Exterior derivative of a alternating bilinear differential form.}]{Exterior derivative of a alternating bilinear differential form \\footnote{More generally we can define the exterior derivative of all exterior differen" 539005)
+
+("sec:197" "s" "Consider an alternating bilinear differential form \\begin{equation}  \\Omega(\\delta'x,\\delta''x)=\\sum" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:13.1" "e" "\\Omega(\\delta'x,\\delta''x)=\\sum_{i,j}A_{ij}(x)(\\delta' x_{i}\\delta''x_{j}-\\delta'_{j}\\delta''x_{i})." "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:13.2" "e" "\\Omega'=\\delta\\Omega(\\delta',\\delta'')+\\delta'\\Omega(\\delta'',\\delta)+\\delta''\\Omega(\\delta,\\delta')" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:13.3" "e" "[\\omega_{1}\\omega_{2}]'=[\\omega_{1}'\\omega_{2}]-[\\omega_{2}'\\omega_{1}]. " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          13.1.0.0.2 Exterior derivation of the structure equations of E.~Cartan" "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "13.1.0.0.2" "\\paragraph{Exterior derivation of the structure equations of E.~Cartan}" 542118)
+
+("sec:198" "s" "\\[ \\omega'_{s}=\\frac{1}{2}\\sum_{p,q}c_{pqs}[\\omega_{p}\\omega_{q}]\\qquad(1\\le s\\le r,\\ 1\\le p\\le r,\\ " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          13.1.0.0.3 Third fundamental theorem of the theory of groups (S.~Lie)." "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "13.1.0.0.3" "\\paragraph{Third fundamental theorem of the theory of groups (S.~Lie).}" 543351)
+
+("sec:199" "s" "\\emph{The necessary and sufficient condition for the $r^{3}$ quantities $c_{pqs}$ to be the structur" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:13.4" "e" "c_{pqs}+c_{qps}&=0&&&&\\left(\\frac{r^{2}(r-1)}{2}\\text{ relations}\\right)," "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:13.5" "e" "\\sum_{p=1}^{r}(c_{\\alpha\\beta p}c_{p\\gamma s}+c_{\\gamma\\alpha p}c_{p\\beta s}+c_{\\beta\\gamma p}c_{p\\a" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "    13.2 The canonical parameters of S.~Lie" "/Users/zh217/Documents/work/cartangrpt.tex" nil 2 "13.2" "\\section{The canonical parameters of S.~Lie}" 545440)
+
+("sec:canon-param-s" "s" "\\paragraph{Properties of the canonical parameters.}  Let $S$ be a finite dimensional connected group" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          13.2.0.0.1 Properties of the canonical parameters." "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "13.2.0.0.1" "\\paragraph{Properties of the canonical parameters.}" 545512)
+
+("sec:200" "s" "Let $S$ be a finite dimensional connected group of transformations $S_{\\xi}$ and consider a variable" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:13.6" "e" "\\frac{\\omega_{1}(\\xi,d\\xi)}{dt},\\qquad\\dots,\\qquad\\frac{\\omega_{r}(\\xi,d\\xi)}{dt} " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:13.7" "e" "\\Sigma_{t'}\\Sigma_{t''}=\\Sigma_{t'+t''}. " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:13.8" "e" "S_{\\xi(t')}\\cdot S_{\\xi(t'')}=S_{\\xi(t'')}\\cdot S_{\\xi(t')}. " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:13.9" "e" "\\omega_{s}(\\xi,d\\xi)=\\vp_{s}(\\xi,d\\xi)=a_{s}dt. " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:13.10" "e" "\\frac{dx_{i}}{dt}=\\sum_{p=1}^{r}a_{p}X_{p}x_{i}\\qquad(i=1,\\dots,n). " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          13.2.0.0.2 The canonical parameters are the local coordinates in the parameter space." "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "13.2.0.0.2" "\\paragraph{The canonical parameters are the local coordinates in the parameter space.}" 548830)
+
+("sec:201" "s" "If we give $a_{1}$, $\\dots$, $a_{r}$ very small values $da_{1}$, $\\dots$, $da_{r}$, the correspondin" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:13.11" "e" "\\omega_{s}(0,d\\xi)=da_{s}. " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:13.12" "e" "\\left\\{ \\begin{aligned} x'&=\\alpha x+\\beta y," "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:13.13" "e" "\\left\\{ \\begin{aligned} \\frac{dx}{dt}&=a_{1}x+a_{2}y," "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:13.14" "e" "\\begin{vmatrix} a_{1}-k&a_{3}" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:13.15" "e" "\\lambda_{1}x'+\\mu_{1}y'=e^{k_{1}}(\\lambda_{1}x+\\mu_{1}y),\\qquad\\lambda_{2}x'+\\mu_{2}y'=e^{k_{2}}(\\la" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:13.16" "e" "\\lambda x'+\\mu y'=e^{k}(\\lambda x+\\mu y),\\qquad y'=e^{k}y+h(\\lambda x+\\mu y), " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          13.2.0.0.3 Expression of the forms $\\omega_{s}$ as functions of canonical parameters." "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "13.2.0.0.3" "\\paragraph{Expression of the forms $\\omega_{s}$ as functions of canonical parameters.}" 553246)
+
+("sec:202" "s" "Consider a moving frame $\\mathbf{R}_{\\xi(t)}$ depending on the parameter $t$. Suppose it to be defin" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:13.17" "e" "\\frac{d\\omega_{s}}{dt}=\\delta\\lambda_{s}+\\sum_{p,q}c_{pqs}\\lambda_{p}\\omega_{q}. " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:13.18" "e" "\\frac{d\\omega_{s}}{dt}=\\delta a_{s}+\\sum_{p,q}c_{pqs}a_{p}\\omega_{q}, " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:13.19" "e" "\\frac{d\\vp_{s}}{dt}&=\\delta \\lambda_{s}-\\sum_{p,q}c_{pqs}\\lambda_{p}\\vp_{q}," "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:13.20" "e" "\\frac{d\\vp_{s}}{dt}&=\\delta a_{s}-\\sum_{p,q}c_{pqs}a_{p}\\vp_{q}. " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "    13.3 Proof (incomplete) of the third fundamental theorem" "/Users/zh217/Documents/work/cartangrpt.tex" nil 2 "13.3" "\\section{Proof (incomplete) of the third fundamental theorem}" 555961)
+
+("sec:proof-incompl-third" "s" "\\paragraph{Construction of the forms $\\omega_{s}$ verifying the structure equations of E.~Cartan.}  " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          13.3.0.0.1 Construction of the forms $\\omega_{s}$ verifying the structure equations of E.~Cartan." "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "13.3.0.0.1" "\\paragraph{Construction of the forms $\\omega_{s}$ verifying the structure equations of E.~Cartan.}" 556056)
+
+("sec:203" "s" "Consider the constants $c_{pqs}$ satisfying the relations \\begin{equation}  c_{pqs}+c_{qps}=0,\\qquad" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:13.21" "e" "c_{pqs}+c_{qps}=0,\\qquad(1\\le p\\le r;\\ 1\\le q\\le r;\\ 1\\le s\\le r). " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:13.22" "e" "\\frac{d\\omega_{s}}{dt}=\\delta a_{s}+\\sum_{p,q}c_{pqs}\\omega_{q}, " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:13.23" "e" "\\omega'_{s}(ta,t\\,\\delta a,t\\,\\delta'a)=\\sum_{(p,q)}c_{pqs}[\\omega_{p}(ta,t\\,\\delta a)\\omega_{q}(ta," "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:13.23'" "e" "\\tag{\\ref{eq:13.23}$'$} \\omega'_{s}(a,\\delta a,\\delta' a)=\\sum_{(p,q)}c_{pqs}[\\omega_{p}(a,\\delta a)" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:13.24" "e" "\\frac{d}{dt}\\omega'_{s}(ta,t\\,\\delta a,t\\,\\delta'a) =\\sum_{p,q}c_{pqs}[\\delta a_{p}\\omega_{q}(ta,t\\," "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:13.25" "e" "\\sum_{(p,q)}c_{pqs}[\\omega_{p}(ta,t\\,\\delta a)\\omega_{q}(ta,t\\,\\delta a)] " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:13.26" "e" "\\frac{d}{dt}\\sum_{(p,q)}c_{pqs}[\\omega_{p}\\omega_{q}]=\\sum_{p,q}c_{pqs}[\\delta a_{p}\\omega_{q}]+\\sum" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:13.27" "e" "c_{\\alpha\\beta p}c_{p\\gamma s}+c_{\\gamma\\alpha p}c_{p\\beta s}+c_{\\beta\\gamma p}c_{p\\alpha s}=0. " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          13.3.0.0.2 Application of the preceding paragraph to the proof of the third fundamental theorem." "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "13.3.0.0.2" "\\paragraph{Application of the preceding paragraph to the proof of the third fundamental theorem.}" 560544)
+
+("sec:204" "s" "Given a group, the relative components $\\omega_{s}$ of its frame satisfy the structural equations \\e" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "  14 The structural equations of S.~Lie" "/Users/zh217/Documents/work/cartangrpt.tex" nil 1 "14" "\\chapter{The structural equations of S.~Lie}" 562697)
+
+("cha:struct-equat-s" "s" "\\section{The bracket of two infinitesimal transformations}  \\paragraph{An infinitesimal transformati" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "    14.1 The bracket of two infinitesimal transformations" "/Users/zh217/Documents/work/cartangrpt.tex" nil 2 "14.1" "\\section{The bracket of two infinitesimal transformations}" 562770)
+
+("sec:brack-two-infin" "s" "\\paragraph{An infinitesimal transformation transformed by another infinitesimal transformation.}  Co" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          14.1.0.0.1 An infinitesimal transformation transformed by another infinitesimal transformation." "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "14.1.0.0.1" "\\paragraph{An infinitesimal transformation transformed by another infinitesimal transformation.}" 562858)
+
+("sec:205" "s" "Consider two infinitesimally small transformations $\\mathbf{S}$ and $\\mathbf{T}$, both possessing in" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:14.S" "e" "\\tag{$\\mathbf{S}$} \\mathbf{X}f&=\\sum_{k=1}^{n}\\xi_{k}(x_{1},\\dots,x_{n})\\frac{\\pd f}{\\pd x_{k}}," "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:14.T" "e" "\\tag{$\\mathbf{T}$} \\mathbf{Y}f&=\\sum_{k=1}^{n}\\eta_{k}(x_{1},\\dots,x_{n})\\frac{\\pd f}{\\pd x_{k}}, " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:14.1" "e" "\\zeta_{i}=\\eta_{i}+\\sum_{k=1}^{n}\\left(\\xi_{k}\\frac{\\pd \\eta_{i}}{\\pd x_{k}}-\\eta_{k}\\frac{\\pd \\xi_{" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:14.2" "e" "(\\mathbf{XY})=\\sum_{k,i}\\left(\\xi_{k}\\frac{\\pd \\eta_{i}}{\\pd x_{k}}-\\eta_{k}\\frac{\\pd \\xi_{i}}{\\pd x" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:14.3" "e" "\\mathbf{Y}f+(\\mathbf{YX}). " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          14.1.0.0.2 Properties of the brackets." "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "14.1.0.0.2" "\\paragraph{Properties of the brackets.}" 565227)
+
+("sec:206" "s" "We have \\begin{equation}  (\\mathbf{XY})=-(\\mathbf{YX}),\\qquad(\\mathbf{XX})=0. " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:14.4" "e" "(\\mathbf{XY})=-(\\mathbf{YX}),\\qquad(\\mathbf{XX})=0. " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:14.5" "e" "(\\mathbf{XY})=\\mathbf{X}(\\mathbf{Y}f)-\\mathbf{Y}(\\mathbf{X}f). " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:14.6" "e" "[\\mathbf{X}(\\mathbf{YZ})]+ [\\mathbf{Y}(\\mathbf{ZX})]+ [\\mathbf{Z}(\\mathbf{XY})]=0. " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          14.1.0.0.3 Application to the theory of groups \\footnote{\\textsc{Sophus Lie}, the creator of the theory of conn" "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "14.1.0.0.3" "\\paragraph[{Application to the theory of groups.}]{Application to the theory of groups \\footnote{\\textsc{Sophus Lie}, the creator of the theory of connected groups, did not use the components $\\omega$, " 566925)
+
+("sec:207" "s" "Consider a finite dimensional connected group and its infinitesimal transformations \\[ \\mathbf{X}_{1" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:14.7" "e" "(\\mathbf{X}_{p}\\mathbf{X}_{q})=\\sum_{s=1}^{r}c'_{pqs}\\mathbf{X}_{s}f, " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:14.8" "e" "c'_{pqs}+c'_{qps}=0. " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:14.9" "e" "\\sum_{p=1}^{r}(c'_{\\alpha\\beta p}c'_{p\\gamma s}+c'_{\\gamma\\alpha p}c'_{p\\beta s}+c'_{\\beta\\gamma p}c" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "    14.2 The second fundamental theorem of S.~Lie" "/Users/zh217/Documents/work/cartangrpt.tex" nil 2 "14.2" "\\section{The second fundamental theorem of S.~Lie}" 568593)
+
+("sec:two-fund-theor" "s" "\\paragraph{Ratio between the infinitesimal transformations and the components of the moving frame.} " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          14.2.0.0.1 Ratio between the infinitesimal transformations and the components of the moving frame." "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "14.2.0.0.1" "\\paragraph{Ratio between the infinitesimal transformations and the components of the moving frame.}" 568672)
+
+("sec:208" "s" "Consider a finite dimensional and connected group whose frame $\\mathbf{R}_{a}$ varies as function of" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:14.10" "e" "dx_{i}=\\sum_{s=1}^{r}\\vp_{s}(a,da)\\mathbf{X}_{s}x_{i}. " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:14.11" "e" "dx_{i}+\\sum_{s=1}^{r}\\omega_{s}(a,da)\\mathbf{X}_{s}x_{i}=0. " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          14.2.0.0.2 Application of the Frobenius theorem." "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "14.2.0.0.2" "\\paragraph{Application of the Frobenius theorem.}" 572480)
+
+("sec:209" "s" "The preceding paragraph leads to the following problem: \\somespace Consider a Pfaffian system \\begin" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:14.12" "e" "dx_{i}+\\sum_{s=1}^{r}\\omega_{s}(a,da)\\mathbf{X}_{s}x_{i}=0,\\qquad(i=1,\\dots,n); " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:14.13" "e" "\\sum_{s=1}^{r}\\omega'_{s}\\mathbf{X}_{s}x_{i}+\\sum_{s=1}^{r}[d\\mathbf{X}_{s}x_{i},\\omega_{s}]=0. " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:14.14" "e" "\\sum_{s}\\omega'_{s}\\mathbf{X}_{s}-\\sum_{(p,q)}[\\omega_{p}\\omega_{q}](\\mathbf{X}_{p}\\mathbf{X}_{q})=0" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:14.15" "e" "\\omega'_{s}=\\sum_{(p,q)}c_{pqs}[\\omega_{p}\\omega_{q}], " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:14.16" "e" "(\\mathbf{X}_{p}\\mathbf{X}_{q})=\\sum c_{pqs}\\mathbf{X}_{s}. " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          14.2.0.0.3 The structure equations of S.~Lie." "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "14.2.0.0.3" "\\paragraph{The structure equations of S.~Lie.}" 575583)
+
+("sec:210" "s" "Consider again a group, its infinitesimal transformations $\\mathbf{X}_{s}$ and its relative and abso" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:14.17" "e" "(\\mathbf{X}_{p}\\mathbf{X}_{q})=\\sum_{s=1}^{r}c_{pqs}\\mathbf{X}_{s}," "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:14.18" "e" "\\omega'_{s}=\\sum_{(p,q)}c_{pqs}[\\omega_{p}\\omega_{q}]," "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:14.19" "e" "\\vp_{s}'=-\\sum_{(p,q)}c_{pqs}[\\vp_{p}\\vp_{q}]. " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          14.2.0.0.4 Group generated by infinitesimal transformations satisfying the structure equations of S.~Lie." "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "14.2.0.0.4" "\\paragraph{Group generated by infinitesimal transformations satisfying the structure equations of S.~Lie.}" 577492)
+
+("sec:211" "s" "Suppose we are given $r$ linearly independent infinitesimal transformations $\\mathbf{X}_{1}$, $\\dots" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "    14.3 Determination of groups and subgroups" "/Users/zh217/Documents/work/cartangrpt.tex" nil 2 "14.3" "\\section{Determination of groups and subgroups}" 581840)
+
+("sec:determ-groups-subgr-1" "s" "\\paragraph{Subgroups of a given group.}  Consider a group $G$, its infinitesimal transformations $\\m" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          14.3.0.0.1 Subgroups of a given group." "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "14.3.0.0.1" "\\paragraph{Subgroups of a given group.}" 581923)
+
+("sec:212" "s" "Consider a group $G$, its infinitesimal transformations $\\mathbf{X}_{1}$, $\\dots$, $\\mathbf{X}_{r}$ " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:14.20" "e" "c_{pqs}=0\\qquad \\text{for} \\qquad p=\\rho+1,\\dots,r,\\quad q=\\rho+1 ,\\dots,r,\\quad s=1,\\dots,\\rho. " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          14.3.0.0.2 The case of isomorphism and similitude." "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "14.3.0.0.2" "\\paragraph{The case of isomorphism and similitude.}" 583981)
+
+("sec:213" "s" "Consider two $r$ parameter groups $G_{1}$ and $G_{2}$, acting respectively on the points $x$ and $y$" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          14.3.0.0.3 The search of all groups acting on one variable." "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "14.3.0.0.3" "\\paragraph{The search of all groups acting on one variable.}" 585874)
+
+("sec:214" "s" "Consider a connected and finite dimensional group of analytic transformations operating on one varia" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "    14.4 Adjoint groups and the third fundamental theorem" "/Users/zh217/Documents/work/cartangrpt.tex" nil 2 "14.4" "\\section{Adjoint groups and the third fundamental theorem}" 593381)
+
+("sec:adjoint-groups-third" "s" "\\paragraph{Non-linear adjoint group.}  Consider a variable transformation $S_{\\xi}$ of a group and a" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          14.4.0.0.1 Non-linear adjoint group." "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "14.4.0.0.1" "\\paragraph{Non-linear adjoint group.}" 593474)
+
+("sec:215" "s" "Consider a variable transformation $S_{\\xi}$ of a group and a fixed transformation $S_{a}$ of this g" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          14.4.0.0.2 Linear adjoint group." "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "14.4.0.0.2" "\\paragraph{Linear adjoint group.}" 594868)
+
+("sec:216" "s" "Consider a connected and finite dimensional group $S_{a}$ whose infinitesimal transformations are $\\" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          14.4.0.0.3 Infinitesimal transformations of the linear adjoint group." "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "14.4.0.0.3" "\\paragraph{Infinitesimal transformations of the linear adjoint group.}" 596482)
+
+("sec:217" "s" "According to the paragraph \\fsref{205} (p.~\\pageref{sec:205}), the transformed image of the infinite" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:14.21" "e" "\\mathbf{E}_{\\alpha}f=\\sum_{q,s}e_{q}c_{q\\alpha s}\\frac{\\pd f}{\\pd e_{s}}. " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:14.22" "e" "(\\mathbf{E}_{\\alpha}\\mathbf{E}_{\\beta})=\\sum_{s}c_{\\alpha\\beta s}\\mathbf{E}_{s}. " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+("eq:1" "e" " " "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(toc "toc" "          14.4.0.0.4 The converse of the third fundamental theorem of S.~Lie." "/Users/zh217/Documents/work/cartangrpt.tex" nil 5 "14.4.0.0.4" "\\paragraph{The converse of the third fundamental theorem of S.~Lie.}" 599356)
+
+("sec:218" "s" "\\appendix \\begin{thebibliography}{9} \\bibitem{1} \\textsc{G.~Darboux}, \\emph{Leçon sur la théorie gén" "/Users/zh217/Documents/work/cartangrpt.tex" nil)
+
+(appendix . t)
+
+(thebib . "/Users/zh217/Documents/work/cartangrpt.tex")
+
+(eof "/Users/zh217/Documents/work/cartangrpt.tex")
+))
+

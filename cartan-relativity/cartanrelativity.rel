@@ -1,0 +1,80 @@
+;; RefTeX parse info file
+;; File: /Users/zh217/Documents/work/cartanrelativity.tex
+;; User: zh217 (Amadeo)
+
+(set reftex-docstruct-symbol '(
+
+
+(xr nil "\\\\\\\\\\\\")
+
+(index-tags)
+
+(is-multi nil)
+
+(bibview-cache)
+
+(master-dir . "/Users/zh217/Documents/work/")
+
+(label-numbers)
+
+(bof "/Users/zh217/Documents/work/cartanrelativity.tex")
+
+(toc "toc" "    1 Systems in involution in two independent variables" "/Users/zh217/Documents/work/cartanrelativity.tex" nil 2 "1" "\\section{Systems in involution in two independent variables}" 5991)
+
+("sec:syst-invol-two" "s" "\\textbf{1}. Consider a system of $r$ first order linear partial differential equations of $n$ unknow" "/Users/zh217/Documents/work/cartanrelativity.tex" nil)
+
+("eq:1" "e" "\\left\\{ \\begin{aligned} \\sum_{k=1}^{k=n}a_{1k}\\frac{\\pd u_{k}}{\\pd x}+\\sum_{k=1}^{k=n}b_{1k}\\frac{\\p" "/Users/zh217/Documents/work/cartanrelativity.tex" nil)
+
+("eq:2" "e" "\\left\\{ \\begin{aligned} X_{i}&\\equiv\\sum_{k}a_{ik}\\frac{\\pd u_{k}}{\\pd x}-c_{i}=0,&(i&=1,2,\\dots,r_{" "/Users/zh217/Documents/work/cartanrelativity.tex" nil)
+
+("eq:3" "e" "a_{ik}=\\lambda_{i1}b_{r_{1}+1,k}+\\lambda_{i2}b_{r_{1}+2,k}+\\dots+\\lambda_{i,r-r_{1}}b_{r,k},\\qquad(i" "/Users/zh217/Documents/work/cartanrelativity.tex" nil)
+
+("eq:4" "e" "\\Theta_{i}\\equiv\\frac{\\pd X_{i}}{\\pd y}-\\lambda_{i1}\\frac{\\pd Y_{1}}{\\pd x}-\\lambda_{i2}\\frac{\\pd Y_" "/Users/zh217/Documents/work/cartanrelativity.tex" nil)
+
+(toc "toc" "    2 Systems in involution in three independent variables" "/Users/zh217/Documents/work/cartanrelativity.tex" nil 2 "2" "\\section{Systems in involution in three independent variables}" 24403)
+
+("sec:syst-invol-three" "s" "\\textbf{9}. Now take a system of $r$ linear first order partial differential equations in three inde" "/Users/zh217/Documents/work/cartanrelativity.tex" nil)
+
+("eq:5" "e" "\\left\\{ \\begin{aligned} X_{i}&\\equiv\\sum_{k}a_{ik}\\frac{\\pd u_{k}}{\\pd x}-d_{i}=0,\\qquad(i=1,\\dots,r" "/Users/zh217/Documents/work/cartanrelativity.tex" nil)
+
+("eq:6" "e" "a_{ih}=\\lambda_{i1}b_{r_{1}+1,h}+\\lambda_{i2}b_{r_{1}+2,h}+\\dots+\\lambda_{i,r_{2}-r_{1}}b_{r_{2}h}" "/Users/zh217/Documents/work/cartanrelativity.tex" nil)
+
+("eq:7" "e" "\\left\\{ \\begin{aligned} a_{ik}&=\\mu_{i1}c_{r_{2}+1,k}+\\dots+\\mu_{i,r-r_{2}}c_{rk},&(i&=1,\\dots,r_{1}" "/Users/zh217/Documents/work/cartanrelativity.tex" nil)
+
+("eq:8" "e" "\\left\\{ \\begin{aligned} \\Theta_{i}&\\equiv\\frac{\\pd X_{i}}{\\pd y}-\\sum_{j=1}^{j=r_{2}-r_{1}}\\lambda_{" "/Users/zh217/Documents/work/cartanrelativity.tex" nil)
+
+("eq:9" "e" "\\frac{\\pd u_{1}}{\\pd z},\\qquad\\frac{\\pd u_{2}}{\\pd z},\\qquad\\frac{\\pd u_{r-r_{1}}}{\\pd z}. " "/Users/zh217/Documents/work/cartanrelativity.tex" nil)
+
+("eq:10" "e" "\\frac{\\pd u_{1}}{\\pd y},\\qquad\\dots\\qquad\\frac{\\pd u_{r_{2}-r_{1}}}{\\pd y}. " "/Users/zh217/Documents/work/cartanrelativity.tex" nil)
+
+("eq:11" "e" "\\frac{\\pd u_{1}}{\\pd x},\\qquad\\dots\\qquad\\frac{\\pd u_{r_{1}}}{\\pd x}. " "/Users/zh217/Documents/work/cartanrelativity.tex" nil)
+
+(toc "toc" "    3 The general case" "/Users/zh217/Documents/work/cartanrelativity.tex" nil 2 "3" "\\section{The general case}" 42205)
+
+("sec:general-case" "s" "\\textbf{16}. Let us confine ourselves to state what happens for four independent variables $x,y,z,t$" "/Users/zh217/Documents/work/cartanrelativity.tex" nil)
+
+(toc "toc" "    4 Applications to the unitary theory of field" "/Users/zh217/Documents/work/cartanrelativity.tex" nil 2 "4" "\\section{Applications to the unitary theory of field}" 47044)
+
+("sec:appl-unit-theory" "s" "\\textbf{18}. We are going to apply the general theory to the study of partial differential equations" "/Users/zh217/Documents/work/cartanrelativity.tex" nil)
+
+("eq:I" "e" "\\tag{I} \\mathcal{H}_{s\\alpha\\beta}\\equiv h_{s\\alpha,\\beta}-h_{s\\beta,\\alpha}-\\Lambda^{s}_{\\alpha\\bet" "/Users/zh217/Documents/work/cartanrelativity.tex" nil)
+
+("eq:II" "e" "\\tag{II} \\mathcal{L}^{s}_{\\alpha\\beta\\gamma}\\equiv\\Lambda^{s}_{\\alpha\\beta,\\gamma}+\\Lambda^{s}_{\\bet" "/Users/zh217/Documents/work/cartanrelativity.tex" nil)
+
+("eq:III" "e" "\\tag{III} \\left\\{ \\begin{aligned} \\mathcal{H}_{s\\alpha\\beta,\\gamma}+\\mathcal{H}_{s\\beta\\gamma,\\alpha" "/Users/zh217/Documents/work/cartanrelativity.tex" nil)
+
+("eq:II'" "e" "\\tag{II$'$} \\mathcal{L}^{\\delta}_{\\alpha\\beta\\gamma}\\equiv \\Lambda^{\\delta}_{\\alpha\\beta;\\gamma}+\\La" "/Users/zh217/Documents/work/cartanrelativity.tex" nil)
+
+("eq:IV" "e" "\\tag{IV} \\left\\{ \\begin{aligned} \\mathcal{F}_{\\alpha\\beta}&\\equiv\\Lambda^{\\rho}_{\\alpha\\beta;\\rho}=0" "/Users/zh217/Documents/work/cartanrelativity.tex" nil)
+
+("eq:V" "e" "\\tag{V} \\left\\{ \\begin{gathered} \\mathcal{F}_{\\alpha\\beta;\\gamma}+\\mathcal{F}_{\\beta\\gamma;\\alpha}+\\" "/Users/zh217/Documents/work/cartanrelativity.tex" nil)
+
+("eq:VI'" "e" "\\tag{IV$'$} \\left\\{ \\begin{aligned} \\varphi_{\\alpha,\\beta}-\\varphi_{\\beta,\\alpha}&=0," "/Users/zh217/Documents/work/cartanrelativity.tex" nil)
+
+("eq:VI" "e" "\\tag{VI} \\left\\{ \\begin{gathered} \\mathcal{F}_{\\alpha\\beta}\\equiv\\varphi_{\\alpha,\\beta}-\\varphi_{\\be" "/Users/zh217/Documents/work/cartanrelativity.tex" nil)
+
+("eq:12" "e" " " "/Users/zh217/Documents/work/cartanrelativity.tex" nil)
+
+(eof "/Users/zh217/Documents/work/cartanrelativity.tex")
+))
+

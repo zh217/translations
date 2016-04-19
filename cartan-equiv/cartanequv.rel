@@ -1,0 +1,74 @@
+;; RefTeX parse info file
+;; File: /Users/zh217/Documents/work/cartanequv.tex
+;; User: zh217 (Amadeo)
+
+(set reftex-docstruct-symbol '(
+
+
+(xr nil "\\\\\\\\\\\\")
+
+(index-tags)
+
+(is-multi nil)
+
+(bibview-cache)
+
+(master-dir . "/Users/zh217/Documents/work/")
+
+(label-numbers ("eq:" . 5))
+
+(bof "/Users/zh217/Documents/work/cartanequv.tex")
+
+(toc "toc" "    1  " "/Users/zh217/Documents/work/cartanequv.tex" nil 2 "1" "\\section{}" 5153)
+
+("sec:1" "s" "Every equivalence problem falls within the study of analysis, but contains preliminarily a problem i" "/Users/zh217/Documents/work/cartanequv.tex" nil)
+
+("eq:1" "e" "\\bar k=k,\\qquad\\bar\\omega_{1}=\\omega_{1},\\qquad\\bar\\omega_{2}=\\omega_{2},\\qquad\\bar\\omega_{3}=\\omega" "/Users/zh217/Documents/work/cartanequv.tex" nil)
+
+("eq:2" "e" "\\bar\\omega_{i}^{\\star}=\\omega_{i}^{\\star}, " "/Users/zh217/Documents/work/cartanequv.tex" nil)
+
+("eq:3" "e" "\\frac{d^{2}y}{dx^{2}}=F\\left(x,y,\\frac{dy}{dx}\\right),\\qquad\\frac{d^{2}\\bar y}{d\\bar x^{2}}=\\bar F\\l" "/Users/zh217/Documents/work/cartanequv.tex" nil)
+
+("eq:A" "e" "\\tag{A} \\left\\{ \\begin{aligned} \\omega_{1}&=dy-y'dx=0," "/Users/zh217/Documents/work/cartanequv.tex" nil)
+
+("eq:Abar" "e" "\\tag{$\\overline{\\mathrm A}$} \\left\\{ \\begin{aligned} \\bar\\omega_{1}&=d\\bar y-\\bar y'd\\bar x=0," "/Users/zh217/Documents/work/cartanequv.tex" nil)
+
+("eq:4" "e" "\\bar\\omega_{1}^{\\star}=\\omega_{1}^{\\star},\\qquad \\bar\\omega_{2}^{\\star}=\\omega_{2}^{\\star},\\qquad \\b" "/Users/zh217/Documents/work/cartanequv.tex" nil)
+
+(toc "toc" "    2  " "/Users/zh217/Documents/work/cartanequv.tex" nil 2 "2" "\\section{}" 16973)
+
+("sec:2" "s" "In some, \\emph{the equivalence problems with respect to every group, finite or infinite dimensional," "/Users/zh217/Documents/work/cartanequv.tex" nil)
+
+("eq:I" "e" "\\tag{I} \\bar\\omega^{i}=\\omega^{i},\\qquad(i=1,2,\\dots,n), " "/Users/zh217/Documents/work/cartanequv.tex" nil)
+
+("eq:I'" "e" "\\tag{I$'$} \\bar F_{k}(\\bar x)=F_{k}(x). " "/Users/zh217/Documents/work/cartanequv.tex" nil)
+
+("eq:II" "e" "\\tag{II} \\bar c_{jk}^{i}(\\bar x)=c_{jk}^{i}(x). " "/Users/zh217/Documents/work/cartanequv.tex" nil)
+
+("eq:III" "e" "\\tag{III} \\bar c_{jk}{}^{i}{}_{,h}(\\bar x)=c_{jk}{}^{i}{}_{,h}(x) " "/Users/zh217/Documents/work/cartanequv.tex" nil)
+
+("eq:IV" "e" "\\tag{IV} dI_{i}=I_{i,k}\\omega^{k}, " "/Users/zh217/Documents/work/cartanequv.tex" nil)
+
+("eq:V" "e" "\\tag{V} dI_{i}=I_{i,k}\\omega^{k}, " "/Users/zh217/Documents/work/cartanequv.tex" nil)
+
+(toc "toc" "    3  " "/Users/zh217/Documents/work/cartanequv.tex" nil 2 "3" "\\section{}" 27657)
+
+("sec:3" "s" "Now let us come to the general equivalence problem as we have already formulated: we limit ourselves" "/Users/zh217/Documents/work/cartanequv.tex" nil)
+
+("eq:3.I" "e" "\\tag{I} \\bar\\omega^{i}=\\omega^{i}, " "/Users/zh217/Documents/work/cartanequv.tex" nil)
+
+(toc "toc" "    4  " "/Users/zh217/Documents/work/cartanequv.tex" nil 2 "4" "\\section{}" 34440)
+
+("sec:4" "s" nil "/Users/zh217/Documents/work/cartanequv.tex" nil "")
+
+(toc "toc" "    5  " "/Users/zh217/Documents/work/cartanequv.tex" nil 2 "5" "\\section{}" 41415)
+
+("sec:5" "s" nil "/Users/zh217/Documents/work/cartanequv.tex" nil "")
+
+("eq:5" "e" nil "/Users/zh217/Documents/work/cartanequv.tex" nil "")
+
+("eq:7" "e" " " "/Users/zh217/Documents/work/cartanequv.tex" nil)
+
+(eof "/Users/zh217/Documents/work/cartanequv.tex")
+))
+

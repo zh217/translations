@@ -1,0 +1,779 @@
+\documentclass[leqno,11pt]{article}
+\usepackage{geometry}
+\geometry{a4paper}
+%\usepackage[adobe-utopia,uppercase=upright,greeklowercase=upright]{mathdesign}
+\usepackage{indentfirst}
+%\usepackage[parfill]{parskip}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amscd}
+\usepackage{sectsty}
+
+%\usepackage{makeidx}
+
+%\makeindex
+
+%\partfont{\mdseries\scshape\centering}
+%\chapterfont{\mdseries\scshape\centering}
+\sectionfont{\bfseries\centering}
+%\subsectionfont{\bfseries\centering}
+
+%\numberwithin{equation}{chapter}
+%\usepackage{epstopdf}
+\usepackage[numbib,nottoc]{tocbibind}
+%\usepackage{overcite}
+\usepackage[pdfborder={0 0 0}]{hyperref}
+%\usepackage[perpage,para,symbol]{footmisc}
+\usepackage[british]{babel}
+%\usepackage{slashed}
+
+\usepackage{perpage}
+\MakePerPage[2]{footnote}
+
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%\fancyhead{}
+%\fancyhead[LE,RO]{\thepage}
+%\fancyhead[RE]{{\rightmark}}
+%\fancyhead[LO]{{\leftmark}}
+%\fancyfoot{}
+
+
+%\renewcommand{\sectionmark}[1]
+%{\markright{\itshape {#1}}}
+
+%\makeatletter
+%\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
+%\hbox{}
+%\vspace*{\fill}
+%\begin{center}
+%This page is intentionally blank.
+%\end{center}
+%\vspace{\fill}
+%\thispagestyle{empty}
+%\newpage
+%\if@twocolumn\hbox{}\newpage\fi\fi\fi}
+%\makeatother
+
+%\renewcommand{\chaptermark}[1]{\markboth{\thechapter.\ \ #1}{}}
+\usepackage{enumerate}
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text}
+
+
+\title{The problems of equivalence \footnote{Delivered by Élie Cartan, Monday 11 January 1937.}}
+\author{by Élie Cartan\\         
+\\
+Translation by Ziyang Hu\\
+\\
+\\
+Translated from the original French\\
+\\
+\emph{Les problèmes d'équivalence}\\ 
+\\{Séminaire de Mathématiques, 4e année, 1936--37}
+\\~
+}%\date{}                                         % Activate to display a given date or no date
+
+\newcommand{\pd}{\partial}
+\newcommand{\rs}{\mathbb{R}}
+
+\DeclareMathOperator{\inp}{\lrcorner}
+
+
+\newtheoremstyle{shape0}% name
+  {9pt}%      Space above
+  {9pt}%      Space below
+  {}%         Body font
+  {\parindent}%         Indent amount (empty = no indent, \parindent = para indent)
+  {\itshape}% Thm head font
+  {.}%        Punctuation after thm head
+  {.5em}%     Space after thm head: " " = normal interword space;
+        %       \newline = linebreak
+  {}%         Thm head spec (can be left empty, meaning `normal')
+
+
+\newtheoremstyle{shape1}% name
+  {9pt}%      Space above
+  {9pt}%      Space below
+  {\itshape}%         Body font
+  {\parindent}%         Indent amount (empty = no indent, \parindent = para indent)
+  {\scshape}% Thm head font
+  {.}%        Punctuation after thm head
+  {.5em}%     Space after thm head: " " = normal interword space;
+        %       \newline = linebreak
+  {}%         Thm head spec (can be left empty, meaning `normal')
+
+\newtheoremstyle{shape2}% name
+  {9pt}%      Space above
+  {9pt}%      Space below
+  {}%         Body font
+  {}%         Indent amount (empty = no indent, \parindent = para indent)
+  {\itshape}% Thm head font
+  {.}%        Punctuation after thm head
+  {.5em}%     Space after thm head: " " = normal interword space;
+        %       \newline = linebreak
+  {}%         Thm head spec (can be left empty, meaning `normal')
+
+
+\setlength{\parindent}{15pt}
+
+\theoremstyle{shape1}
+\newtheorem*{thm*}{\hspace{15pt}Theorem}
+\newtheorem{thm}{Theorem}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prin}[thm]{Principle}
+\newtheorem{expr}[thm]{Experiment}
+\newtheorem*{dfn*}{\hspace{15pt}Definition}
+\newtheorem*{concl*}{\hspace{15pt}Conclusion}
+\newtheorem{prob}[thm]{Problem}
+\renewcommand{\thethm}{\Roman{thm}}
+\theoremstyle{shape0}
+\newtheorem*{rmk*}{\hspace{15pt}Remark}
+\newtheorem*{pcase*}{\hspace{15pt}Particular case}
+
+\theoremstyle{shape2}
+\newtheorem{ex}[thm]{Example}
+\theoremstyle{definition}
+
+\renewcommand{\bfdefault}{b}
+
+\newcommand{\vp}{\varpi}
+
+\renewcommand{\thesection}{\Roman{section}.}
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\begin{document}
+\maketitle
+
+The problem which I am going to be concerned with is, under its most general form, the search for the conditions for the equivalence of two systems of differential forms or ordinary or partial differential equations with respect to a continuous group of transformations in the sense of Lie. But it is not under this general form that we will consider the problem, since we are not yet in possession of a general theory of continuous groups, and this theory of groups finds its origin precisely in the theory of equivalence in a restricted form, and it is this form of the theory that we are going to discuss. The theory is founded on the theory of Pfaffian systems in involution, and on the other hand, it is at the base of general differential geometry (the method of moving frame), of generalised space and of a theory of integration of certain differential systems. It is understood that the data we are dealing with are always supposed to be analytic, even though the method and the results often remain valide under less restrictive hypotheses.
+
+\section{}
+\label{sec:1}
+
+Every equivalence problem falls within the study of analysis, but contains preliminarily a problem in algebra, which is often of a trivial nature but which is important to be made obvious. For example, two differential forms in the same number $n$ of variables, the first constructed with the variables $x_{1}$, $x_{2}$, $\dots$, $x_{n}$ and their differentials, the second constructed with the variables $\bar x_{1}$, $\bar x_{2}$, $\dots$, $\bar x_{n}$ and their differentials, can be equivalent, i.e., transformable into each other by an analytic transformation passing the variables $x_{i}$ into the variables $\bar x_{i}$, only if at two corresponding points $(x,\bar x)$, the two forms, considered as algebraic forms in $dx_{i}$ and $d\bar x_{i}$, are algebraically equivalent, i.e., transformable into each other by a linear transformation passing $dx_{i}$ into $d\bar x_{i}$. If we are concerned with two quadratic differential forms and if one of them is decomposable into a sum of $p<n$ independent squares, it is necessary that the same holds for the other form. If we are concerned with two cubic (non-exterior) differential forms in three variables, setting these forms to zero can be interpreted as defining two cubics when we regard the differentials as homogeneous coordinates of a point in a plane: the equivalence of the forms requires that we are able to pass from one of the cubics to the other by a linear transformation on the given coordinates, from which we have the equality of the projective invariants of the two cubics. Let us remain in the general case, and according to a classical theorem, two given cubic forms $F$ and $\bar F$ can be written
+\begin{align*}
+  F&=\omega_{1}^{3}+\omega_{2}^{3}+\omega_{3}^{3}-6k\omega_{1}\omega_{2}\omega_{3},\\
+  \bar F&=\bar\omega_{1}^{3}+\bar\omega_{2}^{3}+\bar\omega_{3}^{3}-6\bar k\bar\omega_{1}\bar\omega_{2}\bar\omega_{3},
+\end{align*}
+where $\omega_{1}$, $\omega_{2}$, $\omega_{3}$ are three linearly independent Pfaffian expressions in $dx_{1}$, $dx_{2}$, $dx_{3}$ and the same holds for $\bar\omega_{1}$, $\bar\omega_{2}$, $\bar\omega_{3}$. The canonical forms thus obtained may be written in a finite number of ways. The equivalence of two forms requires at least the compatibility of a finite number of systems under the form
+\begin{equation}
+  \label{eq:1}
+  \bar k=k,\qquad\bar\omega_{1}=\omega_{1},\qquad\bar\omega_{2}=\omega_{2},\qquad\bar\omega_{3}=\omega_{3}
+\end{equation}
+corresponding to (a finite number of) different ways of algebraically identifying the forms $F$ and $\bar F$.
+
+Let us return to the case of two quadratic differential forms in $n$ variables and assume them to be positive definite. Each may be made into a sum of $n$ independent squares
+\begin{align*}
+  F&\equiv\omega_{1}^{2}+\omega_{2}^{2}+\dots+\omega_{n}^{2},\\
+  \bar F&\equiv\bar\omega_{1}^{2}+\bar\omega_{2}^{2}+\dots+\bar\omega_{n}^{2}.
+\end{align*}
+Here, the algebraic identification of two forms in possible in an infinite number of ways: we pass $\omega_{i}$ into $\bar \omega_{i}$ by an orthogonal linear transformation. The equivalence condition of two forms in the sense of the problem is therefore here the compatibility condition of the Pfaffian system obtained by expressing that $\bar \omega_{i}$ reduce to $\omega_{i}$ by an orthogonal linear transformation (with coefficients that are \emph{a priori} arbitrary). But it is more convenient, for conserving the symmetry between the two forms $F$ and $\bar F$, to introduce the forms $\omega_{i}^{\star}$ where are deduced from $\omega_{i}$ by an arbitrary linear transformation (which will introduce into the coefficients of $\omega_{i}$ $n(n-1)/2$ parameters or auxiliary variables $u_{1}$, $u_{2}$, $\dots$, $u_{n(n-1)/2}$) as well as the forms $\bar\omega^{\star}_{i}$ with $n(n-1)/2$ other auxiliary variables $\bar u_{i}$ in their coefficients. \emph{The equivalence condition is then none other than the compatibility condition of the Pfaffian equations}
+\begin{equation}
+  \label{eq:2}
+  \bar\omega_{i}^{\star}=\omega_{i}^{\star},
+\end{equation}
+but whereas in the case of cubic forms only the given variables are involved, here auxiliary variables are also involved.
+
+It is conceivable that in all algebraic equivalence problems, we arrive at analogous results. The linear transformation of the variables realising the equivalence is obtained by, thanks to a prior suitable choice of variables, the linear transformations of a group which can be finite or infinite dimensional. The corresponding problem of analysis will lead to analogous systems to \eqref{eq:1} and \eqref{eq:2} with or without introducing auxiliary variables.
+
+An example about the equivalence of differential equations will be useful. Consider two second order differential equations
+\begin{equation}
+  \label{eq:3}
+  \frac{d^{2}y}{dx^{2}}=F\left(x,y,\frac{dy}{dx}\right),\qquad\frac{d^{2}\bar y}{d\bar x^{2}}=\bar F\left(\bar x,\bar y,\frac{d\bar y}{d\bar x}\right).
+\end{equation}
+Each of them can be made into a Pfaffian system, namely
+\begin{align}
+\label{eq:A}\tag{A}
+\left\{
+  \begin{aligned}
+    \omega_{1}&=dy-y'dx=0,\\
+    \omega_{2}&=dy'-F(x,y,y')dx=0,
+  \end{aligned}
+\right.
+\\
+\label{eq:Abar}\tag{$\overline{\mathrm A}$}
+\left\{
+  \begin{aligned}
+    \bar\omega_{1}&=d\bar y-\bar y'd\bar x=0,\\
+    \bar\omega_{2}&=d\bar y'-\bar F(\bar x,\bar y,\bar y')d\bar x=0.
+  \end{aligned}
+\right.
+\end{align}
+Each of these systems, from the algebraic point of view, is a system of two linear and homogeneous equations in three variables. From this point of view, two systems \eqref{eq:A} and \eqref{eq:Abar} are always algebraically equivalent, and this algebraic equivalence is realised by the relations
+\begin{align*}
+  \bar\omega_{1}&=\alpha\omega_{1}+\beta\omega_{2},\\
+  \bar\omega_{2}&=\alpha'\omega_{1}+\beta'\omega_{2},
+\end{align*}
+to which we need to add
+\[
+d\bar x=\alpha''\omega_{1}+\beta''\omega_{2}+\gamma''dx.
+\]
+More symmetrically, we set
+\begin{gather*}
+  \omega_{1}^{\star}=u\omega_{1}+v\omega_{2},\qquad\omega_{2}^{\star}=u'\omega_{1}+v'\omega_{2},\qquad\omega_{3}^{\star}=w\,dx+\lambda\,dy+\mu\,dy',\\
+  \bar\omega_{1}^{\star}=\bar u\bar\omega_{1}+\bar v\bar\omega_{2},\qquad\bar\omega_{2}^{\star}=\bar u'\bar\omega_{1}+\bar v'\bar\omega_{2},\qquad\bar\omega_{3}^{\star}=\bar w\,d\bar x+\bar\lambda\,d\bar y+\bar\mu\,d\bar y',
+\end{gather*}
+with seven auxiliary variables for each of these systems, and the equivalence is realised by the corresponding equality of the forms $\omega_{i}^{\star}$ and $\bar\omega_{i}^{\star}$
+\begin{equation}
+  \label{eq:4}
+  \bar\omega_{1}^{\star}=\omega_{1}^{\star},\qquad
+  \bar\omega_{2}^{\star}=\omega_{2}^{\star},\qquad
+  \bar\omega_{3}^{\star}=\omega_{3}^{\star}.
+\end{equation}
+
+But we must not lose view of our original problem. The compatibility of system \eqref{eq:4} signifies that we can apply a transformation of the variables $x$, $y$, $y'$ into $\bar x$, $\bar y$, $\bar y'$ which transforms \eqref{eq:A} into \eqref{eq:Abar}. Indeed, the equations \eqref{eq:4} give $d\bar x$, $d\bar y$, $d\bar y'$ as linear combinations of $dx$, $dy$, $dy'$ and then entails the property of $\bar x$, $\bar y$, $bar y'$ being functions of $x$, $y$, $y'$. However, we state an equivalence problem in a different way, \emph{for example} by asking under what conditions can we transform the first differential equation \eqref{eq:3} into the second by a point transformation $(x,y\rightarrow \bar x, \bar y)$. Naturally, the introduction of the auxiliary variable $y'$ to transform the differential equation into a Pfaffian system has made us lose view of the initial problem. To rediscover this, \emph{it suffices to limit the linear transformations considered in the purely algebraic part of the problem to those that express $d\bar x$, $d\bar y$ linearly in $dx$, $dy$}, and hence at the same time $\bar\omega_{1}$ and $\bar\omega_{2}$ linearly in terms of $\omega_{1}$ and $\omega_{2}$. It follows that
+\begin{align*}
+  d\bar y-\bar y'd\bar x&=\alpha(dy-y'dx),\\
+  d\bar y'-\bar F\, d\bar x&=\alpha'(dy-y'dx)+\beta'(dy'-F\,dx),\\
+  d\bar x&=\alpha''dx+\beta''dy,
+\end{align*}
+by setting, this time,
+\begin{align*}
+  \omega_{1}^{\star}&=u(dy-y'dx),\\
+  \omega_{2}^{\star}&=u'(dy-y'dx)+v'(dy'-F\,dx),\\
+  \omega_{3}^{\star}&=u''dx+v''dy,
+\end{align*}
+and $\bar\omega_{i}^{\star}$ in an analogous manner, the equivalence conditions are the compatibility conditions of the system
+\[
+  \bar\omega_{1}^{\star}=\omega_{1}^{\star},\qquad
+  \bar\omega_{2}^{\star}=\omega_{2}^{\star},\qquad
+  \bar\omega_{3}^{\star}=\omega_{3}^{\star},
+\]
+where the right hand sides involve only five auxiliary variables $u$, $u'$, $v'$, $u''$, $v''$ instead of seven.
+
+We can also state the equivalence problem of the given differential equations with respect to the group of contact transformations in the plane, which simply expresses that the equation $dy-y'dx=0$ transforms into $d\bar y-\bar y'd\bar x=0$. We only have to take the same form of $\omega_{i}^{\star}$ as in the preceding case except that $\omega_{3}^{\star}$ is now more general
+\[
+\omega_{3}^{\star}=u''dx+v''dy+w''dy'.
+\]
+
+Here we make the fundamental observation that the group of point transformations in two variables has been used for its characteristic property that $d\bar x$, $d\bar y$ are linear combinations of $dx$, $dy$, which also means that \emph{this group is constituted by the set of transformations leaving the two Pfaffian expressions $u\,dx+v\,dy$, $u'dx+v'dy$ invariant}, which involve four arbitrary variables $u$, $v$, $u'$, $v'$. The group of conformal transformations of the plane, which reproduces $dx^{2}+dy^{2}$ up to a finite factor, is the group which acts on $dx$, $dy$ by the linear transformation
+\begin{align*}
+  d\bar x&=u\,dx-v\,dy,\\
+  d\bar y&=v\,dx+u\,dy,
+\end{align*}
+or rather, \emph{that which leaves the two forms $u\,dx-v\,dy$ and $v\,dx+u\,dy$ invariant.}
+
+It is conceivable that \emph{every equivalence problem with respect to a group susceptible to be defined by the invariance of a system of Pfaffian forms can themselves be made into a compatibility problem of Pfaffian system $\bar\omega_{i}=\omega_{i}$}, analogous to those that we have found so far.
+
+Let us indicate one last example which is the origin of Finsler geometry. Let us find the equivalence conditions of two integrals
+\[
+\int F\left(x,y,\frac{dy}{dx}\right)dx\qquad\text{and}\qquad
+\int\bar F\left(\bar x,\bar y,\frac{d\bar y}{d\bar x}\right)d\bar x,
+\]
+with respect to the group of contact transformations in the plane. By introducing the variables $y'$ and $\bar y'$, it does not suffice to express that we can change the form $F\,dx$ into the form $\bar F\,d\bar x$ by a contact transformation, since we assumed that in the integrals of these forms, we always have $dy-y'dx=0$ and $d\bar y-\bar y'd\bar x=0$. Indeed, we have to express them as the congruence
+\[
+\bar F\,d\bar x\equiv F\,dx\pmod{dy-y'dx,d\bar y-\bar y'd\bar x},
+\]
+which leads to 
+\[
+\bar F\,d\bar x+\bar\alpha(d\bar y-\bar y'd\bar x)= F\,dx+\alpha(dy-y'dx).
+\]
+We are then lead to introduce the forms
+\begin{gather*}
+  \omega_{1}=F\,dx+u(dy-y'dx),\qquad\omega_{2}=v(dy-y'dx),\\
+  \omega_{3}=w\,dy'+\lambda\,dx+\mu\,dy;\\
+  \bar\omega_{1}=\bar F\,d\bar x+\bar u(d\bar y-\bar y'd\bar x),\qquad\bar\omega_{2}=\bar v(d\bar y-\bar y'd\bar x),\\
+  \bar\omega_{3}=\bar w\,d\bar y'+\bar\lambda\,d\bar x+\bar\mu\,d\bar y,
+\end{gather*}
+with
+\[
+\bar\omega_{1}=\omega_{1},\qquad\bar\omega_{2}=\omega_{2},\qquad\bar\omega_{3}=\omega_{3}.
+\]
+The equality $\bar\omega_{2}=\omega_{2}$ expresses the equivalence with respect to the group of contact transformations, but the equalities $\bar\omega_{1}=\omega_{1}$, $\bar\omega_{2}=\omega_{2}$ show that the equivalence holds \emph{effectively} for a point transformation.
+
+\section{}
+\label{sec:2}
+
+In sum, \emph{the equivalence problems with respect to every group, finite or infinite dimensional, susceptible to be defined as the set of transformations leaving one or several Pfaffian forms invariant, becomes the study of the compatibility of a system}
+\begin{equation}
+  \label{eq:I}\tag{I}
+  \bar\omega^{i}=\omega^{i},\qquad(i=1,2,\dots,n),
+\end{equation}
+\emph{where $\omega^{i}$ are $n$ linearly independent differential forms in $dx^{1}$, $dx^{2}$, $\dots$, $dx^{n}$, and $\bar\omega^{i}$ are $n$ linearly independent differential forms in $d\bar x^{1}$, $d\bar x^{2}$, $\dots$, $d\bar x^{n}$, and the coefficients of these forms can contain auxiliary variables $y_{1}$, $\dots$, $y_{p}$, $\bar y_{1}$, $\dots$, $\bar y_{p}$.} We can also add to the system \eqref{eq:I} algebraic equations
+\begin{equation}
+  \label{eq:I'}\tag{I$'$}
+  \bar F_{k}(\bar x)=F_{k}(x).
+\end{equation}
+
+We will begin with the case where there are no auxiliary variables and we assume, for simplicity, that there are no algebraic equations \eqref{eq:I'} either, the case where such equations are present will be examined in the exposition of the method.
+
+In summary, we have to study the compatibility of the system \eqref{eq:I} in $n$ unknown functions $\bar x_{1}$, $\bar x_{2}$, $\dots$, $\bar x_{n}$ in $n$ independent variables. According to the general theory of Pfaffian systems, we must adjoin to the equations \eqref{eq:I} the exterior differentiated equations $d\bar\omega^{i}=d\omega^{i}$ \footnote{Here we use the notation $d\omega^{i}$ proposed by E.~Kähler to denote the \emph{bilinear covariant}, or \emph{exterior derivative}, of the form $\omega^{i}$. The exterior differential forms are polynomials of the given variables $x_{1}$, $x_{2}$, $\dots$, $x_{n}$ such that for $A_{ij}dx^{i}dx^{j}$, etc., the multiplication of differentials obey the Grassmann's rule of exterior multiplication: every permutation applied to these differentials appearing in a term either change or leave intact the sign of the product according to whether this permutation is odd or even. The \emph{exterior derivative} (or rather the \emph{exterior differential}) of a form $\omega=A_{i}dx^{i}$ is $d\omega^{i}=dA_{i}dx^{i}$, that of the form $\omega=A_{ij}dx^{i}dx^{j}$ is $d\omega=dA_{ij}dx^{i}dx^{j}$, etc. The exterior differential of the differential $d\omega$ is identically zero. The notation $c_{jk}^{i}\omega^{j}\omega^{k}$, where $\omega^{j}$ and $\omega^{k}$ are two exterior differential forms, signifies that the product $\omega^{j}\omega^{k}$ is multiplied according to the rules of exterior multiplication. The exterior differential of the exterior product of two forms $\omega$, $\varpi$ of degrees $p$ and $q$ respectively is $d\omega\cdot\varpi+(-1)^{p}\omega\cdot d\varpi$.}. However, we can express $d\omega^{i}$ under the form
+\[
+d\omega^{i}=\frac{1}{2}c_{jk}{}^{i}\omega^{j}\omega^{k},\qquad(c_{jk}{}^{i}=-c_{kj}{}^{i}),
+\]
+where the summation sign is suppressed with respect to the indices $j$ and $k$. The conditions $d\bar\omega^{i}=d\omega^{i}$ show that \emph{the coefficients $c_{jk}{}^{i}$ are invariants}, and we must adjoin to the equations \eqref{eq:I} the equations
+\begin{equation}
+  \label{eq:II}\tag{II}
+  \bar c_{jk}^{i}(\bar x)=c_{jk}^{i}(x).
+\end{equation}
+
+We must then adjoin to the systems \eqref{eq:I}, \eqref{eq:II} the differentiated equations
+\[
+d\bar c_{jk}{}^{i}=dc_{jk}{}^{i},
+\]
+and by setting
+\[
+dc_{jk}{}^{i}=c_{jk}{}^{i}{}_{,h}\omega^{h},
+\]
+we find a new series of invariants
+\begin{equation}
+  \label{eq:III}\tag{III}
+  \bar c_{jk}{}^{i}{}_{,h}(\bar x)=c_{jk}{}^{i}{}_{,h}(x)
+\end{equation}
+and so on. For any given system we obtain an unlimited number of invariants.
+
+However, it is not necessary to form all these invariants to know if two systems of given forms are equivalent.
+
+First take a rather special case which nonetheless has a huge importance, the case where the \emph{fundamental} invariants $c_{jk}{}^{i}$ are all constants for the first system. It will then be necessary for the equivalence of the two systems that the fundamental invariants $\bar c_{jk}{}^{i}$ have the same constant values. \emph{This condition is sufficient}, since if it is realised, the relations $d\bar\omega^{i}=d\omega^{i}$ are consequences of equations \eqref{eq:I} and then the system \eqref{eq:I} is completely integrable. The change of variables which transforms $\omega{^i}$ into $\bar\omega^{i}$ depends on $n$ arbitrary constants. In particular, the forms $\omega^{i}$ of the first system are invariants for a family of transformations depending on $n$ arbitrary constants, and these transformations form manifestly a group, which we can easily check to be simply transitive. We have \emph{the first example of a finite dimensional continuous group defined as the set of transformations leaving a certain number of different forms invariant}.
+
+Now take the other extreme case where, among the invariants $c_{jk}{}^{i}$, there are $n$ independent invariants, which we call $I_{1}$, $I_{2}$, $\dots$, $I_{n}$. For the equivalence of the two systems, the invariants $\bar c_{jk}{}^{i}$ with the same indices must be independent and there must be the same relations among $\bar c_{jk}{}^{i}$ as among $c_{jk}{}^{i}$. But \emph{these conditions are not sufficient}. The equivalence requires the compatibility of the systems
+\begin{align*}
+  \bar\omega^{i}&=\omega^{i},\\
+  \bar I_{h}&=I_{h}.
+\end{align*}
+Exterior differentiation gives
+\[
+\bar I_{h,i}\bar\omega^{i}=I_{h,i}\omega^{i},
+\]
+from which
+\[
+\bar I_{h,i}=I_{h,i},
+\]
+by denoting the derived invariants of the fundamental invariants by $I_{h,i}$. Therefore for the equivalence, the derived invariants $\bar I_{h,i}$ must be the same functions of the fundamental invariants as the first system.
+
+\emph{This condition is sufficient}, since if it is realised, the relations
+\begin{equation}
+  \label{eq:IV}\tag{IV}
+  dI_{i}=I_{i,k}\omega^{k},
+\end{equation}
+in which the matrix of coefficients on the right hand side has non-zero determinant, show that the change of variables defined by
+\[
+\bar I_{i}=I_{i}
+\]
+itself entails
+\[
+\bar\omega^{i}=\omega^{i}.
+\]
+
+It is paradoxal enough to observe that the conclusion remains exactly the same without needing to assume that all the fundamental invariants $c_{jk}{}^{i}$ other than $I_{1}$, $I_{2}$, $\dots$, $I_{n}$ are for the two systems the same functions as $I_{1}$, $I_{2}$, $\dots$, $I_{n}$. This is actually a consequence of the hypothesis relative to $I_{i,k}$. If we exterior differentiate \eqref{eq:IV}, we find, by setting to zero the terms in $\omega^{h}\omega^{l}$,
+\[
+c_{hl}{}^{k}I_{i,k}+\frac{\pd I_{i,l}}{\pd I_{r}}I_{r,h}-\frac{\pd I_{i,h}}{\pd I_{r}}I_{r,l}=0,
+\]
+relations which allow us to express all the coefficients $c_{hl}{}^{k}$ as functions of $I_{i}$ and $I_{i,k}$.
+
+Now let us come to the \emph{general case}. Suppose that $\nu<n$ of $c_{jk}{}^{i}$ are independent, that $\nu_{1}>1$ of $c_{jk}{}^{i}$ and their first derivatives are independent, and so on: to make things concrete, suppose that $\nu_{2}>\nu_{1}$ of $c_{jk}{}^{i}$ and their derivatives of the first two orders are independent, but the third order derivatives do not introduce new independent invariants other than the preceding ones. Then, the compatibility of the equations
+\begin{align*}
+  \bar\omega^{i}&=\omega^{i},\\
+  \bar c_{jk}{}^{i}&=c_{jk}{}^{i},\\
+  \bar c_{jk}{}^{i}{}_{,h}&=c_{jk}{}^{i}{}_{,h},\\
+  \bar c_{jk}{}^{i}{}_{,hl}&=c_{jk}{}^{i}{}_{,hl},\\
+  \bar c_{jk}{}^{i}{}_{,hlm}&=c_{jk}{}^{i}{}_{,hlm},
+\end{align*}
+is a necessary condition for equivalence. \emph{It is sufficient}, since if they are realised, the system
+\begin{align*}
+  \bar\omega^{i}&=\omega^{i},\\
+  \bar c_{jk}{}^{i}&=c_{jk}{}^{i},\\
+  \bar c_{jk}{}^{i}{}_{,h}&=c_{jk}{}^{i}{}_{,h},\\
+  \bar c_{jk}{}^{i}{}_{,hl}&=c_{jk}{}^{i}{}_{,hl},
+\end{align*}
+is completely integrable, since the equations obtained by exterior differentiation are identically satisfied as consequences of the given equations. The general solution of the system then depend on $n-\nu_{2}$ arbitrary constants.
+
+In particular, if we consider the forms $\omega^{i}$ of the first system, they are invariants for a group with $n-\nu_{2}$ parameters. \emph{This group is formed by the set of transformations leaving $\nu_{2}$ functions (independent functions of the invariants) and $n$ Pfaffian forms invariant}. This is an \emph{intransitive} group.
+
+Finally, a last question can be asked. It follows manifestly from the preceding discussion that a system of forms $\omega^{i}$ is characterised redundantly by the set of all the derived invariants of different orders, since the knowledge of these derived invariants up to order $p+1$ suffices, in the case where the formation of the $p+1$-th order invariants does not introduce invariants independent of those of the first $p$ orders. The system is completely characterised by the relations linking all these invariants. \emph{But these relations are not arbitrary}, and we can ask what is the most general way that they can be specified. We will limit to the case where the fundamental invariants $c_{jk}{}^{i}$ contain $n$ independent invariants $I_{i}$. We have seen that the system is characterised by the functions $I_{i,k}$ in terms of $I_{i}$. Once these functions are known, we get $\omega^{i}$ by solving the equations
+\begin{equation}
+  \label{eq:V}\tag{V}
+  dI_{i}=I_{i,k}\omega^{k},
+\end{equation}
+the functions $I_{i,k}$ of $I_{i}$ are admissible if they forms $\omega^{i}$ that we just obtained satisfy the relations
+\[
+d\omega^{i}=\frac{1}{2}c_{jk}{}^{i}\omega^{j}\omega^{k},
+\]
+or rather if the equations \eqref{eq:V}, when differentiated exteriorly, are satisfied when we replace $d\omega^{i}$ by $\frac{1}{2}c_{jk}{}^{i}\omega^{j}\omega^{k}$. The calculation has already been carried out and gives
+\[
+\frac{\pd I_{i,l}}{\pd I_{r}}I_{r,h}-\frac{\pd I_{i,h}}{\pd I_{r}}I_{r,l}+c_{hl}{}^{k}I_{i,k}=0.
+\]
+If we eliminate the $c_{hl}{}^{k}$ other than the $n$ invariants $I_{1}$, $\dots$, $I_{n}$, we obtain a system of partial differential equations expressing the necessary and sufficient conditions of the question for the given functions $I_{i,k}$ in $I_{i}$ to satisfy. This differential system is in involution, and its general solution depends on $n^{2}-n$ arbitrary functions of $n$ arguments, which is easy to envisage by a not very rigorous reasoning.
+
+The case where $c_{jk}{}^{i}$ are constants has an extreme importance. These constants \emph{cannot} be arbitrary. The question arises in the theory of finite dimensional continuous groups, which is the subject of S.~Lie's third fundamental theorem.
+
+\section{}
+\label{sec:3}
+Now let us come to the general equivalence problem as we have already formulated: we limit ourselves to the study of the following system, though this is not an essential restriction:
+\begin{equation}
+  \label{eq:3.I}\tag{I}
+  \bar\omega^{i}=\omega^{i},
+\end{equation}
+where $\omega^{i}$ are $n$ linearly independent differential forms in $dx^{1}$, $dx^{2}$, $\dots$, $dx^{n}$ with their coefficients functions in $x_{1}$, $x_{2}$, $\dots$, $x_{n}$ and of $p$ other auxiliary variables $y_{1}$, $y_{2}$, $\dots$, $y_{p}$. The forms $\bar\omega^{i}$ are defined in an analogous manner with the same integers $n$ and $p$. In fact, the forms $\omega^{i}$ are deduced from $n$ particular forms that involves only the variables $x$ by applying a linear transformation belonging to a group with $p$ variables, and $\bar\omega^{i}$ are also deduced from $n$ particular forms by applying a linear transformation belong to the same group. The method applies whatever the origin of the auxiliary variables. Nonetheless we will confine ourselves to some schematic indications.
+
+The equations \eqref{eq:3.I} if they are compatible, obviously entails that $\bar x_{i}$ are functions of $x_{i}$ only. The differentials $d\omega^{i}$ are obviously linear with respect to $dx^{k}$, i.e., with respect to $\omega^{k}$, but also contain the differentials of the auxiliaries $y_{j}$, and we can write
+\[
+d\omega^{i}=\omega^{k}\varpi_{k}{}^{i},
+\]
+where the summation sign with respect to $k$ is omitted and $\varpi_{k}{}^{i}$ are linear with respect to $dx^{i}$ and $dy^{j}$. Each of $\varpi_{k}{}^{i}$ is not completely determined, since we can add to them certain linear combinations of $\omega^{i}$ without changing the right hand sides. In any case, suppose that $q$ of them are linearly independent$\pmod{dx^{1},dx^{2},\dots,dx^{n}}$, and let us call them $\varpi^{1},\varpi^{2},\dots,\vp^{q}$. We can write
+\[
+\vp_{i}{}^{j}=a_{ik}{}^{j}\vp^{k}\pmod{\omega^{1},\omega^{2},\dots,\omega^{n}}.
+\]
+It is clear that $a_{ik}{}^{j}$ \emph{are invariants}. If one of these invariants depends effectively on the variables $y_{1}$, $y_{2}$, $\dots$, $y_{q}$, we can arrange the auxiliary variables in a way such that this invariant takes a fixed numerical value \footnote{It is necessary to have some clarification here and a classification, conforming to the nature of things being considered, has to be carried out. Nonetheless, in the case where we are considering, where the auxiliary variables are none other than the parameters of a linear group, the invariants $a_{ik}{}^{j}$ are \emph{numerical constants}, and hence the question does not arise at all.}. It is clear that the equations \eqref{eq:3.I} require the auxiliary variables $\bar y_{j}$ to satisfy the same conditions, i.e., the conditions that the invariant $\bar a_{ik}{}^{j}$ of the same indices take the same fixed numerical value. The consideration of the invariants $a_{ik}{}^{j}$ therefore in certain cases permits us to reduce the number of auxiliary variables, and those invariants with the property indicated above, as presented, effectively depend on the auxiliary variables.
+
+We can now assume that the reduction of the number auxiliary variables has been done such that the invariants $a_{ik}{}^{j}$ no longer depend on variables other than $x_{1}$, $x_{2}$, $\dots$, $x_{n}$. Now, two other kinds of reductions may be possible. If the invariants obtained are not constants, the derived invariants $I_{1}$, $I_{2}$, $\dots$, $I_{n}$ from $I$
+\[
+dI=I_{1}\omega^{1}+I_{2}\omega^{2}+\dots+I_{n}\omega^{n}
+\]
+can again depend on auxiliary variables. On the other hand, the formulae
+\[
+d\omega^{i}=a_{kh}{}^{i}\omega^{k}\vp^{h}\pmod(\omega^{1},\omega^{2},\dots,\omega^{n})
+\]
+show that the equations \eqref{eq:3.I}, if compatible, entails
+\[
+\bar\vp^{h}=\vp^{h}\pmod{\omega^{1},\omega^{2},\dots,\omega^{n}}.
+\]
+According to the spirit of the general method, it is necessary to introduce the $q$ invariants 
+\[
+(\vp^{h})^{\star}=\vp^{h}-z^{h}_{k}\omega^{k}
+\]
+with auxiliary variables $z_{k}^{h}$. We then have
+\[
+d\omega^{i}=a_{kh}{}^{i}\omega^{k}(\vp^{h})^{\star}+\frac{1}{2}c_{kh}{}^{i}\omega^{k}\omega^{h},
+\]
+the $c_{kh}{}^{i}$ are again invariants depending linearly on the auxiliary variables $z_{k}^{h}$. \emph{We will arrange these variables in a way to remove the largest number of these invariants.} Those that remain, if they depend effectively on the auxiliary variables $y_{j}$ which have been conserved, again permit a reduction, and so on.
+
+At last, we can assume that all resulting invariants as well as the successive derived invariants depend only on $x_{1}$, $x_{2}$, $\dots$, $x_{n}$.
+
+Under these conditions, the compatibility of system \eqref{eq:3.I} requires the one-to-one equality of the invariants obtained. We therefore complement it by a system of algebraic equations
+\begin{equation}
+  \label{eq:3.II}\tag{II}
+  \bar I_{k}=I_{k}
+\end{equation}
+such that the equations \eqref{eq:3.I} and \eqref{eq:3.II} when differentiated do not give any more new algebraic equations and lead only to the equations
+\[
+a_{kh}{}^{i}\omega^{k}[(\bar\vp^{h})^{\star}-(\vp^{h})^{\star}]=0.
+\]
+
+If the coefficients $a_{kh}{}^{i}$ form an \emph{involutive system}, the system \eqref{eq:3.I}, \eqref{eq:3.II} will be involution, and its general solution will depend on \emph{arbitrary functions}, at least in the case where there still remains auxiliary variables $y$. Each of the two given systems will admit an infinite dimensional group determined by the set of transformations leaving the functions $I_{k}$ and the forms $\omega^{i}$ invariant. If there remains no auxiliary variables $y$, we have come to the first problem that we have studied (absence of auxiliary variables).
+
+If there remains auxiliary variables and that the system of the coefficients are not involutive, we \emph{prolong} the system \eqref{eq:3.I}, \eqref{eq:3.II} by adding the equations
+\[
+(\bar\vp_{i}{}^{j})^{\star}=(\vp_{i}{}^{j})^{\star},
+\]
+and we come to a problem of the same nature as the initial problem, with $x_{1}$, $x_{2}$, $\dots$, $x_{n}$ and $y_{k}$ as the variables, $z_{i}^{j}$ as the new auxiliary variables, if any.
+
+All these operations will come to an end since, according to a general theorem, the integration of the initial system \eqref{eq:3.I} can be, by successive prolongation, made into a system in involution, at least in the case where it is compatible.
+
+The general method that we have just developed therefore involves at the same time the equivalence conditions, a series of differential invariants and \emph{a series of invariant differential forms}. The differential invariants are given by differentiations, whereas the method of S.~Lie obtain them by integration of complete systems.
+
+\section{}
+\label{sec:4}
+It is useful to give several particularly simple examples.
+
+\begin{prob}
+  Consider two one-parameter families of curves in a plane. Find the equivalence conditions with respect to the group of conformal transformations of the plane.
+\end{prob}
+
+Fix a system of rectangular coordinates $x$, $y$ on the plane and at each point $M$ of the plane let $\theta$ be the angle between $Ox$ and the tangent to the curve in the first family at the point. The angle $\theta$ is a given function of $x$, $y$. The differential equation of the curves of the family is
+\[
+-\sin\theta\,dx+\cos\theta\,dy=0.
+\]
+
+Set
+\begin{align*}
+  \omega_{1}&=u(\hphantom{+}\cos\theta\,dx+\sin\theta\,dy),\\
+  \omega_{2}&=u({-}\sin\theta\,dx+\cos\theta\,dy),
+\end{align*}
+the equation $\omega_{1}=0$ is the equation of the orthogonal trajectories of the given curves.
+
+By setting in the same way
+\begin{align*}
+  \bar\omega_{1}&=\bar u(\hphantom{+}\cos\bar\theta\,dx+\sin\bar\theta\,d\bar y),\\
+  \bar\omega_{2}&=\bar u({-}\sin\bar\theta\,d\bar x+\cos\bar\theta\,d\bar y),
+\end{align*}
+the equivalence conditions are the compatibility of the system
+\begin{equation}
+  \label{eq:4.1}\tag{1}
+  \bar\omega_{1}=\omega_{1},\qquad\bar\omega_{2}=\omega_{2}.
+\end{equation}
+If this system holds, the two given families of curves will be transformed into each other by a point transformation such that
+\[
+\bar u^{2}(d\bar x^{2}+d\bar y^{2})=u^{2}(dx^{2}+dy^{2}),
+\]
+which is a conformal transformation.
+
+Here we have
+\begin{align*}
+  d\omega_{1}&=\frac{du}{u}\omega_{1}+u\left(\phantom{+}\cos\theta\frac{\pd \theta}{\pd x}+\sin\theta\frac{\pd\theta}{\pd y}\right)dx\,dy,\\
+  d\omega_{2}&=\frac{du}{u}\omega_{2}+u\left(-\sin\theta\frac{\pd \theta}{\pd x}+\cos\theta\frac{\pd\theta}{\pd y}\right)dx\,dy.
+\end{align*}
+
+We set, conforming to the general theory,
+\[
+\frac{du}{u}=\vp+\lambda\,dx+\mu\,dy,
+\]
+from which
+\begin{align*}
+  d\omega_{1}&=\vp\omega_{1}+\frac{1}{u}\left(\lambda\,\sin\theta-\mu\cos\theta+\cos\theta\frac{\pd\theta}{\pd x}+\sin\theta\frac{\pd\theta}{\pd y}\right)\omega_{1}\omega_{2},\\
+  d\omega_{2}&=\vp\omega_{2}+\frac{1}{u}\left(\lambda\,\cos\theta+\mu\sin\theta-\sin\theta\frac{\pd\theta}{\pd x}+\cos\theta\frac{\pd\theta}{\pd y}\right)\omega_{1}\omega_{2}.
+\end{align*}
+
+We can set the two quantities in parentheses to zero by taking
+\begin{gather*}
+  \lambda=-\frac{\pd\theta}{\pd y},\qquad\mu=\frac{\pd\theta}{\pd x},\\
+  \vp=\frac{du}{u}+\frac{\pd\theta}{\pd y}dx-\frac{\pd\theta}{\pd x}dy.
+\end{gather*}
+We are therefore lead to three linearly independent forms $\omega_{1}$, $\omega_{2}$, $\omega_{3}(=\vp)$ in $dx$, $dy$, $du$. Calculation gives
+\begin{align*}
+  d\omega_{1}&=\vp\omega_{1},\\
+  d\omega_{2}&=\vp\omega_{2},\\
+  d\vp&=-\frac{1}{u^{2}}\left(\frac{\pd^{2}\theta}{\pd x^{2}}+\frac{\pd^{2}\theta}{\pd y^{2}}\right)\omega_{1}\omega_{2}.
+\end{align*}
+We hence arrive at a first invariant $\dfrac{1}{u^{2}}\Delta\theta$.
+
+If $\Delta\theta=0$ for the first family of curves, we must have $\Delta\bar\theta=0$ for the second family: the two families are then equivalent and the conformal transformation realising the equivalence depends on three arbitrary constants.
+
+The condition $\Delta\theta=0$ expresses that the first family is obtained by setting the real part (or the imaginary part) of an analytic function in $x+iy$ to zero. This family admits a three parameter group formed by the set of transformations leaving the following forms invariant
+\begin{gather*}
+  \omega_{1}=u(\cos\theta\,dx+\sin\theta\,dy),\qquad\omega_{2}=u(-\sin\theta\,dx+\cos\theta\,dy),\\
+  \omega_{3}=\frac{du}{u}+\frac{\pd \theta}{\pd y}dx-\frac{\pd \theta}{\pd x}dy.
+\end{gather*}
+
+If $\Delta\theta\neq 0$, for example $\Delta\theta>0$, we arrange the auxiliary variable $u$ to set the invariant $\dfrac{\Delta\theta}{u^{2}}$ to equal to $1$, which leads to two invariant forms
+\begin{align*}
+  \omega_{1}&=\sqrt{\Delta\theta}(\phantom{+}\cos\theta\,dx+\sin\theta\,dy),\\
+  \omega_{2}&=\sqrt{\Delta\theta}(-\sin\theta\,dx+\cos\theta\,dy),  
+\end{align*}
+and we are lead to the problem already treated. The form $\omega_{3}$ being dependent on $\omega_{1}$ and $\omega_{2}$, 
+\[
+\omega_{3}=a\omega_{1}+b\omega_{2},
+\]
+the coefficients $a$ and $b$ are invariants. They cannot both be constants, since the equalities
+\begin{align*}
+  d\omega_{1}&=\omega_{3}\omega_{1}=-b\omega_{1}\omega_{2},\\
+  d\omega_{2}&=\omega_{3}\omega_{2}=a\omega_{1}\omega_{2},\\
+  d\omega_{3}&=\omega_{1}\omega_{2}
+\end{align*}
+give the relations
+\[
+b_{1}-a_{2}=-1
+\]
+between the first derived invariants, which excludes the possibility that both of these derived invariants being zero. A family of curves which is not of the first type is therefore invariant under at most a one parameter group of conformal transformations.
+
+\begin{prob}
+  Consider a force field $F\left(t,x,\dfrac{dx}{dt}\right)$ on a line and we suppose the measure of time is specified. Study the equivalence conditions of two force fields with respect to the infinite dimensional group of arbitrary (analytic) change of coordinates of the space $x$.
+\end{prob}
+
+Here the data is the differential equation
+\[
+\frac{d^{2}x}{dt^{2}}-F\left(t,x,\frac{dx}{dt}\right)=0
+\]
+with respect to the group $t'=t$, $x'=f(x)$, which we can define by the invariance of the variable $t$ and the forms $dt$ and $\alpha\,dx$. The differential equation is then replaced by the Pfaffian equation
+\[
+dx-x'dt=0,\qquad dx'-F\,dt=0,
+\]
+we have the invariant forms
+\begin{gather*}
+  \omega_{1}=dt,\qquad\omega_{2}=\frac{dx}{x'},\\
+  \omega_{3}=u[(dx'-F\,dt)+v(dx-x'dt)].
+\end{gather*}
+
+The relations
+\begin{align*}
+  d\omega_{1}&=0,\\
+  d\omega_{2}&=\frac{dx\,dx'}{x'^{2}}=\left(v+\frac{F}{x'}\right)\omega_{1}\omega_{2}+\frac{1}{ux'}\omega_{2}\omega_{3}
+\end{align*}
+leads to two invariants $v+\dfrac{F}{x}$ and $\dfrac{1}{ux'}$. We can therefore arrange the auxiliary variables in a way to set the first to zero and the second to $1$:
+\[
+u=\frac{1}{x'},\qquad v=-\frac{F}{x'},
+\]
+from which
+\[
+\omega_{3}=\frac{dx'}{x'}-\frac{F}{x'^{2}}dx.
+\]
+
+There does not remain any auxiliary variables. Calculation gives
+\begin{gather*}
+  d\omega_{1}=0,\qquad d\omega_{2}=\omega_{2}\omega_{3},\\
+  d\omega_{3}=-\frac{1}{x'}\frac{\pd F}{\pd t}\omega_{1}\omega_{2}+\left(\frac{\pd F}{\pd x'}-2\frac{F}{x'}\right)\omega_{2}\omega_{3}
+\end{gather*}
+and leads to the \emph{fundamental invariants}
+\[
+I_{1}=-\frac{1}{x'}\frac{\pd F}{\pd t},\qquad I_{2}=\frac{\pd F}{\pd x'}-\frac{2F}{x'}.
+\]
+The force fields equivalent to zero fields are those that annihilate the two invariants, namely
+\[
+F=X(x)\cdot x'^{2},
+\]
+each of them admit a two parameter group (the variable $t$ cannot be transformed).
+
+\begin{prob}
+  Topological properties of the figure formed by three one-parameter families of planar curves \emph{(the first problem of textile geometry).}
+\end{prob}
+
+Let
+\[
+\frac{dy}{dx}=F_{i}(x,y),\qquad(i=1,2,3)
+\]
+be the differential equations of the curves in the three families. The data are equivalent to a system of three Pfaffian forms
+\[
+\omega_{i}=u_{i}(dy-F_{i}dx),\qquad (i=1,2,3).
+\]
+These three forms are not linearly independent. They are linked by the relations
+\[
+\frac{F_{2}-F_{3}}{u_{1}}\omega_{1}+
+\frac{F_{3}-F_{1}}{u_{2}}\omega_{2}+
+\frac{F_{1}-F_{2}}{u_{3}}\omega_{3}=0.
+\]
+We arrange the auxiliary variables $u_{i}$ such as to set the three coefficients equal, which gives
+\[
+u_{1}=u(F_{2}-F_{3}),\qquad u_{2}=u(F_{3}-F_{1}),\qquad u_{3}=u(F_{1}-F_{2}).
+\]
+
+It then suffices to consider the first two forms
+\begin{align*}
+  \omega_{1}&=u(F_{2}-F_{3})(dy-F_{1}dx),\\
+  \omega_{2}&=u(F_{3}-F_{1})(dy-F_{2}dx).
+\end{align*}
+We are lead to a problem that is analogous to problem I.
+
+
+\begin{prob}
+  Find the isometry condition of two surfaces given by their $ds^{2}$.
+\end{prob}
+
+In the preceding problems, we have effectively done the calculations, at least in the beginning. However there are many cases, especially in theoretical research, where the nature of results may be foreseen without needing to carrying out the calculations completely. We are going to show for the last problem how we can proceed.
+
+Suppose that the first given $ds^{2}$ has been decomposed in a particular manner into a sum of two squares $\omega_{1}^{2}+\omega_{2}^{2}$. We set
+\[
+\omega_{1}^{\star}=\omega_{1}\cos\theta+\omega_{2}\sin\theta,\qquad\omega_{2}^{\star}=-\omega_{1}\sin\theta+\omega_{2}\cos\theta
+\]
+by introducing an auxiliary variable $\theta$. The variables that $ds^{2}$ depend on are denoted by $x_{1}$, $x_{2}$, but these two effectively do not occur in our reasoning.
+
+We have
+\[
+d\omega_{1}^{\star}=d\theta(-\omega_{1}\sin\theta+\omega_{2}\cos\theta)+d\omega_{1}\cos\theta+d\omega_{2}\sin\theta.
+\]
+The right hand side is of the form
+\[
+d\omega_{1}^{\star}=d\theta\,\omega_{2}^{\star}+a\omega_{1}^{\star}\omega_{2}^{\star}.
+\]
+We have, similarly,
+\[
+d\omega_{2}^{\star}=-d\theta\,\omega_{1}^{\star}+b\omega_{1}^{\star}\omega_{2}^{\star}.
+\]
+We set
+\[
+\omega_{3}^{\star}=d\theta+a\omega_{1}^{\star}+b\omega_{2}^{\star},
+\]
+which gives
+\[
+d\omega_{1}^{\star}=\omega_{3}^{\star}\omega_{2}^{\star},\qquad d\omega_{2}^{\star}=-\omega_{3}^{\star}\omega_{1}^{\star}.
+\]
+
+The three forms $\omega_{1}^{\star}$, $\omega_{2}^{\star}$, $\omega_{3}^{\star}$ are linearly independent in $dx_{1}$, $dx_{2}$, $d\theta$. The differential $d\omega_{3}^{\star}$, \emph{a priori}, can be a quadratic exterior form in $\omega_{1}^{\star}$, $\omega_{2}^{\star}$, $\omega_{3}^{\star}$, but we are going to see that it is very special. Indeed, exterior differentiation of $d\omega_{1}^{\star}$ and $d\omega_{2}^{\star}$ gives
+\begin{align*}
+  d\omega_{3}^{\star}\omega_{2}^{\star}-\omega_{3}^{\star}d\omega_{2}^{\star}&=0,\qquad\text{or}\qquad d\omega_{3}^{\star}\omega_{2}^{\star}=0,\\
+ -d\omega_{3}^{\star}\omega_{1}^{\star}+\omega_{3}^{\star}d\omega_{1}^{\star}&=0,\qquad\text{or}\qquad d\omega_{3}^{\star}\omega_{1}^{\star}=0.
+\end{align*}
+The form $d\omega_{3}^{\star}$ is annihilated by $\omega_{1}^{\star}$ and $\omega_{2}^{\star}$ and is therefore necessarily
+\[
+d\omega_{3}^{\star}=-K\omega_{1}^{\star}\omega_{2}^{\star}.
+\]
+
+We obtain a first invariant $K$. \emph{A priori}, this invariant can depend on $x_{1}$, $x_{2}$ and $\theta$. We are going to see that it does not depend on $\theta$, since exterior differentiating the last equation gives
+\[
+dK\,\omega_{1}^{\star}\omega_{2}^{\star}+K\,d\omega_{1}^{\star}\,\omega_{2}^{\star}-K\omega_{1}^{\star}\,d\omega_{2}^{\star},
+\]
+simplifying gives
+\[
+dK\,\omega_{1}^{\star}\omega_{2}^{\star}=0.
+\]
+The differential $dK$ vanishes when we set both $\omega_{1}^{\star}$ and $\omega_{2}^{\star}$ to zero, i.e., $dx_{1}$ and $dx_{2}$ to zero, and hence $K$ is a function of $x_{1}$ and $x_{2}$. Without doing any calculation, we have therefore shown the existence of a function constructed with the coefficients of $ds^{2}$ and which is conserved by deformation: this is the \emph{total curvature}.
+
+Two surfaces having the same constant total curvature are isometric and the isometry depend on three arbitrary constants, since we are in the case with three forms $\omega_{i}$ in three variables with constant coefficients $c_{jk}{}^{i}$.
+
+We will not pursue the discussion further. Let us content ourselves of saying that if $K$ is not constant, we can ger rid of the unknown function $\theta$ such that the differential $dK$ depends only on $\omega_{1}^{\star}$.
+
+Let us observe in passing that the displacement group in the plane correspond to $ds^{2}=dx^{2}+dy^{2}$, with
+\[
+\omega_{1}^{\star}=dx\,\cos\theta+dy\,\sin\theta,\qquad\omega_{2}^{\star}=-dx\,\sin\theta+dy\,\cos\theta,\qquad\omega_{3}^{\star}=d\theta.
+\]
+We see the geometric significance of these forms: they are the relative components of translation and rotation undergone by a system of rectangular axes with origin $(x,y)$ making an angle $\theta$ with the fixed axes. The study of the elementary geometrical properties of a plane curve $y=f(x)$ is none other than the study of the system formed by the equation of this curve and of the three forms $\omega_{i}^{\star}$. Taking account of the given equations, these three forms become
+\[
+\omega_{1}^{\star}=(\cos\theta+y'\sin\theta)dx,\qquad\omega_{2}^{\star}=(-\sin\theta+y'\cos\theta)dx,\qquad\omega_{3}^{\star}=d\theta.
+\]
+The first two are proportional and their ration is an invariant. By choosing $\theta$ in a way such that these invariants are zero ($\theta=\arctan y'$), a choice of invariant nature, we have
+\[
+\omega_{1}^{\star}=\sqrt{1+y'^{2}}\,dx,\qquad\omega_{3}^{\star}=\frac{y''}{1+y'^{2}}dx,
+\]
+and the first is none other than the arc element $ds$ of the curve and the ratio $\dfrac{\omega_{3}^{\star}}{\omega_{1}^{\star}}$ none other than the curvature $\dfrac{y''}{(1+y'^{2})^{3/2}}$. This is the simplest example of a problem treated by the method of moving frames having the object of study the properties of figures envisaged with respect to a group. Problem I is a problem treated in a completely analogous manner, but with the \emph{infinite-dimensional} group of conformal transformation of the plane.
+
+Let us come back to an arbitrary surface. Although we are not, in this case, concerned with a group, we can nonetheless apply the same procedure to study the properties of a line traced on the surface, as if this surface is a plane, and the determination of the auxiliary variable $\theta$ with the same procedure leads to a form $\omega_{3}^{\star}$ non other than $\dfrac{ds}{\rho_{g}}$, where we denote by $\dfrac{1}{\rho_{g}}$ the geodesic curvature. This is the simplest example of a \emph{generalised space} in which the methods of a geometry founded on a group continue to apply without any group applying on the space.
+
+\mbox{}
+
+We have transformed all these problems of equivalence into consideration of linear differential forms. The are the cases admitting the simplest treatment.
+
+An example is furnished by an exterior form of degree $n-1$ in $n$ variables: such a form is always algebraically reducible to 
+\[
+\omega=\omega_{1}\omega_{2}\dots \omega_{n-1}.
+\]
+Two cases can be distinguished:
+\begin{enumerate}[a.]
+\item $d\omega=0$, then the form is always equivalent to
+\[
+\omega=dx_{1}dx_{2}\dots dx_{n-1}.
+\]
+\item $d\omega\neq 0$, then the form is always reducible to
+\[
+\omega=x_{n}dx_{1}dx_{2}\dots dx_{n-1}.
+\]
+\end{enumerate}
+
+In the last case for example the form admits an infinite group obtained by taking $\bar x_{1}$, $\bar x_{2}$, $\dots$, $\bar x_{n-1}$ as arbitrary functions of $x_{1}$, $x_{2}$, $\dots$, $x_{n-1}$ and taking
+\[
+\bar x_{n}=\frac{x_{n}}{\dfrac{D(\bar x_{1},\bar x_{2},\dots,\bar x_{n-1})}{D(x_{1},x_{2},\dots,x_{n-1})}}.
+\]
+
+\section{}
+\label{sec:5}
+
+It remains to say some words about the application of the preceding method to the integration of certain differential systems. We will content ourselves by the example furnished by a system of two second order partial differential equations, said to be in involution
+\[
+F(x,y,z,p,q,r,s,t)=0,\qquad \Phi(x,y,z,p,q,r,s,t)=0,
+\]
+the system studied by E.~Goursat. Let us imagine that we have expressed $r$, $s$, $t$ as functions of $x$, $y$, $z$, $p$, $q$ and a parameter $u$. The given system can be made into a Pfaffian system
+\begin{align*}
+  \theta_{1}&\equiv dz-p\,dx-q\,dy=0,\\
+  \theta_{2}&\equiv dp-r\,dx-s\,dy=0,\\
+  \theta_{3}&\equiv dq-s\,dx-t\,dy=0.
+\end{align*}
+
+We have, taking the preceding equations into account, 
+\begin{align*}
+  d\theta_{1}&=0,\\
+  d\theta_{2}&=\left(\frac{dr}{dy}-\frac{ds}{dx}\right)dx\,dy+\frac{\pd r}{\pd u}dx\,du+\frac{\pd s}{\pd u}dy\,du,\\
+  d\theta_{3}&=\left(\frac{ds}{dy}-\frac{dt}{dx}\right)dx\,dy+\frac{\pd s}{\pd u}dx\,du+\frac{\pd t}{\pd u}dy\,du,
+\end{align*}
+where we set
+\begin{align*}
+  \frac{d}{dx}&=\frac{\pd}{\pd x}+p\frac{\pd}{\pd z}+r\frac{\pd}{\pd p}+s\frac{\pd}{\pd q},\\
+  \frac{d}{dy}&=\frac{\pd}{\pd y}+q\frac{\pd}{\pd z}+s\frac{\pd}{\pd p}+t\frac{\pd}{\pd q}.
+\end{align*}
+
+The system is in involution if the two reduced forms are proportional
+\[
+\frac{\dfrac{dr}{dy}-\dfrac{ds}{dx}}{\dfrac{ds}{dy}-\dfrac{dt}{dx}}=\frac{\dfrac{\pd r}{\pd u}}{\dfrac{\pd s}{\pd u}}=\frac{\dfrac{\pd s}{\pd u}}{\dfrac{\pd t}{\pd u}}.
+\]
+
+In this case, the three equations $\theta_{i}=0$ can be written by means of only five variables: these variables are the first integrals of the \emph{characteristic} system obtained by setting $\theta_{1}$, $\theta_{2}$, $\theta_{3}$ and the partial derivatives of $d\theta_{2}$ with respect to $dx$, $dy$, $du$ to zero.
+
+Every two dimensional integral variety is generated by the characteristic curves. If we know the these curves, we only have to search the one dimensional solutions of the system $\theta_{i}=0$ in five variables, solutions indicating in what manner we must associated the characteristic curves to generate an integral surface. On the other hand, in the general case, \emph{the characteristics are known by differentiation}.
+
+Indeed, the operations which serve to obtain the differential invariants of a given system with respect to the group of all analytic transformations involving $x$, $y$, $z$, $p$, $q$, $u$ can be applied regardless of the chosen variables. If we imagine that we have chosen five first integrals of the characteristics equations as variables, these operations will only lead to functions of five variables. In general, the total system of invariants will contain five independent variables furnishing five first integrals. We can envisage that an analogous method applies whenever a differential system admit the characteristics in the sense of Cauchy. There are also cases where it applies to ordinary differential equations.
+
+\end{document}

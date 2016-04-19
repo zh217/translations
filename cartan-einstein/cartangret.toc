@@ -1,0 +1,46 @@
+\select@language {british}
+\contentsline {section}{\numberline {i.}Introduction}{2}{section.1}
+\contentsline {section}{\numberline {ii.}Preliminaries}{4}{section.2}
+\contentsline {paragraph}{\numberline {1}}{4}{paragraph.2.0.0.1}
+\contentsline {paragraph}{\numberline {2}}{6}{paragraph.2.0.0.2}
+\contentsline {paragraph}{\numberline {3}}{7}{paragraph.2.0.0.3}
+\contentsline {paragraph}{\numberline {4}}{8}{paragraph.2.0.0.4}
+\contentsline {paragraph}{\numberline {5}}{8}{paragraph.2.0.0.5}
+\contentsline {paragraph}{\numberline {6}}{10}{paragraph.2.0.0.6}
+\contentsline {paragraph}{\numberline {7}}{11}{paragraph.2.0.0.7}
+\contentsline {paragraph}{\numberline {8}}{13}{paragraph.2.0.0.8}
+\contentsline {paragraph}{\numberline {9}}{13}{paragraph.2.0.0.9}
+\contentsline {paragraph}{\numberline {10}}{14}{paragraph.2.0.0.10}
+\contentsline {paragraph}{\numberline {11}}{16}{paragraph.2.0.0.11}
+\contentsline {paragraph}{\numberline {12}}{18}{paragraph.2.0.0.12}
+\contentsline {section}{\numberline {iii.}Invariants of a quadratic differential form}{19}{section.3}
+\contentsline {paragraph}{\numberline {13}}{19}{paragraph.3.0.0.13}
+\contentsline {paragraph}{\numberline {14}}{20}{paragraph.3.0.0.14}
+\contentsline {paragraph}{\numberline {15}}{21}{paragraph.3.0.0.15}
+\contentsline {paragraph}{\numberline {16}}{21}{paragraph.3.0.0.16}
+\contentsline {paragraph}{\numberline {17}}{23}{paragraph.3.0.0.17}
+\contentsline {paragraph}{\numberline {18}}{25}{paragraph.3.0.0.18}
+\contentsline {paragraph}{\numberline {19}}{26}{paragraph.3.0.0.19}
+\contentsline {paragraph}{\numberline {20}}{27}{paragraph.3.0.0.20}
+\contentsline {paragraph}{\numberline {21}}{28}{paragraph.3.0.0.21}
+\contentsline {paragraph}{\numberline {22}}{32}{paragraph.3.0.0.22}
+\contentsline {paragraph}{\numberline {23}}{34}{paragraph.3.0.0.23}
+\contentsline {section}{\numberline {iv.}Absolute invariants of a quadratic differential form}{34}{section.4}
+\contentsline {paragraph}{\numberline {24}}{34}{paragraph.4.0.0.24}
+\contentsline {paragraph}{\numberline {25}}{36}{paragraph.4.0.0.25}
+\contentsline {paragraph}{\numberline {26}}{36}{paragraph.4.0.0.26}
+\contentsline {paragraph}{\numberline {27}}{37}{paragraph.4.0.0.27}
+\contentsline {paragraph}{\numberline {28}}{38}{paragraph.4.0.0.28}
+\contentsline {paragraph}{\numberline {29}}{40}{paragraph.4.0.0.29}
+\contentsline {paragraph}{\numberline {30}}{41}{paragraph.4.0.0.30}
+\contentsline {paragraph}{\numberline {31}}{42}{paragraph.4.0.0.31}
+\contentsline {paragraph}{\numberline {32}}{43}{paragraph.4.0.0.32}
+\contentsline {paragraph}{\numberline {33}}{45}{paragraph.4.0.0.33}
+\contentsline {paragraph}{\numberline {34}}{46}{paragraph.4.0.0.34}
+\contentsline {section}{\numberline {v.}Conversation law and the equations of gravitation}{47}{section.5}
+\contentsline {paragraph}{\numberline {35}}{47}{paragraph.5.0.0.35}
+\contentsline {paragraph}{\numberline {36}}{48}{paragraph.5.0.0.36}
+\contentsline {paragraph}{\numberline {37}}{50}{paragraph.5.0.0.37}
+\contentsline {paragraph}{\numberline {38}}{50}{paragraph.5.0.0.38}
+\contentsline {paragraph}{\numberline {39}}{51}{paragraph.5.0.0.39}
+\contentsline {paragraph}{\numberline {40}}{51}{paragraph.5.0.0.40}

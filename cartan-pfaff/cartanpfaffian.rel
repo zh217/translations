@@ -1,0 +1,268 @@
+;; RefTeX parse info file
+;; File: /Users/zh217/Documents/work/cartanpfaffian.tex
+;; User: zh217 (Amadeo)
+
+(set reftex-docstruct-symbol '(
+
+
+(xr nil "\\\\\\\\\\\\")
+
+(index-tags)
+
+(is-multi nil)
+
+(bibview-cache)
+
+(master-dir . "/Users/zh217/Documents/work/")
+
+(label-numbers ("eq:" . 7))
+
+(bof "/Users/zh217/Documents/work/cartanpfaffian.tex")
+
+(toc "toc" "  * On the integration of" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil 1 "*" "\\chapter*{On the integration of\\\\systems of equations\\\\in total differentials \\footnote{\\emph{Annales École Normale}, 3rd series, 18, 1901, p. 241–311.}}" 6441)
+
+("sec:integr-syst-equat" "s" "The problem of the existence of integrals of a given system of $s$ equations in total differentials " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+(toc "toc" "    1  " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil 2 "1" "\\section{}" 19496)
+
+("sec:1" "s" "Consider a system of equations in total differentials of $r$ variables $x_{1}$, $x_{2}$, $\\dots$, $x" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:1" "e" "\\left\\{ \\begin{alignedat}{3} \\omega&\\equiv& a_{1}dx_{1}+a_{2}dx_{2}+\\dots+a_{r}dx_{r}&{}={}0," "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+(toc "toc" "    2  " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil 2 "2" "\\section{}" 23335)
+
+("sec:2" "s" "As well as the linear elements, we are going to consider what we will call \\emph{$2$, $3$, $\\dots$ d" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:2" "e" "\\left\\{ \\begin{aligned} \\omega'&\\equiv\\sum_{i,k}\\left(\\frac{\\pd a_{i}}{\\pd x_{k}}-\\frac{\\pd a_{k}}{\\" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:3" "e" "\\left\\{ \\begin{aligned} \\omega&=dz-p\\,dx-q\\,dy=0," "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:ag" "e" "\\tag{$\\alpha$} p_{12}&=p_{34}=0," "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:bg" "e" "\\tag{$\\beta$} p_{12}&=p_{13}+p_{24}=0," "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:gg" "e" "\\tag{$\\gamma$} p_{12}&=p_{13}=0, " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+(toc "toc" "    3  " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil 2 "3" "\\section{}" 35398)
+
+("sec:3" "s" "Having settled with these preliminary notions, we are now going to be concerned with what can be cal" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:4" "e" "\\left\\{ \\begin{aligned} x&=\\phi(x_{1},x_{2},\\dots,x_{p})," "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:eg" "e" "\\tag{$\\epsilon$} \\frac{dx}{1}=\\frac{dx_{1}}{0}=\\dots=\\frac{dx_{p}}{0}=\\frac{dz_{1}}{\\frac{\\pd z_{1}}" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:e1g" "e" "\\tag{$\\epsilon^{(1)}$} \\frac{dx}{0}=\\frac{dx_{1}}{1}=\\dots=\\frac{dx_{p}}{0}=\\frac{dz_{1}}{\\frac{\\pd " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:epg" "e" "\\tag{$\\epsilon^{(p)}$} \\frac{dx}{0}=\\frac{dx_{1}}{0}=\\dots=\\frac{dx_{p}}{1}=\\frac{dz_{1}}{\\frac{\\pd " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:I" "e" "\\tag{I} \\left\\{ \\begin{aligned} \\Omega_{i}&=0,\\qquad\\frac{\\pd\\Omega_{i}}{\\pd x_{j}}-\\frac{\\pd\\Omega_" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:II" "e" "\\tag{II} \\left\\{ \\begin{aligned} \\Omega&=0,\\qquad\\frac{\\pd\\Omega}{\\pd x_{i}}-\\frac{\\pd\\Omega_{i}}{\\p" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:II'" "e" "\\tag{II$'$} \\left\\{ \\begin{aligned} \\frac{\\pd z_{1}}{\\pd x}&=\\Phi_{1}\\left(x,x_{i},z_{k},\\frac{\\pd z" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+(toc "toc" "    4  " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil 2 "4" "\\section{}" 53507)
+
+("sec:4" "s" "Cauchy's theorem makes the importance of the following property of the system \\eqref{eq:1} evident, " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+(toc "toc" "    5  " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil 2 "5" "\\section{}" 57236)
+
+("sec:5" "s" "The numbers $r$, $r_{1}$, $r_{2}$, $\\dots$, $r_{n}$ play a big role in the study of the indeterminac" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:5" "e" "r-r_{1}-1\\ge r_{1}-r_{2}-1\\ge \\dots\\ge r_{n-1}-r_{n}-1\\ge r_{n}. " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:6" "e" "\\left\\{ \\begin{alignedat}{3} &s&&=r-r_{1}-1," "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+(toc "toc" "    6  " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil 2 "6" "\\section{}" 75243)
+
+("sec:6" "s" "We are now going to find a system of conditions \\emph{determining} all integral varieties $M_{n}$ su" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:1'" "e" "\\tag{1$'$} \\left\\{ \\begin{aligned} f_{1}(x_{1},x_{2},\\dots,x_{r})&=0," "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:En1" "e" "\\tag{$E_{n-1}$} dx_{n}=\\alpha_{n,1}dx_{1}+\\dots+\\alpha_{n,n-2}dx_{n-2}+\\alpha_{n,n-1}dx_{n-1}. " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:En2" "e" "\\tag{$E_{n-2}$} dx_{n-1}=\\alpha_{n-1,1}dx_{1}+\\dots+\\alpha_{n-1,n-2}dx_{n-2}, " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:E1" "e" "\\tag{$E_{1}$} dx_{2}=\\alpha_{2,1}dx_{1}. " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:An" "e" "\\tag{$A_{n}$} \\left\\{ \\begin{aligned} z_{1}^{(n)}&=\\phi_{1}^{(n)}(x_{1},x_{2},\\dots,x_{n})," "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:An1" "e" "\\tag{$A_{n-1}$} \\left\\{ \\begin{aligned} z_{1}^{(n-1)}&=\\phi_{1}^{(n-1)}(x_{1},x_{2},\\dots,x_{n})," "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:Bn" "e" "\\tag{$B_{n}$} x_{n}=a_{n}, " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:A1" "e" "\\tag{$A_{1}$} \\left\\{ \\begin{aligned} z_{1}^{(1)}&=\\phi_{1}^{(1)}(x_{1},x_{2},\\dots,x_{n})," "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:B2" "e" "\\tag{$B_{2}$} x_{2}=a_{2}, " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:A0" "e" "\\tag{$A_{0}$} \\left\\{ \\begin{aligned} z_{1}&=\\phi_{1}," "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:B1" "e" "\\tag{$B_{1}$} x_{1}=a_{1}. " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:S" "e" "\\tag{S} s,\\quad s_{1},\\quad s_{2},\\quad \\dots,\\quad s_{n} " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:1.1" "e" "dz-p\\,dx-q\\,dy=0, " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:1.2" "e" "dx\\,\\delta p-dp\\,\\delta x+dy\\,\\delta q-dq\\,\\delta y=0. " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:1.E2" "e" "\\tag{$E_{2}$} dz=dp=dq=0, " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:1.E1" "e" "\\tag{$E_{1}$} dz=dp=dq=dy=0. " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:1.P0" "e" "\\tag{$P_{0}$} dz=0, " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:1.P1" "e" "\\tag{$P_{1}$} dz=dp=0. " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:Delta" "e" "\\tag{$\\Delta$} \\begin{Vmatrix} a_{1}&a_{2}&\\dots&a_{r}" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("2.1" "s" "\\tag{1} &\\left\\{ \\begin{alignedat}{30} &a_{1}dx_{1}&{}+{}&a_{2}dx_{2}&{}+{}&\\cdots&{}+{}&a_{r}&dx_{r" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("2.2" "s" "\\tag{2} &\\left\\{ \\begin{alignedat}{20} &\\sum_{i}a_{1i}\\delta x_{i}dx_{1}&&{}+{}\\dots&&{}+{}\\sum_{i}a" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:Delta1" "e" "\\tag{$\\Delta_{1}$} \\begin{Vmatrix} a_{1}&a_{2}&\\dots&a_{r}" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+(toc "toc" "    7  " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil 2 "7" "\\section{}" 109403)
+
+("sec:7" "s" "In this paragraph we are going to be concerned with systems of the first kind for which the $(n-1)$-" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:Anu1" "e" "\\tag{$A_{\\nu-1}$} \\left\\{ \\begin{aligned} z^{(\\nu-1)}_{1}&=\\phi^{(\\nu-1)}_{1}(x_{1},x_{2},\\dots,x_{\\" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:Bnu" "e" "\\tag{$B_{\\nu}$} x_{n}=a_{n},\\quad x_{n-1}=a_{n-1},\\quad \\dots,\\quad x_{\\nu}=a_{\\nu}. " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:Anu2" "e" "\\tag{$A_{\\nu-2}$} \\left\\{ \\begin{aligned} z^{(\\nu-1)}_{2}&=\\phi^{(\\nu-1)}_{2}(x_{1},x_{2},\\dots,x_{\\" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:Bnu" "e" "\\tag{$B_{\\nu-1}$} x_{\\nu-1}=a_{\\nu-1}, " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:murrnu" "e" "\\tag{$\\mu_{r-r_{\\nu}}$} \\left\\{ \\begin{aligned} x_{\\nu+1}-a_{\\nu+1}&=t_{1}(x_{\\nu}-a_{\\nu})," "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+(toc "toc" "    8  " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil 2 "8" "\\section{}" 127322)
+
+("sec:8" "s" "In this last section we are going to be concerned with certain systems for which the Kowalewski syst" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:1'" "e" "\\tag{1$'$} \\left\\{ \\begin{alignedat}{3} a_{1}\\delta x_{1}+a_{2}\\delta x_{2}+\\dots+a_{r}\\delta x_{r}&" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:1_1" "e" "\\tag{$1_{1}$} \\left\\{ \\begin{gathered} dy_{1}+b_{1,s+1}dy_{s+1}+\\dots+b_{1,r-1}dy_{r-1}=0," "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+(toc "toc" "  * Differential systems" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil 1 "*" "\\chapter*{Differential systems\\\\in involution \\footnote{Chapter 1 of \\emph{Sur la structure des groupes infinis de transformations} (Annales École Normale, 3rd s" 159505)
+
+("cha:diff-syst-invol" "s" "\\setcounter{equation}{0} \\paragraph{}  Given a Pfaffian system in $n$ variables \\begin{equation} \\la" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+(toc "toc" "          8.0.0.1  " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil 5 "8.0.0.1" "\\paragraph{}" 159740)
+
+("sec:p1" "s" "Given a Pfaffian system in $n$ variables \\begin{equation}  \\omega_{d}=a_{1}dx_{1}+a_{2}dx_{2}+\\dots+" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:p1" "e" "\\omega_{d}=a_{1}dx_{1}+a_{2}dx_{2}+\\dots+a_{n}dx_{n}, " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:p2" "e" "\\omega_{d\\delta}=d\\omega_{\\delta}-\\delta\\omega_{d}&=da_{1}\\delta x_{1}-\\delta a_{1}dx_{1}+\\dots+da_{" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:p3" "e" "\\Omega_{d\\delta}=\\sum_{(i,k)}a_{ik}(dx_{i}\\delta x_{k}-dx_{k}\\delta x_{i})\\qquad (a_{ik}=-a_{ki},a_{" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:p4" "e" "\\Omega_{d\\delta D}=d\\Omega_{\\delta D}+\\delta\\Omega_{Dd}+D\\Omega_{d\\delta}=\\sum{a_{ijk}} \\begin{pmatr" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+(toc "toc" "          8.0.0.2  " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil 5 "8.0.0.2" "\\paragraph{}" 162006)
+
+("sec:p2" "s" "We will use symbolic notations devised to simply calculations. If $\\omega$ and $\\vp$ are two Pfaffia" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:p5" "e" "\\omega\\vp=\\omega_{d}\\vp_{\\delta}-\\omega_{\\delta}\\vp_{d}. " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:p6" "e" "\\omega\\vp\\chi= \\begin{vmatrix} \\omega_{d}&\\vp_{d}&\\chi_{d}" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:p7" "e" "dA\\omega\\vp+A\\omega'\\vp-a\\omega\\vp'. " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+(toc "toc" "          8.0.0.3  " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil 5 "8.0.0.3" "\\paragraph{}" 163721)
+
+("sec:p3" "s" "Given a system of Pfaffian equations, the theory on the existence and the degree of indeterminacy of" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:p8" "e" "s+s_{1}+\\dots+s_{p}\\le n-p " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:p9" "e" "Q=pq-(p-1)s_{1}-(p-2)s_{2}-\\dots-s_{p-1}. " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+(toc "toc" "          8.0.0.4  " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil 5 "8.0.0.4" "\\paragraph{}" 167461)
+
+("sec:p4" "s" "The theory we just summarised must be further completed to resolve the following question whose prac" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:p10" "e" "\\theta_{k}'=\\sum_{ij}c_{ijk}\\omega_{i}\\omega_{j}+\\sum_{i,\\rho}a_{i\\rho k}\\omega_{i}\\vp_{\\rho}\\qquad(" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:p11" "e" "\\vp_{k}=l_{k1}\\omega_{1}+\\dots+l_{kp}\\omega_{p}\\qquad(k=1,2,\\dots,q), " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+(toc "toc" "          8.0.0.5  " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil 5 "8.0.0.5" "\\paragraph{}" 170828)
+
+("sec:p5" "s" "We are first going to search for the necessary and sufficient conditions for \\emph{that the Pfaffian" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:p12" "e" "\\frac{\\omega_{1}}{u_{1}}=\\frac{\\omega_{2}}{u_{2}}=\\dots=\\frac{\\omega_{p}}{u_{p}}=\\frac{\\vp_{1}}{v_{1" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:p13" "e" "\\sum_{i,\\rho}a_{i\\rho k}u_{i}\\vp_{\\rho}-\\sum_{i,\\rho}a_{i\\rho k}v_{\\rho}\\omega_{i}-0,\\qquad(k=1,2,\\d" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:p14" "e" "\\begin{Vmatrix} \\sum a_{i11}u_{i}&\\sum a_{i21}u_{i}&\\dots&\\sum a_{iq1}u_{i}" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+(toc "toc" "          8.0.0.6  " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil 5 "8.0.0.6" "\\paragraph{}" 173822)
+
+("sec:p6" "s" "Conversely, \\emph{given a Pfaffian system whose covariants $\\theta'_{k}$ has the form \\eqref{eq:p10}" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:p15" "e" "\\theta'_{\\rho}=\\omega_{1}\\vp_{\\rho 1}+\\omega_{2}\\vp_{\\rho 2}+\\dots+\\omega_{p}\\vp_{\\rho p},\\qquad(\\rh" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:p16" "e" "p(q-\\sigma_{1}-\\sigma_{2}-\\dots-\\sigma_{p}) " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:p17" "e" "l_{\\rho ij}=l_{\\rho ji}. " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:p18" "e" "\\rho\\le \\sigma_{i},\\qquad\\rho\\le \\sigma_{j}. " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:p.19" "e" "\\sigma_{1}+2\\sigma_{2}+\\dots+p\\sigma_{p} " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:p20" "e" "\\vp_{\\rho 1}-v_{\\rho 11}\\omega_{1}-v_{\\rho 21}\\omega_{2}-\\dots-v_{\\rho p1}\\omega_{p}=0. " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:p21" "e" "\\left\\{ \\begin{aligned} \\vp_{\\rho 1}-v_{\\rho 11}\\omega_{1}-v_{\\rho 21}\\omega_{2}-\\dots-v_{\\rho p1}\\o" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+(toc "toc" "          8.0.0.7  " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil 5 "8.0.0.7" "\\paragraph{}" 181851)
+
+("sec:p7" "s" "Whenever we have a system of $pqr$ quantities \\[ a_{i\\rho k}\\qquad(i=1,2,\\dots,p;\\rho=1,2,\\dots,q;k=" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:p22" "e" "\\sum_{i,k}a_{ik\\rho}\\omega_{i}\\vp_{k}=\\omega_{1}\\vp_{\\rho 1}+\\omega_{2}\\vp_{\\rho 2}+\\dots+\\omega_{p}" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:p23" "e" "\\omega_{1}\\vp_{\\rho i1}+\\omega_{2}\\vp_{\\rho i2}+\\dots+\\omega_{p}\\vp_{\\rho ip},\\qquad(\\rho =1,2,\\dots" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+(toc "toc" "          8.0.0.8  " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil 5 "8.0.0.8" "\\paragraph{}" 186178)
+
+("sec:p8" "s" "The involutive system of quantities $a_{ik\\rho}$ also enjoys another property which will be useful f" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:p24" "e" "\\omega_{1}\\Pi_{\\rho 1}+\\omega_{2}\\Pi_{\\rho 2}+\\dots+\\omega_{p}\\Pi_{\\rho p},\\qquad(\\rho=1,2,\\dots,s)," "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:p25" "e" "\\Pi_{\\rho i}=\\omega_{1}\\chi_{\\rho i1}+\\omega_{2}\\chi_{\\rho i2}+\\dots+\\omega_{p}\\chi_{\\rho ip}, " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:p26" "e" "\\left\\{ \\begin{aligned} \\chi_{\\rho,1,h+1}&=\\chi_{\\rho,h+1,1}+\\lambda_{\\rho11}\\omega_{1}+\\dots+\\lambd" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+(toc "toc" "          8.0.0.9  " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil 5 "8.0.0.9" "\\paragraph{}" 190422)
+
+("sec:p9" "s" "With the two preceding theorems, we can, \\emph{by using only the fundamental identity}, show that if" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:p27" "e" "\\bar\\vp_{\\rho i}=\\vp_{\\rho i}-l_{\\rho i1}\\omega_{1}-l_{\\rho i2}\\omega_{2}-\\dots-l_{\\rho ip}\\omega_{p" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:p28" "e" "\\bar\\vp'_{\\rho i}=\\omega_{1}\\chi_{\\rho i1}+\\omega_{2}\\chi_{\\rho i 2}+\\dots+\\omega_{p}\\chi_{\\rho ip}+" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:p29" "e" "\\bar\\vp'_{\\rho i}=\\omega_{1}\\chi_{\\rho i1}+\\dots+\\omega_{p}\\chi_{\\rho ip}\\pmod{\\theta_{1},\\dots,\\the" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+(toc "toc" "          8.0.0.10  " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil 5 "8.0.0.10" "\\paragraph{}" 193008)
+
+("sec:p10" "s" "After studying systems in involution, we are going to consider a Pfaffian system for which the bilin" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+(toc "toc" "          8.0.0.11  " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil 5 "8.0.0.11" "\\paragraph{}" 197344)
+
+("sec:p11" "s" "Granted this, let us denote by \\[ v_{0},\\quad v_{1},\\quad \\dots \\quad v_{p} \\] the total number of t" "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:p30" "e" "\\tau_{1}+2\\tau_{2}+3\\tau_{3}+\\dots+p\\tau_{p}, " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:p31" "e" "\\left\\{ \\begin{aligned} \\sigma_{1}&\\ge \\tau_{1}," "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+("eq:p32" "e" "\\left\\{ \\begin{aligned} \\sigma_{p}&\\le \\tau_{p}," "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+(toc "toc" "          8.0.0.12  " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil 5 "8.0.0.12" "\\paragraph{}" 200557)
+
+("sec:p12" "s" nil "/Users/zh217/Documents/work/cartanpfaffian.tex" nil "")
+
+("eq:7" "e" nil "/Users/zh217/Documents/work/cartanpfaffian.tex" nil "")
+
+("eq:8" "e" " " "/Users/zh217/Documents/work/cartanpfaffian.tex" nil)
+
+(eof "/Users/zh217/Documents/work/cartanpfaffian.tex")
+))
+

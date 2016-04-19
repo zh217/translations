@@ -1,0 +1,438 @@
+;; RefTeX parse info file
+;; File: /Users/zh217/Documents/work/cartanedst.tex
+;; User: zh217 (Amadeo)
+
+(set reftex-docstruct-symbol '(
+
+
+(xr nil "\\\\\\\\\\\\")
+
+(index-tags)
+
+(is-multi nil)
+
+(bibview-cache)
+
+(master-dir . "/Users/zh217/Documents/work/")
+
+(label-numbers)
+
+(bof "/Users/zh217/Documents/work/cartanedst.tex")
+
+(toc "toc" "  * Preface" "/Users/zh217/Documents/work/cartanedst.tex" nil 1 "*" "\\chapter*{Preface}" 4900)
+
+(toc "toc" "Part I Applications to differential geometry" "/Users/zh217/Documents/work/cartanedst.tex" nil 0 "Part I" "\\part{Applications to differential geometry}" 258720)
+
+("part:appl-diff-geom" "s" "\\chapter{Differential systems in the theory of surfaces}  \\section[{Review of the principles of the " "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+(toc "toc" "  1 Differential systems in the theory of surfaces" "/Users/zh217/Documents/work/cartanedst.tex" nil 1 "1" "\\chapter{Differential systems in the theory of surfaces}" 258794)
+
+("cha:diff-syst-theory" "s" "\\section[{Review of the principles of the theory of moving trihedrals}]{Review of the principles of" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+(toc "toc" "    1.1 Review of the principles of" "/Users/zh217/Documents/work/cartanedst.tex" nil 2 "1.1" "\\section[{Review of the principles of the theory of moving trihedrals}]{Review of the principles of\\\\the theory of moving trihedrals}" 258881)
+
+("sec:revi-princ-theory" "s" "\\fsec Consider in ordinary space a family $\\mathcal{F}$ of right trihedrals depending on a certain n" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.1" "e" "dA=\\omega^{i}\\vec e_{i},\\qquad d\\vec e_{i}=\\omega_{i}{}^{j}\\vec e_{j}, " "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.2" "e" "\\left\\{ \\begin{aligned} d\\omega^{i}&=[\\omega^{k}\\omega_{ki}]=[\\omega_{ik}\\omega^{k}]," "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.2'" "e" "\\tag{2$'$} d\\omega_{ij}=-[\\omega_{i}{}^{k}\\omega_{jk}]. " "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.3" "e" "\\left\\{ \\begin{aligned} \\overline\\omega^{i}(\\nu,d\\nu)&=\\omega^{i}(u,du)" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+(toc "toc" "    1.2 Fundamental theorems" "/Users/zh217/Documents/work/cartanedst.tex" nil 2 "1.2" "\\section[{Fundamental theorems in the theory of surfaces}]{Fundamental theorems\\\\in the theory of surfaces}" 263920)
+
+("sec:fund-theor-theory" "s" "\\fsec To a given surface $S$ we can attach a family of right trihedrals whose origin is on the surfa" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.4" "e" "\\omega^{3}=0, " "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.5" "e" "[\\omega^{1}\\omega_{13}]+[\\omega^{2}\\omega_{23}]=0. " "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.6" "e" "\\left\\{ \\begin{aligned} \\vec T&=+\\vec e_{1}\\cos\\theta+\\vec e_{2}\\sin\\theta," "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.7" "e" "\\left\\{ \\begin{aligned} d\\vec T&=\\frac{ds}{\\rho}\\vec N," "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.8" "e" "\\left\\{ \\begin{aligned} d\\theta+\\omega_{12}&=\\frac{ds\\sin\\varpi}{\\rho}=\\frac{ds}{R_{g}}," "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.9" "e" "\\Phi=\\omega^{1}\\omega_{13}+\\omega^{2}\\omega_{23}=\\frac{ds^{2}}{R_{n}}. " "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.10" "e" "F=(\\omega^{1})^{2}+(\\omega^{2})^{2}=ds^{2}. " "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.11" "e" "\\frac{ds^{2}}{T_{g}}=\\left(\\frac{d\\varpi}{ds}+\\frac{1}{\\tau}\\right)ds^{2}=\\omega^{1}\\omega_{23}-\\ome" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:24" "e" "\\Psi=\\omega^{1}\\omega_{23}-\\omega^{2}\\omega_{13} " "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.13" "e" "\\left\\{ \\begin{aligned} \\omega_{13}&=a\\omega^{1}+b\\omega^{2}," "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("pageref1" "s" "The three fundamental forms are then \\begin{equation}  \\left\\{ \\begin{aligned} F&=(\\omega^{1})^{2}+(" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.14" "e" "\\left\\{ \\begin{aligned} F&=(\\omega^{1})^{2}+(\\omega^{2})^{2}," "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.15" "e" "\\left(a-\\frac{1}{R}\\right) \\left(c-\\frac{1}{R}\\right) -b^{2}=0, " "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.15'" "e" "\\tag{15$'$} \\frac{1}{R_{1}}+\\frac{1}{R_{2}}=a+c,\\qquad \\frac{1}{R_{1}R_{2}}=ac-b^{2}. " "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.16" "e" "\\left\\{ \\begin{aligned} \\Phi&=\\frac{1}{R_{1}}(\\omega^{1})^{2}+\\frac{1}{R_{2}}(\\omega^{2})^{2}," "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.17" "e" "\\frac{1}{R_{n}}=\\frac{\\cos^{2}\\theta}{R_{1}}+\\frac{\\sin^{2}\\theta}{R_{2}},\\qquad\\frac{1}{T_{g}}\\left" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.18" "e" "\\frac{1}{R_{n}}=a,\\qquad\\frac{1}{T_{g}}=b,\\qquad\\frac{1}{R_{g}}=\\frac{d\\theta+\\omega_{12}}{ds}. " "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+(toc "toc" "      1.2.1 Surfaces containing only umbilical points" "/Users/zh217/Documents/work/cartanedst.tex" nil 3 "1.2.1" "\\subsection{Surfaces containing only umbilical points}" 275786)
+
+("sec:surfaces-where-all" "s" "\\fsec The second fundamental form being proportional to the first, we have, in the equations \\eqref{" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.I.1" "e" "\\tag{I, 1} \\omega^{3}=0,\\qquad \\omega_{13}= a\\omega^{1},\\qquad \\omega_{23}=a\\omega^{2},\\qquad da=0, " "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+(toc "toc" "      1.2.2 Establishing a point correspondence" "/Users/zh217/Documents/work/cartanedst.tex" nil 3 "1.2.2" "\\subsection[{Establishing a point correspondence between two given surfaces}]{Establishing a point correspondence\\\\between two given surfaces}" 279458)
+
+("sec:establ-point-corr" "s" "\\fsec Let $S$ and $\\overline S$ be two given surfaces: we can have between these two surfaces a poin" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.II.1" "e" "\\tag{II, 1} \\overline\\omega^{1}=u\\omega^{1},\\qquad\\overline\\omega^{2}=u\\omega^{2}. " "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.II.2" "e" "\\tag{II, 2} \\left\\{ \\begin{aligned} \\overline\\omega^{1}=u\\omega^{1},\\quad\\overline\\omega^{2}=u\\omega" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.II.3" "e" "\\tag{II, 3} \\begin{bmatrix} \\omega^{1}&-u\\omega^{2}" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+(toc "toc" "      1.2.3 Weingarten surfaces" "/Users/zh217/Documents/work/cartanedst.tex" nil 3 "1.2.3" "\\subsection{Weingarten surfaces}" 285850)
+
+("sec:weingarten-surfaces" "s" "\\fsec Weingarten's surfaces are those that have a given relation between the principal curvatures. M" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.III.1" "e" "\\tag{III, 1} \\left\\{ \\begin{aligned} \\omega^{3}=0,\\quad\\omega_{13}=a\\omega^{1}+b\\omega^{2},&\\quad\\om" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.III.2" "e" "\\tag{III, 2} \\left\\{ \\begin{aligned}{} [\\omega^{1}(da-2b\\omega_{12})]+[\\omega^{2}(db+\\overline{a-c}\\" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.III.3" "e" "\\tag{III, 3} F_{a}(da-2b\\omega_{12})+F_{b}(db+\\overline{a-c}\\,\\omega_{12})+F_{c}(dc+2b\\omega_{12})=0" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.III.4" "e" "\\tag{III, 4} F_{u}[(\\omega^{1})^{2}+(\\omega^{2})^{2}]+F_{v}[a(\\omega^{1})^{2}+2b\\omega^{1}\\omega^{2}" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.III.5" "e" "\\left\\{ \\begin{aligned} da-2b\\omega_{12}&=\\alpha\\omega^{1}+\\beta\\omega^{2}," "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.III.6" "e" "\\tag{III, 6} F_{a}(da-2b\\omega_{12})+F_{b}(db+\\overline{a-c}\\,\\omega_{12})=0, " "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.III.7" "e" "\\tag{III, 7} F_{a}(db+\\overline{a-c}\\,\\omega_{12})+F_{b}(dc+2b\\omega_{12})=0. " "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+(toc "toc" "      1.2.4 Isothermal surfaces" "/Users/zh217/Documents/work/cartanedst.tex" nil 3 "1.2.4" "\\subsection{Isothermal surfaces}" 297521)
+
+("sec:isothermal-surfaces" "s" "\\fsec An isothermal surface is defined by the property that its $ds^{2}$ is reducible to the form $A" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.IV.1" "e" "\\tag{IV, 1} \\omega^{2}=0,\\qquad \\omega_{13}=a\\omega^{1},\\qquad \\omega_{23}=c\\omega^{2}. " "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.IV.2" "e" "\\tag{IV, 2} \\left\\{ \\begin{aligned} \\left[\\omega^{1}\\frac{du}{u}\\right]+[\\omega^{2}\\omega_{12}]&=0," "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.IV.3" "e" "\\tag{IV, 3} \\left\\{ \\begin{aligned}{} [\\omega^{1}da]+(a-c)[\\omega^{2}\\omega_{12}]&=0," "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.IV.4" "e" "\\tag{IV, 4} a\\cos^{2}\\theta+c\\sin^{2}\\theta=\\frac{\\cos\\varpi}{\\rho},\\qquad(c-a)\\sin\\theta\\cos\\theta=" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+(toc "toc" "      1.2.5 Pairs of isometric surfaces" "/Users/zh217/Documents/work/cartanedst.tex" nil 3 "1.2.5" "\\subsection{Pairs of isometric surfaces}" 302758)
+
+("sec:some-isoth-surf" "s" "\\fsec Let $S$ and $\\overline S$ be two isometric surfaces, that is to say of the same $ds^{2}$. Let " "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.V.1" "e" "\\tag{V, 1} \\omega^{3}=0,\\qquad\\overline\\omega^{3}=0,\\qquad\\overline\\omega^{1}=\\omega^{1},\\qquad\\over" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.V.2" "e" "\\tag{V, 2} \\left\\{ \\begin{aligned}[] [\\omega^{1}\\omega_{13}]+[\\omega^{2}\\omega_{23}]&=0," "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.V.3" "e" "\\tag{V, 3} \\left\\{ \\begin{aligned} \\omega_{13}&=a\\omega^{1}+b\\omega^{2}," "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.V.4" "e" "\\tag{V, 4} \\overline a\\overline c-\\overline b^{2}=ac-b^{2}. " "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("s20" "s" "\\begin{equation} \\tag{V, 5} \\left\\{ \\begin{aligned} \\overline\\omega^{1}=\\omega^{1},\\quad\\overline\\om" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.V.5" "e" "\\tag{V, 5} \\left\\{ \\begin{aligned} \\overline\\omega^{1}=\\omega^{1},\\quad\\overline\\omega^{2}=\\omega^{2" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.V.6" "e" "\\tag{V, 6} \\left\\{ \\begin{aligned} \\overline\\omega_{13}&=\\overline a\\omega^{1}+\\overline b\\omega^{2}" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.V.7" "e" "\\tag{V, 7} \\overline{a}\\overline{c}-\\overline b^{2}=K. " "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("s21" "s" "\\begin{align*} \\omega^{1}\\overline\\omega_{23}-\\omega^{2}\\overline\\omega_{13}&=\\sqrt{-K}[(\\omega^{1})" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+(toc "toc" "      1.2.6 Pairs of isometric surfaces" "/Users/zh217/Documents/work/cartanedst.tex" nil 3 "1.2.6" "\\subsection[{Pairs of isometric surfaces conserving a family of asymptotic lines}]{Pairs of isometric surfaces\\\\conserving a family of asymptotic lines}" 311894)
+
+("sec:some-isoth-surf-1" "s" "\\fsec We attach at corresponding points of two surfaces right trihedrals whose vector $\\vec e_{1}$ i" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.VI.1" "e" "\\tag{VI, 1} \\left\\{ \\begin{gathered} \\overline\\omega^{1}=\\omega^{1},\\quad\\overline\\omega^{2}=\\omega^" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.VI.2" "e" "\\tag{VI, 2} \\left\\{ \\begin{aligned} \\frac{\\sin\\overline\\varpi}{\\overline\\rho}&=\\frac{\\sin\\varpi}{\\rh" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+(toc "toc" "      1.2.7 Pairs of isometric surfaces conserving curvature lines" "/Users/zh217/Documents/work/cartanedst.tex" nil 3 "1.2.7" "\\subsection{Pairs of isometric surfaces conserving curvature lines}" 319308)
+
+("sec:some-isoth-surf-2" "s" "\\fsec To the equations \\begin{equation} \\tag{VII, 1} \\overline\\omega^{1}=\\omega^{1},\\quad\\overline\\o" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.VII.1" "e" "\\tag{VII, 1} \\overline\\omega^{1}=\\omega^{1},\\quad\\overline\\omega^{2}=\\omega^{2},\\quad\\omega^{3}=0,\\q" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.VII.2" "e" "\\tag{VII, 2} \\left\\{ \\begin{aligned} \\overline\\omega_{13}&=u\\omega_{13}+v\\omega^{1}," "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.VII.3" "e" "\\tag{VII, 3} \\left\\{ \\begin{aligned}[] [\\omega^{1}\\omega_{13}]+[\\omega^{2}\\omega_{23}]&=0," "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.VII.4" "e" "\\tag{VII, 4} \\left\\{ \\begin{aligned} \\omega_{13}&=a\\omega^{1}+b\\omega^{2}," "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.VII.5" "e" "\\tag{VII, 5} (au+v)(cu+v)-b^{2}u^{2}=ac-b^{2}, " "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.VII.6" "e" "\\tag{VII, 6} \\left\\{ \\begin{gathered} \\overline\\omega^{1}=\\omega^{1},\\qquad\\overline\\omega^{2}=\\omeg" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.VII.7" "e" "\\tag{VII, 7} \\left\\{ \\begin{aligned}{} [\\omega^{1}da]+(a-c)[\\omega^{2}\\omega_{12}]&=0," "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.VII.7'" "e" "\\tag{VII, 7$'$} \\left\\{ \\begin{aligned}{} [\\omega^{1}da]+(a-c)[\\omega^{2}\\omega_{12}]&=0," "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.VII.8" "e" "\\tag{VII, 8} \\frac{t\\,dt}{1-t^{2}}=t\\frac{ta}{c}k\\omega^{1}-\\frac{c}{a}h\\omega^{2}=t^{2}\\varpi^{1}-\\" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.VII.9" "e" "\\tag{VII, 9} \\left\\{ \\begin{gathered} \\omega^{3}=0,\\quad\\omega_{13}=a\\omega^{1},\\quad\\omega_{23}=c\\o" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+(toc "toc" "      1.2.8 Pairs of isometric surfaces" "/Users/zh217/Documents/work/cartanedst.tex" nil 3 "1.2.8" "\\subsection[{Pairs of isometric surfaces conserving principal curvatures}]{Pairs of isometric surfaces\\\\conserving principal curvatures}" 334864)
+
+("sec:some-isoth-surf-3" "s" "\\fsec It suffices that the mean curvature is conserved. If we use the same right trihedrals as in th" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.VIII.1" "e" "\\tag{VIII, 1} \\overline\\omega^{1}=\\omega^{1},\\qquad\\overline\\omega^{2}=\\omega^{2},\\qquad\\omega^{3}=0" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.VIII.2" "e" "\\tag{VIII, 2} \\left\\{ \\begin{aligned}{} [\\omega^{1}\\omega_{13}]+[\\omega^{2}\\omega_{23}]&=0," "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.VIII.3" "e" "\\tag{VIII, 3} \\left\\{ \\begin{gathered} \\begin{vmatrix} \\omega^{1}&\\omega^{2}&0&0" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.VIII.4" "e" "\\tag{VIII, 4} \\frac{\\sin\\overline\\varpi}{\\overline\\rho}=\\frac{\\sin\\varpi}{\\rho}, " "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.VIII.5" "e" "\\tag{VIII, 5} \\frac{\\cos\\overline\\varpi}{\\overline\\varpi}=\\frac{\\cos\\varpi}{\\rho}, " "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+(toc "toc" "      1.2.9 Pairs of surfaces in point correspondence" "/Users/zh217/Documents/work/cartanedst.tex" nil 3 "1.2.9" "\\subsection[{Pairs of surfaces in point correspondence conserving curvature lines and principal curvatures}]{Pairs of surfaces in point correspondence\\\\conserving curvature lines and principal curvatures}" 339905)
+
+("sec:some-surfaces-point" "s" "\\fsec We define the problem by demanding that the correspondance between the two surfaces conserve t" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.IX.1" "e" "\\tag{IX, 1} \\omega^{3}=0,\\qquad\\overline\\omega^{3}=0,\\qquad\\overline\\omega^{1}=u\\omega^{1},\\qquad\\ov" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.IX.2" "e" "\\tag{IX.2} \\omega_{13}=a\\omega^{1},\\qquad\\omega_{23}=c\\omega^{2},\\qquad\\overline\\omega_{13}=\\epsilon" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.IX.3" "e" "\\tag{IX, 3} \\left\\{ \\begin{aligned}{} [\\omega^{1}du]&=0,&[\\omega^{2}dv]&=0," "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.IX.4" "e" "\\tag{IX, 4} \\Delta=(a-c)^{2}(u^{2}-v^{2})(\\omega^{1})^{3}(\\omega^{2})^{3}. " "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.IX.5" "e" "\\tag{IX, 5} \\omega_{12}=h\\omega^{1}, " "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.IX.6" "e" "\\tag{IX, 6} \\left\\{ \\begin{gathered}{} \\overline\\omega^{3}=0,\\quad\\overline\\omega^{1}=u\\omega^{1},\\q" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.IX.7" "e" "\\tag{IX, 7} [\\omega^{1}du]=0,\\qquad[\\omega^{2}dv]=0,\\qquad\\overline\\omega_{12}=\\frac{u}{v}\\omega_{12" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.IX.8" "e" "\\tag{IX, 8} h[\\omega^{1}dv]+acv(v^{2}-1)[\\omega^{1}\\omega^{2}]=0. " "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.IX.9" "e" "\\tag{IX, 9} dv=ac\\frac{v(1-v^{2})}{h}\\omega^{2}. " "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.IX.10" "e" "\\tag{IX, 10} \\omega_{13}=a\\omega^{1},\\quad\\omega_{23}=c\\omega^{2},\\quad\\overline\\omega_{13}=\\epsilon" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.IX.11" "e" "\\tag{IX, 11} \\left\\{ \\begin{aligned}{} [\\omega^{1}du]+[\\omega^{2}(u\\omega_{12}-v\\overline\\omega_{12}" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.IX.12" "e" "\\tag{IX, 12} \\left\\{ \\begin{aligned} d\\overline s\\cos\\overline\\theta&=u\\,ds\\cos\\theta,&d\\overline s\\" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.IX.13" "e" "\\tag{IX, 13} \\frac{dv}{v}+\\frac{da+dc}{a-c}=0. " "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.IX.14" "e" "\\tag{IX, 14} v\\,da+u\\,dc+(a-c)\\sqrt{uv}(\\overline\\omega_{12}-\\omega_{12})=0. " "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+(toc "toc" "      1.2.10 Pairs of surfaces in point correspondence" "/Users/zh217/Documents/work/cartanedst.tex" nil 3 "1.2.10" "\\subsection[{Pairs of surfaces in point correspondence conserving  geodesic torsion of curves}]{Pairs of surfaces in point correspondence\\\\conserving  geodesic torsion of curves}" 357398)
+
+("sec:some-surfaces-point-1" "s" "\\fsec We exclude the trivial cases of the planes and the spheres. The geodesic torsion being the exp" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.X.1" "e" "\\tag{X, 1} \\left\\{ \\begin{gathered} \\omega^{3}=0,\\qquad\\overline\\omega^{3}=0,\\qquad\\overline\\omega^{" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.X.2" "e" "\\tag{X, 2} \\left\\{ \\begin{aligned}{} [\\omega^{1}\\omega_{13}]+[\\omega^{2}\\omega_{23}]&=0," "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.X.3" "e" "\\tag{X, 3} \\left\\{ \\begin{aligned} \\omega_{13}&=a\\omega^{1}+b\\omega^{2}," "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.X.4" "e" "\\tag{X, 4} \\left\\{ \\begin{gathered} \\omega^{3}=0,\\qquad\\overline\\omega^{3}=0,\\qquad\\overline\\omega^{" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.X.5" "e" "\\tag{X, 5} \\overline\\omega{^3}=0,\\qquad\\overline\\omega^{1}=m\\omega^{1},\\qquad\\overline\\omega^{2}=m\\o" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+(toc "toc" "      1.2.11 Surfaces having the same " "/Users/zh217/Documents/work/cartanedst.tex" nil 3 "1.2.11" "\\subsection[Surfaces having the same third fundamental form as a given surface]{Surfaces having the same \\\\third fundamental form as a given surface}" 366601)
+
+("sec:surfaces-having-same" "s" "\\fsec In this case the curvature lines correspond to each other on the two surfaces, and we attach a" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.XI.1" "e" "\\tag{XI, 1} \\overline\\omega^{3}=0,\\qquad\\overline\\omega^{1}=u\\omega^{1},\\qquad\\overline\\omega^{2}=v\\" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.XI.2" "e" "\\tag{XI, 2} \\overline\\omega_{13}=\\frac{\\omega_{13}+w\\omega^{1}}{v}=\\frac{a+w}{v}\\omega^{1},\\qquad\\ov" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.XI.3" "e" "\\tag{XI, 3} \\left\\{ \\begin{gathered} \\overline\\omega^{3}=0,\\qquad\\overline\\omega^{1}=u\\omega^{1},\\qq" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.XI.4" "e" "\\tag{XI, 4} \\omega_{12}=h\\omega^{1}+k\\omega^{2},\\quad da=a_{a}\\omega^{1}+(a-c)h\\omega^{2},\\quad dc=(" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.XI.5" "e" "\\tag{XI, 5} \\left\\{ \\begin{aligned} du&=\\alpha\\omega^{1}+\\beta\\omega^{2},\\qquad dv=\\gamma\\omega^{1}+" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.XI.6" "e" "\\tag{XI, 6} &\\quad \\begin{vmatrix} u\\omega^{1}&0&-v\\omega^{2}" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.XI.7" "e" "\\tag{XI, 7} \\frac{du}{u}=\\frac{da}{a-c},\\quad\\frac{dv}{v}=\\frac{dc}{c-a},\\quad\\overline\\omega_{13}=0" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.XI.8" "e" "\\tag{XI, 8} \\left\\{ \\begin{aligned} d\\overline s\\cos\\overline\\theta&=u\\,ds\\cos\\theta,\\qquad d\\overli" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+(toc "toc" "      1.2.12 Pairs of surfaces in conformal correspondence" "/Users/zh217/Documents/work/cartanedst.tex" nil 3 "1.2.12" "\\subsection[Pairs of surfaces in conformal correspondence  conserving asymptotic lines]{Pairs of surfaces in conformal correspondence\\\\conserving asymptotic lines}" 374119)
+
+("sec:some-surf-conf" "s" "\\fsec It is obvious that the conformal correspondance conserving the asymptotic lines conserve the c" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.XII.1" "e" "\\tag{XII, 1} \\left\\{ \\begin{gathered} \\omega^{3}=0,\\quad\\overline\\omega^{3}=0,\\quad\\overline\\omega^{" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.XII.2" "e" "\\tag{XII, 2} \\left\\{ \\begin{aligned} \\omega_{13}&=a\\omega^{1}+b\\omega^{2}," "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.XII.3" "e" "\\tag{XII, 3} \\left\\{ \\begin{aligned} a\\alpha+b\\beta-c\\lambda+b\\mu&=0," "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.XII.4" "e" "\\tag{XII, 4} [(\\omega^{1})^{2}+(\\omega^{2})^{2}]\\{(a\\lambda-b\\beta)(\\omega^{1})^{3}+(2b\\lambda+a\\mu+" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.XII.5" "e" "\\tag{XII, 5} \\left\\{ \\begin{aligned} a\\lambda-b\\beta&=0," "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.XII.6" "e" "\\tag{XII, 6} \\overline\\omega^{3}=0,\\quad\\overline\\omega^{1}=m\\omega^{1},\\quad\\overline\\omega^{2}=m\\o" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.XII.7" "e" "\\left\\{ \\begin{gathered} \\overline\\omega^{3}=0,\\quad\\overline\\omega^{1}=u\\omega^{1},\\quad\\overline\\o" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+(toc "toc" "      1.2.13 Pairs of surfaces in point correspondence conserving" "/Users/zh217/Documents/work/cartanedst.tex" nil 3 "1.2.13" "\\subsection[{Pairs of surfaces in point correspondence conserving curvature lines and second fundamental form}]{Pairs of surfaces in point correspondence conserving\\\\curvature lines and second fundamental form}" 384182)
+
+("sec:some-surfaces-point-2" "s" "\\fsec By relating the two surfaces using their Darboux trihedrals, we are led to the following close" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.XIII.1" "e" "\\tag{XIII, 1} \\left\\{ \\begin{gathered} \\omega^{3}=0,\\quad\\overline\\omega^{3}=0,\\quad\\overline\\omega^" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.XIII.2" "e" "\\tag{XIII, 2} \\left\\{ \\begin{gathered} \\omega^{3}=0,\\quad\\overline\\omega^{3}=0,\\quad\\overline\\omega^" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.XIII.3" "e" "\\tag{XIII, 3} 2uv(u^{2}-v^{2})\\frac{a^{1}v^{2}-c^{2}u^{2}}{av^{2}+cu^{2}}\\omega_{12}[a(\\omega^{1})^{" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+(toc "toc" "      1.2.14 Surfaces $\\overline S$ in point correspondence with a given surface $S$" "/Users/zh217/Documents/work/cartanedst.tex" nil 3 "1.2.14" "\\subsection[{Surfaces $\\overline S$ in point correspondence with a given surface $S$ such that the curvature lines of each surface correspond to the asymptotic lines of the other}]{Surfaces $\\overline S$ in point correspondence with a given surface $S$\\\\such that the curvature lines of each surface\\\\correspond to the asymptotic li" 389678)
+
+("sec:surfaces-bar-s" "s" "\\fsec We assume, naturally, that the two surfaces $S$ and $\\overline S$ are of inverse curvature to " "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.XIV.1" "e" "\\tag{XIV, 1} \\left\\{ \\begin{aligned} \\sqrt{\\overline a}\\,\\overline\\omega^{1}&=\\lambda(\\sqrt{a}\\,\\ome" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.XIV.2" "e" "\\tag{XIV, 2} \\overline\\omega^{3}=0,\\qquad\\overline\\omega_{13}=\\overline a \\overline\\omega^{1},\\qquad" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.XIV.3" "e" "\\tag{XIV, 3} \\left\\{ \\begin{aligned}{} [\\overline\\omega^{1}d\\overline a]+(\\overline a-\\overline c)[\\" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.XIV.4" "e" "\\tag{XIV, 4} \\frac{2d\\lambda}{\\lambda}=\\frac{a+c}{\\sqrt{-ac}}(h\\omega^{1}+k\\omega^{2}). " "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.XIV.5" "e" "\\tag{XIV, 5} \\left\\{ \\begin{aligned} \\sqrt{\\overline a}\\,d\\overline s\\cos\\overline\\theta&=\\lambda(\\s" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.XIV.6" "e" "\\tag{XIV, 6} \\left\\{ \\begin{aligned} \\sqrt{\\overline a}\\,d\\overline s&=2\\lambda\\sqrt{a}\\cos\\theta\\, " "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.XIV.7" "e" "\\tag{XIV, 7} \\frac{d\\lambda}{\\lambda}-\\frac{\\overline a+\\overline c}{\\overline a-\\overline c}\\frac{d" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.XIV.8" "e" "\\tag{XIV, 8} \\left\\{ \\begin{aligned} \\sqrt{\\overline a}\\,d\\overline s\\cos\\overline\\theta&=\\sqrt{-\\ov" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.XIV.9" "e" "\\tag{XIV, 9} \\frac{d\\lambda}{\\lambda}+\\frac{\\overline a-\\overline c}{2\\sqrt{-\\overline{ac}}}\\overlin" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+(toc "toc" "      1.2.15 Pairs of convex surfaces in point correspondence" "/Users/zh217/Documents/work/cartanedst.tex" nil 3 "1.2.15" "\\subsection[{Pairs of convex surfaces in point correspondence such that  asymptotic lines of one of them corresponds to the minimal lines of the other}]{Pairs of convex surfaces in point correspondence\\\\such that  asymptotic lines of one of them corresponds to\\\\the minimal lines of the other}" 402211)
+
+("sec:some-convex-surfaces" "s" "\\fsec We say that a surface is convex if its total curvature is positive everywhere. It is clear tha" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.XV.1" "e" "\\tag{XV, 1} \\left\\{ \\begin{aligned} \\omega^{3}&=0,&\\overline\\omega^{3}&=0,&\\overline\\omega^{1}&=u\\sq" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.XV.2" "e" "\\tag{XV, 2} \\left\\{ \\begin{aligned}{} [\\omega^{1}da]+(a-c)[\\omega^{2}\\omega_{12}]&=0," "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.XV.3" "e" "\\tag{XV, 3} \\left\\{ \\begin{aligned} d\\overline s&=u\\sqrt{a}\\,ds,&a&=\\frac{\\cos\\varpi}{\\rho},&\\frac{d" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:7.XV.4" "e" "\\tag{XV, 4} a\\frac{dv}{v}-c\\frac{du}{u}+\\frac{c-a}{2c}dc=0. " "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+(toc "toc" "           * General remark" "/Users/zh217/Documents/work/cartanedst.tex" nil 3 "     *" "\\subsection*{General remark}" 409083)
+
+("sec:general-remark" "s" "\\fsec The problems that we have reviews have been treated in Euclidean geometry, but they can also a" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+(toc "toc" "  2 Geometric problems with more than two independent variables" "/Users/zh217/Documents/work/cartanedst.tex" nil 1 "2" "\\chapter{Geometric problems with more than two independent variables}" 410907)
+
+("cha:geom-probl-with" "s" "\\section{Triple orthogonal systems}  \\fsec The search for triple orthogonal systems in an ordinary t" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+(toc "toc" "    2.1 Triple orthogonal systems" "/Users/zh217/Documents/work/cartanedst.tex" nil 2 "2.1" "\\section{Triple orthogonal systems}" 411006)
+
+("sec:orth-three-syst" "s" "\\fsec The search for triple orthogonal systems in an ordinary three dimensional space leads to a ver" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:8.I.1" "e" "\\tag{I, 1} \\left\\{ \\begin{aligned} d\\omega^{1}&=-[\\omega^{2}\\omega_{12}]+[\\omega^{3}\\omega_{31}]," "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:8.I.2" "e" "\\tag{I, 2} [\\omega^{2}\\omega^{3}\\omega_{23}]=0,\\qquad[\\omega^{3}\\omega^{1}\\omega_{31}]=0,\\qquad[\\ome" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:8.I.3" "e" "\\tag{I, 3} u_{1}\\omega_{23}=0,\\qquad u_{2}\\omega_{31}=0,\\qquad u_{3}\\omega_{12}=0. " "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:8.I.4" "e" "\\tag{I, 4} \\left\\{ \\begin{aligned} \\omega_{23}&=\\alpha_{1}\\omega_{2}-\\beta_{1}\\omega_{3}," "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+(toc "toc" "    2.2 Triple systems at constant angles" "/Users/zh217/Documents/work/cartanedst.tex" nil 2 "2.2" "\\section{Triple systems at constant angles}" 418014)
+
+("sec:three-systems-with" "s" "\\fsec We can generalise the problem of triple orthogonal system by seeking three families parameteri" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:8.II.1" "e" "\\tag{II, 1} \\left\\{ \\begin{aligned} dA&=\\omega^{i}\\vec e_{1}," "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:8.II.2" "e" "\\tag{II, 2} \\left\\{ \\begin{aligned} \\omega_{1}{}^{1}+\\gamma\\omega_{1}{}^{2}+\\beta\\omega_{1}{}^{3}&=0" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:8.II.3" "e" "\\tag{II, 3} \\left\\{ \\begin{aligned} d\\omega^{1}&=[\\omega^{1}\\omega_{1}{}^{1}]+[\\omega^{2}\\omega_{2}{" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:8.II.4" "e" "\\tag{II, 4} \\left\\{ \\begin{aligned}{} [\\omega^{1}\\omega^{2}\\omega_{2}{}^{1}]-[\\omega^{3}\\omega^{1}\\o" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:8.II.5" "e" "\\tag{II, 5} \\left\\{ \\begin{aligned} u_{3}\\omega_{2}{}^{1}-u_{2}\\omega_{3}{}^{1}&=0," "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:8.II.6" "e" "\\tag{II, 6} \\begin{vmatrix} (\\beta-\\gamma\\alpha)u_{2}+(\\gamma-\\alpha\\beta)u_{3}&(1-\\alpha^{2})u_{3}&" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+(toc "toc" "    2.3 $p$-tuple orthogonal systems in $p$ dimensional space" "/Users/zh217/Documents/work/cartanedst.tex" nil 2 "2.3" "\\section{$p$-tuple orthogonal systems in $p$ dimensional space}" 426594)
+
+("sec:p-tuple-orthogonal" "s" "\\fsec The problem is about finding, in a $p$ dimensional Euclidean space, $p$ families of hypersurfa" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:8.III.1" "e" "\\tag{III, 1} \\left\\{ \\begin{aligned} dA&=\\omega^{1}\\vec e_{1}," "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:8.III.2" "e" "\\tag{III, 2} \\left\\{ \\begin{aligned} d\\omega^{i}&=[\\omega^{k}\\omega_{ki}]," "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:8.III.3" "e" "\\tag{III, 3} [\\omega^{i}\\omega^{j}\\omega_{ij}]=0,\\qquad(i,j=1,2,\\dots,p),\\qquad\\text{(no sum)}. " "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:8.III.4" "e" "\\tag{III, 4} [\\omega^{j}\\omega^{k}\\omega_{ki}\\omega_{ij}]-[\\omega^{i}\\omega^{k}\\omega_{kj}\\omega_{ij" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:8.III.5" "e" "\\tag{III, 5} \\omega_{ji}=\\alpha_{ij}\\omega_{j}-\\alpha_{ji}\\omega_{i},\\qquad(i,j=1,2,\\dots,p), " "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+(toc "toc" "    2.4 Realisation of a three-dimensional Riemannian space as a variety of Euclidean space" "/Users/zh217/Documents/work/cartanedst.tex" nil 2 "2.4" "\\section{Realisation of a three-dimensional Riemannian space as a variety of Euclidean space}" 440595)
+
+("sec:real-riem-space" "s" "\\fsec We have already considered (in \\textsection\\textbf{20} and \\textsection\\textbf{21}, pp.~\\pager" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:8.IV.1" "e" "\\tag{IV, 1} \\left\\{ \\begin{aligned} d\\vec A&=\\varpi^{1}\\vec e_{1}+\\varpi^{2}\\vec e_{2}+\\varpi^{3}\\ve" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:8.IV.2" "e" "\\tag{IV, 2}\\left\\{ \\begin{aligned} d\\varpi^{1}&=-[\\varpi^{2}\\varpi_{12}]+[\\varpi^{3}\\varpi_{31}]," "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:8.IV.3" "e" "\\tag{IV, 3} \\left\\{ \\begin{aligned} dA&=\\omega^{i}\\vec e_{i}," "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:8.IV.4" "e" "\\tag{IV, 4} \\left\\{ \\begin{aligned} d\\omega^{i}&=[\\omega^{k}\\omega_{ki}],&(i&=1,2,\\dots,6)," "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:8.IV.5" "e" "\\tag{IV, 5} \\omega^{i}=\\varpi^{i},\\quad(i=1,2,3),\\qquad\\omega^{\\alpha}=0,\\quad(\\alpha=4,5,6). " "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:8.IV.6" "e" "\\tag{IV, 6} \\omega_{23}=\\varpi_{23},\\qquad\\omega_{31}=\\varpi_{31},\\qquad\\omega_{12}=\\varpi_{12}. " "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:8.IV.7" "e" "\\tag{IV, 7} \\left\\{ \\begin{aligned} \\omega^{i}&=\\varpi^{i},\\qquad\\omega^{\\alpha}=0," "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:8.IV.8" "e" "\\tag{IV, 8} \\left\\{ \\begin{aligned} \\omega_{14}&=a_{11}\\varpi^{1}+a_{12}\\varpi^{2}+a_{13}\\varpi^{3}," "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:8.IV.9" "e" "\\tag{IV, 9} A_{ij}+B_{ij}+C_{ij}=K_{ij}, " "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:8.IV.10" "e" "\\tag{IV, 10} \\left\\{ \\begin{aligned} \\omega_{14}=\\omega_{15}=\\omega_{16}&=0," "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:8.IV.11" "e" "\\left\\{ \\begin{aligned} \\omega_{14}=\\omega_{15}=\\omega_{16}&=0," "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:8.IV.12" "e" "\\tag{IV, 12} \\omega^{1}=\\varpi^{1},\\qquad\\omega^{2}=\\varpi^{2}. " "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:8.IV.3" "e" "\\tag{IV, 3} \\omega_{13}=a\\varpi^{1}+b\\varpi^{2},\\qquad\\omega_{23}=b\\varpi^{1}+c\\varpi^{2}. " "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:8.IV.14" "e" "\\tag{IV, 14} \\left\\{ \\begin{aligned} (x^{3})^{2}+(x^{4})^{2}+(x^{5})^{2}+(x^{6})^{2}&=1," "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:8.IV.15" "e" "\\tag{IV, 15} \\delta= \\begin{vmatrix} x^{3}&x^{4}&x^{5}&x^{6}" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:8.IV.16" "e" "\\tag{IV, 16} \\left\\{ \\begin{aligned} a_{22}a_{33}+b_{22}b_{33}&=a^{2}{}_{23}+b^{2}{}_{23}+c^{2}{}_{1" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+("eq:8.IV.17" "e" "\\tag{IV, 17} \\begin{vmatrix} a_{22}&b_{22}&a^{2}_{23}+b^{2}_{23}+c^{2}_{23}+K_{11}" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+(toc "toc" "  3 Translator's note" "/Users/zh217/Documents/work/cartanedst.tex" nil 1 "3" "\\chapter{Translator's note}" 474706)
+
+("cha:translators-note" "s" nil "/Users/zh217/Documents/work/cartanedst.tex" nil "")
+
+("eq:2" "e" " " "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+(appendix . t)
+
+(toc "toc" "  A Bibliography" "/Users/zh217/Documents/work/cartanedst.tex" nil 1 "A" "\\chapter{Bibliography}" 468959)
+
+("cha:bibliography" "s" "\\begin{enumerate} " "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+(toc "toc" "  B Translator's notes" "/Users/zh217/Documents/work/cartanedst.tex" nil 1 "B" "\\chapter{Translator's notes}" 471358)
+
+(toc "toc" "    B.1 Exterior forms" "/Users/zh217/Documents/work/cartanedst.tex" nil 2 "B.1" "\\section{Exterior forms}" 471839)
+
+(toc "toc" "    B.2 Exterior differential forms" "/Users/zh217/Documents/work/cartanedst.tex" nil 2 "B.2" "\\section{Exterior differential forms}" 475263)
+
+("sec:exter-diff-forms" "s" "In this chapter exterior differential forms are introduced in a straightforward and practical manner" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+(toc "toc" "    B.3 Exterior differential systems. Characteristic system." "/Users/zh217/Documents/work/cartanedst.tex" nil 2 "B.3" "\\section{Exterior differential systems. Characteristic system.}" 476224)
+
+("sec:exter-diff-syst" "s" "In this chapter Cartan begins the investigation of exterior differential systems proper. First, Frob" "/Users/zh217/Documents/work/cartanedst.tex" nil)
+
+(eof "/Users/zh217/Documents/work/cartanedst.tex")
+))
+
